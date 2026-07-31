@@ -59,9 +59,9 @@ export default function NotFound() {
           <Link href="/" passHref>
             <Button
               size="lg"
-              bg="brand.500"
-              color="dark.800"
-              _hover={{ bg: 'brand.400' }}
+              bg="brand.600"
+              color="white"
+              _hover={{ bg: 'brand.500' }}
               leftIcon={<FiArrowLeft />}
             >
               Return Home

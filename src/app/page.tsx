@@ -121,7 +121,7 @@ export default function HomePage() {
         left={0}
         right={0}
         zIndex={100}
-        bg="rgba(10, 10, 10, 0.8)"
+        bg="rgba(20, 24, 32, 0.88)"
         backdropFilter="blur(12px)"
         borderBottom="1px solid"
         borderColor="whiteAlpha.100"
@@ -140,7 +140,7 @@ export default function HomePage() {
                   fontFamily="heading"
                   fontSize="xl"
                   fontWeight="600"
-                  color="dark.800"
+                  color="white"
                 >
                   C
                 </Box>
@@ -266,9 +266,9 @@ export default function HomePage() {
               >
                 <Button
                   size="lg"
-                  bg="brand.500"
-                  color="dark.800"
-                  _hover={{ bg: 'brand.400' }}
+                  bg="brand.600"
+                  color="white"
+                  _hover={{ bg: 'brand.500' }}
                   rightIcon={<FiArrowRight />}
                 >
                   View Projects
@@ -666,26 +666,29 @@ export default function HomePage() {
       <Box
         as="section"
         py={{ base: 20, md: 32 }}
-        bg="brand.500"
-        color="dark.800"
+        bg="dark.50"
+        color="dark.900"
+        borderY="1px solid"
+        borderColor="blackAlpha.100"
       >
         <Container maxW="container.xl" textAlign="center">
           <VStack spacing={8} maxW="800px" mx="auto">
             <Heading
               fontSize={{ base: '3xl', md: '5xl' }}
               fontWeight="400"
+              color="dark.900"
             >
               Ready to Build Something Extraordinary?
             </Heading>
-            <Text fontSize="lg" opacity={0.8} maxW="600px">
+            <Text fontSize="lg" color="dark.400" maxW="600px" lineHeight="1.8">
               Let&apos;s discuss how we can bring your vision to life. 
               Our team is ready to transform your ideas into architectural reality.
             </Text>
             <Button
               size="lg"
-              bg="dark.800"
-              color="white"
-              _hover={{ bg: 'dark.700' }}
+              bg="dark.900"
+              color="dark.50"
+              _hover={{ bg: 'dark.700', color: 'white' }}
               rightIcon={<FiArrowRight />}
             >
               Start Your Project
@@ -884,9 +887,9 @@ export default function HomePage() {
                 <Button
                   w="full"
                   size="lg"
-                  bg="brand.500"
-                  color="dark.800"
-                  _hover={{ bg: 'brand.400' }}
+                  bg="brand.600"
+                  color="white"
+                  _hover={{ bg: 'brand.500' }}
                   rightIcon={<FiArrowRight />}
                 >
                   Send Message
@@ -923,7 +926,7 @@ export default function HomePage() {
                   fontFamily="heading"
                   fontSize="xl"
                   fontWeight="600"
-                  color="dark.800"
+                  color="white"
                 >
                   C
                 </Box>

@@ -218,8 +218,8 @@ export default function ProjectsPage() {
                       left={4}
                       px={3}
                       py={1}
-                      bg="brand.500"
-                      color="dark.800"
+                      bg="brand.600"
+                      color="white"
                       fontSize="xs"
                       fontWeight="600"
                       letterSpacing="0.1em"
@@ -285,24 +285,25 @@ export default function ProjectsPage() {
       </Box>
 
       {/* CTA Section */}
-      <Box py={{ base: 16, md: 24 }} bg="dark.700">
+      <Box py={{ base: 16, md: 24 }} bg="dark.50" color="dark.900">
         <Container maxW="container.xl" textAlign="center">
           <VStack spacing={6}>
             <Heading
               fontSize={{ base: '2xl', md: '4xl' }}
               fontWeight="400"
+              color="dark.900"
             >
               Have a Project in Mind?
             </Heading>
-            <Text color="dark.100" maxW="500px">
+            <Text color="dark.400" maxW="500px" lineHeight="1.8">
               We&apos;d love to hear about your vision. Let&apos;s discuss how we can bring it to life.
             </Text>
             <NextLink href="/#contact" passHref>
               <Button
                 size="lg"
-                bg="brand.500"
-                color="dark.800"
-                _hover={{ bg: 'brand.400' }}
+                bg="dark.900"
+                color="dark.50"
+                _hover={{ bg: 'dark.700' }}
               >
                 Start a Conversation
               </Button>
