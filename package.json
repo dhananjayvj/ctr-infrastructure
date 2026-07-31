@@ -1,0 +1,47 @@
+{
+  "name": "static-website-builder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static Website Builder with Cloudflare DNS and AWS EC2 deployment infrastructure",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "npx serve@latest out -l 9500",
+    "lint": "next lint",
+    "deploy:preview": "node scripts/deploy-preview.js",
+    "deploy:production": "node scripts/deploy-production.js",
+    "dns:create": "node scripts/cloudflare-dns.js create",
+    "dns:delete": "node scripts/cloudflare-dns.js delete",
+    "dns:list": "node scripts/cloudflare-dns.js list",
+    "test:infra": "node scripts/test-infrastructure.js"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.2.4",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^6.5.1",
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-ec2": "^3.515.0",
+    "@aws-sdk/client-s3": "^3.515.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "node-fetch": "^3.3.2",
+    "ssh2": "^1.15.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
+
