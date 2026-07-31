@@ -1,245 +1,50 @@
-# .github/workflows/deploy.yml
-#
-# Deploy Static Website to EC2
-# 
-# This workflow mirrors the deployment patterns from the storezy-ui-monorepo
-# and deploys static sites to the same EC2 infrastructure.
-
-name: Deploy Static Site to EC2
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-      - staging
+    branches: [main]
   workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Deployment environment'
-        required: true
-        default: 'production'
-        type: choice
-        options:
-          - production
-          - staging
-      subdomain:
-        description: 'Subdomain to deploy to (optional)'
-        required: false
-        type: string
 
-env:
-  NODE_VERSION: '20'
-  SERVICE_NAME: 'ctrinfrastructure'
-  SERVICE_PORT: '9500'
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build Static Site
-
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          node-version: '20'
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build static site
-        env:
-          SITE_URL: ${{ secrets.SITE_URL }}
-          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
         run: npm run build
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: static-site-build
-          path: out/
-          retention-days: 1
+          path: out
 
   deploy:
-    runs-on: ubuntu-latest
-    name: Deploy to EC2
     needs: build
-    environment: 
-      name: ${{ github.event.inputs.environment || (github.ref == 'refs/heads/main' && 'production' || 'staging') }}
-
-    steps:
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: static-site-build
-          path: out/
-
-      - name: Verify build output
-        run: |
-          echo "=== Build artifacts ==="
-          ls -la out/
-          if [ ! -f "out/index.html" ]; then
-            echo "ERROR: index.html not found in build output"
-            exit 1
-          fi
-          echo "✓ Build verification passed"
-
-      - name: Prepare SSH key
-        run: |
-          echo "${{ secrets.EC2_KEY }}" > ec2_key.pem
-          chmod 600 ec2_key.pem
-
-      - name: Create deployment archive
-        run: |
-          echo "=== Creating deployment archive ==="
-          cd out
-          tar -czf ../deploy.tar.gz .
-          cd ..
-          ls -lh deploy.tar.gz
-          echo "✓ Archive created"
-
-      - name: Prepare remote directory
-        run: |
-          ssh -o StrictHostKeyChecking=no -i ec2_key.pem \
-            ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
-            set -e
-            echo "Creating deployment directory: ${{ secrets.EC2_DEPLOY_DIR }}"
-            mkdir -p ${{ secrets.EC2_DEPLOY_DIR }}
-            echo "✓ Directory prepared"
-          EOF
-
-      - name: Transfer files to EC2
-        run: |
-          echo "=== Transferring files to EC2 ==="
-          scp -o StrictHostKeyChecking=no -i ec2_key.pem \
-            deploy.tar.gz \
-            ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:/tmp/
-          echo "✓ Transfer complete"
-
-      - name: Deploy and start service
-        run: |
-          ssh -o StrictHostKeyChecking=no -i ec2_key.pem \
-            ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
-            set -e
-            
-            DEPLOY_DIR="${{ secrets.EC2_DEPLOY_DIR }}"
-            SERVICE_NAME="${{ env.SERVICE_NAME }}"
-            SERVICE_PORT="${{ env.SERVICE_PORT }}"
-            
-            echo "=== Extracting deployment archive ==="
-            cd "$DEPLOY_DIR"
-            rm -rf *
-            tar -xzf /tmp/deploy.tar.gz
-            rm -f /tmp/deploy.tar.gz
-            
-            echo "=== Directory contents ==="
-            ls -la
-            
-            echo "=== Installing serve and PM2 ==="
-            npm install -g serve pm2 2>/dev/null || true
-            
-            echo "=== Stopping existing service ==="
-            pm2 delete "$SERVICE_NAME" 2>/dev/null || true
-            
-            echo "=== Starting service on port $SERVICE_PORT ==="
-            pm2 start serve --name "$SERVICE_NAME" -- -s . -l "$SERVICE_PORT"
-            
-            echo "=== Saving PM2 configuration ==="
-            pm2 save
-            
-            echo "=== Verifying deployment ==="
-            sleep 2
-            HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:$SERVICE_PORT || echo "000")
-            
-            if [ "$HTTP_STATUS" = "200" ]; then
-              echo "✓ Deployment successful! Service running on port $SERVICE_PORT"
-              pm2 list
-            else
-              echo "⚠ Warning: Health check returned $HTTP_STATUS"
-              pm2 logs "$SERVICE_NAME" --lines 20 --nostream || true
-            fi
-          EOF
-
-      - name: Cleanup
-        if: always()
-        run: |
-          rm -f ec2_key.pem deploy.tar.gz
-
-  configure-dns:
     runs-on: ubuntu-latest
-    name: Configure DNS (Optional)
-    needs: deploy
-    if: github.event.inputs.subdomain != ''
-
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Configure Cloudflare DNS
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-          EC2_HOST: ${{ secrets.EC2_HOST }}
-        run: |
-          node -e "
-            const { CloudflareClient } = require('./lib/cloudflare');
-            
-            async function configureDNS() {
-              const client = new CloudflareClient(
-                process.env.CLOUDFLARE_API_TOKEN,
-                process.env.CLOUDFLARE_ZONE_ID
-              );
-              
-              const subdomain = '${{ github.event.inputs.subdomain }}';
-              const ec2Host = process.env.EC2_HOST;
-              
-              console.log('Configuring DNS for:', subdomain);
-              console.log('Pointing to:', ec2Host);
-              
-              const result = await client.upsertSubdomain(subdomain, ec2Host, {
-                proxied: true,
-                comment: 'Deployed via GitHub Actions'
-              });
-              
-              console.log('✓ DNS configured successfully');
-              console.log('Record:', result.name, '→', result.content);
-            }
-            
-            configureDNS().catch(err => {
-              console.error('DNS configuration failed:', err);
-              process.exit(1);
-            });
-          "
-
-  purge-cache:
-    runs-on: ubuntu-latest
-    name: Purge CDN Cache
-    needs: deploy
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Purge Cloudflare cache
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-        run: |
-          curl -X POST "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE_ID/purge_cache" \
-            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
-            -H "Content-Type: application/json" \
-            --data '{"purge_everything":true}'
-          echo ""
-          echo "✓ CDN cache purged"
-
-
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
