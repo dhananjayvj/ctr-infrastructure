@@ -531,7 +531,6 @@ export default function HomePage() {
                   border="1px solid"
                   borderColor="whiteAlpha.100"
                   _hover={{ borderColor: 'brand.500' }}
-                  transition="border-color 0.3s"
                   cursor="pointer"
                   role="group"
                 >
