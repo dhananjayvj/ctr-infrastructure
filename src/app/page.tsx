@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import {
   Box,
   Container,
@@ -16,13 +15,25 @@ import {
   Image,
   SimpleGrid,
 } from '@chakra-ui/react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { FiArrowRight, FiArrowUpRight, FiMapPin, FiMail, FiPhone } from 'react-icons/fi';
+import { SiteHeader } from '@/components/SiteHeader';
+import { Reveal } from '@/components/Reveal';
+import {
+  heroStagger,
+  heroItem,
+  staggerContainer,
+  staggerItem,
+  safeTransition,
+  viewportOnce,
+} from '@/lib/motion';
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);
+const MotionGrid = motion(Grid);
 const MotionHeading = motion(Heading);
 const MotionText = motion(Text);
+const MotionVStack = motion(VStack);
 
 // Featured Projects Data
 const featuredProjects = [
@@ -97,95 +108,17 @@ const stats = [
 ];
 
 export default function HomePage() {
-  const [mounted, setMounted] = useState(false);
+  const reducedMotion = useReducedMotion();
   const { scrollYProgress } = useScroll();
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
-  const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1.1]);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
+  const heroOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0.4]);
+  const heroScale = useTransform(scrollYProgress, [0, 0.25], [1, 1.08]);
+  const scrollLineY = useTransform(scrollYProgress, [0, 0.15], [0, 24]);
 
   return (
     <Box as="main">
-      {/* Grain Overlay */}
       <Box className="grain-overlay" />
 
-      {/* Navigation */}
-      <Box
-        as="header"
-        position="fixed"
-        top={0}
-        left={0}
-        right={0}
-        zIndex={100}
-        bg="rgba(24, 29, 37, 0.92)"
-        backdropFilter="blur(16px)"
-        borderBottom="1px solid"
-        borderColor="whiteAlpha.150"
-        boxShadow="0 1px 0 rgba(255,255,255,0.04) inset"
-      >
-        <Container maxW="container.xl">
-          <Flex h="80px" align="center" justify="space-between">
-            <Link href="/" _hover={{ textDecoration: 'none' }}>
-              <HStack spacing={3}>
-                <Box
-                  w="40px"
-                  h="40px"
-                  bg="brand.500"
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  fontFamily="heading"
-                  fontSize="xl"
-                  fontWeight="600"
-                  color="white"
-                >
-                  C
-                </Box>
-                <Text
-                  fontFamily="heading"
-                  fontSize="xl"
-                  fontWeight="500"
-                  letterSpacing="0.05em"
-                >
-                  CTR Infrastructure
-                </Text>
-              </HStack>
-            </Link>
-
-            <HStack spacing={8} display={{ base: 'none', md: 'flex' }}>
-              {['Projects', 'Services', 'About', 'Contact'].map((item) => (
-                <Link
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  fontSize="sm"
-                  fontWeight="500"
-                  letterSpacing="0.04em"
-                  color="dark.200"
-                  _hover={{ color: 'dark.50' }}
-                  transition="color 0.25s"
-                >
-                  {item}
-                </Link>
-              ))}
-            </HStack>
-
-            <Button
-              as="a"
-              href="#contact"
-              variant="outline"
-              size="sm"
-              display={{ base: 'none', lg: 'flex' }}
-              rightIcon={<FiArrowRight />}
-            >
-              Start a project
-            </Button>
-          </Flex>
-        </Container>
-      </Box>
+      <SiteHeader />
 
       {/* Hero Section */}
       <Box
@@ -197,7 +130,11 @@ export default function HomePage() {
         <MotionBox
           position="absolute"
           inset={0}
-          style={{ opacity: heroOpacity, scale: heroScale }}
+          style={
+            reducedMotion
+              ? undefined
+              : { opacity: heroOpacity, scale: heroScale }
+          }
         >
           <Box
             position="absolute"
@@ -220,26 +157,26 @@ export default function HomePage() {
             align="center"
             pt="80px"
           >
-            <VStack align="flex-start" spacing={8} maxW="900px">
-              <MotionText
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                variant="eyebrow"
-              >
+            <MotionVStack
+              align="flex-start"
+              spacing={8}
+              maxW="900px"
+              variants={heroStagger}
+              initial={reducedMotion ? false : 'hidden'}
+              animate="visible"
+            >
+              <MotionText variant="eyebrow" variants={heroItem}>
                 Architecture · Infrastructure · Design
               </MotionText>
 
               <MotionHeading
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
                 as="h1"
                 fontSize="display-xl"
                 fontWeight="400"
                 lineHeight="0.95"
                 letterSpacing="-0.04em"
                 color="dark.50"
+                variants={heroItem}
               >
                 Building tomorrow&apos;s
                 <Box as="span" display="block" color="brand.300" mt={3}>
@@ -248,24 +185,16 @@ export default function HomePage() {
               </MotionHeading>
 
               <MotionText
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
                 variant="lead"
                 color="dark.100"
                 maxW="36rem"
+                variants={heroItem}
               >
                 A multidisciplinary studio designing buildings, infrastructure, and public
                 spaces with clarity, restraint, and long-term civic value.
               </MotionText>
 
-              <MotionFlex
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.7 }}
-                gap={4}
-                pt={4}
-              >
+              <MotionFlex gap={4} pt={4} variants={heroItem}>
                 <Button
                   as="a"
                   href="#projects"
@@ -289,7 +218,7 @@ export default function HomePage() {
                   Our story
                 </Button>
               </MotionFlex>
-            </VStack>
+            </MotionVStack>
           </Flex>
 
           {/* Scroll Indicator */}
@@ -297,19 +226,20 @@ export default function HomePage() {
             position="absolute"
             bottom={10}
             left="50%"
-            transform="translateX(-50%)"
+            style={{ x: '-50%' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
+            transition={safeTransition(reducedMotion, { duration: 0.6, delay: 0.9 })}
           >
-            <VStack spacing={2}>
-              <Text fontSize="xs" letterSpacing="0.2em" textTransform="uppercase" color="dark.100">
+            <VStack spacing={2} align="center">
+              <Text fontSize="xs" letterSpacing="0.18em" textTransform="uppercase" color="dark.200">
                 Scroll
               </Text>
-              <Box
+              <MotionBox
                 w="1px"
                 h="60px"
-                bg="linear-gradient(to bottom, var(--chakra-colors-brand-500), transparent)"
+                bg="linear-gradient(to bottom, var(--chakra-colors-brand-400), transparent)"
+                style={reducedMotion ? undefined : { y: scrollLineY }}
               />
             </VStack>
           </MotionBox>
@@ -319,14 +249,17 @@ export default function HomePage() {
       {/* Stats Section */}
       <Box py={{ base: 16, md: 24 }} borderY="1px solid" borderColor="whiteAlpha.100" bg="dark.900">
         <Container maxW="container.xl">
+          <MotionBox
+            variants={staggerContainer}
+            initial={reducedMotion ? false : 'hidden'}
+            whileInView="visible"
+            viewport={viewportOnce}
+          >
           <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 8, md: 12 }}>
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <MotionBox
                 key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
+                variants={staggerItem}
                 textAlign={{ base: 'center', md: 'left' }}
                 borderLeft={{ base: 'none', md: '2px solid' }}
                 borderColor={{ base: 'transparent', md: 'brand.600' }}
@@ -341,52 +274,56 @@ export default function HomePage() {
               </MotionBox>
             ))}
           </SimpleGrid>
+          </MotionBox>
         </Container>
       </Box>
 
       {/* Featured Projects Section */}
       <Box as="section" id="projects" py={{ base: 20, md: 32 }}>
         <Container maxW="container.xl">
-          <Flex
-            direction={{ base: 'column', md: 'row' }}
-            justify="space-between"
-            align={{ base: 'flex-start', md: 'flex-end' }}
-            mb={16}
-            gap={6}
-          >
-            <VStack align="flex-start" spacing={4} maxW="32rem">
-              <Text variant="eyebrow">Portfolio</Text>
-              <Heading fontSize="display-md" fontWeight="400">
-                Featured projects
-              </Heading>
-            </VStack>
-
-            <Button
-              as="a"
-              href="/projects"
-              variant="outline"
-              rightIcon={<FiArrowRight />}
-              borderColor="whiteAlpha.200"
-              _hover={{ borderColor: 'brand.400', color: 'brand.300' }}
+          <Reveal mb={16}>
+            <Flex
+              direction={{ base: 'column', md: 'row' }}
+              justify="space-between"
+              align={{ base: 'flex-start', md: 'flex-end' }}
+              gap={6}
             >
-              View all projects
-            </Button>
-          </Flex>
+              <VStack align="flex-start" spacing={4} maxW="32rem">
+                <Text variant="eyebrow">Portfolio</Text>
+                <Heading fontSize="display-md" fontWeight="400">
+                  Featured projects
+                </Heading>
+              </VStack>
 
-          <Grid
+              <Button
+                as="a"
+                href="/projects"
+                variant="outline"
+                rightIcon={<FiArrowRight />}
+                borderColor="whiteAlpha.200"
+                _hover={{ borderColor: 'brand.400', color: 'brand.300' }}
+              >
+                View all projects
+              </Button>
+            </Flex>
+          </Reveal>
+
+          <MotionGrid
             templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}
             gap={8}
+            variants={staggerContainer}
+            initial={reducedMotion ? false : 'hidden'}
+            whileInView="visible"
+            viewport={viewportOnce}
           >
             {featuredProjects.map((project, index) => (
               <MotionBox
                 key={project.id}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                viewport={{ once: true }}
+                variants={staggerItem}
                 position="relative"
                 role="group"
                 cursor="pointer"
+                whileHover={reducedMotion ? undefined : { y: -6 }}
               >
                 <Box
                   position="relative"
@@ -399,8 +336,8 @@ export default function HomePage() {
                     objectFit="cover"
                     w="full"
                     h="full"
-                    transition="transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)"
-                    _groupHover={{ transform: 'scale(1.05)' }}
+                    transition="transform 0.55s cubic-bezier(0.22, 1, 0.36, 1)"
+                    _groupHover={{ transform: 'scale(1.04)' }}
                   />
                   <Box
                     position="absolute"
@@ -455,7 +392,7 @@ export default function HomePage() {
                 </Box>
               </MotionBox>
             ))}
-          </Grid>
+          </MotionGrid>
         </Container>
       </Box>
 
@@ -492,14 +429,18 @@ export default function HomePage() {
               </Button>
             </VStack>
 
-            <Grid templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }} gap={6}>
-              {services.map((service, index) => (
+            <MotionGrid
+              templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }}
+              gap={6}
+              variants={staggerContainer}
+              initial={reducedMotion ? false : 'hidden'}
+              whileInView="visible"
+              viewport={viewportOnce}
+            >
+              {services.map((service) => (
                 <MotionBox
                   key={service.number}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+                  variants={staggerItem}
                   p={8}
                   bg="dark.600"
                   border="1px solid"
@@ -535,7 +476,7 @@ export default function HomePage() {
                   </Text>
                 </MotionBox>
               ))}
-            </Grid>
+            </MotionGrid>
           </Grid>
         </Container>
       </Box>
