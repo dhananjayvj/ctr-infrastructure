@@ -18,8 +18,11 @@ import {
   useScroll,
   useReducedMotion,
 } from 'framer-motion';
+import NextLink from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FiArrowRight, FiMenu, FiX } from 'react-icons/fi';
 import { drawerVariants, navLinks, overlayVariants, safeTransition } from '@/lib/motion';
+import { HEADER_HEIGHT } from '@/lib/spacing';
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);
@@ -30,15 +33,15 @@ type SiteHeaderProps = {
 };
 
 export function SiteHeader({
-  ctaHref = '#contact',
+  ctaHref = '/#contact',
   ctaLabel = 'Start a project',
 }: SiteHeaderProps) {
+  const pathname = usePathname();
   const reducedMotion = useReducedMotion();
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
   const lastScroll = useRef(0);
 
   useEffect(() => {
@@ -63,7 +66,19 @@ export function SiteHeader({
     };
   }, [menuOpen]);
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
   const closeMenu = () => setMenuOpen(false);
+
+  const isLinkActive = (href: string) => {
+    if (href === '/projects') return pathname === '/projects';
+    if (href.startsWith('/#')) {
+      return pathname === '/' && typeof window !== 'undefined' && window.location.hash === href.slice(1);
+    }
+    return pathname === href;
+  };
 
   return (
     <>
@@ -76,7 +91,7 @@ export function SiteHeader({
         zIndex={100}
         initial={false}
         animate={{
-          y: hidden ? -88 : 0,
+          y: hidden ? -96 : 0,
           backgroundColor: scrolled
             ? 'rgba(24, 29, 37, 0.97)'
             : 'rgba(24, 29, 37, 0.88)',
@@ -91,54 +106,63 @@ export function SiteHeader({
         boxShadow="0 1px 0 rgba(255,255,255,0.04) inset"
       >
         <Container maxW="container.xl">
-          <Flex h="80px" align="center" justify="space-between">
-            <Link href="/" _hover={{ textDecoration: 'none' }} onClick={closeMenu}>
-              <HStack spacing={3}>
+          <Flex h={HEADER_HEIGHT} align="center" justify="space-between" gap={4}>
+            <Link as={NextLink} href="/" _hover={{ textDecoration: 'none' }} onClick={closeMenu}>
+              <HStack spacing={{ base: 2, md: 3 }}>
                 <Box
-                  w="40px"
-                  h="40px"
+                  w={{ base: '36px', md: '40px' }}
+                  h={{ base: '36px', md: '40px' }}
                   bg="brand.500"
                   display="flex"
                   alignItems="center"
                   justifyContent="center"
                   fontFamily="heading"
-                  fontSize="xl"
+                  fontSize={{ base: 'lg', md: 'xl' }}
                   fontWeight="600"
                   color="white"
+                  flexShrink={0}
                 >
                   C
                 </Box>
                 <Text
                   fontFamily="heading"
-                  fontSize="xl"
+                  fontSize={{ base: 'md', sm: 'lg', md: 'xl' }}
                   fontWeight="500"
                   letterSpacing="0.03em"
+                  noOfLines={1}
                 >
                   CTR Infrastructure
                 </Text>
               </HStack>
             </Link>
 
-            <HStack spacing={8} display={{ base: 'none', md: 'flex' }}>
-              {navLinks.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  fontSize="sm"
-                  fontWeight="500"
-                  letterSpacing="0.04em"
-                  color="dark.200"
-                  _hover={{ color: 'dark.50' }}
-                  transition="color 0.2s"
-                >
-                  {item.label}
-                </Link>
-              ))}
+            <HStack spacing={{ base: 6, lg: 8 }} display={{ base: 'none', md: 'flex' }}>
+              {navLinks.map((item) => {
+                const active = isLinkActive(item.href);
+                return (
+                  <Link
+                    key={item.label}
+                    as={NextLink}
+                    href={item.href}
+                    fontSize="sm"
+                    fontWeight={active ? '600' : '500'}
+                    letterSpacing="0.04em"
+                    color={active ? 'dark.50' : 'dark.200'}
+                    borderBottom="1px solid"
+                    borderColor={active ? 'brand.400' : 'transparent'}
+                    pb={0.5}
+                    _hover={{ color: 'dark.50', borderColor: 'brand.500' }}
+                    transition="color 0.2s, border-color 0.2s"
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </HStack>
 
             <HStack spacing={2}>
               <Button
-                as="a"
+                as={NextLink}
                 href={ctaHref}
                 variant="outline"
                 size="sm"
@@ -188,18 +212,20 @@ export function SiteHeader({
               bottom={0}
               zIndex={120}
               w="min(100vw, 320px)"
+              maxW="100vw"
               direction="column"
               bg="dark.800"
               borderLeft="1px solid"
               borderColor="whiteAlpha.100"
-              px={8}
-              py={10}
+              px={{ base: 6, sm: 8 }}
+              py={{ base: 8, sm: 10 }}
+              pt={{ base: 20, sm: 10 }}
               variants={drawerVariants}
               initial="closed"
               animate="open"
               exit="exit"
             >
-              <Flex justify="space-between" align="center" mb={10}>
+              <Flex justify="space-between" align="center" mb={8}>
                 <Text variant="eyebrow">Menu</Text>
                 <IconButton
                   aria-label="Close menu"
@@ -211,7 +237,7 @@ export function SiteHeader({
                 />
               </Flex>
 
-              <VStack align="stretch" spacing={2} flex={1}>
+              <VStack align="stretch" spacing={1} flex={1}>
                 {navLinks.map((item, index) => (
                   <MotionBox
                     key={item.label}
@@ -224,13 +250,16 @@ export function SiteHeader({
                     }}
                   >
                     <Link
+                      as={NextLink}
                       href={item.href}
-                      display="block"
+                      display="flex"
+                      alignItems="center"
                       py={3}
+                      px={1}
                       fontSize="lg"
                       fontWeight="500"
                       color="dark.50"
-                      minH="44px"
+                      minH="48px"
                       onClick={closeMenu}
                       _hover={{ color: 'brand.300' }}
                     >
@@ -241,7 +270,7 @@ export function SiteHeader({
               </VStack>
 
               <Button
-                as="a"
+                as={NextLink}
                 href={ctaHref}
                 w="full"
                 size="lg"

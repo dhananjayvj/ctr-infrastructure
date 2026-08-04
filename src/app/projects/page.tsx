@@ -11,19 +11,19 @@ import {
   Icon,
   Image,
   Button,
+  Link,
 } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { FiArrowUpRight, FiMapPin } from 'react-icons/fi';
 import NextLink from 'next/link';
-import { SiteHeader } from '@/components/SiteHeader';
 import { Reveal } from '@/components/Reveal';
 import { heroStagger, heroItem, staggerContainer, staggerItem, viewportOnce } from '@/lib/motion';
+import { sectionPy, pageTopPad, gridGap } from '@/lib/spacing';
 
 const MotionBox = motion(Box);
 const MotionGrid = motion(Grid);
 const MotionVStack = motion(VStack);
 
-// All Projects Data
 const allProjects = [
   {
     id: 1,
@@ -113,35 +113,32 @@ export default function ProjectsPage() {
   const reducedMotion = useReducedMotion();
 
   return (
-    <Box as="main" bg="dark.800" minH="100dvh">
-      <Box className="grain-overlay" />
-      <SiteHeader ctaHref="/#contact" />
-
-      <Box pt={{ base: 28, md: 36 }} pb={{ base: 16, md: 24 }}>
+    <Box as="main" bg="dark.800" overflowX="hidden">
+      <Box pt={pageTopPad} pb={sectionPy}>
         <Container maxW="container.xl">
-          <Reveal mb={8}>
-            <NextLink href="/" passHref>
-              <Button
-                variant="ghost"
-                size="sm"
-                minH="44px"
-                color="dark.200"
-                _hover={{ color: 'brand.300' }}
-                pl={0}
-              >
-                ← Back to home
-              </Button>
-            </NextLink>
+          <Reveal mb={{ base: 6, md: 8 }}>
+            <Button
+              as={NextLink}
+              href="/"
+              variant="ghost"
+              size="sm"
+              minH="44px"
+              color="dark.200"
+              _hover={{ color: 'brand.300' }}
+              pl={0}
+            >
+              ← Back to home
+            </Button>
           </Reveal>
 
           <MotionVStack
             align="flex-start"
-            spacing={6}
-            maxW="36rem"
+            spacing={{ base: 5, md: 6 }}
+            maxW={{ base: 'full', md: '36rem' }}
             variants={heroStagger}
             initial={reducedMotion ? false : 'hidden'}
             animate="visible"
-            mb={12}
+            mb={{ base: 10, md: 12 }}
           >
             <MotionBox variants={heroItem}>
               <Text variant="eyebrow">Our work</Text>
@@ -160,7 +157,7 @@ export default function ProjectsPage() {
           </MotionVStack>
 
           <Reveal>
-            <HStack spacing={3} flexWrap="wrap">
+            <HStack spacing={3} flexWrap="wrap" gap={2}>
               {categories.map((category) => (
                 <Button
                   key={category}
@@ -179,11 +176,11 @@ export default function ProjectsPage() {
         </Container>
       </Box>
 
-      <Box pb={{ base: 20, md: 32 }}>
+      <Box pb={sectionPy}>
         <Container maxW="container.xl">
           <MotionGrid
-            templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
-            gap={8}
+            templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
+            gap={gridGap}
             variants={staggerContainer}
             initial={reducedMotion ? false : 'hidden'}
             whileInView="visible"
@@ -245,8 +242,8 @@ export default function ProjectsPage() {
                   />
                 </Box>
 
-                <Box p={6} bg="dark.700">
-                  <HStack spacing={4} mb={3}>
+                <Box p={{ base: 5, md: 6 }} bg="dark.700">
+                  <HStack spacing={4} mb={3} flexWrap="wrap">
                     <Text variant="eyebrow" fontSize="2xs">
                       {project.category}
                     </Text>
@@ -256,7 +253,7 @@ export default function ProjectsPage() {
                   </HStack>
 
                   <Heading
-                    fontSize="xl"
+                    fontSize={{ base: 'lg', md: 'xl' }}
                     fontWeight="400"
                     mb={2}
                     _groupHover={{ color: 'brand.300' }}
@@ -281,9 +278,9 @@ export default function ProjectsPage() {
       </Box>
 
       <Reveal>
-        <Box py={{ base: 16, md: 24 }} bg="dark.50" color="dark.900">
+        <Box py={sectionPy} bg="dark.50" color="dark.900">
           <Container maxW="container.xl" textAlign="center">
-            <VStack spacing={6} maxW="36rem" mx="auto">
+            <VStack spacing={{ base: 5, md: 6 }} maxW="36rem" mx="auto" px={{ base: 2, sm: 0 }}>
               <Text variant="eyebrow" color="brand.600">New work</Text>
               <Heading fontSize="display-md" fontWeight="400" color="dark.900">
                 Have a project in mind?
@@ -292,17 +289,17 @@ export default function ProjectsPage() {
                 Share your brief and we will outline scope, team, and timeline within
                 two business days.
               </Text>
-              <NextLink href="/#contact" passHref>
-                <Button
-                  size="lg"
-                  minH="48px"
-                  bg="dark.900"
-                  color="dark.50"
-                  _hover={{ bg: 'dark.700', transform: 'translateY(-1px)' }}
-                >
-                  Start a conversation
-                </Button>
-              </NextLink>
+              <Button
+                as={NextLink}
+                href="/#contact"
+                size="lg"
+                minH="48px"
+                bg="dark.900"
+                color="dark.50"
+                _hover={{ bg: 'dark.700', transform: 'translateY(-1px)' }}
+              >
+                Start a conversation
+              </Button>
             </VStack>
           </Container>
         </Box>

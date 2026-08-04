@@ -17,8 +17,9 @@ import {
 } from '@chakra-ui/react';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { FiArrowRight, FiArrowUpRight, FiMapPin, FiMail, FiPhone } from 'react-icons/fi';
-import { SiteHeader } from '@/components/SiteHeader';
+import NextLink from 'next/link';
 import { Reveal } from '@/components/Reveal';
+import { GradientShimmer } from '@/components/ui/gradient-shimmer';
 import {
   heroStagger,
   heroItem,
@@ -27,6 +28,14 @@ import {
   safeTransition,
   viewportOnce,
 } from '@/lib/motion';
+import { sectionPy, sectionPyLg, sectionPySm, HEADER_HEIGHT, gridGap } from '@/lib/spacing';
+
+const footerNav = [
+  { label: 'Projects', href: '/projects' },
+  { label: 'Services', href: '/#services' },
+  { label: 'About', href: '/#about' },
+  { label: 'Contact', href: '/#contact' },
+];
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);
@@ -115,16 +124,12 @@ export default function HomePage() {
   const scrollLineY = useTransform(scrollYProgress, [0, 0.15], [0, 24]);
 
   return (
-    <Box as="main">
-      <Box className="grain-overlay" />
-
-      <SiteHeader />
-
+    <Box as="main" overflowX="hidden">
       {/* Hero Section */}
       <Box
         as="section"
         position="relative"
-        minH={{ base: '700px', md: '100dvh' }}
+        minH={{ base: 'min(100dvh, 900px)', md: '100dvh' }}
         overflow="hidden"
       >
         <MotionBox
@@ -155,12 +160,14 @@ export default function HomePage() {
           <Flex
             h="full"
             align="center"
-            pt="80px"
+            pt={HEADER_HEIGHT}
+            pb={{ base: 16, md: 0 }}
           >
             <MotionVStack
               align="flex-start"
-              spacing={8}
-              maxW="900px"
+              spacing={{ base: 6, md: 8 }}
+              maxW={{ base: 'full', lg: '900px' }}
+              px={{ base: 0, sm: 0 }}
               variants={heroStagger}
               initial={reducedMotion ? false : 'hidden'}
               animate="visible"
@@ -179,8 +186,26 @@ export default function HomePage() {
                 variants={heroItem}
               >
                 Building tomorrow&apos;s
-                <Box as="span" display="block" color="brand.300" mt={3}>
-                  landmarks today
+                <Box as="span" display="block" mt={3}>
+                  <GradientShimmer
+                    as="span"
+                    gradient="sunrise"
+                    easing="gentle"
+                    duration={1.6}
+                    spread={3.5}
+                    angle={105}
+                    pauseBetween={1200}
+                    baseColor="#9a8868"
+                    style={{
+                      fontFamily: 'var(--chakra-fonts-heading)',
+                      fontSize: 'clamp(3.25rem, 7vw, 6.5rem)',
+                      fontWeight: 400,
+                      lineHeight: 0.95,
+                      letterSpacing: '-0.04em',
+                    }}
+                  >
+                    landmarks today
+                  </GradientShimmer>
                 </Box>
               </MotionHeading>
 
@@ -194,11 +219,17 @@ export default function HomePage() {
                 spaces with clarity, restraint, and long-term civic value.
               </MotionText>
 
-              <MotionFlex gap={4} pt={4} variants={heroItem}>
+              <MotionFlex
+                gap={{ base: 3, sm: 4 }}
+                pt={2}
+                flexWrap="wrap"
+                variants={heroItem}
+              >
                 <Button
-                  as="a"
-                  href="#projects"
-                  size="lg"
+                  as={NextLink}
+                  href="/projects"
+                  size={{ base: 'md', md: 'lg' }}
+                  minH="48px"
                   bg="brand.600"
                   color="white"
                   _hover={{ bg: 'brand.500', transform: 'translateY(-1px)' }}
@@ -207,9 +238,10 @@ export default function HomePage() {
                   View projects
                 </Button>
                 <Button
-                  as="a"
-                  href="#about"
-                  size="lg"
+                  as={NextLink}
+                  href="/#about"
+                  size={{ base: 'md', md: 'lg' }}
+                  minH="48px"
                   variant="outline"
                   borderColor="whiteAlpha.400"
                   color="dark.50"
@@ -247,7 +279,7 @@ export default function HomePage() {
       </Box>
 
       {/* Stats Section */}
-      <Box py={{ base: 16, md: 24 }} borderY="1px solid" borderColor="whiteAlpha.100" bg="dark.900">
+      <Box py={sectionPySm} borderY="1px solid" borderColor="whiteAlpha.100" bg="dark.900">
         <Container maxW="container.xl">
           <MotionBox
             variants={staggerContainer}
@@ -279,9 +311,9 @@ export default function HomePage() {
       </Box>
 
       {/* Featured Projects Section */}
-      <Box as="section" id="projects" py={{ base: 20, md: 32 }}>
+      <Box as="section" id="projects" py={sectionPyLg}>
         <Container maxW="container.xl">
-          <Reveal mb={16}>
+          <Reveal mb={{ base: 10, md: 16 }}>
             <Flex
               direction={{ base: 'column', md: 'row' }}
               justify="space-between"
@@ -296,11 +328,12 @@ export default function HomePage() {
               </VStack>
 
               <Button
-                as="a"
+                as={NextLink}
                 href="/projects"
                 variant="outline"
                 rightIcon={<FiArrowRight />}
                 borderColor="whiteAlpha.200"
+                minH="44px"
                 _hover={{ borderColor: 'brand.400', color: 'brand.300' }}
               >
                 View all projects
@@ -310,7 +343,7 @@ export default function HomePage() {
 
           <MotionGrid
             templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}
-            gap={8}
+            gap={gridGap}
             variants={staggerContainer}
             initial={reducedMotion ? false : 'hidden'}
             whileInView="visible"
@@ -400,13 +433,13 @@ export default function HomePage() {
       <Box
         as="section"
         id="services"
-        py={{ base: 20, md: 32 }}
+        py={sectionPyLg}
         bg="dark.700"
       >
         <Container maxW="container.xl">
           <Grid
             templateColumns={{ base: '1fr', lg: '1fr 2fr' }}
-            gap={{ base: 12, lg: 20 }}
+            gap={{ base: 10, md: 16, lg: 20 }}
           >
             <VStack align="flex-start" spacing={6} maxW="28rem">
               <Text variant="eyebrow">What we do</Text>
@@ -418,11 +451,12 @@ export default function HomePage() {
                 architecture, infrastructure, and planning with one integrated team.
               </Text>
               <Button
-                as="a"
-                href="#contact"
+                as={NextLink}
+                href="/#contact"
                 variant="outline"
                 rightIcon={<FiArrowRight />}
                 borderColor="whiteAlpha.200"
+                minH="44px"
                 mt={2}
               >
                 Discuss a project
@@ -431,7 +465,7 @@ export default function HomePage() {
 
             <MotionGrid
               templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }}
-              gap={6}
+              gap={gridGap}
               variants={staggerContainer}
               initial={reducedMotion ? false : 'hidden'}
               whileInView="visible"
@@ -482,11 +516,11 @@ export default function HomePage() {
       </Box>
 
       {/* About Section */}
-      <Box as="section" id="about" py={{ base: 20, md: 32 }}>
+      <Box as="section" id="about" py={sectionPyLg}>
         <Container maxW="container.xl">
           <Grid
             templateColumns={{ base: '1fr', lg: '1fr 1fr' }}
-            gap={{ base: 12, lg: 20 }}
+            gap={{ base: 10, md: 16, lg: 20 }}
             alignItems="center"
           >
             <MotionBox
@@ -537,7 +571,7 @@ export default function HomePage() {
                   The result is architecture that reads clearly at street level and holds
                   up over decades of use.
                 </Text>
-                <HStack spacing={10} pt={4}>
+                <HStack spacing={{ base: 8, md: 10 }} pt={4} flexWrap="wrap">
                   <VStack align="flex-start" spacing={1}>
                     <Text variant="stat" fontSize="3xl">85+</Text>
                     <Text variant="caption">Team members</Text>
@@ -548,11 +582,12 @@ export default function HomePage() {
                   </VStack>
                 </HStack>
                 <Button
-                  as="a"
-                  href="#contact"
+                  as={NextLink}
+                  href="/#contact"
                   variant="outline"
                   rightIcon={<FiArrowRight />}
                   borderColor="whiteAlpha.200"
+                  minH="44px"
                   mt={4}
                 >
                   Meet the team
@@ -566,7 +601,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <Box
         as="section"
-        py={{ base: 20, md: 28 }}
+        py={sectionPy}
         bg="dark.50"
         color="dark.900"
         borderY="1px solid"
@@ -589,9 +624,10 @@ export default function HomePage() {
               business days with next steps and the right team members to involve.
             </Text>
             <Button
-              as="a"
-              href="#contact"
+              as={NextLink}
+              href="/#contact"
               size="lg"
+              minH="48px"
               bg="dark.900"
               color="dark.50"
               _hover={{ bg: 'dark.700', color: 'white', transform: 'translateY(-1px)' }}
@@ -604,11 +640,11 @@ export default function HomePage() {
       </Box>
 
       {/* Contact Section */}
-      <Box as="section" id="contact" py={{ base: 20, md: 32 }}>
+      <Box as="section" id="contact" py={sectionPyLg}>
         <Container maxW="container.xl">
           <Grid
             templateColumns={{ base: '1fr', lg: '1fr 1fr' }}
-            gap={{ base: 12, lg: 20 }}
+            gap={{ base: 10, md: 16, lg: 20 }}
           >
             <VStack align="flex-start" spacing={8}>
               <Box>
@@ -691,7 +727,7 @@ export default function HomePage() {
               borderColor="whiteAlpha.120"
             >
               <VStack spacing={6}>
-                <SimpleGrid columns={2} spacing={4} w="full">
+                <SimpleGrid columns={{ base: 1, sm: 2 }} spacing={4} w="full">
                   <Box>
                     <Text variant="caption" mb={2}>First name</Text>
                     <Box
@@ -799,16 +835,16 @@ export default function HomePage() {
       {/* Footer */}
       <Box
         as="footer"
-        py={16}
+        py={sectionPySm}
         borderTop="1px solid"
         borderColor="whiteAlpha.100"
         bg="dark.800"
       >
         <Container maxW="container.xl">
           <Grid
-            templateColumns={{ base: '1fr', md: 'repeat(4, 1fr)' }}
-            gap={12}
-            mb={16}
+            templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' }}
+            gap={{ base: 10, md: 12 }}
+            mb={{ base: 10, md: 16 }}
           >
             <VStack align="flex-start" spacing={6}>
               <HStack spacing={3}>
@@ -839,15 +875,16 @@ export default function HomePage() {
               <Text variant="caption" fontWeight="600" color="dark.100">
                 Navigation
               </Text>
-              {['Projects', 'Services', 'About', 'Contact'].map((item) => (
+              {footerNav.map((item) => (
                 <Link
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
+                  key={item.label}
+                  as={NextLink}
+                  href={item.href}
                   fontSize="sm"
                   color="dark.200"
                   _hover={{ color: 'brand.300' }}
                 >
-                  {item}
+                  {item.label}
                 </Link>
               ))}
             </VStack>
@@ -859,7 +896,8 @@ export default function HomePage() {
               {['Architecture', 'Infrastructure', 'Urban planning', 'Interior design'].map((item) => (
                 <Link
                   key={item}
-                  href="#services"
+                  as={NextLink}
+                  href="/#services"
                   fontSize="sm"
                   color="dark.200"
                   _hover={{ color: 'brand.300' }}

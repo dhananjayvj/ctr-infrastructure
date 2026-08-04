@@ -138,6 +138,12 @@ const theme = extendTheme({
         },
       },
     },
+    Container: {
+      baseStyle: {
+        maxW: 'container.xl',
+        px: { base: 5, sm: 6, md: 8, lg: 10 },
+      },
+    },
   },
 });
 

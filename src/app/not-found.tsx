@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
+import { pageTopPad } from '@/lib/spacing';
 
 export default function NotFound() {
   return (
@@ -21,6 +22,8 @@ export default function NotFound() {
       justifyContent="center"
       bg="dark.800"
       position="relative"
+      pt={pageTopPad}
+      pb={{ base: 16, md: 24 }}
     >
       <Box
         position="absolute"
@@ -57,9 +60,11 @@ export default function NotFound() {
             explore our work.
           </Text>
 
-          <Link href="/" passHref>
+          <Link href="/" passHref legacyBehavior>
             <Button
+              as="a"
               size="lg"
+              minH="48px"
               bg="brand.600"
               color="white"
               _hover={{ bg: 'brand.500', transform: 'translateY(-1px)' }}

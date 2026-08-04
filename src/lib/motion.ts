@@ -131,8 +131,41 @@ export const overlayVariants: Variants = {
 };
 
 export const navLinks = [
-  { label: 'Projects', href: '#projects' },
-  { label: 'Services', href: '#services' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'Services', href: '/#services' },
+  { label: 'About', href: '/#about' },
+  { label: 'Contact', href: '/#contact' },
 ];
+
+export const pageTransition: Variants = {
+  initial: {
+    opacity: 0,
+    y: 10,
+    scale: 0.998,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.4,
+      ease: easeOut,
+      when: 'beforeChildren',
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -6,
+    scale: 0.999,
+    transition: {
+      duration: 0.24,
+      ease: easeIn,
+    },
+  },
+};
+
+export const pageTransitionReduced: Variants = {
+  initial: { opacity: 1, y: 0, scale: 1 },
+  animate: { opacity: 1, y: 0, scale: 1 },
+  exit: { opacity: 1, y: 0, scale: 1 },
+};
