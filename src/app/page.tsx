@@ -84,7 +84,7 @@ const services = [
   {
     number: '04',
     title: 'Interiors',
-    description: 'Thoughtful interior architecture that elevates the human experience.',
+    description: 'Interior environments shaped by materiality, light, and proportion.',
   },
 ];
 
@@ -109,7 +109,7 @@ export default function HomePage() {
   if (!mounted) return null;
 
   return (
-    <Box>
+    <Box as="main">
       {/* Grain Overlay */}
       <Box className="grain-overlay" />
 
@@ -121,10 +121,11 @@ export default function HomePage() {
         left={0}
         right={0}
         zIndex={100}
-        bg="rgba(20, 24, 32, 0.88)"
-        backdropFilter="blur(12px)"
+        bg="rgba(24, 29, 37, 0.92)"
+        backdropFilter="blur(16px)"
         borderBottom="1px solid"
-        borderColor="whiteAlpha.100"
+        borderColor="whiteAlpha.150"
+        boxShadow="0 1px 0 rgba(255,255,255,0.04) inset"
       >
         <Container maxW="container.xl">
           <Flex h="80px" align="center" justify="space-between">
@@ -161,12 +162,11 @@ export default function HomePage() {
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   fontSize="sm"
-                  fontWeight="400"
-                  letterSpacing="0.1em"
-                  textTransform="uppercase"
-                  color="dark.100"
-                  _hover={{ color: 'brand.500' }}
-                  transition="color 0.3s"
+                  fontWeight="500"
+                  letterSpacing="0.04em"
+                  color="dark.200"
+                  _hover={{ color: 'dark.50' }}
+                  transition="color 0.25s"
                 >
                   {item}
                 </Link>
@@ -174,12 +174,14 @@ export default function HomePage() {
             </HStack>
 
             <Button
+              as="a"
+              href="#contact"
               variant="outline"
               size="sm"
               display={{ base: 'none', lg: 'flex' }}
               rightIcon={<FiArrowRight />}
             >
-              Start a Project
+              Start a project
             </Button>
           </Flex>
         </Container>
@@ -189,8 +191,7 @@ export default function HomePage() {
       <Box
         as="section"
         position="relative"
-        h="100vh"
-        minH="700px"
+        minH={{ base: '700px', md: '100dvh' }}
         overflow="hidden"
       >
         <MotionBox
@@ -204,7 +205,12 @@ export default function HomePage() {
             bgImage="url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&q=80')"
             bgSize="cover"
             bgPosition="center"
-            filter="brightness(0.4)"
+            filter="brightness(0.35)"
+          />
+          <Box
+            position="absolute"
+            inset={0}
+            bgGradient="linear(to-r, rgba(16,19,25,0.92) 0%, rgba(16,19,25,0.55) 55%, rgba(16,19,25,0.25) 100%)"
           />
         </MotionBox>
 
@@ -219,13 +225,9 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                fontSize="sm"
-                fontWeight="500"
-                letterSpacing="0.3em"
-                textTransform="uppercase"
-                color="brand.500"
+                variant="eyebrow"
               >
-                Architecture • Infrastructure • Design
+                Architecture · Infrastructure · Design
               </MotionText>
 
               <MotionHeading
@@ -233,14 +235,15 @@ export default function HomePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 as="h1"
-                fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }}
+                fontSize="display-xl"
                 fontWeight="400"
-                lineHeight="1"
-                color="white"
+                lineHeight="0.95"
+                letterSpacing="-0.04em"
+                color="dark.50"
               >
-                Building Tomorrow&apos;s
-                <Box as="span" display="block" color="brand.400" mt={2}>
-                  Landmarks Today
+                Building tomorrow&apos;s
+                <Box as="span" display="block" color="brand.300" mt={3}>
+                  landmarks today
                 </Box>
               </MotionHeading>
 
@@ -248,13 +251,12 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                fontSize={{ base: 'lg', md: 'xl' }}
+                variant="lead"
                 color="dark.100"
-                maxW="600px"
-                lineHeight="1.8"
+                maxW="36rem"
               >
-                We are a multidisciplinary architecture and infrastructure firm 
-                dedicated to creating spaces that define cities and inspire communities.
+                A multidisciplinary studio designing buildings, infrastructure, and public
+                spaces with clarity, restraint, and long-term civic value.
               </MotionText>
 
               <MotionFlex
@@ -265,21 +267,26 @@ export default function HomePage() {
                 pt={4}
               >
                 <Button
+                  as="a"
+                  href="#projects"
                   size="lg"
                   bg="brand.600"
                   color="white"
-                  _hover={{ bg: 'brand.500' }}
+                  _hover={{ bg: 'brand.500', transform: 'translateY(-1px)' }}
                   rightIcon={<FiArrowRight />}
                 >
-                  View Projects
+                  View projects
                 </Button>
                 <Button
+                  as="a"
+                  href="#about"
                   size="lg"
                   variant="outline"
-                  borderColor="whiteAlpha.300"
-                  _hover={{ bg: 'whiteAlpha.100' }}
+                  borderColor="whiteAlpha.400"
+                  color="dark.50"
+                  _hover={{ bg: 'whiteAlpha.100', borderColor: 'whiteAlpha.600' }}
                 >
-                  Our Story
+                  Our story
                 </Button>
               </MotionFlex>
             </VStack>
@@ -310,9 +317,9 @@ export default function HomePage() {
       </Box>
 
       {/* Stats Section */}
-      <Box py={20} borderY="1px solid" borderColor="whiteAlpha.100">
+      <Box py={{ base: 16, md: 24 }} borderY="1px solid" borderColor="whiteAlpha.100" bg="dark.900">
         <Container maxW="container.xl">
-          <SimpleGrid columns={{ base: 2, md: 4 }} spacing={8}>
+          <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 8, md: 12 }}>
             {stats.map((stat, index) => (
               <MotionBox
                 key={stat.label}
@@ -320,23 +327,15 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                textAlign="center"
+                textAlign={{ base: 'center', md: 'left' }}
+                borderLeft={{ base: 'none', md: '2px solid' }}
+                borderColor={{ base: 'transparent', md: 'brand.600' }}
+                pl={{ base: 0, md: 6 }}
               >
-                <Text
-                  fontFamily="heading"
-                  fontSize={{ base: '4xl', md: '5xl' }}
-                  fontWeight="400"
-                  color="brand.500"
-                >
+                <Text variant="stat">
                   {stat.number}
                 </Text>
-                <Text
-                  fontSize="sm"
-                  letterSpacing="0.1em"
-                  textTransform="uppercase"
-                  color="dark.100"
-                  mt={2}
-                >
+                <Text variant="caption" mt={3}>
                   {stat.label}
                 </Text>
               </MotionBox>
@@ -355,31 +354,22 @@ export default function HomePage() {
             mb={16}
             gap={6}
           >
-            <VStack align="flex-start" spacing={4}>
-              <Text
-                fontSize="sm"
-                fontWeight="500"
-                letterSpacing="0.3em"
-                textTransform="uppercase"
-                color="brand.500"
-              >
-                Portfolio
-              </Text>
-              <Heading
-                fontSize={{ base: '3xl', md: '5xl' }}
-                fontWeight="400"
-              >
-                Featured Projects
+            <VStack align="flex-start" spacing={4} maxW="32rem">
+              <Text variant="eyebrow">Portfolio</Text>
+              <Heading fontSize="display-md" fontWeight="400">
+                Featured projects
               </Heading>
             </VStack>
 
             <Button
+              as="a"
+              href="/projects"
               variant="outline"
               rightIcon={<FiArrowRight />}
               borderColor="whiteAlpha.200"
-              _hover={{ borderColor: 'brand.500', color: 'brand.500' }}
+              _hover={{ borderColor: 'brand.400', color: 'brand.300' }}
             >
-              View All Projects
+              View all projects
             </Button>
           </Flex>
 
@@ -427,16 +417,10 @@ export default function HomePage() {
                   p={8}
                 >
                   <HStack spacing={4} mb={3}>
-                    <Text
-                      fontSize="xs"
-                      fontWeight="500"
-                      letterSpacing="0.2em"
-                      textTransform="uppercase"
-                      color="brand.500"
-                    >
+                    <Text variant="eyebrow" fontSize="2xs">
                       {project.category}
                     </Text>
-                    <Text fontSize="xs" color="dark.100">
+                    <Text fontSize="xs" color="dark.200" sx={{ fontVariantNumeric: 'tabular-nums' }}>
                       {project.year}
                     </Text>
                   </HStack>
@@ -451,7 +435,7 @@ export default function HomePage() {
                     {project.title}
                   </Heading>
 
-                  <HStack color="dark.100" fontSize="sm">
+                  <HStack color="dark.200" fontSize="sm">
                     <Icon as={FiMapPin} />
                     <Text>{project.location}</Text>
                   </HStack>
@@ -487,34 +471,24 @@ export default function HomePage() {
             templateColumns={{ base: '1fr', lg: '1fr 2fr' }}
             gap={{ base: 12, lg: 20 }}
           >
-            <VStack align="flex-start" spacing={6}>
-              <Text
-                fontSize="sm"
-                fontWeight="500"
-                letterSpacing="0.3em"
-                textTransform="uppercase"
-                color="brand.500"
-              >
-                What We Do
-              </Text>
-              <Heading
-                fontSize={{ base: '3xl', md: '4xl' }}
-                fontWeight="400"
-              >
-                Comprehensive Design Services
+            <VStack align="flex-start" spacing={6} maxW="28rem">
+              <Text variant="eyebrow">What we do</Text>
+              <Heading fontSize="display-md" fontWeight="400">
+                Design services across scale
               </Heading>
-              <Text color="dark.100" lineHeight="1.8">
-                From initial concept through construction administration, 
-                we provide full-spectrum architectural and infrastructure 
-                services tailored to each project&apos;s unique requirements.
+              <Text variant="body" maxW="none">
+                From early feasibility through construction administration, we lead
+                architecture, infrastructure, and planning with one integrated team.
               </Text>
               <Button
+                as="a"
+                href="#contact"
                 variant="outline"
                 rightIcon={<FiArrowRight />}
                 borderColor="whiteAlpha.200"
-                mt={4}
+                mt={2}
               >
-                Learn More
+                Discuss a project
               </Button>
             </VStack>
 
@@ -530,7 +504,11 @@ export default function HomePage() {
                   bg="dark.600"
                   border="1px solid"
                   borderColor="whiteAlpha.100"
-                  _hover={{ borderColor: 'brand.500' }}
+                  _hover={{
+                    borderColor: 'brand.500',
+                    transform: 'translateY(-4px)',
+                    boxShadow: '0 12px 40px rgba(16, 19, 25, 0.45)',
+                  }}
                   cursor="pointer"
                   role="group"
                 >
@@ -539,6 +517,7 @@ export default function HomePage() {
                     fontSize="4xl"
                     color="brand.500"
                     mb={4}
+                    sx={{ fontVariantNumeric: 'tabular-nums' }}
                   >
                     {service.number}
                   </Text>
@@ -546,12 +525,12 @@ export default function HomePage() {
                     fontSize="xl"
                     fontWeight="500"
                     mb={3}
-                    _groupHover={{ color: 'brand.400' }}
-                    transition="color 0.3s"
+                    _groupHover={{ color: 'brand.300' }}
+                    transition="color 0.25s"
                   >
                     {service.title}
                   </Heading>
-                  <Text fontSize="sm" color="dark.100" lineHeight="1.7">
+                  <Text fontSize="sm" color="dark.200" lineHeight="1.75">
                     {service.description}
                   </Text>
                 </MotionBox>
@@ -603,58 +582,39 @@ export default function HomePage() {
               viewport={{ once: true }}
             >
               <VStack align="flex-start" spacing={6}>
-                <Text
-                  fontSize="sm"
-                  fontWeight="500"
-                  letterSpacing="0.3em"
-                  textTransform="uppercase"
-                  color="brand.500"
-                >
-                  Our Story
-                </Text>
-                <Heading
-                  fontSize={{ base: '3xl', md: '4xl' }}
-                  fontWeight="400"
-                >
-                  Shaping Skylines Since 1999
+                <Text variant="eyebrow">Our story</Text>
+                <Heading fontSize="display-md" fontWeight="400">
+                  Shaping skylines since 1999
                 </Heading>
-                <Text color="dark.100" lineHeight="1.8" fontSize="lg">
-                  For over two decades, CTR Infrastructure has been at the forefront 
-                  of architectural innovation. Our multidisciplinary team brings together 
-                  architects, engineers, and designers who share a common passion for 
-                  creating spaces that transcend expectations.
+                <Text variant="lead" maxW="none" fontSize="lg">
+                  For more than twenty-five years, CTR Infrastructure has delivered
+                  civic, commercial, and cultural work across Canada — with architects,
+                  engineers, and planners working as one studio.
                 </Text>
-                <Text color="dark.100" lineHeight="1.8">
-                  We believe that great architecture is born from deep understanding—of 
-                  place, purpose, and the people who will inhabit our creations. Every 
-                  project begins with listening and culminates in spaces that tell 
-                  meaningful stories.
+                <Text variant="body" maxW="none">
+                  We begin every commission by understanding site, program, and context.
+                  The result is architecture that reads clearly at street level and holds
+                  up over decades of use.
                 </Text>
-                <HStack spacing={8} pt={4}>
+                <HStack spacing={10} pt={4}>
                   <VStack align="flex-start" spacing={1}>
-                    <Text fontFamily="heading" fontSize="3xl" color="brand.500">
-                      85+
-                    </Text>
-                    <Text fontSize="sm" color="dark.100" textTransform="uppercase" letterSpacing="0.1em">
-                      Team Members
-                    </Text>
+                    <Text variant="stat" fontSize="3xl">85+</Text>
+                    <Text variant="caption">Team members</Text>
                   </VStack>
                   <VStack align="flex-start" spacing={1}>
-                    <Text fontFamily="heading" fontSize="3xl" color="brand.500">
-                      $2B+
-                    </Text>
-                    <Text fontSize="sm" color="dark.100" textTransform="uppercase" letterSpacing="0.1em">
-                      Project Value
-                    </Text>
+                    <Text variant="stat" fontSize="3xl">$2.1B</Text>
+                    <Text variant="caption">Built project value</Text>
                   </VStack>
                 </HStack>
                 <Button
+                  as="a"
+                  href="#contact"
                   variant="outline"
                   rightIcon={<FiArrowRight />}
                   borderColor="whiteAlpha.200"
                   mt={4}
                 >
-                  Meet Our Team
+                  Meet the team
                 </Button>
               </VStack>
             </MotionBox>
@@ -665,33 +625,38 @@ export default function HomePage() {
       {/* CTA Section */}
       <Box
         as="section"
-        py={{ base: 20, md: 32 }}
+        py={{ base: 20, md: 28 }}
         bg="dark.50"
         color="dark.900"
         borderY="1px solid"
-        borderColor="blackAlpha.100"
+        borderColor="blackAlpha.80"
       >
         <Container maxW="container.xl" textAlign="center">
-          <VStack spacing={8} maxW="800px" mx="auto">
+          <VStack spacing={8} maxW="42rem" mx="auto">
+            <Text variant="eyebrow" color="brand.600">
+              New commissions
+            </Text>
             <Heading
-              fontSize={{ base: '3xl', md: '5xl' }}
+              fontSize="display-md"
               fontWeight="400"
               color="dark.900"
             >
-              Ready to Build Something Extraordinary?
+              Start a conversation about your project
             </Heading>
-            <Text fontSize="lg" color="dark.400" maxW="600px" lineHeight="1.8">
-              Let&apos;s discuss how we can bring your vision to life. 
-              Our team is ready to transform your ideas into architectural reality.
+            <Text fontSize="lg" color="dark.400" lineHeight="1.8" fontWeight="300">
+              Tell us about your site, timeline, and ambitions. We respond within two
+              business days with next steps and the right team members to involve.
             </Text>
             <Button
+              as="a"
+              href="#contact"
               size="lg"
               bg="dark.900"
               color="dark.50"
-              _hover={{ bg: 'dark.700', color: 'white' }}
+              _hover={{ bg: 'dark.700', color: 'white', transform: 'translateY(-1px)' }}
               rightIcon={<FiArrowRight />}
             >
-              Start Your Project
+              Start your project
             </Button>
           </VStack>
         </Container>
@@ -706,26 +671,14 @@ export default function HomePage() {
           >
             <VStack align="flex-start" spacing={8}>
               <Box>
-                <Text
-                  fontSize="sm"
-                  fontWeight="500"
-                  letterSpacing="0.3em"
-                  textTransform="uppercase"
-                  color="brand.500"
-                  mb={4}
-                >
-                  Get In Touch
-                </Text>
-                <Heading
-                  fontSize={{ base: '3xl', md: '4xl' }}
-                  fontWeight="400"
-                >
-                  Let&apos;s Create Together
+                <Text variant="eyebrow" mb={4}>Get in touch</Text>
+                <Heading fontSize="display-md" fontWeight="400">
+                  Let&apos;s create together
                 </Heading>
               </Box>
 
               <VStack align="flex-start" spacing={6} pt={4}>
-                <HStack spacing={4}>
+                <HStack spacing={4} align="flex-start">
                   <Box
                     w="50px"
                     h="50px"
@@ -734,19 +687,18 @@ export default function HomePage() {
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
+                    flexShrink={0}
                   >
-                    <Icon as={FiMapPin} color="brand.500" />
+                    <Icon as={FiMapPin} color="brand.400" />
                   </Box>
                   <Box>
-                    <Text fontSize="sm" color="dark.100" mb={1}>
-                      Headquarters
-                    </Text>
-                    <Text>1200 Main Street, Suite 500</Text>
-                    <Text>Vancouver, BC V6B 4Y8</Text>
+                    <Text variant="caption" mb={1}>Headquarters</Text>
+                    <Text color="dark.100">1200 Main Street, Suite 500</Text>
+                    <Text color="dark.100">Vancouver, BC V6B 4Y8</Text>
                   </Box>
                 </HStack>
 
-                <HStack spacing={4}>
+                <HStack spacing={4} align="flex-start">
                   <Box
                     w="50px"
                     h="50px"
@@ -755,20 +707,19 @@ export default function HomePage() {
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
+                    flexShrink={0}
                   >
-                    <Icon as={FiMail} color="brand.500" />
+                    <Icon as={FiMail} color="brand.400" />
                   </Box>
                   <Box>
-                    <Text fontSize="sm" color="dark.100" mb={1}>
-                      Email
-                    </Text>
-                    <Link href="mailto:hello@ctrinfrastructure.com" _hover={{ color: 'brand.500' }}>
+                    <Text variant="caption" mb={1}>Email</Text>
+                    <Link href="mailto:hello@ctrinfrastructure.com" color="dark.50" _hover={{ color: 'brand.300' }}>
                       hello@ctrinfrastructure.com
                     </Link>
                   </Box>
                 </HStack>
 
-                <HStack spacing={4}>
+                <HStack spacing={4} align="flex-start">
                   <Box
                     w="50px"
                     h="50px"
@@ -777,14 +728,13 @@ export default function HomePage() {
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
+                    flexShrink={0}
                   >
-                    <Icon as={FiPhone} color="brand.500" />
+                    <Icon as={FiPhone} color="brand.400" />
                   </Box>
                   <Box>
-                    <Text fontSize="sm" color="dark.100" mb={1}>
-                      Phone
-                    </Text>
-                    <Link href="tel:+16045551234" _hover={{ color: 'brand.500' }}>
+                    <Text variant="caption" mb={1}>Phone</Text>
+                    <Link href="tel:+16045551234" color="dark.50" _hover={{ color: 'brand.300' }}>
                       +1 (604) 555-1234
                     </Link>
                   </Box>
@@ -794,92 +744,97 @@ export default function HomePage() {
 
             <Box
               as="form"
-              p={10}
+              p={{ base: 8, md: 10 }}
               bg="dark.700"
               border="1px solid"
-              borderColor="whiteAlpha.100"
+              borderColor="whiteAlpha.120"
             >
               <VStack spacing={6}>
                 <SimpleGrid columns={2} spacing={4} w="full">
                   <Box>
-                    <Text fontSize="sm" mb={2} color="dark.100">First Name</Text>
+                    <Text variant="caption" mb={2}>First name</Text>
                     <Box
                       as="input"
                       w="full"
                       p={4}
-                      bg="transparent"
+                      bg="dark.800"
                       border="1px solid"
                       borderColor="whiteAlpha.200"
-                      color="white"
-                      _focus={{ borderColor: 'brand.500', outline: 'none' }}
-                      placeholder="John"
+                      color="dark.50"
+                      transition="border-color 0.2s"
+                      _focus={{ borderColor: 'brand.400', outline: 'none', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
+                      placeholder="Amara"
                     />
                   </Box>
                   <Box>
-                    <Text fontSize="sm" mb={2} color="dark.100">Last Name</Text>
+                    <Text variant="caption" mb={2}>Last name</Text>
                     <Box
                       as="input"
                       w="full"
                       p={4}
-                      bg="transparent"
+                      bg="dark.800"
                       border="1px solid"
                       borderColor="whiteAlpha.200"
-                      color="white"
-                      _focus={{ borderColor: 'brand.500', outline: 'none' }}
-                      placeholder="Doe"
+                      color="dark.50"
+                      transition="border-color 0.2s"
+                      _focus={{ borderColor: 'brand.400', outline: 'none', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
+                      placeholder="Chen"
                     />
                   </Box>
                 </SimpleGrid>
 
                 <Box w="full">
-                  <Text fontSize="sm" mb={2} color="dark.100">Email</Text>
+                  <Text variant="caption" mb={2}>Email</Text>
                   <Box
                     as="input"
                     type="email"
                     w="full"
                     p={4}
-                    bg="transparent"
+                    bg="dark.800"
                     border="1px solid"
                     borderColor="whiteAlpha.200"
-                    color="white"
-                    _focus={{ borderColor: 'brand.500', outline: 'none' }}
-                    placeholder="john@example.com"
+                    color="dark.50"
+                    transition="border-color 0.2s"
+                    _focus={{ borderColor: 'brand.400', outline: 'none', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
+                    placeholder="amara.chen@example.com"
                   />
                 </Box>
 
                 <Box w="full">
-                  <Text fontSize="sm" mb={2} color="dark.100">Project Type</Text>
+                  <Text variant="caption" mb={2}>Project type</Text>
                   <Box
                     as="select"
                     w="full"
                     p={4}
-                    bg="transparent"
+                    bg="dark.800"
                     border="1px solid"
                     borderColor="whiteAlpha.200"
-                    color="white"
-                    _focus={{ borderColor: 'brand.500', outline: 'none' }}
+                    color="dark.50"
+                    transition="border-color 0.2s"
+                    _focus={{ borderColor: 'brand.400', outline: 'none', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                   >
-                    <option value="" style={{ background: '#141414' }}>Select a project type</option>
-                    <option value="commercial" style={{ background: '#141414' }}>Commercial</option>
-                    <option value="residential" style={{ background: '#141414' }}>Residential</option>
-                    <option value="infrastructure" style={{ background: '#141414' }}>Infrastructure</option>
-                    <option value="cultural" style={{ background: '#141414' }}>Cultural</option>
+                    <option value="" style={{ background: '#181d25' }}>Select a project type</option>
+                    <option value="commercial" style={{ background: '#181d25' }}>Commercial</option>
+                    <option value="residential" style={{ background: '#181d25' }}>Residential</option>
+                    <option value="infrastructure" style={{ background: '#181d25' }}>Infrastructure</option>
+                    <option value="cultural" style={{ background: '#181d25' }}>Cultural</option>
                   </Box>
                 </Box>
 
                 <Box w="full">
-                  <Text fontSize="sm" mb={2} color="dark.100">Message</Text>
+                  <Text variant="caption" mb={2}>Message</Text>
                   <Box
                     as="textarea"
                     w="full"
                     p={4}
                     h="150px"
-                    bg="transparent"
+                    bg="dark.800"
                     border="1px solid"
                     borderColor="whiteAlpha.200"
-                    color="white"
-                    _focus={{ borderColor: 'brand.500', outline: 'none' }}
-                    placeholder="Tell us about your project..."
+                    color="dark.50"
+                    transition="border-color 0.2s"
+                    _focus={{ borderColor: 'brand.400', outline: 'none', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
+                    placeholder="Briefly describe your site, scope, and timeline..."
                     resize="none"
                   />
                 </Box>
@@ -892,7 +847,7 @@ export default function HomePage() {
                   _hover={{ bg: 'brand.500' }}
                   rightIcon={<FiArrowRight />}
                 >
-                  Send Message
+                  Send message
                 </Button>
               </VStack>
             </Box>
@@ -934,22 +889,22 @@ export default function HomePage() {
                   CTR Infrastructure
                 </Text>
               </HStack>
-              <Text fontSize="sm" color="dark.100" lineHeight="1.8">
-                Creating extraordinary spaces that inspire and endure for generations.
+              <Text fontSize="sm" color="dark.200" lineHeight="1.8" maxW="16rem">
+                Architecture and infrastructure for cities, campuses, and civic life.
               </Text>
             </VStack>
 
             <VStack align="flex-start" spacing={4}>
-              <Text fontWeight="500" letterSpacing="0.1em" textTransform="uppercase" fontSize="sm">
+              <Text variant="caption" fontWeight="600" color="dark.100">
                 Navigation
               </Text>
-              {['Projects', 'Services', 'About', 'Careers', 'Contact'].map((item) => (
+              {['Projects', 'Services', 'About', 'Contact'].map((item) => (
                 <Link
                   key={item}
                   href={`#${item.toLowerCase()}`}
                   fontSize="sm"
-                  color="dark.100"
-                  _hover={{ color: 'brand.500' }}
+                  color="dark.200"
+                  _hover={{ color: 'brand.300' }}
                 >
                   {item}
                 </Link>
@@ -957,16 +912,16 @@ export default function HomePage() {
             </VStack>
 
             <VStack align="flex-start" spacing={4}>
-              <Text fontWeight="500" letterSpacing="0.1em" textTransform="uppercase" fontSize="sm">
+              <Text variant="caption" fontWeight="600" color="dark.100">
                 Services
               </Text>
-              {['Architecture', 'Infrastructure', 'Urban Planning', 'Interior Design', 'Consulting'].map((item) => (
+              {['Architecture', 'Infrastructure', 'Urban planning', 'Interior design'].map((item) => (
                 <Link
                   key={item}
                   href="#services"
                   fontSize="sm"
-                  color="dark.100"
-                  _hover={{ color: 'brand.500' }}
+                  color="dark.200"
+                  _hover={{ color: 'brand.300' }}
                 >
                   {item}
                 </Link>
@@ -974,16 +929,16 @@ export default function HomePage() {
             </VStack>
 
             <VStack align="flex-start" spacing={4}>
-              <Text fontWeight="500" letterSpacing="0.1em" textTransform="uppercase" fontSize="sm">
+              <Text variant="caption" fontWeight="600" color="dark.100">
                 Connect
               </Text>
-              {['LinkedIn', 'Instagram', 'Twitter', 'Behance'].map((item) => (
+              {['LinkedIn', 'Instagram', 'Behance'].map((item) => (
                 <Link
                   key={item}
                   href="#"
                   fontSize="sm"
-                  color="dark.100"
-                  _hover={{ color: 'brand.500' }}
+                  color="dark.200"
+                  _hover={{ color: 'brand.300' }}
                 >
                   {item}
                 </Link>
@@ -1002,8 +957,8 @@ export default function HomePage() {
               align="center"
               gap={4}
             >
-              <Text fontSize="sm" color="dark.100">
-                © 2024 CTR Infrastructure. All rights reserved.
+              <Text fontSize="sm" color="dark.300">
+                © 2026 CTR Infrastructure. All rights reserved.
               </Text>
               <HStack spacing={6}>
                 <Link href="#" fontSize="sm" color="dark.100" _hover={{ color: 'brand.500' }}>

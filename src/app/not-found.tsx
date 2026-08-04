@@ -14,57 +14,58 @@ import { FiArrowLeft } from 'react-icons/fi';
 export default function NotFound() {
   return (
     <Box
-      minH="100vh"
+      as="main"
+      minH="100dvh"
       display="flex"
       alignItems="center"
       justifyContent="center"
       bg="dark.800"
       position="relative"
     >
-      {/* Background Pattern */}
       <Box
         position="absolute"
         inset={0}
-        opacity={0.03}
-        bgImage="linear-gradient(rgba(201, 169, 110, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 169, 110, 0.1) 1px, transparent 1px)"
+        opacity={0.04}
+        bgImage="linear-gradient(rgba(133, 116, 86, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(133, 116, 86, 0.12) 1px, transparent 1px)"
         bgSize="100px 100px"
       />
-      
+
       <Container maxW="md" position="relative" zIndex={1}>
         <VStack spacing={8} textAlign="center">
           <Text
             fontFamily="heading"
             fontSize={{ base: '8rem', md: '12rem' }}
             fontWeight="300"
-            color="brand.500"
+            color="brand.600"
             lineHeight="1"
-            opacity={0.3}
+            opacity={0.35}
+            sx={{ fontVariantNumeric: 'tabular-nums' }}
           >
             404
           </Text>
-          
+
           <Heading
-            fontFamily="heading"
             fontSize={{ base: '2xl', md: '4xl' }}
             fontWeight="400"
             mt={-16}
           >
-            Page Not Found
+            Page not found
           </Heading>
-          
-          <Text color="dark.100" fontSize="lg" maxW="400px">
-            The page you&apos;re looking for doesn&apos;t exist or has been moved to a new location.
+
+          <Text variant="lead" maxW="24rem" mx="auto" textAlign="center">
+            This page does not exist or has moved. Return to the homepage to
+            explore our work.
           </Text>
-          
+
           <Link href="/" passHref>
             <Button
               size="lg"
               bg="brand.600"
               color="white"
-              _hover={{ bg: 'brand.500' }}
+              _hover={{ bg: 'brand.500', transform: 'translateY(-1px)' }}
               leftIcon={<FiArrowLeft />}
             >
-              Return Home
+              Return home
             </Button>
           </Link>
         </VStack>

@@ -108,7 +108,7 @@ const categories = ['All', 'Commercial', 'Residential', 'Infrastructure', 'Cultu
 
 export default function ProjectsPage() {
   return (
-    <Box bg="dark.800" minH="100vh">
+    <Box as="main" bg="dark.800" minH="100dvh">
       {/* Grain Overlay */}
       <Box className="grain-overlay" />
 
@@ -127,43 +127,31 @@ export default function ProjectsPage() {
               color="dark.100"
               _hover={{ color: 'brand.500' }}
             >
-              Back to Home
+              Back to home
             </Button>
           </NextLink>
 
-          <VStack align="flex-start" spacing={6} maxW="800px">
-            <Text
-              fontSize="sm"
-              fontWeight="500"
-              letterSpacing="0.3em"
-              textTransform="uppercase"
-              color="brand.500"
-            >
-              Our Work
-            </Text>
-            <Heading
-              fontSize={{ base: '4xl', md: '6xl' }}
-              fontWeight="400"
-              lineHeight="1.1"
-            >
-              Featured Projects
+          <VStack align="flex-start" spacing={6} maxW="36rem">
+            <Text variant="eyebrow">Our work</Text>
+            <Heading fontSize="display-lg" fontWeight="400" lineHeight="1.05">
+              Project portfolio
             </Heading>
-            <Text color="dark.100" fontSize="lg" lineHeight="1.8">
-              Explore our portfolio of award-winning architectural and infrastructure 
-              projects spanning commercial, residential, and public sectors.
+            <Text variant="lead" maxW="none">
+              Award-winning architecture and infrastructure across commercial,
+              residential, and public sectors.
             </Text>
           </VStack>
 
           {/* Category Filters */}
-          <HStack spacing={4} mt={12} flexWrap="wrap">
+          <HStack spacing={3} mt={12} flexWrap="wrap">
             {categories.map((category) => (
               <Button
                 key={category}
                 variant="outline"
                 size="sm"
                 borderColor={category === 'All' ? 'brand.500' : 'whiteAlpha.200'}
-                color={category === 'All' ? 'brand.500' : 'dark.100'}
-                _hover={{ borderColor: 'brand.500', color: 'brand.500' }}
+                color={category === 'All' ? 'brand.300' : 'dark.200'}
+                _hover={{ borderColor: 'brand.400', color: 'brand.200' }}
               >
                 {category}
               </Button>
@@ -269,7 +257,7 @@ export default function ProjectsPage() {
                     {project.title}
                   </Heading>
 
-                  <Text fontSize="sm" color="dark.100" mb={4} noOfLines={2}>
+                  <Text fontSize="sm" color="dark.200" mb={4} noOfLines={2} lineHeight="1.7">
                     {project.description}
                   </Text>
 
@@ -287,16 +275,14 @@ export default function ProjectsPage() {
       {/* CTA Section */}
       <Box py={{ base: 16, md: 24 }} bg="dark.50" color="dark.900">
         <Container maxW="container.xl" textAlign="center">
-          <VStack spacing={6}>
-            <Heading
-              fontSize={{ base: '2xl', md: '4xl' }}
-              fontWeight="400"
-              color="dark.900"
-            >
-              Have a Project in Mind?
+          <VStack spacing={6} maxW="36rem" mx="auto">
+            <Text variant="eyebrow" color="brand.600">New work</Text>
+            <Heading fontSize="display-md" fontWeight="400" color="dark.900">
+              Have a project in mind?
             </Heading>
-            <Text color="dark.400" maxW="500px" lineHeight="1.8">
-              We&apos;d love to hear about your vision. Let&apos;s discuss how we can bring it to life.
+            <Text color="dark.400" lineHeight="1.8" fontWeight="300">
+              Share your brief and we will outline scope, team, and timeline within
+              two business days.
             </Text>
             <NextLink href="/#contact" passHref>
               <Button
@@ -305,7 +291,7 @@ export default function ProjectsPage() {
                 color="dark.50"
                 _hover={{ bg: 'dark.700' }}
               >
-                Start a Conversation
+                Start a conversation
               </Button>
             </NextLink>
           </VStack>
