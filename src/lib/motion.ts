@@ -1,35 +1,34 @@
 import type { Transition, Variants } from 'framer-motion';
 
-/** ease-out for entering elements (UI/UX Pro Max) */
-export const easeOut = [0.22, 1, 0.36, 1] as const;
+/** Audi-style smooth ease */
+export const easeSmooth = [0.25, 0.1, 0.25, 1] as const;
 
-/** ease-in for exiting — faster than enter */
+export const easeOut = [0.22, 1, 0.36, 1] as const;
 export const easeIn = [0.4, 0, 1, 1] as const;
 
 export const springSnappy: Transition = {
   type: 'spring',
-  stiffness: 420,
+  stiffness: 320,
   damping: 32,
-  mass: 0.8,
+  mass: 0.9,
 };
 
 export const springSoft: Transition = {
   type: 'spring',
-  stiffness: 260,
-  damping: 28,
+  stiffness: 200,
+  damping: 30,
 };
 
-export const tweenEnter = (duration = 0.45): Transition => ({
+export const tweenEnter = (duration = 0.55): Transition => ({
   duration,
-  ease: easeOut,
+  ease: easeSmooth,
 });
 
-export const tweenExit = (duration = 0.25): Transition => ({
+export const tweenExit = (duration = 0.35): Transition => ({
   duration,
   ease: easeIn,
 });
 
-/** Returns instant transition when user prefers reduced motion */
 export function safeTransition(
   reduced: boolean | null,
   transition: Transition = tweenEnter()
@@ -40,15 +39,15 @@ export function safeTransition(
 
 export const viewportOnce = {
   once: true,
-  margin: '-64px 0px -64px 0px',
+  margin: '-80px 0px -80px 0px',
 } as const;
 
 export const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 28 },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: tweenEnter(0.5),
+    transition: tweenEnter(0.65),
   },
 };
 
@@ -56,38 +55,47 @@ export const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: tweenEnter(0.4),
+    transition: tweenEnter(0.6),
+  },
+};
+
+export const crossfade: Variants = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: tweenEnter(0.75),
+  },
+  exit: {
+    opacity: 0,
+    transition: tweenExit(0.55),
   },
 };
 
 export const scaleIn: Variants = {
-  hidden: { opacity: 0, scale: 0.96, y: 12 },
+  hidden: { opacity: 0, scale: 1.02 },
   visible: {
     opacity: 1,
     scale: 1,
-    y: 0,
-    transition: tweenEnter(0.45),
+    transition: tweenEnter(0.7),
   },
 };
 
-/** Stagger grid/list — motion dial 7 / back.out feel via spring */
 export const staggerContainer: Variants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.07,
-      delayChildren: 0.06,
+      staggerChildren: 0.1,
+      delayChildren: 0.08,
     },
   },
 };
 
 export const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 20, scale: 0.97 },
+  hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
     y: 0,
-    scale: 1,
-    transition: springSnappy,
+    transition: tweenEnter(0.55),
   },
 };
 
@@ -95,18 +103,18 @@ export const heroStagger: Variants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.12,
-      delayChildren: 0.15,
+      staggerChildren: 0.14,
+      delayChildren: 0.2,
     },
   },
 };
 
 export const heroItem: Variants = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 36 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.65, ease: easeOut },
+    transition: { duration: 0.75, ease: easeSmooth },
   },
 };
 
@@ -115,19 +123,19 @@ export const drawerVariants: Variants = {
   open: {
     opacity: 1,
     x: 0,
-    transition: springSoft,
+    transition: { duration: 0.45, ease: easeSmooth },
   },
   exit: {
     opacity: 0,
     x: '100%',
-    transition: tweenExit(0.22),
+    transition: tweenExit(0.35),
   },
 };
 
 export const overlayVariants: Variants = {
   closed: { opacity: 0 },
-  open: { opacity: 1, transition: tweenEnter(0.2) },
-  exit: { opacity: 0, transition: tweenExit(0.15) },
+  open: { opacity: 1, transition: tweenEnter(0.35) },
+  exit: { opacity: 0, transition: tweenExit(0.25) },
 };
 
 export const navLinks = [
@@ -138,34 +146,24 @@ export const navLinks = [
 ];
 
 export const pageTransition: Variants = {
-  initial: {
-    opacity: 0,
-    y: 10,
-    scale: 0.998,
-  },
+  initial: { opacity: 0 },
   animate: {
     opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.4,
-      ease: easeOut,
-      when: 'beforeChildren',
-    },
+    transition: { duration: 0.55, ease: easeSmooth },
   },
   exit: {
     opacity: 0,
-    y: -6,
-    scale: 0.999,
-    transition: {
-      duration: 0.24,
-      ease: easeIn,
-    },
+    transition: { duration: 0.35, ease: easeIn },
   },
 };
 
 export const pageTransitionReduced: Variants = {
-  initial: { opacity: 1, y: 0, scale: 1 },
-  animate: { opacity: 1, y: 0, scale: 1 },
-  exit: { opacity: 1, y: 0, scale: 1 },
+  initial: { opacity: 1 },
+  animate: { opacity: 1 },
+  exit: { opacity: 1 },
+};
+
+export const imageHover = {
+  rest: { scale: 1 },
+  hover: { scale: 1.04, transition: { duration: 0.75, ease: easeSmooth } },
 };

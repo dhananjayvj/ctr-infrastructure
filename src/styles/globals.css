@@ -1,29 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --color-bg-primary: #181d25;
-  --color-bg-secondary: #232a34;
-  --color-bg-tertiary: #313a46;
-  --color-bg-light: #f2f0ec;
-  --color-text-primary: #f2f0ec;
-  --color-text-secondary: #d8dde4;
-  --color-text-muted: #b0bac6;
-  --color-text-on-light: #101319;
-  --color-text-on-light-muted: #5f6d7d;
-  --color-accent: #857456;
-  --color-accent-light: #9a8868;
-  --color-border: rgba(255, 255, 255, 0.1);
-  --color-border-hover: rgba(255, 255, 255, 0.18);
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #0a0a0a;
+  --color-bg-tertiary: #141414;
+  --color-bg-elevated: #1a1a1a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b3b3b3;
+  --color-text-muted: #808080;
+  --color-accent: #ffffff;
+  --color-accent-red: #bb0a30;
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-border-hover: rgba(255, 255, 255, 0.28);
 
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  --section-padding: clamp(5rem, 11vw, 9rem);
-  --container-max: 1320px;
+  --section-padding: clamp(4rem, 10vw, 8rem);
+  --container-max: 1440px;
 
-  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --transition-smooth: 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --transition-slow: 0.75s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 * {
@@ -41,34 +38,35 @@ body {
   font-family: var(--font-sans);
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
-  line-height: 1.65;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-weight: 400;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: clamp(3.25rem, 7vw, 6.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-weight: 300;
 }
 
 h2 {
-  font-size: clamp(2rem, 4.5vw, 3.75rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 400;
 }
 
 h3 {
-  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
 }
 
 p {
-  font-family: var(--font-sans);
   font-weight: 300;
   color: var(--color-text-secondary);
 }
@@ -76,44 +74,39 @@ p {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-a:hover {
-  color: var(--color-accent-light);
+  transition: color var(--transition-fast), opacity var(--transition-fast);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-text-primary);
   outline-offset: 3px;
 }
 
-.container {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 clamp(1.5rem, 4vw, 3rem);
+/* Audi-style horizontal scroll strip */
+.audi-scroll-strip {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
-.section {
-  padding: var(--section-padding) 0;
+.audi-scroll-strip::-webkit-scrollbar {
+  display: none;
 }
 
-.grain-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.045;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+.audi-scroll-strip > * {
+  scroll-snap-align: start;
+  flex-shrink: 0;
 }
 
 [id='services'],
 [id='about'],
 [id='projects'],
-[id='contact'] {
+[id='contact'],
+[id='news'] {
   scroll-margin-top: 5.5rem;
 }
 
@@ -121,7 +114,8 @@ a:hover {
   [id='services'],
   [id='about'],
   [id='projects'],
-  [id='contact'] {
+  [id='contact'],
+  [id='news'] {
     scroll-margin-top: 6rem;
   }
 }

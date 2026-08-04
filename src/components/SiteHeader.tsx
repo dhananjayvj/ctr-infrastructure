@@ -8,7 +8,6 @@ import {
   HStack,
   Text,
   Link,
-  Button,
   IconButton,
   VStack,
 } from '@chakra-ui/react';
@@ -20,42 +19,33 @@ import {
 } from 'framer-motion';
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FiArrowRight, FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 import { drawerVariants, navLinks, overlayVariants, safeTransition } from '@/lib/motion';
 import { HEADER_HEIGHT } from '@/lib/spacing';
 
 const MotionBox = motion(Box);
 const MotionFlex = motion(Flex);
 
-type SiteHeaderProps = {
-  ctaHref?: string;
-  ctaLabel?: string;
-};
-
-export function SiteHeader({
-  ctaHref = '/#contact',
-  ctaLabel = 'Start a project',
-}: SiteHeaderProps) {
+export function SiteHeader() {
   const pathname = usePathname();
   const reducedMotion = useReducedMotion();
   const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const lastScroll = useRef(0);
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
     return scrollY.onChange((latest) => {
       const previous = lastScroll.current;
       lastScroll.current = latest;
+      setScrolled(latest > 40);
+      if (reducedMotion) return;
       if (latest <= 80) {
         setHidden(false);
-        setScrolled(false);
         return;
       }
-      setScrolled(true);
-      if (reducedMotion) return;
-      setHidden(latest > previous && latest > 120);
+      setHidden(latest > previous && latest > 160);
     });
   }, [scrollY, reducedMotion]);
 
@@ -80,6 +70,9 @@ export function SiteHeader({
     return pathname === href;
   };
 
+  const headerBg = scrolled ? 'rgba(0, 0, 0, 0.96)' : 'transparent';
+  const headerBorder = scrolled ? 'whiteAlpha.120' : 'transparent';
+
   return (
     <>
       <MotionBox
@@ -91,52 +84,46 @@ export function SiteHeader({
         zIndex={100}
         initial={false}
         animate={{
-          y: hidden ? -96 : 0,
-          backgroundColor: scrolled
-            ? 'rgba(24, 29, 37, 0.97)'
-            : 'rgba(24, 29, 37, 0.88)',
+          y: hidden ? -80 : 0,
+          backgroundColor: headerBg,
         }}
         transition={safeTransition(reducedMotion, {
-          y: { duration: 0.28, ease: [0.4, 0, 0.2, 1] },
-          backgroundColor: { duration: 0.25 },
+          y: { duration: 0.4, ease: [0.25, 0.1, 0.25, 1] },
+          backgroundColor: { duration: 0.45 },
         })}
-        backdropFilter="blur(16px)"
         borderBottom="1px solid"
-        borderColor="whiteAlpha.150"
-        boxShadow="0 1px 0 rgba(255,255,255,0.04) inset"
+        borderColor={headerBorder}
+        backdropFilter={scrolled ? 'blur(12px)' : 'none'}
       >
-        <Container maxW="container.xl">
+        <Container maxW="1440px">
           <Flex h={HEADER_HEIGHT} align="center" justify="space-between" gap={4}>
-            <Link as={NextLink} href="/" _hover={{ textDecoration: 'none' }} onClick={closeMenu}>
-              <HStack spacing={{ base: 2, md: 3 }}>
-                <Box
-                  w={{ base: '36px', md: '40px' }}
-                  h={{ base: '36px', md: '40px' }}
-                  bg="brand.500"
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  fontFamily="heading"
-                  fontSize={{ base: 'lg', md: 'xl' }}
-                  fontWeight="600"
-                  color="white"
-                  flexShrink={0}
-                >
-                  C
-                </Box>
+            <Link as={NextLink} href="/" _hover={{ textDecoration: 'none', opacity: 0.9 }} onClick={closeMenu}>
+              <HStack spacing={3}>
+                <HStack spacing={1}>
+                  {[0, 1, 2, 3].map((i) => (
+                    <Box
+                      key={i}
+                      w={{ base: '7px', md: '8px' }}
+                      h={{ base: '7px', md: '8px' }}
+                      borderRadius="full"
+                      border="1.5px solid"
+                      borderColor="dark.50"
+                    />
+                  ))}
+                </HStack>
                 <Text
-                  fontFamily="heading"
-                  fontSize={{ base: 'md', sm: 'lg', md: 'xl' }}
-                  fontWeight="500"
-                  letterSpacing="0.03em"
-                  noOfLines={1}
+                  fontSize={{ base: 'xs', md: 'sm' }}
+                  fontWeight="600"
+                  letterSpacing="0.12em"
+                  textTransform="uppercase"
+                  display={{ base: 'none', sm: 'block' }}
                 >
                   CTR Infrastructure
                 </Text>
               </HStack>
             </Link>
 
-            <HStack spacing={{ base: 6, lg: 8 }} display={{ base: 'none', md: 'flex' }}>
+            <HStack spacing={{ base: 6, lg: 10 }} display={{ base: 'none', lg: 'flex' }}>
               {navLinks.map((item) => {
                 const active = isLinkActive(item.href);
                 return (
@@ -145,14 +132,10 @@ export function SiteHeader({
                     as={NextLink}
                     href={item.href}
                     fontSize="sm"
-                    fontWeight={active ? '600' : '500'}
-                    letterSpacing="0.04em"
+                    fontWeight={active ? '600' : '400'}
                     color={active ? 'dark.50' : 'dark.200'}
-                    borderBottom="1px solid"
-                    borderColor={active ? 'brand.400' : 'transparent'}
-                    pb={0.5}
-                    _hover={{ color: 'dark.50', borderColor: 'brand.500' }}
-                    transition="color 0.2s, border-color 0.2s"
+                    _hover={{ color: 'dark.50', textDecoration: 'none' }}
+                    transition="color 0.35s"
                   >
                     {item.label}
                   </Link>
@@ -160,31 +143,17 @@ export function SiteHeader({
               })}
             </HStack>
 
-            <HStack spacing={2}>
-              <Button
-                as={NextLink}
-                href={ctaHref}
-                variant="outline"
-                size="sm"
-                display={{ base: 'none', lg: 'flex' }}
-                minH="44px"
-                rightIcon={<FiArrowRight />}
-              >
-                {ctaLabel}
-              </Button>
-
-              <IconButton
-                aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-                icon={menuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
-                variant="ghost"
-                color="dark.100"
-                minW="44px"
-                minH="44px"
-                display={{ base: 'flex', md: 'none' }}
-                onClick={() => setMenuOpen((open) => !open)}
-                _hover={{ bg: 'whiteAlpha.100' }}
-              />
-            </HStack>
+            <IconButton
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+              icon={menuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+              variant="ghost"
+              color="dark.50"
+              minW="44px"
+              minH="44px"
+              display={{ base: 'flex', lg: 'none' }}
+              onClick={() => setMenuOpen((open) => !open)}
+              _hover={{ bg: 'whiteAlpha.100' }}
+            />
           </Flex>
         </Container>
       </MotionBox>
@@ -196,7 +165,7 @@ export function SiteHeader({
               position="fixed"
               inset={0}
               zIndex={110}
-              bg="blackAlpha.700"
+              bg="blackAlpha.800"
               variants={overlayVariants}
               initial="closed"
               animate="open"
@@ -211,22 +180,21 @@ export function SiteHeader({
               right={0}
               bottom={0}
               zIndex={120}
-              w="min(100vw, 320px)"
-              maxW="100vw"
+              w="min(100vw, 360px)"
               direction="column"
-              bg="dark.800"
-              borderLeft="1px solid"
-              borderColor="whiteAlpha.100"
-              px={{ base: 6, sm: 8 }}
-              py={{ base: 8, sm: 10 }}
-              pt={{ base: 20, sm: 10 }}
+              bg="dark.900"
+              px={8}
+              py={10}
+              pt={20}
               variants={drawerVariants}
               initial="closed"
               animate="open"
               exit="exit"
             >
-              <Flex justify="space-between" align="center" mb={8}>
-                <Text variant="eyebrow">Menu</Text>
+              <Flex justify="space-between" align="center" mb={10}>
+                <Text fontSize="xs" fontWeight="600" letterSpacing="0.1em" textTransform="uppercase" color="dark.300">
+                  Menu
+                </Text>
                 <IconButton
                   aria-label="Close menu"
                   icon={<FiX size={22} />}
@@ -237,53 +205,37 @@ export function SiteHeader({
                 />
               </Flex>
 
-              <VStack align="stretch" spacing={1} flex={1}>
+              <VStack align="stretch" spacing={0} flex={1}>
                 {navLinks.map((item, index) => (
                   <MotionBox
                     key={item.label}
-                    initial={reducedMotion ? false : { opacity: 0, x: 16 }}
+                    initial={reducedMotion ? false : { opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{
-                      delay: reducedMotion ? 0 : 0.05 + index * 0.06,
-                      duration: 0.3,
-                      ease: [0.22, 1, 0.36, 1],
+                      delay: reducedMotion ? 0 : 0.04 + index * 0.07,
+                      duration: 0.45,
+                      ease: [0.25, 0.1, 0.25, 1],
                     }}
+                    borderBottom="1px solid"
+                    borderColor="whiteAlpha.80"
                   >
                     <Link
                       as={NextLink}
                       href={item.href}
                       display="flex"
                       alignItems="center"
-                      py={3}
-                      px={1}
+                      py={5}
                       fontSize="lg"
-                      fontWeight="500"
+                      fontWeight="400"
                       color="dark.50"
-                      minH="48px"
                       onClick={closeMenu}
-                      _hover={{ color: 'brand.300' }}
+                      _hover={{ textDecoration: 'none', opacity: 0.8 }}
                     >
                       {item.label}
                     </Link>
                   </MotionBox>
                 ))}
               </VStack>
-
-              <Button
-                as={NextLink}
-                href={ctaHref}
-                w="full"
-                size="lg"
-                minH="48px"
-                bg="brand.600"
-                color="white"
-                _hover={{ bg: 'brand.500' }}
-                rightIcon={<FiArrowRight />}
-                onClick={closeMenu}
-                mt={6}
-              >
-                {ctaLabel}
-              </Button>
             </MotionFlex>
           </>
         )}

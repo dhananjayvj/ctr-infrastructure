@@ -7,6 +7,7 @@ import {
   Text,
   Button,
   VStack,
+  HStack,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
@@ -20,38 +21,23 @@ export default function NotFound() {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      bg="dark.800"
-      position="relative"
+      bg="dark.900"
       pt={pageTopPad}
       pb={{ base: 16, md: 24 }}
     >
-      <Box
-        position="absolute"
-        inset={0}
-        opacity={0.04}
-        bgImage="linear-gradient(rgba(133, 116, 86, 0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(133, 116, 86, 0.12) 1px, transparent 1px)"
-        bgSize="100px 100px"
-      />
-
-      <Container maxW="md" position="relative" zIndex={1}>
+      <Container maxW="md">
         <VStack spacing={8} textAlign="center">
           <Text
-            fontFamily="heading"
-            fontSize={{ base: '8rem', md: '12rem' }}
+            fontSize={{ base: '6rem', md: '9rem' }}
             fontWeight="300"
-            color="brand.600"
+            color="dark.600"
             lineHeight="1"
-            opacity={0.35}
             sx={{ fontVariantNumeric: 'tabular-nums' }}
           >
             404
           </Text>
 
-          <Heading
-            fontSize={{ base: '2xl', md: '4xl' }}
-            fontWeight="400"
-            mt={-16}
-          >
+          <Heading fontSize={{ base: '2xl', md: '3xl' }} fontWeight="400" mt={-8}>
             Page not found
           </Heading>
 
@@ -65,14 +51,25 @@ export default function NotFound() {
               as="a"
               size="lg"
               minH="48px"
-              bg="brand.600"
-              color="white"
-              _hover={{ bg: 'brand.500', transform: 'translateY(-1px)' }}
+              variant="solid"
               leftIcon={<FiArrowLeft />}
             >
               Return home
             </Button>
           </Link>
+
+          <HStack spacing={1} pt={4}>
+            {[0, 1, 2, 3].map((i) => (
+              <Box
+                key={i}
+                w="7px"
+                h="7px"
+                borderRadius="full"
+                border="1.5px solid"
+                borderColor="dark.400"
+              />
+            ))}
+          </HStack>
         </VStack>
       </Container>
     </Box>

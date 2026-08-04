@@ -10,141 +10,49 @@ import {
   HStack,
   Icon,
   Image,
-  Button,
-  Link,
 } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { FiArrowUpRight, FiMapPin } from 'react-icons/fi';
+import { FiMapPin } from 'react-icons/fi';
 import NextLink from 'next/link';
-import { Reveal } from '@/components/Reveal';
-import { heroStagger, heroItem, staggerContainer, staggerItem, viewportOnce } from '@/lib/motion';
-import { sectionPy, pageTopPad, gridGap } from '@/lib/spacing';
+import { HorizontalStrip } from '@/components/audi/HorizontalStrip';
+import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
+import { SiteFooter } from '@/components/SiteFooter';
+import { projectStrip, featuredProjects } from '@/lib/content';
+import { heroStagger, heroItem, staggerContainer, staggerItem, viewportOnce, imageHover } from '@/lib/motion';
+import { pageTopPad, sectionPy, gridGap } from '@/lib/spacing';
 
 const MotionBox = motion(Box);
 const MotionGrid = motion(Grid);
 const MotionVStack = motion(VStack);
 
-const allProjects = [
-  {
-    id: 1,
-    title: 'Aurora Tower',
-    category: 'Commercial',
-    location: 'Vancouver, BC',
-    year: '2024',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
-    description: 'A 45-story mixed-use development featuring sustainable design principles and LEED Platinum certification.',
-    featured: true,
-  },
-  {
-    id: 2,
-    title: 'Riverside Residence',
-    category: 'Residential',
-    location: 'Toronto, ON',
-    year: '2023',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-    description: 'Contemporary waterfront home with panoramic city views and integrated smart home technology.',
-    featured: true,
-  },
-  {
-    id: 3,
-    title: 'Heritage Bridge',
-    category: 'Infrastructure',
-    location: 'Montreal, QC',
-    year: '2024',
-    image: 'https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=800&q=80',
-    description: 'Iconic pedestrian bridge connecting historic and modern districts with innovative cable-stayed design.',
-    featured: true,
-  },
-  {
-    id: 4,
-    title: 'The Glass Pavilion',
-    category: 'Cultural',
-    location: 'Calgary, AB',
-    year: '2023',
-    image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80',
-    description: 'Award-winning arts center with innovative structural glazing and acoustic engineering.',
-    featured: true,
-  },
-  {
-    id: 5,
-    title: 'Metro Central Station',
-    category: 'Infrastructure',
-    location: 'Edmonton, AB',
-    year: '2023',
-    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
-    description: 'Modern transit hub serving 50,000 daily passengers with sustainable energy systems.',
-    featured: false,
-  },
-  {
-    id: 6,
-    title: 'Harmony Towers',
-    category: 'Residential',
-    location: 'Vancouver, BC',
-    year: '2022',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
-    description: 'Twin residential towers with shared amenity spaces and rooftop gardens.',
-    featured: false,
-  },
-  {
-    id: 7,
-    title: 'Innovation Campus',
-    category: 'Commercial',
-    location: 'Waterloo, ON',
-    year: '2022',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
-    description: 'Tech company headquarters featuring collaborative workspaces and biophilic design.',
-    featured: false,
-  },
-  {
-    id: 8,
-    title: 'Sunset Marina',
-    category: 'Mixed-Use',
-    location: 'Victoria, BC',
-    year: '2021',
-    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80',
-    description: 'Waterfront development combining retail, dining, and recreational boating facilities.',
-    featured: false,
-  },
-];
-
-const categories = ['All', 'Commercial', 'Residential', 'Infrastructure', 'Cultural', 'Mixed-Use'];
+const categories = ['All', 'Commercial', 'Residential', 'Infrastructure', 'Cultural'];
 
 export default function ProjectsPage() {
   const reducedMotion = useReducedMotion();
 
   return (
-    <Box as="main" bg="dark.800" overflowX="hidden">
+    <Box as="main" bg="dark.900" overflowX="hidden">
       <Box pt={pageTopPad} pb={sectionPy}>
-        <Container maxW="container.xl">
-          <Reveal mb={{ base: 6, md: 8 }}>
-            <Button
-              as={NextLink}
-              href="/"
-              variant="ghost"
-              size="sm"
-              minH="44px"
-              color="dark.200"
-              _hover={{ color: 'brand.300' }}
-              pl={0}
-            >
-              ← Back to home
-            </Button>
-          </Reveal>
+        <Container maxW="1440px">
+          <LearnMoreLink href="/" size="sm">
+            Back to home
+          </LearnMoreLink>
 
           <MotionVStack
             align="flex-start"
             spacing={{ base: 5, md: 6 }}
-            maxW={{ base: 'full', md: '36rem' }}
+            maxW="36rem"
             variants={heroStagger}
             initial={reducedMotion ? false : 'hidden'}
             animate="visible"
-            mb={{ base: 10, md: 12 }}
+            mt={{ base: 8, md: 12 }}
+            mb={{ base: 10, md: 14 }}
           >
             <MotionBox variants={heroItem}>
-              <Text variant="eyebrow">Our work</Text>
+              <Text variant="caption">Our work</Text>
             </MotionBox>
             <MotionBox variants={heroItem}>
-              <Heading fontSize="display-lg" fontWeight="400" lineHeight="1.05">
+              <Heading fontSize="display-lg" fontWeight="300" lineHeight="1.1">
                 Project portfolio
               </Heading>
             </MotionBox>
@@ -156,154 +64,117 @@ export default function ProjectsPage() {
             </MotionBox>
           </MotionVStack>
 
-          <Reveal>
-            <HStack spacing={3} flexWrap="wrap" gap={2}>
-              {categories.map((category) => (
-                <Button
-                  key={category}
-                  variant="outline"
-                  size="sm"
-                  minH="44px"
-                  borderColor={category === 'All' ? 'brand.500' : 'whiteAlpha.200'}
-                  color={category === 'All' ? 'brand.300' : 'dark.200'}
-                  _hover={{ borderColor: 'brand.400', color: 'brand.200' }}
-                >
-                  {category}
-                </Button>
-              ))}
-            </HStack>
-          </Reveal>
+          <HStack spacing={0} flexWrap="wrap" borderTop="1px solid" borderColor="whiteAlpha.120">
+            {categories.map((category, index) => (
+              <Box
+                key={category}
+                as="button"
+                px={{ base: 5, md: 6 }}
+                py={4}
+                fontSize="sm"
+                fontWeight="500"
+                color={category === 'All' ? 'dark.50' : 'dark.300'}
+                borderBottom="1px solid"
+                borderRight="1px solid"
+                borderColor="whiteAlpha.120"
+                borderLeft={index === 0 ? '1px solid' : 'none'}
+                borderLeftColor="whiteAlpha.120"
+                bg={category === 'All' ? 'whiteAlpha.50' : 'transparent'}
+                transition="all 0.35s"
+                _hover={{ color: 'dark.50', bg: 'whiteAlpha.50' }}
+              >
+                {category}
+              </Box>
+            ))}
+          </HStack>
         </Container>
       </Box>
 
+      <HorizontalStrip title="All projects" items={projectStrip} />
+
       <Box pb={sectionPy}>
-        <Container maxW="container.xl">
+        <Container maxW="1440px">
           <MotionGrid
-            templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
-            gap={gridGap}
+            templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}
+            gap={0}
+            borderTop="1px solid"
+            borderColor="whiteAlpha.120"
             variants={staggerContainer}
             initial={reducedMotion ? false : 'hidden'}
             whileInView="visible"
             viewport={viewportOnce}
           >
-            {allProjects.map((project) => (
+            {featuredProjects.map((project) => (
               <MotionBox
                 key={project.id}
                 variants={staggerItem}
                 position="relative"
                 role="group"
-                cursor="pointer"
-                whileHover={reducedMotion ? undefined : { y: -5 }}
+                borderBottom="1px solid"
+                borderRight={{ md: '1px solid' }}
+                borderColor="whiteAlpha.120"
+                overflow="hidden"
+                initial="rest"
+                whileHover={reducedMotion ? undefined : 'hover'}
               >
-                <Box position="relative" overflow="hidden" aspectRatio={4 / 3}>
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    objectFit="cover"
-                    w="full"
-                    h="full"
-                    transition="transform 0.55s cubic-bezier(0.22, 1, 0.36, 1)"
-                    _groupHover={{ transform: 'scale(1.04)' }}
-                  />
+                <Box position="relative" overflow="hidden" aspectRatio={16 / 10}>
+                  <MotionBox position="absolute" inset={0} variants={imageHover}>
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      objectFit="cover"
+                      w="full"
+                      h="full"
+                    />
+                  </MotionBox>
                   <Box
                     position="absolute"
                     inset={0}
-                    bg="linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.3) 50%, transparent 100%)"
-                  />
-
-                  {project.featured && (
-                    <Box
-                      position="absolute"
-                      top={4}
-                      left={4}
-                      px={3}
-                      py={1}
-                      bg="brand.600"
-                      color="white"
-                      fontSize="xs"
-                      fontWeight="600"
-                      letterSpacing="0.08em"
-                    >
-                      Featured
-                    </Box>
-                  )}
-
-                  <Icon
-                    as={FiArrowUpRight}
-                    position="absolute"
-                    top={4}
-                    right={4}
-                    boxSize={6}
-                    color="white"
-                    opacity={0}
-                    transform="translateY(10px)"
-                    _groupHover={{ opacity: 1, transform: 'translateY(0)' }}
-                    transition="all 0.25s ease-out"
+                    bgGradient="linear(to-t, rgba(0,0,0,0.9) 0%, transparent 55%)"
                   />
                 </Box>
 
-                <Box p={{ base: 5, md: 6 }} bg="dark.700">
-                  <HStack spacing={4} mb={3} flexWrap="wrap">
-                    <Text variant="eyebrow" fontSize="2xs">
-                      {project.category}
-                    </Text>
-                    <Text fontSize="xs" color="dark.300" sx={{ fontVariantNumeric: 'tabular-nums' }}>
-                      {project.year}
-                    </Text>
+                <VStack align="flex-start" p={{ base: 6, md: 8 }} spacing={3}>
+                  <HStack spacing={4}>
+                    <Text variant="caption">{project.category}</Text>
+                    <Text variant="date">{project.year}</Text>
                   </HStack>
-
-                  <Heading
-                    fontSize={{ base: 'lg', md: 'xl' }}
-                    fontWeight="400"
-                    mb={2}
-                    _groupHover={{ color: 'brand.300' }}
-                    transition="color 0.25s"
-                  >
+                  <Heading fontSize={{ base: 'lg', md: 'xl' }} fontWeight="400">
                     {project.title}
                   </Heading>
-
-                  <Text fontSize="sm" color="dark.200" mb={4} noOfLines={2} lineHeight="1.7">
+                  <Text fontSize="sm" color="dark.200" noOfLines={2} lineHeight="1.7">
                     {project.description}
                   </Text>
-
                   <HStack color="dark.300" fontSize="sm">
                     <Icon as={FiMapPin} />
                     <Text>{project.location}</Text>
                   </HStack>
-                </Box>
+                  <LearnMoreLink href="/#contact" size="sm">Learn more</LearnMoreLink>
+                </VStack>
               </MotionBox>
             ))}
           </MotionGrid>
         </Container>
       </Box>
 
-      <Reveal>
-        <Box py={sectionPy} bg="dark.50" color="dark.900">
-          <Container maxW="container.xl" textAlign="center">
-            <VStack spacing={{ base: 5, md: 6 }} maxW="36rem" mx="auto" px={{ base: 2, sm: 0 }}>
-              <Text variant="eyebrow" color="brand.600">New work</Text>
-              <Heading fontSize="display-md" fontWeight="400" color="dark.900">
-                Have a project in mind?
-              </Heading>
-              <Text color="dark.400" lineHeight="1.8" fontWeight="300">
-                Share your brief and we will outline scope, team, and timeline within
-                two business days.
-              </Text>
-              <Button
-                as={NextLink}
-                href="/#contact"
-                size="lg"
-                minH="48px"
-                bg="dark.900"
-                color="dark.50"
-                _hover={{ bg: 'dark.700', transform: 'translateY(-1px)' }}
-              >
-                Start a conversation
-              </Button>
-            </VStack>
-          </Container>
-        </Box>
-      </Reveal>
+      <Box py={sectionPy} bg="dark.800" borderTop="1px solid" borderColor="whiteAlpha.120">
+        <Container maxW="1440px" textAlign="center">
+          <VStack spacing={6} maxW="32rem" mx="auto">
+            <Heading fontSize="display-md" fontWeight="400">
+              Have a project in mind?
+            </Heading>
+            <Text variant="lead" maxW="none" mx="auto" textAlign="center">
+              Share your brief and we will outline scope, team, and timeline within
+              two business days.
+            </Text>
+            <Box as={NextLink} href="/#contact">
+              <LearnMoreLink href="/#contact">Start a conversation</LearnMoreLink>
+            </Box>
+          </VStack>
+        </Container>
+      </Box>
+
+      <SiteFooter />
     </Box>
   );
 }
