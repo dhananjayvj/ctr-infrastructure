@@ -16,6 +16,7 @@ import { FiMapPin } from 'react-icons/fi';
 import NextLink from 'next/link';
 import { HorizontalStrip } from '@/components/audi/HorizontalStrip';
 import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SiteFooter } from '@/components/SiteFooter';
 import { projectStrip, featuredProjects } from '@/lib/content';
 import { heroStagger, heroItem, staggerContainer, staggerItem, viewportOnce, imageHover } from '@/lib/motion';
@@ -34,6 +35,8 @@ export default function ProjectsPage() {
     <Box as="main" bg="dark.900" overflowX="hidden">
       <Box pt={pageTopPad} pb={sectionPy}>
         <Container maxW="1440px">
+          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Projects' }]} />
+
           <LearnMoreLink href="/" size="sm">
             Back to home
           </LearnMoreLink>
@@ -164,8 +167,8 @@ export default function ProjectsPage() {
               Have a project in mind?
             </Heading>
             <Text variant="lead" maxW="none" mx="auto" textAlign="center">
-              Share your brief and we will outline scope, team, and timeline within
-              two business days.
+              Share your brief and we will respond within 24 hours with scope,
+              team, and timeline.
             </Text>
             <Box as={NextLink} href="/#contact">
               <LearnMoreLink href="/#contact">Start a conversation</LearnMoreLink>

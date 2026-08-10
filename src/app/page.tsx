@@ -39,6 +39,8 @@ import { sectionPyLg, gridGap } from '@/lib/spacing';
 const MotionBox = motion(Box);
 const MotionGrid = motion(Grid);
 
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+
 export default function HomePage() {
   const reducedMotion = useReducedMotion();
 
@@ -301,16 +303,40 @@ export default function HomePage() {
                   </HStack>
                 ))}
               </VStack>
+
+              <LearnMoreLink href="/faq" size="sm">
+                Have questions? Read our FAQs
+              </LearnMoreLink>
             </VStack>
 
-            <Box as="form" p={{ base: 6, md: 10 }} border="1px solid" borderColor="whiteAlpha.120" bg="dark.900">
+            <Box
+              as="form"
+              action={FORMSPREE_ENDPOINT}
+              method="POST"
+              p={{ base: 6, md: 10 }}
+              border="1px solid"
+              borderColor="whiteAlpha.120"
+              bg="dark.900"
+            >
               <VStack spacing={5}>
+                <Box as="input" type="text" name="_gotcha" display="none" tabIndex={-1} autoComplete="off" />
+                <Box as="input" type="hidden" name="_next" value="https://ctrinfrastructure.com/thank-you/" />
+                <Box as="input" type="hidden" name="_subject" value="New enquiry from ctrinfrastructure.com" />
+
                 <Grid templateColumns={{ base: '1fr', sm: '1fr 1fr' }} gap={4} w="full">
-                  {['First name', 'Last name'].map((label) => (
-                    <Box key={label}>
-                      <Text variant="caption" mb={2}>{label}</Text>
+                  {[
+                    { label: 'First name', name: 'first_name' },
+                    { label: 'Last name', name: 'last_name' },
+                  ].map((field) => (
+                    <Box key={field.name}>
+                      <Text as="label" htmlFor={field.name} variant="caption" mb={2} display="block">
+                        {field.label}
+                      </Text>
                       <Box
                         as="input"
+                        id={field.name}
+                        name={field.name}
+                        required
                         w="full"
                         p={4}
                         bg="transparent"
@@ -324,10 +350,13 @@ export default function HomePage() {
                   ))}
                 </Grid>
                 <Box w="full">
-                  <Text variant="caption" mb={2}>Email</Text>
+                  <Text as="label" htmlFor="email" variant="caption" mb={2} display="block">Email</Text>
                   <Box
                     as="input"
+                    id="email"
+                    name="email"
                     type="email"
+                    required
                     w="full"
                     p={4}
                     bg="transparent"
@@ -339,9 +368,12 @@ export default function HomePage() {
                   />
                 </Box>
                 <Box w="full">
-                  <Text variant="caption" mb={2}>Message</Text>
+                  <Text as="label" htmlFor="message" variant="caption" mb={2} display="block">Message</Text>
                   <Box
                     as="textarea"
+                    id="message"
+                    name="message"
+                    required
                     w="full"
                     p={4}
                     h="140px"
@@ -363,6 +395,9 @@ export default function HomePage() {
                 >
                   Send message
                 </Button>
+                <Text fontSize="xs" color="dark.300" textAlign="center">
+                  We respond to every enquiry within 24 hours.
+                </Text>
               </VStack>
             </Box>
           </Grid>

@@ -8,11 +8,12 @@ const footerNav = [
   { label: 'Projects', href: '/projects' },
   { label: 'Services', href: '/#services' },
   { label: 'About', href: '/#about' },
+  { label: 'FAQs', href: '/faq' },
   { label: 'Contact', href: '/#contact' },
 ];
 
 const legalLinks = [
-  { label: 'Privacy', href: '#' },
+  { label: 'Privacy', href: '/privacy' },
   { label: 'Legal', href: '#' },
   { label: 'Imprint', href: '#' },
 ];
@@ -94,7 +95,14 @@ export function SiteFooter() {
           </Text>
           <HStack spacing={6}>
             {legalLinks.map((item) => (
-              <Link key={item.label} href={item.href} fontSize="xs" color="dark.400" _hover={{ color: 'dark.200' }}>
+              <Link
+                key={item.label}
+                as={item.href.startsWith('/') ? NextLink : undefined}
+                href={item.href}
+                fontSize="xs"
+                color="dark.400"
+                _hover={{ color: 'dark.200' }}
+              >
                 {item.label}
               </Link>
             ))}
