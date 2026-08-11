@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Button, Container, Heading, HStack, Text, VStack } from '@chakra-ui/react';
+import { Box, Button, Container, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -17,18 +17,7 @@ export default function ThankYouPage() {
           </Box>
 
           <VStack spacing={6} py={{ base: 10, md: 16 }}>
-            <HStack spacing={1}>
-              {[0, 1, 2, 3].map((i) => (
-                <Box
-                  key={i}
-                  w="7px"
-                  h="7px"
-                  borderRadius="full"
-                  border="1.5px solid"
-                  borderColor="dark.50"
-                />
-              ))}
-            </HStack>
+            <Image src="/images/logo/ctr-logo-mark.png" alt="CTR Infrastructure" h="32px" w="auto" />
 
             <Heading fontSize="display-lg" fontWeight="300" lineHeight="1.1">
               Message received

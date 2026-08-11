@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Container, Flex, Grid, HStack, Link, Text, VStack } from '@chakra-ui/react';
+import { Box, Container, Flex, Grid, HStack, Image, Link, Text, VStack } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { sectionPySm } from '@/lib/spacing';
 
@@ -28,18 +28,7 @@ export function SiteFooter() {
           mb={{ base: 10, md: 14 }}
         >
           <VStack align="flex-start" spacing={4}>
-            <HStack spacing={1}>
-              {[0, 1, 2, 3].map((i) => (
-                <Box
-                  key={i}
-                  w="7px"
-                  h="7px"
-                  borderRadius="full"
-                  border="1.5px solid"
-                  borderColor="dark.50"
-                />
-              ))}
-            </HStack>
+            <Image src="/images/logo/ctr-logo-mark.png" alt="CTR Infrastructure" h="28px" w="auto" />
             <Text fontSize="sm" color="dark.300" lineHeight="1.7" maxW="18rem">
               Architecture and infrastructure for cities, campuses, and civic life.
             </Text>

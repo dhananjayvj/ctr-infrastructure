@@ -6,8 +6,8 @@ import {
   Heading,
   Text,
   Button,
+  Image,
   VStack,
-  HStack,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
@@ -58,18 +58,7 @@ export default function NotFound() {
             </Button>
           </Link>
 
-          <HStack spacing={1} pt={4}>
-            {[0, 1, 2, 3].map((i) => (
-              <Box
-                key={i}
-                w="7px"
-                h="7px"
-                borderRadius="full"
-                border="1.5px solid"
-                borderColor="dark.400"
-              />
-            ))}
-          </HStack>
+          <Image src="/images/logo/ctr-logo-mark.png" alt="" h="24px" w="auto" opacity={0.6} pt={4} />
         </VStack>
       </Container>
     </Box>

@@ -9,6 +9,7 @@ import {
   Text,
   Link,
   IconButton,
+  Image,
   VStack,
 } from '@chakra-ui/react';
 import {
@@ -99,18 +100,12 @@ export function SiteHeader() {
           <Flex h={HEADER_HEIGHT} align="center" justify="space-between" gap={4}>
             <Link as={NextLink} href="/" _hover={{ textDecoration: 'none', opacity: 0.9 }} onClick={closeMenu}>
               <HStack spacing={3}>
-                <HStack spacing={1}>
-                  {[0, 1, 2, 3].map((i) => (
-                    <Box
-                      key={i}
-                      w={{ base: '7px', md: '8px' }}
-                      h={{ base: '7px', md: '8px' }}
-                      borderRadius="full"
-                      border="1.5px solid"
-                      borderColor="dark.50"
-                    />
-                  ))}
-                </HStack>
+                <Image
+                  src="/images/logo/ctr-logo-mark.png"
+                  alt="CTR Infrastructure"
+                  h={{ base: '22px', md: '26px' }}
+                  w="auto"
+                />
                 <Text
                   fontSize={{ base: 'xs', md: 'sm' }}
                   fontWeight="600"
