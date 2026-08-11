@@ -39,7 +39,7 @@ import { sectionPyLg, gridGap } from '@/lib/spacing';
 const MotionBox = motion(Box);
 const MotionGrid = motion(Grid);
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnpadjev';
 
 export default function HomePage() {
   const reducedMotion = useReducedMotion();
