@@ -5,7 +5,7 @@ import { Box } from '@chakra-ui/react';
 import { useReducedMotion } from 'framer-motion';
 import styles from './InitialLoader.module.css';
 
-const DISPLAY_MS = 2500;
+const DISPLAY_MS = 2800;
 const FADE_MS = 450;
 const REDUCED_MOTION_DISPLAY_MS = 200;
 
@@ -41,15 +41,9 @@ export function InitialLoader() {
       aria-hidden="true"
     >
       <div className={styles.loader}>
-        <div className={`${styles.box} ${styles.box0}`}><div /></div>
-        <div className={`${styles.box} ${styles.box1}`}><div /></div>
-        <div className={`${styles.box} ${styles.box2}`}><div /></div>
-        <div className={`${styles.box} ${styles.box3}`}><div /></div>
-        <div className={`${styles.box} ${styles.box4}`}><div /></div>
-        <div className={`${styles.box} ${styles.box5}`}><div /></div>
-        <div className={`${styles.box} ${styles.box6}`}><div /></div>
-        <div className={`${styles.box} ${styles.box7}`}><div /></div>
-        <div className={styles.ground}><div /></div>
+        {Array.from({ length: 9 }).map((_, i) => (
+          <div key={i} className={styles.box} />
+        ))}
       </div>
     </Box>
   );

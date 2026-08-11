@@ -123,7 +123,7 @@ export default function HomePage() {
               mr={{ lg: 0 }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=85"
+                src="/images/projects/ganeshan-residence/1.jpg"
                 alt="CTR Infrastructure projects"
                 objectFit="cover"
                 w="full"

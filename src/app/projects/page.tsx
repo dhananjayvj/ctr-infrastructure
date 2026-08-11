@@ -13,7 +13,6 @@ import {
 } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { FiMapPin } from 'react-icons/fi';
-import NextLink from 'next/link';
 import { HorizontalStrip } from '@/components/audi/HorizontalStrip';
 import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -26,7 +25,7 @@ const MotionBox = motion(Box);
 const MotionGrid = motion(Grid);
 const MotionVStack = motion(VStack);
 
-const categories = ['All', 'Commercial', 'Residential', 'Infrastructure', 'Cultural'];
+const categories = ['All', 'Commercial', 'Residential', 'Infrastructure'];
 
 export default function ProjectsPage() {
   const reducedMotion = useReducedMotion();
@@ -170,9 +169,7 @@ export default function ProjectsPage() {
               Share your brief and we will respond within 24 hours with scope,
               team, and timeline.
             </Text>
-            <Box as={NextLink} href="/#contact">
-              <LearnMoreLink href="/#contact">Start a conversation</LearnMoreLink>
-            </Box>
+            <LearnMoreLink href="/#contact">Start a conversation</LearnMoreLink>
           </VStack>
         </Container>
       </Box>
