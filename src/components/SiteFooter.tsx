@@ -7,7 +7,7 @@ import { sectionPySm } from '@/lib/spacing';
 const footerNav = [
   { label: 'Projects', href: '/projects' },
   { label: 'Services', href: '/#services' },
-  { label: 'About', href: '/#about' },
+  { label: 'About', href: '/about' },
   { label: 'FAQs', href: '/faq' },
   { label: 'Contact', href: '/#contact' },
 ];

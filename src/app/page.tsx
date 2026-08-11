@@ -209,28 +209,30 @@ export default function HomePage() {
             >
               <VStack align="flex-start" spacing={6}>
                 <Heading fontSize="display-md" fontWeight="400">
-                  Shaping skylines since 1999
+                  A legacy spanning more than 60 years
                 </Heading>
                 <Text variant="lead" maxW="none">
-                  For more than twenty-five years, CTR Infrastructure has delivered
-                  civic, commercial, and cultural work across Canada.
+                  Officially established in 1990 and building on a foundation laid
+                  in the 1960s, CTR Infrastructure has delivered architecture and
+                  infrastructure work across South India.
                 </Text>
                 <Text variant="body" maxW="none">
-                  We begin every commission by understanding site, program, and context.
-                  The result is architecture that reads clearly at street level and holds
-                  up over decades of use.
+                  Our design approach is rooted in clarity, climate sensitivity,
+                  and material honesty — integrating planning, design, and
+                  execution into work that is thoughtful, efficient, and deeply
+                  connected to context.
                 </Text>
                 <HStack spacing={10} pt={2}>
                   <VStack align="flex-start" spacing={1}>
-                    <Text variant="stat" fontSize="2xl">85+</Text>
-                    <Text variant="caption">Team members</Text>
+                    <Text variant="stat" fontSize="2xl">1960s</Text>
+                    <Text variant="caption">Legacy begins</Text>
                   </VStack>
                   <VStack align="flex-start" spacing={1}>
-                    <Text variant="stat" fontSize="2xl">$2.1B</Text>
-                    <Text variant="caption">Built project value</Text>
+                    <Text variant="stat" fontSize="2xl">1990</Text>
+                    <Text variant="caption">CTR Infrastructure founded</Text>
                   </VStack>
                 </HStack>
-                <LearnMoreLink href="/#contact">Meet the team</LearnMoreLink>
+                <LearnMoreLink href="/about">Learn our story</LearnMoreLink>
               </VStack>
             </MotionBox>
           </Grid>

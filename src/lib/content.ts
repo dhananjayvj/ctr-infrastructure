@@ -66,7 +66,7 @@ export const quickLinks: QuickLink[] = [
   { label: 'At a glance', href: '/#about' },
   { label: 'Projects', href: '/projects' },
   { label: 'Services', href: '/#services' },
-  { label: 'About', href: '/#about' },
+  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/#contact' },
   { label: 'Media', href: '/#news' },
 ];
@@ -88,7 +88,7 @@ export const featureTiles: FeatureTile[] = [
     title: 'Behind the scenes',
     subtitle: 'How CTR is raising the bar on design efficiency',
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80',
-    href: '/#about',
+    href: '/about',
   },
   {
     id: 2,
@@ -109,7 +109,7 @@ export const featureTiles: FeatureTile[] = [
     title: 'Key statements',
     subtitle: 'Leadership on technological transformation in architecture',
     image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=900&q=80',
-    href: '/#about',
+    href: '/about',
   },
   {
     id: 5,
@@ -164,9 +164,9 @@ export const newsItems: NewsItem[] = [
 
 export const stats = [
   { number: '150+', label: 'Projects completed' },
-  { number: '25', label: 'Years experience' },
+  { number: '60+', label: 'Years legacy' },
   { number: '40+', label: 'Awards won' },
-  { number: '12', label: 'Countries' },
+  { number: '4+', label: 'States across South India' },
 ];
 
 export const services = [
