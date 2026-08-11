@@ -7,23 +7,19 @@ import { sectionPySm } from '@/lib/spacing';
 const footerNav = [
   { label: 'Projects', href: '/projects' },
   { label: 'Services', href: '/#services' },
-  { label: 'About', href: '/about' },
+  { label: 'About', href: '/#about' },
   { label: 'FAQs', href: '/faq' },
   { label: 'Contact', href: '/#contact' },
 ];
 
-const legalLinks = [
-  { label: 'Privacy', href: '/privacy' },
-  { label: 'Legal', href: '#' },
-  { label: 'Imprint', href: '#' },
-];
+const legalLinks = [{ label: 'Privacy', href: '/privacy' }];
 
 export function SiteFooter() {
   return (
     <Box as="footer" bg="dark.900" borderTop="1px solid" borderColor="whiteAlpha.120">
       <Container maxW="1440px" py={sectionPySm}>
         <Grid
-          templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
+          templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}
           gap={{ base: 10, md: 12 }}
           mb={{ base: 10, md: 14 }}
         >
@@ -51,23 +47,6 @@ export function SiteFooter() {
               </Link>
             ))}
           </VStack>
-
-          <VStack align="flex-start" spacing={3}>
-            <Text fontSize="xs" fontWeight="600" letterSpacing="0.08em" color="dark.300">
-              Connect
-            </Text>
-            {['LinkedIn', 'Instagram', 'Behance'].map((item) => (
-              <Link
-                key={item}
-                href="#"
-                fontSize="sm"
-                color="dark.200"
-                _hover={{ color: 'dark.50' }}
-              >
-                {item}
-              </Link>
-            ))}
-          </VStack>
         </Grid>
 
         <Flex
@@ -86,7 +65,7 @@ export function SiteFooter() {
             {legalLinks.map((item) => (
               <Link
                 key={item.label}
-                as={item.href.startsWith('/') ? NextLink : undefined}
+                as={NextLink}
                 href={item.href}
                 fontSize="xs"
                 color="dark.400"

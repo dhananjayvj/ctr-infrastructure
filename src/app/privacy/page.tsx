@@ -28,7 +28,7 @@ const sections = [
   },
   {
     title: 'Contact us',
-    body: 'Questions about this policy can be directed to hello@ctrinfrastructure.com or +1 (604) 555-1234.',
+    body: 'Questions about this policy can be directed to hello@ctrinfrastructure.com.',
   },
 ];
 

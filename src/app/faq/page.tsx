@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Where are you based, and what regions do you work in?',
     answer:
-      'We are headquartered in Vancouver, BC, and have delivered 150+ projects across Canada and select international markets in 12 countries over the past 25 years.',
+      'We are headquartered in Tamil Nadu, South India, with a legacy spanning more than 60 years and projects delivered across 4+ states in South India.',
   },
   {
     question: 'How long does a typical project take?',
