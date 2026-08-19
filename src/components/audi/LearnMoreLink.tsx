@@ -28,8 +28,7 @@ export function LearnMoreLink({
       fontWeight="500"
       w="fit-content"
       role="group"
-      transition="transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)"
-      _hover={{ textDecoration: 'none', opacity: 0.9, transform: 'translateX(2px)' }}
+      _hover={{ textDecoration: 'none', opacity: 0.85 }}
     >
       <Text
         borderBottom="1px solid"
@@ -70,18 +69,18 @@ export function QuickNavPills({ links }: QuickNavPillsProps) {
           as={NextLink}
           href={link.href}
           flexShrink={0}
-          px={{ base: 4, md: 6 }}
+          px={{ base: 5, md: 8 }}
           py={{ base: 4, md: 5 }}
           fontSize="sm"
-          fontWeight="600"
-          color="dark.100"
+          fontWeight="500"
+          color="dark.200"
           borderRight="1px solid"
           borderColor="whiteAlpha.120"
           whiteSpace="nowrap"
           transition="all 0.35s"
           _hover={{
             color: 'dark.50',
-            bg: 'surface.100',
+            bg: 'whiteAlpha.50',
             textDecoration: 'none',
           }}
           _last={{ borderRight: 'none' }}

@@ -13,25 +13,25 @@ export function HorizontalStrip({ title, items }: HorizontalStripProps) {
   return (
     <Box as="section" py={{ base: 10, md: 14 }} bg="dark.900">
       <Text
-        px={{ base: 4, md: 12 }}
+        px={{ base: 5, md: 14 }}
         mb={{ base: 6, md: 8 }}
         fontSize={{ base: 'xl', md: '2xl' }}
-        fontWeight="500"
+        fontWeight="400"
       >
         {title}
       </Text>
-      <Box className="audi-scroll-strip" px={{ base: 4, md: 12 }} gap={0}>
+      <Box className="audi-scroll-strip" px={{ base: 5, md: 14 }} gap={0}>
         {items.map((item, index) => (
           <Box
             key={item.id}
             as={NextLink}
             href={item.href}
             flexShrink={0}
-            px={{ base: 4, md: 6 }}
+            px={{ base: 5, md: 8 }}
             py={4}
             fontSize={{ base: 'sm', md: 'md' }}
-            fontWeight="600"
-            color="dark.100"
+            fontWeight="500"
+            color="dark.200"
             borderTop="1px solid"
             borderBottom="1px solid"
             borderColor="whiteAlpha.120"
@@ -41,7 +41,7 @@ export function HorizontalStrip({ title, items }: HorizontalStripProps) {
             transition="all 0.35s"
             _hover={{
               color: 'dark.50',
-              bg: 'surface.100',
+              bg: 'whiteAlpha.50',
               textDecoration: 'none',
             }}
           >

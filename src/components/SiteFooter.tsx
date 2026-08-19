@@ -25,13 +25,13 @@ export function SiteFooter() {
         >
           <VStack align="flex-start" spacing={4}>
             <Image src="/images/logo/ctr-logo-mark.png" alt="CTR Infrastructure" h="28px" w="auto" />
-            <Text fontSize="sm" color="dark.100" lineHeight="1.7" maxW="22rem">
-              Architecture, infrastructure, and planning for civic, commercial, and residential environments across South India.
+            <Text fontSize="sm" color="dark.300" lineHeight="1.7" maxW="18rem">
+              Architecture and infrastructure for cities, campuses, and civic life.
             </Text>
           </VStack>
 
           <VStack align="flex-start" spacing={3}>
-            <Text fontSize="xs" fontWeight="700" letterSpacing="0.12em" textTransform="uppercase" color="brand.300">
+            <Text fontSize="xs" fontWeight="600" letterSpacing="0.08em" color="dark.300">
               Navigation
             </Text>
             {footerNav.map((item) => (
@@ -40,7 +40,7 @@ export function SiteFooter() {
                 as={NextLink}
                 href={item.href}
                 fontSize="sm"
-                color="dark.100"
+                color="dark.200"
                 _hover={{ color: 'dark.50', textDecoration: 'none' }}
               >
                 {item.label}
@@ -58,7 +58,7 @@ export function SiteFooter() {
           borderTop="1px solid"
           borderColor="whiteAlpha.120"
         >
-          <Text fontSize="xs" color="dark.300">
+          <Text fontSize="xs" color="dark.400">
             © 2026 CTR Infrastructure. All rights reserved.
           </Text>
           <HStack spacing={6}>
@@ -68,8 +68,8 @@ export function SiteFooter() {
                 as={NextLink}
                 href={item.href}
                 fontSize="xs"
-                color="dark.300"
-                _hover={{ color: 'dark.100' }}
+                color="dark.400"
+                _hover={{ color: 'dark.200' }}
               >
                 {item.label}
               </Link>
