@@ -71,7 +71,7 @@ export function SiteHeader() {
     return pathname === href;
   };
 
-  const headerBg = scrolled ? 'rgba(0, 0, 0, 0.96)' : 'transparent';
+  const headerBg = scrolled ? 'rgba(6, 11, 19, 0.88)' : 'transparent';
   const headerBorder = scrolled ? 'whiteAlpha.120' : 'transparent';
 
   return (
@@ -111,6 +111,7 @@ export function SiteHeader() {
                   fontWeight="600"
                   letterSpacing="0.12em"
                   textTransform="uppercase"
+                  color="dark.50"
                   display={{ base: 'none', sm: 'block' }}
                 >
                   CTR Infrastructure
@@ -128,8 +129,8 @@ export function SiteHeader() {
                     href={item.href}
                     fontSize="sm"
                     fontWeight={active ? '600' : '400'}
-                    color={active ? 'dark.50' : 'dark.200'}
-                    _hover={{ color: 'dark.50', textDecoration: 'none' }}
+                    color={active ? 'dark.50' : 'dark.100'}
+                    _hover={{ color: 'brand.300', textDecoration: 'none' }}
                     transition="color 0.35s"
                   >
                     {item.label}
@@ -212,7 +213,7 @@ export function SiteHeader() {
                       ease: [0.25, 0.1, 0.25, 1],
                     }}
                     borderBottom="1px solid"
-                    borderColor="whiteAlpha.80"
+                    borderColor="whiteAlpha.120"
                   >
                     <Link
                       as={NextLink}

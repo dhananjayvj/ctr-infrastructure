@@ -115,12 +115,13 @@ export default function HomePage() {
       {/* Discover CTA — Audi "Discover the Models" pattern */}
       <Box as="section" py={{ base: 16, md: 24 }} bg="dark.900">
         <Container maxW="1440px">
-          <Grid templateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap={{ base: 10, lg: 0 }}>
+          <Grid templateColumns={{ base: '1fr', lg: '1.05fr 0.95fr' }} gap={{ base: 10, lg: 8 }}>
             <Box
               position="relative"
               overflow="hidden"
               minH={{ base: '320px', md: '480px' }}
-              mr={{ lg: 0 }}
+              border="1px solid"
+              borderColor="whiteAlpha.120"
             >
               <Image
                 src="/images/projects/ganeshan-residence/1.jpg"
@@ -130,24 +131,28 @@ export default function HomePage() {
                 h="full"
                 position="absolute"
                 inset={0}
-                filter="brightness(0.7)"
+                filter="brightness(0.62)"
+              />
+              <Box
+                position="absolute"
+                inset={0}
+                bgGradient="linear(to-t, rgba(6,11,19,0.82) 0%, rgba(6,11,19,0.24) 60%, rgba(6,11,19,0.18) 100%)"
               />
             </Box>
             <Flex
               direction="column"
               justify="center"
-              px={{ base: 0, lg: 14 }}
-              py={{ base: 4, lg: 12 }}
+              px={{ base: 0, lg: 10 }}
+              py={{ base: 4, lg: 10 }}
             >
-              <Text variant="caption" mb={4} color="dark.300">
-                Information on the projects
+              <Text variant="eyebrow" mb={4}>
+                Portfolio overview
               </Text>
-              <Heading fontSize="display-lg" fontWeight="400" mb={5}>
-                Discover the CTR portfolio
+              <Heading fontSize="display-lg" fontWeight="500" mb={5} maxW="12ch">
+                Discover the built work behind the practice
               </Heading>
               <Text variant="lead" maxW="none" mb={8}>
-                Find featured work, sector expertise, and commissioning information
-                for commercial, residential, and civic projects.
+                Review selected projects, sector expertise, and commissioning pathways for commercial, residential, and civic work.
               </Text>
               <LearnMoreLink href="/projects">Discover CTR Projects</LearnMoreLink>
             </Flex>
@@ -166,9 +171,16 @@ export default function HomePage() {
           >
             <SimpleGrid columns={{ base: 2, md: 4 }} spacing={{ base: 8, md: 12 }}>
               {stats.map((stat) => (
-                <MotionBox key={stat.label} variants={staggerItem}>
+                <MotionBox
+                  key={stat.label}
+                  variants={staggerItem}
+                  p={{ base: 4, md: 5 }}
+                  bg="surface.100"
+                  border="1px solid"
+                  borderColor="whiteAlpha.120"
+                >
                   <Text variant="stat">{stat.number}</Text>
-                  <Text variant="caption" mt={2} textTransform="none">
+                  <Text variant="caption" mt={2} color="dark.100">
                     {stat.label}
                   </Text>
                 </MotionBox>
@@ -187,13 +199,13 @@ export default function HomePage() {
       <Box as="section" id="services" py={sectionPyLg} bg="dark.800">
         <Container maxW="1440px">
           <Grid templateColumns={{ base: '1fr', lg: '1fr 2fr' }} gap={{ base: 10, lg: 20 }}>
-            <VStack align="flex-start" spacing={5} maxW="28rem">
-              <Heading fontSize="display-md" fontWeight="400">
-                Design services across scale
+            <VStack align="flex-start" spacing={5} maxW="30rem">
+              <Text variant="eyebrow">Integrated services</Text>
+              <Heading fontSize="display-md" fontWeight="500">
+                Design services across architecture and infrastructure
               </Heading>
               <Text variant="body" maxW="none">
-                From early feasibility through construction administration, we lead
-                architecture, infrastructure, and planning with one integrated team.
+                From feasibility to construction administration, CTR leads architecture, infrastructure, and planning through one coordinated technical team.
               </Text>
               <LearnMoreLink href="/#contact">Discuss a project</LearnMoreLink>
             </VStack>
@@ -213,22 +225,24 @@ export default function HomePage() {
                   p={{ base: 6, md: 8 }}
                   border="1px solid"
                   borderColor="whiteAlpha.120"
-                  _hover={{ borderColor: 'whiteAlpha.300', bg: 'whiteAlpha.30' }}
+                  bg="surface.100"
+                  minH="100%"
+                  _hover={{ borderColor: 'brand.400', bg: 'surface.200', transform: 'translateY(-2px)' }}
                   transition="all 0.45s"
                   role="group"
                 >
                   <Text
                     fontSize="sm"
-                    color="dark.300"
+                    color="brand.300"
                     mb={4}
                     sx={{ fontVariantNumeric: 'tabular-nums' }}
                   >
                     {service.number}
                   </Text>
-                  <Heading fontSize="lg" fontWeight="500" mb={3}>
+                  <Heading fontSize="xl" fontWeight="500" mb={3}>
                     {service.title}
                   </Heading>
-                  <Text fontSize="sm" color="dark.200" lineHeight="1.7">
+                  <Text fontSize="sm" color="dark.100" lineHeight="1.7">
                     {service.description}
                   </Text>
                 </MotionBox>
@@ -242,23 +256,20 @@ export default function HomePage() {
       <Box as="section" id="about" py={sectionPyLg} bg="dark.900">
         <Container maxW="1440px">
           <VStack align="flex-start" spacing={4} mb={{ base: 14, md: 16 }} maxW="42rem">
-            <Text variant="caption">About Us</Text>
-            <Heading fontSize="display-lg" fontWeight="300" lineHeight="1.1">
+            <Text variant="eyebrow">About the studio</Text>
+            <Heading fontSize="display-lg" fontWeight="500" lineHeight="1.02" maxW="12ch">
               CTR Infrastructure
             </Heading>
             <Text variant="lead" maxW="none">
-              Architecture is a deeply contextual and collaborative practice. We
-              view each project as an opportunity to create spaces that are
-              responsive — to their environment, to their users, and to the
-              culture they emerge from.
+              CTR approaches architecture as a contextual and collaborative discipline, balancing climate, materials, technical performance, and long-term use in every commission.
             </Text>
           </VStack>
 
           {/* Our Legacy */}
           <Reveal>
             <VStack align="flex-start" spacing={5} maxW="42rem" pb={{ base: 14, md: 16 }}>
-              <Text variant="caption">Our Legacy</Text>
-              <Heading fontSize="display-md" fontWeight="400">
+              <Text variant="eyebrow">Our legacy</Text>
+              <Heading fontSize="display-md" fontWeight="500">
                 A legacy of more than 60 years
               </Heading>
               <Text variant="body" maxW="none">
@@ -268,7 +279,7 @@ export default function HomePage() {
                 water resources and landscape development, setting a vision
                 rooted in sustainability and environmental sensitivity.
               </Text>
-              <Text color="dark.200" lineHeight="1.7" maxW="none">
+              <Text color="dark.100" lineHeight="1.7" maxW="none">
                 Today, the firm is led by Er. C. Thillairajan, Managing
                 Director and Past President of the Federation of all Civil
                 Engineers Association of Tamil Nadu and Pondicherry
@@ -296,8 +307,8 @@ export default function HomePage() {
           >
             <Reveal>
               <VStack align="flex-start" spacing={5}>
-                <Text variant="caption">Our Reach</Text>
-                <Heading fontSize="display-md" fontWeight="400">
+                <Text variant="eyebrow">Our reach</Text>
+                <Heading fontSize="display-md" fontWeight="500">
                   Rooted in South India
                 </Heading>
                 <Text variant="body" maxW="none">
@@ -306,7 +317,7 @@ export default function HomePage() {
                   with projects ranging from rural landscapes to dense urban
                   contexts throughout Tamil Nadu.
                 </Text>
-                <Text color="dark.200" lineHeight="1.7" maxW="none">
+                <Text color="dark.100" lineHeight="1.7" maxW="none">
                   Regardless of location or scale, our core philosophies remain
                   unchanged: thoughtful consideration of the environment, a deep
                   respect for local materials and cultural narratives, and a
@@ -319,9 +330,15 @@ export default function HomePage() {
             <Reveal delay={0.1}>
               <SimpleGrid columns={3} spacing={{ base: 6, md: 8 }}>
                 {reachStats.map((stat) => (
-                  <Box key={stat.label}>
+                  <Box
+                    key={stat.label}
+                    p={{ base: 4, md: 5 }}
+                    bg="surface.100"
+                    border="1px solid"
+                    borderColor="whiteAlpha.120"
+                  >
                     <Text variant="stat">{stat.number}</Text>
-                    <Text variant="caption" mt={2} textTransform="none">
+                    <Text variant="caption" mt={2} color="dark.100">
                       {stat.label}
                     </Text>
                   </Box>
@@ -340,8 +357,8 @@ export default function HomePage() {
           >
             <Reveal>
               <VStack align="flex-start" spacing={5} maxW="28rem">
-                <Text variant="caption">Architecture</Text>
-                <Heading fontSize="display-md" fontWeight="400">
+                <Text variant="eyebrow">Architecture</Text>
+                <Heading fontSize="display-md" fontWeight="500">
                   A multidisciplinary studio
                 </Heading>
               </VStack>
@@ -357,7 +374,7 @@ export default function HomePage() {
                   policy and economics, currently led by Ar. Vishnu Raj T.T. and
                   Ar. Vaishnavi M. Pawar.
                 </Text>
-                <Text color="dark.200" lineHeight="1.7" maxW="none">
+                <Text color="dark.100" lineHeight="1.7" maxW="none">
                   Our work spans a wide range of sectors — from sustainable
                   engineering and healthcare design, to regenerative city
                   planning and temple architecture. None of these areas stand in
@@ -373,8 +390,8 @@ export default function HomePage() {
           <Box py={{ base: 16, md: 20 }} borderTop="1px solid" borderColor="whiteAlpha.120">
             <Reveal>
               <VStack align="flex-start" spacing={5} maxW="900px">
-                <Text variant="caption">About Our Work</Text>
-                <Heading fontSize="display-md" fontWeight="400">
+                <Text variant="eyebrow">About our work</Text>
+                <Heading fontSize="display-md" fontWeight="500">
                   A contextual, collaborative practice
                 </Heading>
                 <Text variant="body" maxW="none">
@@ -384,7 +401,7 @@ export default function HomePage() {
                   detail — from structure to finish — is considered and
                   cohesive.
                 </Text>
-                <Text color="dark.200" lineHeight="1.7" maxW="none">
+                <Text color="dark.100" lineHeight="1.7" maxW="none">
                   Led by a studio that values both creative exploration and
                   technical precision, we continuously engage with the evolving
                   needs of modern living, while remaining attuned to tradition,
@@ -397,8 +414,8 @@ export default function HomePage() {
           {/* Our Projects — sector grid */}
           <Box py={{ base: 16, md: 20 }} borderTop="1px solid" borderColor="whiteAlpha.120">
             <VStack align="flex-start" spacing={4} mb={{ base: 10, md: 14 }}>
-              <Text variant="caption">Diverse Works</Text>
-              <Heading fontSize="display-md" fontWeight="400">
+              <Text variant="eyebrow">Diverse works</Text>
+              <Heading fontSize="display-md" fontWeight="500">
                 Our Projects
               </Heading>
             </VStack>
@@ -418,16 +435,17 @@ export default function HomePage() {
                   p={{ base: 6, md: 8 }}
                   border="1px solid"
                   borderColor="whiteAlpha.120"
-                  _hover={{ borderColor: 'whiteAlpha.300', bg: 'whiteAlpha.30' }}
+                  bg="surface.100"
+                  _hover={{ borderColor: 'brand.400', bg: 'surface.200' }}
                   transition="all 0.45s"
                 >
-                  <Text fontSize="sm" color="dark.300" mb={4} sx={{ fontVariantNumeric: 'tabular-nums' }}>
+                  <Text fontSize="sm" color="brand.300" mb={4} sx={{ fontVariantNumeric: 'tabular-nums' }}>
                     {sector.number}
                   </Text>
-                  <Heading fontSize="lg" fontWeight="500" mb={3}>
+                  <Heading fontSize="xl" fontWeight="500" mb={3}>
                     {sector.title}
                   </Heading>
-                  <Text fontSize="sm" color="dark.200" lineHeight="1.7">
+                  <Text fontSize="sm" color="dark.100" lineHeight="1.7">
                     {sector.description}
                   </Text>
                 </MotionBox>
@@ -445,8 +463,8 @@ export default function HomePage() {
           >
             <Reveal>
               <VStack align="flex-start" spacing={5} maxW="28rem">
-                <Text variant="caption">Design Style</Text>
-                <Heading fontSize="display-md" fontWeight="400">
+                <Text variant="eyebrow">Design style</Text>
+                <Heading fontSize="display-md" fontWeight="500">
                   Timeless, contemporary, and rooted
                 </Heading>
                 <Text variant="body" maxW="none">
@@ -473,16 +491,17 @@ export default function HomePage() {
                   p={{ base: 6, md: 8 }}
                   border="1px solid"
                   borderColor="whiteAlpha.120"
-                  _hover={{ borderColor: 'whiteAlpha.300', bg: 'whiteAlpha.30' }}
+                  bg="surface.100"
+                  _hover={{ borderColor: 'brand.400', bg: 'surface.200' }}
                   transition="all 0.45s"
                 >
-                  <Text fontSize="sm" color="dark.300" mb={4} sx={{ fontVariantNumeric: 'tabular-nums' }}>
+                  <Text fontSize="sm" color="brand.300" mb={4} sx={{ fontVariantNumeric: 'tabular-nums' }}>
                     {pillar.number}
                   </Text>
-                  <Heading fontSize="lg" fontWeight="500" mb={3}>
+                  <Heading fontSize="xl" fontWeight="500" mb={3}>
                     {pillar.title}
                   </Heading>
-                  <Text fontSize="sm" color="dark.200" lineHeight="1.7">
+                  <Text fontSize="sm" color="dark.100" lineHeight="1.7">
                     {pillar.description}
                   </Text>
                 </MotionBox>
@@ -494,8 +513,8 @@ export default function HomePage() {
           <Box pt={{ base: 16, md: 20 }} borderTop="1px solid" borderColor="whiteAlpha.120" textAlign="center">
             <Reveal>
               <VStack spacing={6} maxW="36rem" mx="auto">
-                <Text variant="caption">Eco Design</Text>
-                <Heading fontSize="display-md" fontWeight="400">
+                <Text variant="eyebrow">Eco design</Text>
+                <Heading fontSize="display-md" fontWeight="500">
                   Sustainability as a starting point
                 </Heading>
                 <Text variant="lead" maxW="none" mx="auto" textAlign="center">
@@ -526,9 +545,9 @@ export default function HomePage() {
           <Grid templateColumns={{ base: '1fr', lg: '1fr 1fr' }} gap={{ base: 10, lg: 20 }}>
             <VStack align="flex-start" spacing={8}>
               <Box>
-                <Text variant="caption" mb={4}>Get in touch</Text>
-                <Heading fontSize="display-md" fontWeight="400">
-                  Let&apos;s create together
+                <Text variant="eyebrow" mb={4}>Get in touch</Text>
+                <Heading fontSize="display-md" fontWeight="500">
+                  Start a conversation about the next commission
                 </Heading>
               </Box>
 
@@ -552,6 +571,7 @@ export default function HomePage() {
                       h="48px"
                       border="1px solid"
                       borderColor="whiteAlpha.200"
+                      bg="surface.100"
                       display="flex"
                       alignItems="center"
                       justifyContent="center"
@@ -567,7 +587,7 @@ export default function HomePage() {
                             {line}
                           </Link>
                         ) : (
-                          <Text key={line} color="dark.100">{line}</Text>
+                          <Text key={line} color="dark.50">{line}</Text>
                         )
                       )}
                     </Box>
@@ -587,7 +607,8 @@ export default function HomePage() {
               p={{ base: 6, md: 10 }}
               border="1px solid"
               borderColor="whiteAlpha.120"
-              bg="dark.900"
+              bg="surface.200"
+              backdropFilter="blur(24px)"
             >
               <VStack spacing={5}>
                 <Box as="input" type="text" name="_gotcha" display="none" tabIndex={-1} autoComplete="off" />
@@ -610,12 +631,12 @@ export default function HomePage() {
                         required
                         w="full"
                         p={4}
-                        bg="transparent"
+                        bg="surface.100"
                         border="1px solid"
                         borderColor="whiteAlpha.200"
                         color="dark.50"
                         fontSize="sm"
-                        _focus={{ borderColor: 'dark.50', outline: 'none' }}
+                        _focus={{ borderColor: 'brand.400', outline: 'none', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                       />
                     </Box>
                   ))}
@@ -630,12 +651,12 @@ export default function HomePage() {
                     required
                     w="full"
                     p={4}
-                    bg="transparent"
+                    bg="surface.100"
                     border="1px solid"
                     borderColor="whiteAlpha.200"
                     color="dark.50"
                     fontSize="sm"
-                    _focus={{ borderColor: 'dark.50', outline: 'none' }}
+                    _focus={{ borderColor: 'brand.400', outline: 'none', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                   />
                 </Box>
                 <Box w="full">
@@ -648,13 +669,13 @@ export default function HomePage() {
                     w="full"
                     p={4}
                     h="140px"
-                    bg="transparent"
+                    bg="surface.100"
                     border="1px solid"
                     borderColor="whiteAlpha.200"
                     color="dark.50"
                     fontSize="sm"
                     resize="none"
-                    _focus={{ borderColor: 'dark.50', outline: 'none' }}
+                    _focus={{ borderColor: 'brand.400', outline: 'none', boxShadow: '0 0 0 1px var(--chakra-colors-brand-400)' }}
                   />
                 </Box>
                 <Button
@@ -666,7 +687,7 @@ export default function HomePage() {
                 >
                   Send message
                 </Button>
-                <Text fontSize="xs" color="dark.300" textAlign="center">
+                <Text fontSize="xs" color="dark.200" textAlign="center">
                   We respond to every enquiry within 24 hours.
                 </Text>
               </VStack>
