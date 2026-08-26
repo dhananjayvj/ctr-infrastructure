@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
+    "postbuild": "node scripts/configure-pages.mjs",
     "start": "npx serve@latest out -l 3000",
     "lint": "next lint"
   },

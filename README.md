@@ -1,6 +1,6 @@
 # CTR Infrastructure
 
-Architecture portfolio website for [CTR Infrastructure](https://ctrinfrastructure.com). Built with Next.js static export and hosted on **GitHub Pages**.
+Architecture portfolio website for CTR Infrastructure. Built with Next.js static export and hosted on **GitHub Pages**.
 
 **Repository:** [github.com/dhananjayvj/ctr-infrastructure](https://github.com/dhananjayvj/ctr-infrastructure)
 
@@ -28,36 +28,36 @@ Open [http://localhost:3000](http://localhost:3000).
 
 Every push to `main` automatically builds and deploys to GitHub Pages via the workflow in `.github/workflows/deploy.yml`.
 
+Production URL: [https://dhananjayvj.github.io/ctr-infrastructure/](https://dhananjayvj.github.io/ctr-infrastructure/)
+
 To deploy manually: push to `main`, or go to **Actions → Deploy to GitHub Pages → Run workflow**.
 
 ---
 
-## Custom Domain Setup (ctrinfrastructure.com)
-
-Domain is registered with **Squarespace**. DNS is configured in Squarespace; hosting is on **GitHub Pages**.
-
-### 1. GitHub Repository Settings
+## GitHub Pages Setup
 
 1. Open [github.com/dhananjayvj/ctr-infrastructure/settings/pages](https://github.com/dhananjayvj/ctr-infrastructure/settings/pages)
-2. Under **Build and deployment**:
-   - **Source:** GitHub Actions
-3. Under **Custom domain**, enter:
-   ```
-   ctrinfrastructure.com
-   ```
-4. Click **Save**
-5. Wait for DNS check — enable **Enforce HTTPS** once the certificate is issued (can take up to 24 hours)
+2. Under **Build and deployment**, keep **Source** set to **GitHub Actions**
+3. Leave **Custom domain** empty
+4. After deploy, verify the site at [https://dhananjayvj.github.io/ctr-infrastructure/](https://dhananjayvj.github.io/ctr-infrastructure/)
 
-The repo already includes `public/CNAME` with `ctrinfrastructure.com`, which is copied into the build output.
+## Custom Domain Toggle
 
-### 2. Squarespace DNS Settings
+The repo now supports turning `ctrinfrastructure.com` on or off without changing DNS records.
 
-1. Log in to [Squarespace](https://account.squarespace.com)
-2. Go to **Domains** → **ctrinfrastructure.com** → **DNS Settings** (or **Advanced Settings → DNS**)
-3. Remove any existing A/CNAME records that conflict with GitHub Pages
-4. Add these records:
+- Default state: `ENABLE_CUSTOM_DOMAIN=false`
+- Toggle on: set GitHub Actions repository variable `ENABLE_CUSTOM_DOMAIN=true`, then rerun the deploy workflow or push a commit
+- Toggle off: unset the variable or set it back to `false`, then redeploy
 
-**For the root domain (`ctrinfrastructure.com`):**
+When enabled, the build will:
+
+- remove the GitHub Pages repo base path
+- emit a `CNAME` file for `ctrinfrastructure.com`
+- switch metadata, sitemap, robots, and form redirects back to `https://ctrinfrastructure.com`
+
+Use the same DNS records as before:
+
+For the root domain `ctrinfrastructure.com`:
 
 | Type | Host | Value |
 |------|------|-------|
@@ -66,19 +66,11 @@ The repo already includes `public/CNAME` with `ctrinfrastructure.com`, which is 
 | A | `@` | `185.199.110.153` |
 | A | `@` | `185.199.111.153` |
 
-**For www (`www.ctrinfrastructure.com`):**
+For `www.ctrinfrastructure.com`:
 
 | Type | Host | Value |
 |------|------|-------|
 | CNAME | `www` | `dhananjayvj.github.io` |
-
-5. Save changes. DNS propagation can take 15 minutes to 48 hours.
-
-### 3. Verify
-
-- GitHub Pages settings should show **DNS check successful**
-- Visit [https://ctrinfrastructure.com](https://ctrinfrastructure.com)
-- Visit [https://www.ctrinfrastructure.com](https://www.ctrinfrastructure.com) (should redirect to apex if configured in GitHub)
 
 ---
 
@@ -90,8 +82,6 @@ ctr-infrastructure/
 │   ├── app/           # Next.js pages (App Router)
 │   ├── components/    # React components
 │   └── styles/        # Global CSS
-├── public/
-│   └── CNAME          # Custom domain for GitHub Pages
 ├── .github/workflows/
 │   └── deploy.yml     # GitHub Pages CI/CD
 ├── next.config.js     # Static export config

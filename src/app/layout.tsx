@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Providers } from '@/components/Providers';
 import { AppShell } from '@/components/AppShell';
+import { SITE_URL } from '@/lib/site';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
@@ -24,14 +25,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'CTR Infrastructure' }],
   creator: 'CTR Infrastructure',
   publisher: 'CTR Infrastructure',
-  metadataBase: new URL('https://ctrinfrastructure.com'),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ctrinfrastructure.com',
+    url: SITE_URL,
     siteName: 'CTR Infrastructure',
     title: 'CTR Infrastructure | Architecture & Design Excellence',
     description: 'Creating extraordinary spaces that define cities and inspire communities. Specializing in architecture, infrastructure, and urban planning.',

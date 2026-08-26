@@ -36,6 +36,7 @@ import {
   services,
 } from '@/lib/content';
 import { staggerContainer, staggerItem, viewportOnce } from '@/lib/motion';
+import { SITE_URL } from '@/lib/site';
 import { sectionPyLg, gridGap } from '@/lib/spacing';
 
 const MotionBox = motion(Box);
@@ -591,8 +592,8 @@ export default function HomePage() {
             >
               <VStack spacing={5}>
                 <Box as="input" type="text" name="_gotcha" display="none" tabIndex={-1} autoComplete="off" />
-                <Box as="input" type="hidden" name="_next" value="https://ctrinfrastructure.com/thank-you/" />
-                <Box as="input" type="hidden" name="_subject" value="New enquiry from ctrinfrastructure.com" />
+                <Box as="input" type="hidden" name="_next" value={`${SITE_URL}/thank-you/`} />
+                <Box as="input" type="hidden" name="_subject" value="New enquiry from CTR Infrastructure website" />
 
                 <Grid templateColumns={{ base: '1fr', sm: '1fr 1fr' }} gap={4} w="full">
                   {[

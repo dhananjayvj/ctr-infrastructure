@@ -3,13 +3,12 @@
 import { Box, HStack, Link as ChakraLink, Text } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { FiChevronRight } from 'react-icons/fi';
+import { SITE_URL } from '@/lib/site';
 
 export type Crumb = {
   label: string;
   href?: string;
 };
-
-const SITE_URL = 'https://ctrinfrastructure.com';
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   const jsonLd = {

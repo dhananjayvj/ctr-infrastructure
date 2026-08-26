@@ -1,3 +1,10 @@
+const repoBasePath = '/ctr-infrastructure';
+const isProduction = process.env.NODE_ENV === 'production';
+const enableCustomDomain = process.env.ENABLE_CUSTOM_DOMAIN === 'true';
+const siteUrl = enableCustomDomain
+  ? 'https://ctrinfrastructure.com'
+  : `https://dhananjayvj.github.io${repoBasePath}`;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -14,6 +21,8 @@ const nextConfig = {
   // Enable static export for SSG
   output: 'export',
   trailingSlash: true,
+  basePath: isProduction && !enableCustomDomain ? repoBasePath : '',
+  assetPrefix: isProduction && !enableCustomDomain ? repoBasePath : '',
   
   // Compiler optimizations
   compiler: {
@@ -26,7 +35,8 @@ const nextConfig = {
   
   // Environment variables
   env: {
-    SITE_URL: process.env.SITE_URL || 'https://ctrinfrastructure.com',
+    SITE_URL: process.env.SITE_URL || siteUrl,
+    ENABLE_CUSTOM_DOMAIN: process.env.ENABLE_CUSTOM_DOMAIN || 'false',
   },
 };
 
