@@ -17,6 +17,7 @@ import { HorizontalStrip } from '@/components/audi/HorizontalStrip';
 import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SiteFooter } from '@/components/SiteFooter';
+import { ClientsSection } from '@/components/ClientsSection';
 import { projectStrip, featuredProjects } from '@/lib/content';
 import { heroStagger, heroItem, staggerContainer, staggerItem, viewportOnce, imageHover } from '@/lib/motion';
 import { pageTopPad, sectionPy, gridGap } from '@/lib/spacing';
@@ -158,6 +159,8 @@ export default function ProjectsPage() {
           </MotionGrid>
         </Container>
       </Box>
+
+      <ClientsSection />
 
       <Box py={sectionPy} bg="dark.800" borderTop="1px solid" borderColor="whiteAlpha.120">
         <Container maxW="1440px" textAlign="center">
