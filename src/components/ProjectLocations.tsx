@@ -15,8 +15,8 @@ const states = ['All', 'Tamil Nadu', 'Karnataka'] as const;
 type FilterState = (typeof states)[number];
 type FilterCategory = (typeof categories)[number];
 
-const MIN_LAT = 10.45;
-const MAX_LAT = 13.35;
+const MIN_LAT = 10.4;
+const MAX_LAT = 15.6;
 const MIN_LNG = 76.4;
 const MAX_LNG = 79.25;
 
@@ -100,11 +100,9 @@ export function ProjectLocations() {
           <VStack align="flex-start" spacing={4} maxW="42rem">
             <Text variant="caption">Project footprint</Text>
             <Heading fontSize="display-lg" fontWeight="400" lineHeight="0.98">A practice with a sense of place</Heading>
-            <Text variant="lead" maxW="38rem">Completed and active work across Tamil Nadu and Karnataka, plotted by city, category, and exact project coordinates.</Text>
+          <Text variant="lead" maxW="38rem">Completed and active work across Tamil Nadu and Karnataka, plotted by city and category.</Text>
           </VStack>
           <VStack align={{ base: 'flex-start', lg: 'flex-end' }} justify="flex-end" spacing={2} minW={{ lg: '13rem' }}>
-            <Text fontFamily="mono" fontSize="xs" color="dark.300" letterSpacing="0.08em">11° 01′ N — 13° 00′ N</Text>
-            <Text fontFamily="mono" fontSize="xs" color="dark.300" letterSpacing="0.08em">76° 32′ E — 79° 01′ E</Text>
             <Text variant="caption">{filteredLocations.length.toString().padStart(2, '0')} locations in view</Text>
           </VStack>
         </Flex>
@@ -122,18 +120,19 @@ export function ProjectLocations() {
           </HStack>
         </Flex>
 
-        <Grid templateColumns={{ base: '1fr', lg: '1.15fr 0.85fr' }} gap={{ base: 8, lg: 0 }} border="1px solid" borderColor="whiteAlpha.160">
-          <Box position="relative" minH={{ base: '440px', md: '620px' }} borderRight={{ lg: '1px solid' }} borderColor="whiteAlpha.160" overflow="hidden" bg="dark.800">
+        <Grid templateColumns={{ base: '1fr', lg: '1.05fr 0.95fr' }} alignItems="start" gap={{ base: 8, lg: 0 }} border="1px solid" borderColor="whiteAlpha.160">
+          <Box position="relative" minH={{ base: '500px', md: '700px' }} borderRight={{ lg: '1px solid' }} borderColor="whiteAlpha.160" overflow="hidden" bg="dark.800">
             <svg viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.7 }} aria-hidden="true">
               {[12, 24, 36, 48, 60, 72, 84].map((line) => <line key={`h-${line}`} x1="0" y1={line} x2="100" y2={line} stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
               {[14, 28, 42, 56, 70, 84].map((line) => <line key={`v-${line}`} x1={line} y1="0" x2={line} y2="100" stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
-              <path d="M18 96 C23 78, 30 70, 42 60 S64 42, 82 9" fill="none" stroke="rgba(255,255,255,0.18)" strokeWidth="0.18" strokeDasharray="1.2 1.2" />
-              <path d="M3 78 C18 68, 24 53, 35 45 S52 28, 66 20" fill="none" stroke="rgba(255,255,255,0.11)" strokeWidth="0.18" />
+              <path d="M1 7 L23 3 L49 7 L62 18 L58 33 L47 42 L35 37 L23 42 L12 34 L2 23 Z" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.42)" strokeWidth="0.28" />
+              <path d="M35 39 L49 35 L66 38 L82 48 L93 64 L88 79 L77 84 L70 96 L54 91 L43 79 L34 69 L25 59 L22 47 Z" fill="rgba(255,255,255,0.045)" stroke="rgba(255,255,255,0.52)" strokeWidth="0.3" />
+              <path d="M16 78 C26 67, 33 59, 43 50 S58 35, 70 25" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="0.18" strokeDasharray="1.2 1.2" />
             </svg>
             <Text position="absolute" top={5} left={6} variant="caption" fontFamily="mono" letterSpacing="0.16em">SOUTH INDIA / FIELD INDEX</Text>
             <Text position="absolute" bottom={5} left={6} fontFamily="mono" fontSize="xs" color="dark.400">NORTH ↑</Text>
-            <Text position="absolute" top="29%" left="7%" fontFamily="heading" fontSize="2xl" color="whiteAlpha.300" transform="rotate(-12deg)">TAMIL NADU</Text>
-            <Text position="absolute" top="8%" left="40%" fontFamily="heading" fontSize="xl" color="whiteAlpha.300" transform="rotate(-12deg)">KARNATAKA</Text>
+            <Text position="absolute" top="54%" left="39%" fontFamily="heading" fontSize={{ base: '2xl', md: '3xl' }} color="whiteAlpha.300" transform="rotate(-12deg)">TAMIL NADU</Text>
+            <Text position="absolute" top="17%" left="29%" fontFamily="heading" fontSize={{ base: 'xl', md: '2xl' }} color="whiteAlpha.300" transform="rotate(-12deg)">KARNATAKA</Text>
             {filteredLocations.map((location) => <LocationPin key={location.id} location={location} active={location.id === activeLocation?.id} reducedMotion={reducedMotion} onSelect={() => selectLocation(location.id, true)} />)}
             <Flex position="absolute" bottom={5} right={5} gap={4} fontFamily="mono" fontSize="xs" color="dark.300">
               <HStack spacing={2}><Box w="8px" h="8px" borderRadius="full" bg="dark.50" /><Text>highlight</Text></HStack>
@@ -141,9 +140,9 @@ export function ProjectLocations() {
             </Flex>
           </Box>
 
-          <Box maxH={{ lg: '620px' }} overflowY="auto" overscrollBehavior="contain">
+          <Box>
             <VStack align="stretch" spacing={0} divider={<Box borderTop="1px solid" borderColor="whiteAlpha.120" />}>
-              <Box px={{ base: 5, md: 7 }} py={5} position="sticky" top={0} zIndex={1} bg="dark.900" borderBottom="1px solid" borderColor="whiteAlpha.120">
+              <Box px={{ base: 5, md: 7 }} py={5} bg="dark.900" borderBottom="1px solid" borderColor="whiteAlpha.120">
                 <HStack justify="space-between"><Text variant="caption">Project register</Text><Text fontFamily="mono" fontSize="xs" color="dark.400">{filteredLocations.length.toString().padStart(2, '0')} / {projectLocations.length.toString().padStart(2, '0')}</Text></HStack>
               </Box>
               <MotionBox variants={staggerContainer} initial={reducedMotion ? false : 'hidden'} whileInView="visible" viewport={viewportOnce}>
@@ -175,10 +174,7 @@ export function ProjectLocations() {
                         </HStack>
                         <Icon as={location.id === activeLocation?.id ? FiArrowUpRight : FiMapPin} color={location.id === activeLocation?.id ? 'dark.50' : 'dark.400'} boxSize={4} flexShrink={0} />
                       </Flex>
-                      <SimpleGrid columns={2} gap={4} mt={5} ml={{ base: 8, md: 9 }}>
-                        <Box><Text variant="caption">Category</Text><Text fontSize="xs" color="dark.200" mt={1}>{location.category}</Text></Box>
-                        <Box><Text variant="caption">Coordinates</Text><Text fontFamily="mono" fontSize="10px" color="dark.300" mt={1} lineHeight="1.4">{location.coordinates.dms}</Text></Box>
-                      </SimpleGrid>
+                      <Text fontSize="xs" color="dark.300" mt={5} ml={{ base: 8, md: 9 }}>{location.category} / {location.city}</Text>
                     </Box>
                   </MotionBox>
                 ))}

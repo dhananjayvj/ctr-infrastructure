@@ -33,4 +33,9 @@ export const projectLocations: ProjectLocation[] = [
   { id: 'ramkumar-retreat', name: 'Mr. Ramkumar’s Retreat', category: 'Hospitality', city: 'Thiruvannamalai', state: 'Tamil Nadu', coordinates: { lat: 12.23616, lng: 79.02906, dms: `12° 14' 10.2" N, 79° 1' 44.6" E` } },
   { id: 'abraham', name: 'Mr. Abraham’s Residence', category: 'Residential', city: 'Mysore', state: 'Karnataka', coordinates: { lat: 12.37425, lng: 76.53452, dms: `12° 22' 27.3" N, 76° 32' 4.3" E` } },
   { id: 'iskcon-bangalore', name: 'ISKCON Cultural & Architectural Space', category: 'Institutional', city: 'Bangalore', state: 'Karnataka', coordinates: { lat: 13.0098, lng: 77.5511, dms: `13° 0' 35.3" N, 77° 33' 4.0" E` }, highlight: true },
+  { id: 'praveen', name: 'Mr. Praveen’s Residence', category: 'Residential', city: 'Bangalore', state: 'Karnataka', coordinates: { lat: 13.084149, lng: 77.550762, dms: `13° 5' 2.9364" N, 77° 33' 2.7432" E` } },
+  { id: 'dollars-colony', name: 'Residences at Dollars Colony', category: 'Residential', city: 'Dollars Colony', state: 'Karnataka', coordinates: { lat: 13.0378, lng: 77.5664, dms: `13° 2' 16.1" N, 77° 33' 59.0" E` } },
+  { id: 'kamalapura-rural', name: 'Rural Development', category: 'Institutional', city: 'Kamalapura', state: 'Karnataka', coordinates: { lat: 15.30447, lng: 76.47562, dms: `15° 18' 16.1" N, 76° 28' 32.2" E` } },
+  { id: 'asi-hampi', name: 'Archaeological Survey of India, Hampi', category: 'Institutional', city: 'Hampi', state: 'Karnataka', coordinates: { lat: 15.334488, lng: 76.458637, dms: `15° 20' 4.2" N, 76° 27' 31.1" E` } },
+  { id: 'talakad-temple', name: 'Talakad Temple Complex Development', category: 'Institutional', city: 'Talakad', state: 'Karnataka', coordinates: { lat: 12.22, lng: 77.03, dms: `12° 13' 12.0" N, 77° 1' 48.0" E` } },
 ];

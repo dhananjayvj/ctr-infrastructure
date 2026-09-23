@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Box, Container, Flex, Heading, Image, SimpleGrid, Text, VStack } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Image, Link, SimpleGrid, Text, VStack } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { staggerContainer, staggerItem, viewportOnce } from '@/lib/motion';
 
@@ -94,15 +94,15 @@ export function ClientsSection() {
             maxW="34rem"
           >
             <MotionBox variants={staggerItem} border="1px solid" borderColor="whiteAlpha.200" bg="dark.900" role="group">
-              <Box position="relative" aspectRatio={16 / 8} overflow="hidden" bg="dark.700">
+              <Box position="relative" aspectRatio={527 / 414} overflow="hidden" bg="dark.700">
                 <ClientImage />
               </Box>
-              <Flex justify="space-between" align="center" gap={4} p={{ base: 5, md: 7 }}>
+              <Flex direction="column" align="flex-start" gap={2} p={{ base: 5, md: 7 }}>
                 <Box>
-              <Text variant="caption" mb={2}>Featured client</Text>
                   <Heading fontSize={{ base: '2xl', md: '3xl' }} fontWeight="500">K2BOX</Heading>
+                  <Text variant="caption" mt={1}>Fitness &amp; Nutrition Solutions</Text>
                 </Box>
-                <Text variant="caption" textAlign="right" maxW="10rem">Client project</Text>
+                <Link href="https://www.k2box.in/" isExternal fontSize="xs" color="dark.300" borderBottom="1px solid" borderColor="whiteAlpha.300" pb="2px" _hover={{ color: 'dark.50', textDecoration: 'none', borderColor: 'dark.50' }}>Visit k2box.in</Link>
               </Flex>
             </MotionBox>
           </MotionBox>
