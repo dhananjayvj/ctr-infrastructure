@@ -67,6 +67,37 @@ const clientGroups = [
   },
 ];
 
+const clientLogos = [
+  { name: 'Archaeological Survey of India', image: '/images/clients/ASOI%20BLUE.jpg' },
+  { name: 'Bharat Petroleum Corporation Limited', image: '/images/clients/Bharat_Petroleum_logo.svg' },
+  { name: 'Central Power Research Institute', image: '/images/clients/CPRI.jpg' },
+  { name: 'Hindustan Petroleum Corporation Limited', image: '/images/clients/HPCL.png' },
+  { name: 'Indian Institute of Science', image: '/images/clients/IISc_Master_Seal.jpg' },
+  { name: 'Indian Institute of Science — black mark', image: '/images/clients/IISc_Master_Seal_Black.jpg' },
+  { name: 'Indian Institute of Science — transparent mark', image: '/images/clients/IISc_Master_Seal_Black_Transparent.png' },
+  { name: 'Indian Institute of Science — reverse mark', image: '/images/clients/IISc_Master_Seal_Reverse.jpg' },
+  { name: 'Indian Institute of Science — clear mark', image: '/images/clients/IISc_Master_Seal_Transparent.png' },
+  { name: 'Indian Railways — Southern Railway', image: '/images/clients/INDIAN%20RAILWAYS_.png' },
+  { name: 'ISKCON Bangalore', image: '/images/clients/ISKCON_Bangalore_logo.png' },
+  { name: 'Khoday Group of Companies', image: '/images/clients/Khoday-india-logo.png' },
+  { name: 'Military Engineer Services', image: '/images/clients/Military_Engineer_Services.png' },
+  { name: 'National Highways Authority of India', image: '/images/clients/NHAI-Color.png' },
+  { name: 'Bangalore Development Authority', image: '/images/clients/bda%20logo.jpg' },
+  { name: 'Chennai Port Authority', image: '/images/clients/chennai%20port.png' },
+  { name: 'The Chennai Silks', image: '/images/clients/chennai%20silks.png' },
+  { name: 'GG Hotels', image: '/images/clients/gg%20hotels.png' },
+  { name: 'Hindusthan', image: '/images/clients/hindusthan_logo.png' },
+  { name: 'ISKCON Bangalore — alternate mark', image: '/images/clients/iskon%20banglore.png' },
+  { name: 'ISKCON — alternate mark', image: '/images/clients/iskonn.jpeg' },
+  { name: 'Karunya', image: '/images/clients/karunya.png' },
+  { name: 'Kauvery Hospitals', image: '/images/clients/kavery.png' },
+  { name: 'Larsen & Toubro', image: '/images/clients/larsen_%26_toubro-logo_brandlogos.net_egljc.png' },
+  { name: 'R60', image: '/images/clients/r60.PNG' },
+  { name: 'R60 — alternate mark', image: '/images/clients/r60.jpg' },
+  { name: 'Tamil Nadu Government', image: '/images/clients/tn%20goverment.png' },
+  { name: 'Indian Oil Corporation Limited', image: '/images/clients/toppng.com-indian-oil-corporation-vector-logo-400x400.png' },
+];
+
 export function ClientsSection() {
   const reducedMotion = useReducedMotion();
 
@@ -117,6 +148,15 @@ export function ClientsSection() {
                 {group.items.map((item) => <Text key={item} fontSize="sm" color="dark.300" lineHeight="1.45">{item}</Text>)}
               </VStack>
             </Box>
+          ))}
+        </SimpleGrid>
+
+        <Text variant="caption" mb={5} mt={{ base: 16, md: 24 }}>Client marks</Text>
+        <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 6 }} gap={0} borderTop="1px solid" borderLeft="1px solid" borderColor="whiteAlpha.120">
+          {clientLogos.map((logo) => (
+            <Flex key={`${logo.name}-${logo.image}`} minH={{ base: '112px', md: '142px' }} p={{ base: 4, md: 6 }} align="center" justify="center" bg="dark.900" borderRight="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.120" _hover={{ bg: 'whiteAlpha.60' }} transition="background 0.3s">
+              <Image src={logo.image} alt={logo.name} maxW="100%" maxH={{ base: '58px', md: '76px' }} objectFit="contain" />
+            </Flex>
           ))}
         </SimpleGrid>
       </Container>
