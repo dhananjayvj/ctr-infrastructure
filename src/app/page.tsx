@@ -26,6 +26,7 @@ import { NewsSection } from '@/components/audi/NewsSection';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Reveal } from '@/components/Reveal';
 import { Timeline } from '@/components/Timeline';
+import { CustomersSection } from '@/components/CustomersSection';
 import {
   heroSlides,
   quickLinks,
@@ -238,6 +239,8 @@ export default function HomePage() {
           </Grid>
         </Container>
       </Box>
+
+      <CustomersSection />
 
       {/* About */}
       <Box as="section" id="about" py={sectionPyLg} bg="dark.900">

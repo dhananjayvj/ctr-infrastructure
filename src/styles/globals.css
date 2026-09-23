@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap');
 
 :root {
   --color-bg-primary: #000000;
@@ -14,6 +14,7 @@
   --color-border-hover: rgba(255, 255, 255, 0.28);
 
   --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
 
   --section-padding: clamp(4rem, 10vw, 8rem);
   --container-max: 1440px;
@@ -45,25 +46,25 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans);
+  font-family: var(--font-display);
   font-weight: 400;
   line-height: 1.15;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
-  font-weight: 300;
+  font-size: clamp(3rem, 6vw, 5.75rem);
+  font-weight: 400;
 }
 
 h2 {
-  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 400;
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
 }
 
 p {
@@ -105,6 +106,7 @@ a {
 [id='services'],
 [id='about'],
 [id='projects'],
+[id='customers'],
 [id='contact'],
 [id='news'] {
   scroll-margin-top: 5.5rem;
@@ -114,6 +116,7 @@ a {
   [id='services'],
   [id='about'],
   [id='projects'],
+  [id='customers'],
   [id='contact'],
   [id='news'] {
     scroll-margin-top: 6rem;

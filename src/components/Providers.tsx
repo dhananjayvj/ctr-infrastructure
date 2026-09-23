@@ -11,13 +11,13 @@ const config: ThemeConfig = {
 const theme = extendTheme({
   config,
   fonts: {
-    heading: `'Manrope', -apple-system, BlinkMacSystemFont, sans-serif`,
+    heading: `'Cormorant Garamond', Georgia, serif`,
     body: `'Manrope', -apple-system, BlinkMacSystemFont, sans-serif`,
   },
   fontSizes: {
-    'display-xl': 'clamp(2.75rem, 5.5vw, 4.5rem)',
-    'display-lg': 'clamp(2rem, 4vw, 3.25rem)',
-    'display-md': 'clamp(1.5rem, 2.75vw, 2.25rem)',
+    'display-xl': 'clamp(3.25rem, 6vw, 5.75rem)',
+    'display-lg': 'clamp(2.25rem, 4.5vw, 3.75rem)',
+    'display-md': 'clamp(1.75rem, 3vw, 2.6rem)',
   },
   colors: {
     brand: {
@@ -106,7 +106,7 @@ const theme = extendTheme({
     Heading: {
       baseStyle: {
         fontWeight: '400',
-        letterSpacing: '-0.02em',
+        letterSpacing: '-0.025em',
         color: 'dark.50',
         textWrap: 'balance',
       },
@@ -116,7 +116,7 @@ const theme = extendTheme({
         eyebrow: {
           fontSize: 'xs',
           fontWeight: '500',
-          letterSpacing: '0.08em',
+          letterSpacing: '0.14em',
           textTransform: 'none',
           color: 'dark.200',
         },

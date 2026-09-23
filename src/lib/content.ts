@@ -65,6 +65,7 @@ export const heroSlides: HeroSlide[] = [
 export const quickLinks: QuickLink[] = [
   { label: 'At a glance', href: '/#about' },
   { label: 'Projects', href: '/projects' },
+  { label: 'Customers', href: '/#customers' },
   { label: 'Services', href: '/#services' },
   { label: 'About', href: '/#about' },
   { label: 'Contact', href: '/#contact' },
