@@ -112,14 +112,12 @@ export function ProjectLocations() {
           </VStack>
         </Flex>
 
-        <Grid templateColumns={{ base: '1fr', lg: '1.05fr 0.95fr' }} alignItems="start" gap={{ base: 8, lg: 0 }} border="1px solid" borderColor="whiteAlpha.160">
-          <Box position="relative" minH={{ base: '500px', md: '700px' }} borderRight={{ lg: '1px solid' }} borderColor="whiteAlpha.160" overflow="hidden" bg="dark.800" backgroundImage="radial-gradient(circle at 27% 20%, rgba(255,255,255,0.10), transparent 30%), linear-gradient(135deg, #191919 0%, #0a0a0a 58%, #171717 100%)">
+        <Grid templateColumns={{ base: '1fr', lg: '1fr 1fr' }} alignItems="start" gap={0} border="1px solid" borderColor="whiteAlpha.160">
+          <Box position="relative" minH={{ base: '460px', md: '600px', lg: '680px' }} borderRight={{ lg: '1px solid' }} borderColor="whiteAlpha.160" overflow="hidden" bg="dark.800" backgroundImage="radial-gradient(circle at 27% 20%, rgba(255,255,255,0.10), transparent 30%), linear-gradient(135deg, #191919 0%, #0a0a0a 58%, #171717 100%)">
             <svg viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.7 }} aria-hidden="true">
               {[12, 24, 36, 48, 60, 72, 84].map((line) => <line key={`h-${line}`} x1="0" y1={line} x2="100" y2={line} stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
               {[14, 28, 42, 56, 70, 84].map((line) => <line key={`v-${line}`} x1={line} y1="0" x2={line} y2="100" stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
             </svg>
-            <Text position="absolute" top={5} left={6} variant="caption" fontFamily="mono" letterSpacing="0.16em">PROJECT FIELD / SOUTH INDIA</Text>
-            <Text position="absolute" bottom={5} left={6} fontFamily="mono" fontSize="xs" color="dark.400">NORTH ↑</Text>
             {locationsInView.map((location) => <LocationPin key={location.id} location={location} active={location.id === activeLocation?.id} reducedMotion={reducedMotion} onSelect={() => selectLocation(location.id, true)} onHover={() => selectLocation(location.id)} />)}
             <Flex position="absolute" bottom={5} right={5} gap={4} fontFamily="mono" fontSize="xs" color="dark.300">
               <HStack spacing={2}><Box w="8px" h="8px" borderRadius="full" bg="dark.50" /><Text>highlight</Text></HStack>
@@ -127,7 +125,7 @@ export function ProjectLocations() {
             </Flex>
           </Box>
 
-          <Box>
+          <Box minW={0}>
             <VStack align="stretch" spacing={0} divider={<Box borderTop="1px solid" borderColor="whiteAlpha.120" />}>
               <Box px={{ base: 5, md: 7 }} py={5} bg="dark.900" borderBottom="1px solid" borderColor="whiteAlpha.120">
                 <HStack justify="space-between"><Text variant="caption">Project register</Text><Text fontFamily="mono" fontSize="xs" color="dark.400">{locationsInView.length.toString().padStart(2, '0')} / {projectLocations.length.toString().padStart(2, '0')}</Text></HStack>

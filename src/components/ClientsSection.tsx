@@ -151,8 +151,7 @@ export function ClientsSection() {
           ))}
         </SimpleGrid>
 
-        <Text variant="caption" mb={5} mt={{ base: 16, md: 24 }}>Client marks</Text>
-        <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 6 }} gap={0} borderTop="1px solid" borderLeft="1px solid" borderColor="whiteAlpha.120">
+        <SimpleGrid mt={{ base: 16, md: 24 }} columns={{ base: 2, sm: 3, md: 4, lg: 6 }} gap={0} borderTop="1px solid" borderLeft="1px solid" borderColor="whiteAlpha.120">
           {clientLogos.map((logo) => (
             <Flex key={`${logo.name}-${logo.image}`} minH={{ base: '112px', md: '142px' }} p={{ base: 4, md: 6 }} align="center" justify="center" bg="dark.900" borderRight="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.120" _hover={{ bg: 'whiteAlpha.60' }} transition="background 0.3s">
               <Image src={logo.image} alt={logo.name} maxW="100%" maxH={{ base: '58px', md: '76px' }} objectFit="contain" />

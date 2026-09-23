@@ -26,6 +26,7 @@ import { NewsSection } from '@/components/audi/NewsSection';
 import { SiteFooter } from '@/components/SiteFooter';
 import { Reveal } from '@/components/Reveal';
 import { Timeline } from '@/components/Timeline';
+import { ClientsSection } from '@/components/ClientsSection';
 import {
   heroSlides,
   quickLinks,
@@ -514,6 +515,8 @@ export default function HomePage() {
           </Box>
         </Container>
       </Box>
+
+      <ClientsSection />
 
       <NewsSection
         title="CTR Media Center"

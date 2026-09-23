@@ -17,7 +17,6 @@ import { HorizontalStrip } from '@/components/audi/HorizontalStrip';
 import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SiteFooter } from '@/components/SiteFooter';
-import { ClientsSection } from '@/components/ClientsSection';
 import { ProjectLocations } from '@/components/ProjectLocations';
 import { projectStrip, featuredProjects } from '@/lib/content';
 import { heroStagger, heroItem, staggerContainer, staggerItem, viewportOnce, imageHover } from '@/lib/motion';
@@ -160,8 +159,6 @@ export default function ProjectsPage() {
           </MotionGrid>
         </Container>
       </Box>
-
-      <ClientsSection />
 
       <ProjectLocations />
 
