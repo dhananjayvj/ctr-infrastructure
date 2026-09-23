@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      ENABLE_CUSTOM_DOMAIN: ${{ vars.ENABLE_CUSTOM_DOMAIN }}
+      ENABLE_CUSTOM_DOMAIN: 'true'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
