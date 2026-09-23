@@ -107,6 +107,7 @@ a {
 [id='about'],
 [id='projects'],
 [id='clients'],
+[id='locations'],
 [id='contact'],
 [id='news'] {
   scroll-margin-top: 5.5rem;
@@ -117,6 +118,7 @@ a {
   [id='about'],
   [id='projects'],
   [id='clients'],
+  [id='locations'],
   [id='contact'],
   [id='news'] {
     scroll-margin-top: 6rem;
