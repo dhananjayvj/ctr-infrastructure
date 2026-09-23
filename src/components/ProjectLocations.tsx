@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { Fragment, useRef, useState } from 'react';
 import { Box, Flex, Grid, Heading, HStack, Icon, Text, VStack } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { FiArrowUpRight, FiMapPin } from 'react-icons/fi';
@@ -10,10 +10,10 @@ import { staggerContainer, staggerItem, viewportOnce } from '@/lib/motion';
 import { sectionPy } from '@/lib/spacing';
 
 const MotionBox = motion(Box);
-const MIN_LAT = 10.4;
-const MAX_LAT = 15.6;
-const MIN_LNG = 76.4;
-const MAX_LNG = 79.25;
+const MIN_LAT = 7.5;
+const MAX_LAT = 15.8;
+const MIN_LNG = 75.5;
+const MAX_LNG = 80.7;
 
 function projectPosition(location: ProjectLocation) {
   const x = ((location.coordinates.lng - MIN_LNG) / (MAX_LNG - MIN_LNG)) * 100;
@@ -49,6 +49,7 @@ function LocationPin({ location, active, reducedMotion, onSelect, onHover }: {
           <Text fontFamily="mono" fontSize="10px" color="dark.400" letterSpacing="0.1em" mb={2}>{location.category.toUpperCase()}</Text>
           <Heading fontSize="lg" fontWeight="400" lineHeight="1.05">{location.name}</Heading>
           <Text fontSize="xs" color="dark.300" mt={2}>{location.city}, {location.state}</Text>
+          {location.client && <Text fontSize="xs" color="dark.400" mt={1}>{location.client}</Text>}
         </Box>
       )}
       <Box
@@ -105,7 +106,7 @@ export function ProjectLocations() {
           <VStack align="flex-start" spacing={4} maxW="42rem">
             <Text variant="caption">Project footprint</Text>
             <Heading fontSize="display-lg" fontWeight="400" lineHeight="0.98">A practice with a sense of place</Heading>
-            <Text variant="lead" maxW="38rem">Completed and active work across Tamil Nadu and Karnataka, plotted by city and category.</Text>
+          <Text variant="lead" maxW="38rem">Completed and active work across Tamil Nadu, Karnataka, and Andhra Pradesh, plotted by city and category.</Text>
           </VStack>
           <VStack align={{ base: 'flex-start', lg: 'flex-end' }} justify="flex-end" spacing={2} minW={{ lg: '13rem' }}>
             <Text variant="caption">{locationsInView.length.toString().padStart(2, '0')} locations</Text>
@@ -131,9 +132,19 @@ export function ProjectLocations() {
                 <HStack justify="space-between"><Text variant="caption">Project register</Text><Text fontFamily="mono" fontSize="xs" color="dark.400">{locationsInView.length.toString().padStart(2, '0')} / {projectLocations.length.toString().padStart(2, '0')}</Text></HStack>
               </Box>
               <MotionBox variants={staggerContainer} initial={reducedMotion ? false : 'hidden'} whileInView="visible" viewport={viewportOnce}>
-                {locationsInView.map((location, index) => (
-                  <MotionBox key={location.id} variants={staggerItem}>
-                    <Box
+                {locationsInView.map((location, index) => {
+                  const stateHeading = index === 0 || locationsInView[index - 1].state !== location.state;
+
+                  return (
+                  <Fragment key={location.id}>
+                    {stateHeading && (
+                      <Flex px={{ base: 5, md: 7 }} py={4} bg="dark.800" borderTop="1px solid" borderColor="whiteAlpha.120" justify="space-between" align="center">
+                        <Text variant="caption">{location.state}</Text>
+                        <Text fontFamily="mono" fontSize="10px" color="dark.400">REGION</Text>
+                      </Flex>
+                    )}
+                    <MotionBox variants={staggerItem}>
+                      <Box
                       as="button"
                       type="button"
                       ref={(element: HTMLButtonElement | null) => { cardRefs.current[location.id] = element; }}
@@ -155,14 +166,17 @@ export function ProjectLocations() {
                           <Box>
                             <Heading fontSize={{ base: 'xl', md: '2xl' }} fontWeight="400" lineHeight="1">{location.name}</Heading>
                             <Text mt={2} fontSize="sm" color="dark.300">{location.city}, {location.state}</Text>
+                            {location.client && <Text mt={1} fontSize="xs" color="dark.400">{location.client}</Text>}
                           </Box>
                         </HStack>
                         <Icon as={location.id === activeLocation?.id ? FiArrowUpRight : FiMapPin} color={location.id === activeLocation?.id ? 'dark.50' : 'dark.400'} boxSize={4} flexShrink={0} />
                       </Flex>
                       <Text fontSize="xs" color="dark.300" mt={5} ml={{ base: 8, md: 9 }}>{location.category} / {location.city}</Text>
-                    </Box>
-                  </MotionBox>
-                ))}
+                      </Box>
+                    </MotionBox>
+                  </Fragment>
+                  );
+                })}
               </MotionBox>
             </VStack>
           </Box>

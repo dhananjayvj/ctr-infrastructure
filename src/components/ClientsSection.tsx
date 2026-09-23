@@ -1,36 +1,8 @@
 'use client';
 
-import { useState } from 'react';
-import { Box, Container, Flex, Heading, Image, Link, SimpleGrid, Text, VStack } from '@chakra-ui/react';
-import { motion, useReducedMotion } from 'framer-motion';
-import { staggerContainer, staggerItem, viewportOnce } from '@/lib/motion';
-
-const MotionBox = motion(Box);
-
-function ClientImage() {
-  const [available, setAvailable] = useState(true);
-
-  if (!available) {
-    return (
-      <Flex align="center" justify="center" h="full" minH="180px" bg="dark.700">
-        <Text fontFamily="heading" fontSize={{ base: '4xl', md: '6xl' }} color="dark.200" letterSpacing="0.08em">K2BOX</Text>
-      </Flex>
-    );
-  }
-
-  return (
-    <Image
-      src="/images/clients/k2box.jpeg"
-      alt="K2BOX client project"
-      objectFit="cover"
-      w="full"
-      h="full"
-      onError={() => setAvailable(false)}
-      transition="transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1)"
-      _groupHover={{ transform: 'scale(1.03)' }}
-    />
-  );
-}
+import { type KeyboardEvent, useState } from 'react';
+import { Box, Container, Flex, Heading, Image, SimpleGrid, Text, VStack } from '@chakra-ui/react';
+import { useReducedMotion } from 'framer-motion';
 
 const clientGroups = [
   {
@@ -68,6 +40,7 @@ const clientGroups = [
 ];
 
 const clientLogos = [
+  { name: 'K2BOX', image: '/images/clients/k2box.jpeg' },
   { name: 'Archaeological Survey of India', image: '/images/clients/ASOI%20BLUE.jpg' },
   { name: 'Bharat Petroleum Corporation Limited', image: '/images/clients/Bharat_Petroleum_logo.svg' },
   { name: 'Central Power Research Institute', image: '/images/clients/CPRI.jpg' },
@@ -100,11 +73,24 @@ const clientLogos = [
 
 export function ClientsSection() {
   const reducedMotion = useReducedMotion();
+  const [hoverPaused, setHoverPaused] = useState(false);
+  const [manualPaused, setManualPaused] = useState(false);
+  const isPaused = hoverPaused || manualPaused;
+  const marqueeLogos = reducedMotion ? clientLogos : [...clientLogos, ...clientLogos];
+
+  const togglePause = () => setManualPaused((paused) => !paused);
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      togglePause();
+    }
+  };
 
   return (
     <Box as="section" id="clients" py={{ base: 20, md: 32 }} bg="dark.800" borderTop="1px solid" borderColor="whiteAlpha.120">
       <Container maxW="1440px">
-        <Flex direction={{ base: 'column', lg: 'row' }} gap={{ base: 12, lg: 24 }} align="flex-start" mb={{ base: 16, md: 24 }}>
+        <Box mb={{ base: 12, md: 16 }} maxW="42rem">
           <VStack align="flex-start" spacing={5} flex="1" maxW="34rem">
             <Text variant="caption">Clients</Text>
             <Heading fontSize="display-lg" fontWeight="400" lineHeight="0.98">
@@ -114,30 +100,58 @@ export function ClientsSection() {
               From private residences to public infrastructure, our work is shaped by long-term relationships and the responsibility each project carries.
             </Text>
           </VStack>
+        </Box>
 
-          <MotionBox
-            variants={staggerContainer}
-            initial={reducedMotion ? false : 'hidden'}
-            whileInView="visible"
-            viewport={viewportOnce}
-            flex="1"
-            w="full"
-            maxW="34rem"
+        <Box
+          role="region"
+          aria-label="Client marks. Hover or tap to pause."
+          tabIndex={0}
+          overflow="hidden"
+          mx={{ base: -5, sm: -6, md: -10, lg: -14 }}
+          px={{ base: 5, sm: 6, md: 10, lg: 14 }}
+          py={1}
+          cursor="pointer"
+          onMouseEnter={() => setHoverPaused(true)}
+          onMouseLeave={() => setHoverPaused(false)}
+          onClick={togglePause}
+          onKeyDown={handleKeyDown}
+          _focusVisible={{ boxShadow: 'inset 0 0 0 2px var(--chakra-colors-dark-50)' }}
+          sx={{
+            '@keyframes clientMarksMarquee': {
+              from: { transform: 'translateX(0)' },
+              to: { transform: 'translateX(-50%)' },
+            },
+          }}
+        >
+          <Flex
+            gap={{ base: 3, md: 4 }}
+            w="max-content"
+            sx={{
+              animation: reducedMotion ? 'none' : 'clientMarksMarquee 72s linear infinite',
+              animationPlayState: isPaused ? 'paused' : 'running',
+            }}
           >
-            <MotionBox variants={staggerItem} border="1px solid" borderColor="whiteAlpha.200" bg="dark.900" role="group">
-              <Box position="relative" aspectRatio={527 / 414} overflow="hidden" bg="dark.700">
-                <ClientImage />
-              </Box>
-              <Flex direction="column" align="flex-start" gap={2} p={{ base: 5, md: 7 }}>
-                <Box>
-                  <Heading fontSize={{ base: '2xl', md: '3xl' }} fontWeight="500">K2BOX</Heading>
-                  <Text variant="caption" mt={1}>Fitness &amp; Nutrition Solutions</Text>
-                </Box>
-                <Link href="https://www.k2box.in/" isExternal fontSize="xs" color="dark.300" borderBottom="1px solid" borderColor="whiteAlpha.300" pb="2px" _hover={{ color: 'dark.50', textDecoration: 'none', borderColor: 'dark.50' }}>Visit k2box.in</Link>
+            {marqueeLogos.map((logo, index) => (
+              <Flex
+                key={`${logo.image}-${index}`}
+                w={{ base: '156px', sm: '180px', md: '220px' }}
+                h={{ base: '104px', md: '132px' }}
+                p={{ base: 4, md: 6 }}
+                align="center"
+                justify="center"
+                flexShrink={0}
+                bg="dark.900"
+                border="1px solid"
+                borderColor="whiteAlpha.120"
+              >
+                <Image src={logo.image} alt={index >= clientLogos.length ? '' : logo.name} maxW="100%" maxH={{ base: '54px', md: '72px' }} objectFit="contain" />
               </Flex>
-            </MotionBox>
-          </MotionBox>
-        </Flex>
+            ))}
+          </Flex>
+          <Text mt={4} textAlign="center" variant="caption" color="dark.400">
+            {reducedMotion ? 'Client marks' : isPaused ? 'Paused — tap to resume' : 'Hover or tap to pause'}
+          </Text>
+        </Box>
 
         <Text variant="caption" mb={5}>Category of work</Text>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={0} borderTop="1px solid" borderLeft="1px solid" borderColor="whiteAlpha.120">
@@ -151,13 +165,6 @@ export function ClientsSection() {
           ))}
         </SimpleGrid>
 
-        <SimpleGrid mt={{ base: 16, md: 24 }} columns={{ base: 2, sm: 3, md: 4, lg: 6 }} gap={0} borderTop="1px solid" borderLeft="1px solid" borderColor="whiteAlpha.120">
-          {clientLogos.map((logo) => (
-            <Flex key={`${logo.name}-${logo.image}`} minH={{ base: '112px', md: '142px' }} p={{ base: 4, md: 6 }} align="center" justify="center" bg="dark.900" borderRight="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.120" _hover={{ bg: 'whiteAlpha.60' }} transition="background 0.3s">
-              <Image src={logo.image} alt={logo.name} maxW="100%" maxH={{ base: '58px', md: '76px' }} objectFit="contain" />
-            </Flex>
-          ))}
-        </SimpleGrid>
       </Container>
     </Box>
   );
