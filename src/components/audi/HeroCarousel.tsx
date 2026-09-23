@@ -4,11 +4,12 @@ import { useCallback, useEffect, useState } from 'react';
 import { Box, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import type { HeroSlide } from '@/lib/content';
-import { crossfade } from '@/lib/motion';
+import { crossfade, heroItem, heroStagger } from '@/lib/motion';
 import { HEADER_HEIGHT } from '@/lib/spacing';
 import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
 
 const MotionBox = motion(Box);
+const MotionVStack = motion(VStack);
 
 type HeroCarouselProps = {
   slides: HeroSlide[];
@@ -20,8 +21,8 @@ const AUTO_ADVANCE_MS = 7000;
 
 export function HeroCarousel({
   slides,
-  tagline = 'Discover CTR Infrastructure',
-  subtitle = 'Company. People. Innovations.',
+  tagline = 'Breaking New Ground in Spatial Design.',
+  subtitle = 'From modernist marvels to timeless sanctuaries, we are the definitive studio for visionary architecture.',
 }: HeroCarouselProps) {
   const reducedMotion = useReducedMotion();
   const [activeIndex, setActiveIndex] = useState(0);
@@ -83,20 +84,31 @@ export function HeroCarousel({
           pt={HEADER_HEIGHT}
           pb={{ base: 24, md: 16 }}
         >
-          <VStack align="flex-start" spacing={3} pt={{ base: 8, md: 16 }}>
-            <Heading
-              as="h1"
-              fontSize="display-xl"
-              fontWeight="300"
-              lineHeight="1.1"
-              maxW="14ch"
-            >
-              {tagline}
-            </Heading>
-            <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="400" color="dark.200">
-              {subtitle}
-            </Text>
-          </VStack>
+          <MotionVStack
+            align="flex-start"
+            spacing={3}
+            pt={{ base: 8, md: 16 }}
+            variants={heroStagger}
+            initial={reducedMotion ? false : 'hidden'}
+            animate="visible"
+          >
+            <MotionBox variants={heroItem}>
+              <Heading
+                as="h1"
+                fontSize="display-xl"
+                fontWeight="300"
+                lineHeight="1.1"
+                maxW="14ch"
+              >
+                {tagline}
+              </Heading>
+            </MotionBox>
+            <MotionBox variants={heroItem}>
+              <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="400" color="dark.200" maxW="42rem">
+                {subtitle}
+              </Text>
+            </MotionBox>
+          </MotionVStack>
 
           <Box maxW={{ base: 'full', md: '540px', lg: '620px' }}>
             <AnimatePresence exitBeforeEnter>

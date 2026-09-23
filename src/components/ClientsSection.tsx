@@ -1,6 +1,5 @@
 'use client';
 
-import { type KeyboardEvent, useState } from 'react';
 import { Box, Container, Flex, Heading, Image, SimpleGrid, Text, VStack } from '@chakra-ui/react';
 import { useReducedMotion } from 'framer-motion';
 
@@ -47,7 +46,6 @@ const clientLogos = [
   { name: 'Hindustan Petroleum Corporation Limited', image: '/images/clients/HPCL.png' },
   { name: 'Indian Institute of Science', image: '/images/clients/IISc_Master_Seal.jpg' },
   { name: 'Indian Institute of Science — black mark', image: '/images/clients/IISc_Master_Seal_Black.jpg' },
-  { name: 'Indian Institute of Science — transparent mark', image: '/images/clients/IISc_Master_Seal_Black_Transparent.png' },
   { name: 'Indian Institute of Science — reverse mark', image: '/images/clients/IISc_Master_Seal_Reverse.jpg' },
   { name: 'Indian Institute of Science — clear mark', image: '/images/clients/IISc_Master_Seal_Transparent.png' },
   { name: 'Indian Railways — Southern Railway', image: '/images/clients/INDIAN%20RAILWAYS_.png' },
@@ -65,7 +63,6 @@ const clientLogos = [
   { name: 'Karunya', image: '/images/clients/karunya.png' },
   { name: 'Kauvery Hospitals', image: '/images/clients/kavery.png' },
   { name: 'Larsen & Toubro', image: '/images/clients/larsen_%26_toubro-logo_brandlogos.net_egljc.png' },
-  { name: 'R60', image: '/images/clients/r60.PNG' },
   { name: 'R60 — alternate mark', image: '/images/clients/r60.jpg' },
   { name: 'Tamil Nadu Government', image: '/images/clients/tn%20goverment.png' },
   { name: 'Indian Oil Corporation Limited', image: '/images/clients/toppng.com-indian-oil-corporation-vector-logo-400x400.png' },
@@ -73,19 +70,7 @@ const clientLogos = [
 
 export function ClientsSection() {
   const reducedMotion = useReducedMotion();
-  const [hoverPaused, setHoverPaused] = useState(false);
-  const [manualPaused, setManualPaused] = useState(false);
-  const isPaused = hoverPaused || manualPaused;
   const marqueeLogos = reducedMotion ? clientLogos : [...clientLogos, ...clientLogos];
-
-  const togglePause = () => setManualPaused((paused) => !paused);
-
-  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      togglePause();
-    }
-  };
 
   return (
     <Box as="section" id="clients" py={{ base: 20, md: 32 }} bg="dark.800" borderTop="1px solid" borderColor="whiteAlpha.120">
@@ -104,18 +89,11 @@ export function ClientsSection() {
 
         <Box
           role="region"
-          aria-label="Client marks. Hover or tap to pause."
-          tabIndex={0}
+          aria-label="Client marks"
           overflow="hidden"
           mx={{ base: -5, sm: -6, md: -10, lg: -14 }}
           px={{ base: 5, sm: 6, md: 10, lg: 14 }}
           py={1}
-          cursor="pointer"
-          onMouseEnter={() => setHoverPaused(true)}
-          onMouseLeave={() => setHoverPaused(false)}
-          onClick={togglePause}
-          onKeyDown={handleKeyDown}
-          _focusVisible={{ boxShadow: 'inset 0 0 0 2px var(--chakra-colors-dark-50)' }}
           sx={{
             '@keyframes clientMarksMarquee': {
               from: { transform: 'translateX(0)' },
@@ -128,7 +106,6 @@ export function ClientsSection() {
             w="max-content"
             sx={{
               animation: reducedMotion ? 'none' : 'clientMarksMarquee 72s linear infinite',
-              animationPlayState: isPaused ? 'paused' : 'running',
             }}
           >
             {marqueeLogos.map((logo, index) => (
@@ -148,9 +125,6 @@ export function ClientsSection() {
               </Flex>
             ))}
           </Flex>
-          <Text mt={4} textAlign="center" variant="caption" color="dark.400">
-            {reducedMotion ? 'Client marks' : isPaused ? 'Paused — tap to resume' : 'Hover or tap to pause'}
-          </Text>
         </Box>
 
         <Text variant="caption" mb={5}>Category of work</Text>

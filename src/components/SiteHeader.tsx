@@ -103,7 +103,7 @@ export function SiteHeader() {
                 <Image
                   src="/images/logo/ctr-logo-mark.png"
                   alt="CTR Infrastructure"
-                  h={{ base: '22px', md: '26px' }}
+                  h={{ base: '30px', md: '38px' }}
                   w="auto"
                 />
                 <Text
