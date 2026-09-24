@@ -5,6 +5,7 @@
   "description": "CTR Infrastructure architecture portfolio — static site hosted on GitHub Pages",
   "scripts": {
     "dev": "next dev -p 3000",
+    "prebuild": "node scripts/generate-project-catalog.mjs",
     "build": "next build",
     "postbuild": "node scripts/configure-pages.mjs",
     "start": "npx serve@latest out -l 3000",
