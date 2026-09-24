@@ -28,8 +28,6 @@ export function ClientsSection() {
                 px={{ base: 3, md: 4, lg: 5 }}
                 py={{ base: 4, md: 5 }}
                 bg="dark.900"
-                border="1px solid"
-                borderColor="whiteAlpha.120"
               >
                 <Image
                   src={`/images/clients/${filename}`}
