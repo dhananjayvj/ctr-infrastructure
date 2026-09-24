@@ -9,11 +9,11 @@ import type { CompleteProject } from '@/data/projectCatalog';
 const MotionBox = motion(Box);
 
 const categoryOrder: CompleteProject['category'][] = [
-  'Residential',
-  'Commercial',
-  'Hospitality',
   'Institutional',
   'Infrastructure',
+  'Commercial',
+  'Hospitality',
+  'Residential',
 ];
 
 type ProjectFilter = 'All projects' | CompleteProject['category'];

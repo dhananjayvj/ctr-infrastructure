@@ -88,21 +88,6 @@ const projectSectors = [
   },
 ];
 
-const designPillars = [
-  {
-    number: '01',
-    title: 'Minimalism',
-    description:
-      'Clean lines, quiet compositions, and restrained palettes let space, light, and proportion carry the experience.',
-  },
-  {
-    number: '02',
-    title: 'Sustainability',
-    description:
-      'Local materials and climate-responsive planning create spaces that endure and connect people with nature.',
-  },
-];
-
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnpadjev';
 
 export default function HomePage() {
@@ -125,7 +110,7 @@ export default function HomePage() {
               mr={{ lg: 0 }}
             >
               <Image
-                src="/images/projects/ganeshan-residence/1.jpg"
+                src="/images/projects/minimalist-canopy-haven/1.jpg"
                 alt="CTR Infrastructure projects"
                 objectFit="cover"
                 w="full"
@@ -401,61 +386,6 @@ export default function HomePage() {
               ))}
             </MotionGrid>
           </Box>
-
-          {/* Design Style */}
-          <Grid
-            templateColumns={{ base: '1fr', lg: '1fr 2fr' }}
-            gap={{ base: 10, lg: 20 }}
-            py={{ base: 16, md: 20 }}
-            borderTop="1px solid"
-            borderColor="whiteAlpha.120"
-          >
-            <Reveal>
-              <VStack align="flex-start" spacing={5} maxW="28rem">
-                <Text variant="caption">Design Style</Text>
-                <Heading fontSize="display-md" fontWeight="400">
-                  Timeless, contemporary, and rooted
-                </Heading>
-                <Text variant="body" maxW="none">
-                  Our design style blends the timeless with the contemporary.
-                  Influenced by vernacular traditions and tropical living, we
-                  craft spaces that are open, breathable, and deeply rooted in
-                  their surroundings.
-                </Text>
-              </VStack>
-            </Reveal>
-
-            <MotionGrid
-              templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }}
-              gap={gridGap}
-              variants={staggerContainer}
-              initial={reducedMotion ? false : 'hidden'}
-              whileInView="visible"
-              viewport={viewportOnce}
-            >
-              {designPillars.map((pillar) => (
-                <MotionBox
-                  key={pillar.number}
-                  variants={staggerItem}
-                  p={{ base: 6, md: 8 }}
-                  border="1px solid"
-                  borderColor="whiteAlpha.120"
-                  _hover={{ borderColor: 'whiteAlpha.300', bg: 'whiteAlpha.30' }}
-                  transition="all 0.45s"
-                >
-                  <Text fontSize="sm" color="dark.300" mb={4} sx={{ fontVariantNumeric: 'tabular-nums' }}>
-                    {pillar.number}
-                  </Text>
-                  <Heading fontSize="lg" fontWeight="500" mb={3}>
-                    {pillar.title}
-                  </Heading>
-                  <Text fontSize="sm" color="dark.200" lineHeight="1.7">
-                    {pillar.description}
-                  </Text>
-                </MotionBox>
-              ))}
-            </MotionGrid>
-          </Grid>
 
           {/* Eco Design — closing */}
           <Box pt={{ base: 16, md: 20 }} borderTop="1px solid" borderColor="whiteAlpha.120" textAlign="center">

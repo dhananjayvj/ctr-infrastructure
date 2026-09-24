@@ -14,7 +14,7 @@ export type ProjectSection = {
   media: ProjectMedia[];
 };
 
-export type CompleteProject = {
+export type PortfolioProject = {
   id: string;
   title: string;
   category: 'Residential' | 'Commercial' | 'Hospitality' | 'Institutional' | 'Infrastructure';
@@ -24,526 +24,254 @@ export type CompleteProject = {
   sections: ProjectSection[];
 };
 
-export const completeProjects: CompleteProject[] = [
+export const portfolioProjects: PortfolioProject[] = [
   {
-    "id": "carmels-residence-mysore-karnataka",
-    "title": "Carmel's residence - Mysore - Karnataka",
-    "category": "Residential",
-    "location": "Mysore, Karnataka",
-    "description": "Carmel's residence - Mysore - Karnataka is a residential project in Mysore, Karnataka. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/Cover image.png",
-    "sections": [
-      {
-        "id": "site-studies",
-        "title": "Site studies",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/07C45233-5F92-4CA3-9CCA-C9EE9D3922D0.png",
-            "type": "image",
-            "label": "07C45233 5F92 4CA3 9CCA C9EE9D3922D0"
-          },
-          {
-            "src": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/67C4ABAD-54E8-42EC-BE59-74D7E218EABB.png",
-            "type": "image",
-            "label": "67C4ABAD 54E8 42EC BE59 74D7E218EABB"
-          },
-          {
-            "src": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/7F268CC4-3239-4151-A2DE-0FE59B7FD6BF.png",
-            "type": "image",
-            "label": "7F268CC4 3239 4151 A2DE 0FE59B7FD6BF"
-          },
-          {
-            "src": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/Cover image.png",
-            "type": "image",
-            "label": "Cover image"
-          },
-          {
-            "src": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/D5C46C52-2D16-40D5-A5C7-4A76CF3F2F37.png",
-            "type": "image",
-            "label": "D5C46C52 2D16 40D5 A5C7 4A76CF3F2F37"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "chennai-silks",
-    "title": "Chennai Silks",
-    "category": "Commercial",
-    "location": "Chennai, Tamil Nadu",
-    "description": "Chennai Silks is a commercial project in Chennai, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_33_58 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 08 33 58 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 08 54 00 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_54_22 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 08 54 22 PM"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "deepaks-residence-tiruppur-tamil-nadu",
-    "title": "Deepak's Residence - Tiruppur, Tamil Nadu",
-    "category": "Residential",
-    "location": "Tiruppur, Tamil Nadu",
-    "description": "Deepak's Residence - Tiruppur, Tamil Nadu is a residential project in Tiruppur, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Exterior Views/front elevation day view 4.png",
-    "sections": [
-      {
-        "id": "technical-drawings",
-        "title": "Technical drawings",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Drawings/0.png",
-            "type": "image",
-            "label": "0"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Drawings/0(1).png",
-            "type": "image",
-            "label": "0(1)"
-          }
-        ]
-      },
-      {
-        "id": "exterior-perspectives",
-        "title": "Exterior perspectives",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Exterior Views/front elevation day view 4.png",
-            "type": "image",
-            "label": "front elevation day view 4"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Exterior Views/side view 1.png",
-            "type": "image",
-            "label": "side view 1"
-          }
-        ]
-      },
-      {
-        "id": "interior-perspectives",
-        "title": "Interior perspectives",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/ff bedroom view 2.png",
-            "type": "image",
-            "label": "ff bedroom view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/ff bedroom view 4.png",
-            "type": "image",
-            "label": "ff bedroom view 4"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/ff library view 1.png",
-            "type": "image",
-            "label": "ff library view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/ff library view 2.png",
-            "type": "image",
-            "label": "ff library view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/Formal Living view 3.png",
-            "type": "image",
-            "label": "Formal Living view 3"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/Kitchen view 3 (1).png",
-            "type": "image",
-            "label": "Kitchen view 3 (1)"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/Living view 1.png",
-            "type": "image",
-            "label": "Living view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/Living view 2.jpeg",
-            "type": "image",
-            "label": "Living view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/Living view 4.png",
-            "type": "image",
-            "label": "Living view 4"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/sliding folding door v2.png",
-            "type": "image",
-            "label": "sliding folding door v2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/v11b1.png",
-            "type": "image",
-            "label": "v11b1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/v1b1.png",
-            "type": "image",
-            "label": "v1b1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/v1b2.png",
-            "type": "image",
-            "label": "v1b2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/v3b2.png",
-            "type": "image",
-            "label": "v3b2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/v4b2.png",
-            "type": "image",
-            "label": "v4b2"
-          }
-        ]
-      },
-      {
-        "id": "site-photography",
-        "title": "Site photography",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Site images/ChatGPT Image Sep 23, 2026, 09_04_58 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 09 04 58 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Site images/ChatGPT Image Sep 23, 2026, 09_07_06 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 09 07 06 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Site images/ChatGPT Image Sep 23, 2026, 09_09_39 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 09 09 39 PM"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "eshwarens-farmhouse-tiruchengode-tamil-nadu",
-    "title": "Eshwaren's Farmhouse - Tiruchengode - Tamil Nadu",
-    "category": "Residential",
-    "location": "Tamilnadu, Tamil Nadu",
-    "description": "Eshwaren's Farmhouse - Tiruchengode - Tamil Nadu is a residential project in Tamilnadu, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/exterior site images/ChatGPT Image Sep 23, 2026, 08_15_11 PM.png",
-    "sections": [
-      {
-        "id": "exterior-photography",
-        "title": "Exterior photography",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/exterior site images/ChatGPT Image Sep 23, 2026, 08_10_40 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 08 10 40 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/exterior site images/ChatGPT Image Sep 23, 2026, 08_15_11 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 08 15 11 PM"
-          }
-        ]
-      },
-      {
-        "id": "interior-photography",
-        "title": "Interior photography",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/1ED4E7E5-CDE7-47AF-8142-27DF5334449A.png",
-            "type": "image",
-            "label": "1ED4E7E5 CDE7 47AF 8142 27DF5334449A"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/7BC31638-0085-4001-8361-096C25348BA3.png",
-            "type": "image",
-            "label": "7BC31638 0085 4001 8361 096C25348BA3"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 04_51_26 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 04 51 26 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 05_21_16 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 05 21 16 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 05_48_32 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 05 48 32 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 05_54_21 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 05 54 21 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 05_59_58 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 05 59 58 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 06_03_01 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 06 03 01 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 06_21_33 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 06 21 33 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 06_40_00 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 06 40 00 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 06_41_38 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 06 41 38 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 06_49_13 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 06 49 13 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/ChatGPT Image Sep 23, 2026, 08_18_29 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 08 18 29 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/FDB75244-6ACC-4164-B331-63671BD0E2B7.png",
-            "type": "image",
-            "label": "FDB75244 6ACC 4164 B331 63671BD0E2B7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "ganeshans-residence-avinashi-tamil-nadu",
-    "title": "Ganeshan's Residence - Avinashi - Tamil Nadu",
-    "category": "Residential",
-    "location": "Tamilnadu, Tamil Nadu",
-    "description": "Ganeshan's Residence - Avinashi - Tamil Nadu is a residential project in Tamilnadu, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Exterior Renders/1.jpg",
-    "sections": [
-      {
-        "id": "exterior-perspectives",
-        "title": "Exterior perspectives",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Exterior Renders/1_2 - Photo.jpg",
-            "type": "image",
-            "label": "1 2   Photo"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Exterior Renders/1.jpg",
-            "type": "image",
-            "label": "1"
-          }
-        ]
-      },
-      {
-        "id": "interior-perspectives",
-        "title": "Interior perspectives",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/Bedroom 1 V1.png",
-            "type": "image",
-            "label": "Bedroom 1 V1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/Bedroom 2 V1.png",
-            "type": "image",
-            "label": "Bedroom 2 V1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/Bedroom 3 V1.png",
-            "type": "image",
-            "label": "Bedroom 3 V1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/Bedroom 3 V3.png",
-            "type": "image",
-            "label": "Bedroom 3 V3"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/Bedroom 4 V1.png",
-            "type": "image",
-            "label": "Bedroom 4 V1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/BF42D745-DA27-4B65-BB2A-E6623061E86E.jpeg",
-            "type": "image",
-            "label": "BF42D745 DA27 4B65 BB2A E6623061E86E"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/C5A82C37-0294-4747-8A59-799502AD6560.jpeg",
-            "type": "image",
-            "label": "C5A82C37 0294 4747 8A59 799502AD6560"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/F914F757-F3F8-4369-9D80-713D7230B57C.jpeg",
-            "type": "image",
-            "label": "F914F757 F3F8 4369 9D80 713D7230B57C"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/FCCFFFBB-946B-4C7B-A819-2C2C1B2B1FAF.jpeg",
-            "type": "image",
-            "label": "FCCFFFBB 946B 4C7B A819 2C2C1B2B1FAF"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/foyer view 1.png",
-            "type": "image",
-            "label": "foyer view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/foyer view 2.png",
-            "type": "image",
-            "label": "foyer view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/kitchen view 1.jpeg",
-            "type": "image",
-            "label": "kitchen view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/kitchen view 2.jpeg",
-            "type": "image",
-            "label": "kitchen view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/Kitchen view 3.jpeg",
-            "type": "image",
-            "label": "Kitchen view 3"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/kitchen view 4.jpeg",
-            "type": "image",
-            "label": "kitchen view 4"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/kitchen view 5.jpeg",
-            "type": "image",
-            "label": "kitchen view 5"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/living view 1.png",
-            "type": "image",
-            "label": "living view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/living view 2.png",
-            "type": "image",
-            "label": "living view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/living view 3.png",
-            "type": "image",
-            "label": "living view 3"
-          },
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/living view 4.png",
-            "type": "image",
-            "label": "living view 4"
-          }
-        ]
-      },
-      {
-        "id": "site-photography",
-        "title": "Site photography",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Site Images/ChatGPT Image Sep 23, 2026, 10_34_34 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 10 34 34 PM"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "helipad",
-    "title": "Helipad",
-    "category": "Infrastructure",
+    "id": "campus-masterplan",
+    "title": "Campus Masterplan & Academic Block",
+    "category": "Institutional",
     "location": "South India",
-    "description": "Helipad is a infrastructure project in South India. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "description": "A sprawling institutional masterplan focused on sustainable campus flow and naturally lit academic spaces.",
     "cover": null,
-    "sections": []
-  },
-  {
-    "id": "hindustan-petroleum-nilgiris",
-    "title": "Hindustan Petroleum - Nilgiris",
-    "category": "Infrastructure",
-    "location": "Nilgiris",
-    "description": "Hindustan Petroleum - Nilgiris is a infrastructure project in Nilgiris. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
     "sections": [
       {
         "id": "overview",
         "title": "Overview",
         "media": [
           {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v1.png",
+            "src": "/images/projects/Complete projects/campus-masterplan/ChatGPT Image Sep 23, 2026, 11_30_23 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 30 23 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/campus-masterplan/ChatGPT Image Sep 23, 2026, 11_32_02 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 32 02 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/campus-masterplan/ChatGPT Image Sep 23, 2026, 11_33_42 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 33 42 PM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sacred-heritage-complex",
+    "title": "Sacred Heritage Complex",
+    "category": "Institutional",
+    "location": "Talakadu Temple, Karnataka",
+    "description": "A sensitive restoration and spatial intervention integrating historic context with modern pedestrian flow.",
+    "cover": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_51_16 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 51 16 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_53_19 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 53 19 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 54 44 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_56_15 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 56 15 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_58_55 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 58 55 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 24, 2026, 12_01_31 AM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 24, 2026, 12 01 31 AM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "educational-block",
+    "title": "Primary Educational Block",
+    "category": "Institutional",
+    "location": "South India",
+    "description": "A dynamic learning environment designed with kinetic facades and open courtyards for early childhood development.",
+    "cover": "/images/projects/Complete projects/educational-block/DSC07281.JPG",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07280.JPG",
+            "type": "image",
+            "label": "DSC07280"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07281.JPG",
+            "type": "image",
+            "label": "DSC07281"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07282.JPG",
+            "type": "image",
+            "label": "DSC07282"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07283.JPG",
+            "type": "image",
+            "label": "DSC07283"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07284.JPG",
+            "type": "image",
+            "label": "DSC07284"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07286.JPG",
+            "type": "image",
+            "label": "DSC07286"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07287.JPG",
+            "type": "image",
+            "label": "DSC07287"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07290.JPG",
+            "type": "image",
+            "label": "DSC07290"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07292.JPG",
+            "type": "image",
+            "label": "DSC07292"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07293.JPG",
+            "type": "image",
+            "label": "DSC07293"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07294.JPG",
+            "type": "image",
+            "label": "DSC07294"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07295.JPG",
+            "type": "image",
+            "label": "DSC07295"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07296.JPG",
+            "type": "image",
+            "label": "DSC07296"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07297.JPG",
+            "type": "image",
+            "label": "DSC07297"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07304.JPG",
+            "type": "image",
+            "label": "DSC07304"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07306.JPG",
+            "type": "image",
+            "label": "DSC07306"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07307.JPG",
+            "type": "image",
+            "label": "DSC07307"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07308.JPG",
+            "type": "image",
+            "label": "DSC07308"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07310.JPG",
+            "type": "image",
+            "label": "DSC07310"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07311.JPG",
+            "type": "image",
+            "label": "DSC07311"
+          },
+          {
+            "src": "/images/projects/Complete projects/educational-block/DSC07312.JPG",
+            "type": "image",
+            "label": "DSC07312"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alpine-infrastructure",
+    "title": "Alpine Energy Infrastructure",
+    "category": "Infrastructure",
+    "location": "Nilgiris, Tamil Nadu",
+    "description": "A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.",
+    "cover": "/images/projects/Complete projects/alpine-energy-infrastructure/v17.png",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v1.png",
             "type": "image",
             "label": "v1"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v10.png",
+            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v10.png",
             "type": "image",
             "label": "v10"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v11.png",
+            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v11.png",
             "type": "image",
             "label": "v11"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v12.png",
+            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v12.png",
             "type": "image",
             "label": "v12"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v13.png",
+            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v13.png",
             "type": "image",
             "label": "v13"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
+            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v17.png",
             "type": "image",
             "label": "v17"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v2.png",
+            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v2.png",
             "type": "image",
             "label": "v2"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v4.png",
+            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v4.png",
             "type": "image",
             "label": "v4"
           }
@@ -552,39 +280,70 @@ export const completeProjects: CompleteProject[] = [
     ]
   },
   {
-    "id": "hindustan-resort-coimbatore-tamil-nadu",
-    "title": "Hindustan resort, Coimbatore, Tamil Nadu",
+    "id": "retail-flagship",
+    "title": "Retail Flagship Store",
+    "category": "Commercial",
+    "location": "Chennai, Tamil Nadu",
+    "description": "A multi-level commercial hub featuring a striking glass curtain wall and expansive, column-free retail floors.",
+    "cover": "/images/projects/Complete projects/retail-flagship-store/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/retail-flagship-store/ChatGPT Image Sep 23, 2026, 08_33_58 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 08 33 58 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/retail-flagship-store/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 08 54 00 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/retail-flagship-store/ChatGPT Image Sep 23, 2026, 08_54_22 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 08 54 22 PM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eco-resort-spa",
+    "title": "Eco-Resort & Wellness Retreat",
     "category": "Hospitality",
     "location": "Coimbatore, Tamil Nadu",
-    "description": "Hindustan resort, Coimbatore, Tamil Nadu is a hospitality project in Coimbatore, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
+    "description": "A landscape-integrated hospitality project blending indigenous materials with modern luxury.",
+    "cover": "/images/projects/Complete projects/eco-resort-wellness/Renders/v10r.jpg",
     "sections": [
       {
         "id": "perspectives",
         "title": "Perspectives",
         "media": [
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_54_27 PM.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/ChatGPT Image Sep 23, 2026, 10_54_27 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 10 54 27 PM"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_59_54 PM.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/ChatGPT Image Sep 23, 2026, 10_59_54 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 10 59 54 PM"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 11_04_08 PM.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/ChatGPT Image Sep 23, 2026, 11_04_08 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 04 08 PM"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 11_11_58 PM.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/ChatGPT Image Sep 23, 2026, 11_11_58 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 11 58 PM"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/v10r.jpg",
             "type": "image",
             "label": "v10r"
           }
@@ -595,27 +354,27 @@ export const completeProjects: CompleteProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_17_28 PM.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/ChatGPT Image Sep 23, 2026, 11_17_28 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 17 28 PM"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_21_43 PM.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/ChatGPT Image Sep 23, 2026, 11_21_43 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 21 43 PM"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_23_07 PM.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/ChatGPT Image Sep 23, 2026, 11_23_07 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 23 07 PM"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_25_00 PM.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/ChatGPT Image Sep 23, 2026, 11_25_00 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 25 00 PM"
           },
           {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/Project Banner_.png",
+            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/Project Banner_.png",
             "type": "image",
             "label": "Project Banner "
           }
@@ -624,456 +383,94 @@ export const completeProjects: CompleteProject[] = [
     ]
   },
   {
-    "id": "karunya-university",
-    "title": "Karunya University",
-    "category": "Institutional",
-    "location": "South India",
-    "description": "Karunya University is a institutional project in South India. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_32_02 PM.png",
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_30_23 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 30 23 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_32_02 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 32 02 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_33_42 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 33 42 PM"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "sathyamoorthys-farmhouse-bhavani",
-    "title": "Sathyamoorthy's Farmhouse - Bhavani",
-    "category": "Residential",
-    "location": "Bhavani",
-    "description": "Sathyamoorthy's Farmhouse - Bhavani is a residential project in Bhavani. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/site images/ChatGPT Image Sep 23, 2026, 11_49_13 PM.png",
-    "sections": [
-      {
-        "id": "exterior-perspectives",
-        "title": "Exterior perspectives",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Exterior/Front view 1n_Photo - 4.jpg",
-            "type": "image",
-            "label": "Front view 1n Photo   4"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Exterior/Front view 1n_Photo - 6.jpg",
-            "type": "image",
-            "label": "Front view 1n Photo   6"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Exterior/Front view 1n_Photo - 7.jpg",
-            "type": "image",
-            "label": "Front view 1n Photo   7"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Exterior/Front view 1n_Photo - 8.jpg",
-            "type": "image",
-            "label": "Front view 1n Photo   8"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Exterior/Front view 1n_Photo - 9.jpg",
-            "type": "image",
-            "label": "Front view 1n Photo   9"
-          }
-        ]
-      },
-      {
-        "id": "interior-perspectives",
-        "title": "Interior perspectives",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/Foyer view 1.png",
-            "type": "image",
-            "label": "Foyer view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/Foyer view 2.png",
-            "type": "image",
-            "label": "Foyer view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/Foyer view 3.png",
-            "type": "image",
-            "label": "Foyer view 3"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/kitchen view 1.png",
-            "type": "image",
-            "label": "kitchen view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/kitchen view 2.png",
-            "type": "image",
-            "label": "kitchen view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/kitchen view 3.png",
-            "type": "image",
-            "label": "kitchen view 3"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/Living view 1.png",
-            "type": "image",
-            "label": "Living view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/Living view 2.png",
-            "type": "image",
-            "label": "Living view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/pooja view 1.png",
-            "type": "image",
-            "label": "pooja view 1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/pooja view 2.png",
-            "type": "image",
-            "label": "pooja view 2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/pooja view 3.png",
-            "type": "image",
-            "label": "pooja view 3"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/pooja view 4.png",
-            "type": "image",
-            "label": "pooja view 4"
-          }
-        ]
-      },
-      {
-        "id": "site-photography",
-        "title": "Site photography",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/site images/ChatGPT Image Sep 23, 2026, 11_44_11 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 44 11 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/site images/ChatGPT Image Sep 23, 2026, 11_49_13 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 49 13 PM"
-          }
-        ]
-      },
-      {
-        "id": "sketch-studies",
-        "title": "Sketch studies",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Sketch/POST-4 - FINAL-6.jpg",
-            "type": "image",
-            "label": "POST 4   FINAL 6"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "shristi-vikas-school",
-    "title": "Shristi Vikas School",
-    "category": "Institutional",
-    "location": "South India",
-    "description": "Shristi Vikas School is a institutional project in South India. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07280.JPG",
-            "type": "image",
-            "label": "DSC07280"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
-            "type": "image",
-            "label": "DSC07281"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07282.JPG",
-            "type": "image",
-            "label": "DSC07282"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07283.JPG",
-            "type": "image",
-            "label": "DSC07283"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07284.JPG",
-            "type": "image",
-            "label": "DSC07284"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07286.JPG",
-            "type": "image",
-            "label": "DSC07286"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07287.JPG",
-            "type": "image",
-            "label": "DSC07287"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07290.JPG",
-            "type": "image",
-            "label": "DSC07290"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07292.JPG",
-            "type": "image",
-            "label": "DSC07292"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07293.JPG",
-            "type": "image",
-            "label": "DSC07293"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07294.JPG",
-            "type": "image",
-            "label": "DSC07294"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07295.JPG",
-            "type": "image",
-            "label": "DSC07295"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07296.JPG",
-            "type": "image",
-            "label": "DSC07296"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07297.JPG",
-            "type": "image",
-            "label": "DSC07297"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07304.JPG",
-            "type": "image",
-            "label": "DSC07304"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07306.JPG",
-            "type": "image",
-            "label": "DSC07306"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07307.JPG",
-            "type": "image",
-            "label": "DSC07307"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07308.JPG",
-            "type": "image",
-            "label": "DSC07308"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07310.JPG",
-            "type": "image",
-            "label": "DSC07310"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07311.JPG",
-            "type": "image",
-            "label": "DSC07311"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07312.JPG",
-            "type": "image",
-            "label": "DSC07312"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "southern-railways",
-    "title": "Southern Railways",
-    "category": "Infrastructure",
-    "location": "South India",
-    "description": "Southern Railways is a infrastructure project in South India. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": null,
-    "sections": []
-  },
-  {
-    "id": "talakad-temple-mysore-karnataka",
-    "title": "Talakad Temple - Mysore, Karnataka",
-    "category": "Institutional",
-    "location": "Talakadu Temple, Karnataka",
-    "description": "Talakad Temple - Mysore, Karnataka is a institutional project in Talakadu Temple, Karnataka. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_51_16 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 51 16 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_53_19 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 53 19 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 54 44 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_56_15 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 56 15 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_58_55 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 58 55 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 24, 2026, 12_01_31 AM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 24, 2026, 12 01 31 AM"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "treasure-trove-venue-tiruppur-tamil-nadu",
-    "title": "Treasure Trove Venue - Tiruppur, Tamil Nadu",
+    "id": "grand-pavilion",
+    "title": "The Grand Pavilion Venue",
     "category": "Hospitality",
     "location": "Tiruppur, Tamil Nadu",
-    "description": "Treasure Trove Venue - Tiruppur, Tamil Nadu is a hospitality project in Tiruppur, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
-    "cover": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 8.jpg",
+    "description": "A large-scale event space characterized by wide-span structural roofing and seamless indoor-outdoor transitions.",
+    "cover": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 8.jpg",
     "sections": [
-      {
-        "id": "technical-drawings",
-        "title": "Technical drawings",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Drawings/[EN19-D1-A] CIVIL WORK MASONRY DETAIL - DIAGONAL WALL [PROTOTYPE].pdf",
-            "type": "document",
-            "label": "[EN19 D1 A] CIVIL WORK MASONRY DETAIL   DIAGONAL WALL [PROTOTYPE]"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Drawings/[EN24-D2-A] -REVISED - B&G ROOM - SCHEMATIC DETAIL.pdf",
-            "type": "document",
-            "label": "[EN24 D2 A]  REVISED   B&G ROOM   SCHEMATIC DETAIL"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Drawings/[EN26-D1-A] [HALL-A] [LEVEL-A] PLAN - SCHEMATIC DETAIL.pdf",
-            "type": "document",
-            "label": "[EN26 D1 A] [HALL A] [LEVEL A] PLAN   SCHEMATIC DETAIL"
-          }
-        ]
-      },
       {
         "id": "perspectives",
         "title": "Perspectives",
         "media": [
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 1.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 1.jpg",
             "type": "image",
             "label": "Form View 1"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 10.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 10.jpg",
             "type": "image",
             "label": "Form View 10"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 12.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 12.jpg",
             "type": "image",
             "label": "Form View 12"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 13.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 13.jpg",
             "type": "image",
             "label": "Form View 13"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 14.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 14.jpg",
             "type": "image",
             "label": "Form View 14"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 15.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 15.jpg",
             "type": "image",
             "label": "Form View 15"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 16.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 16.jpg",
             "type": "image",
             "label": "Form View 16"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 17.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 17.jpg",
             "type": "image",
             "label": "Form View 17"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 2.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 2.jpg",
             "type": "image",
             "label": "Form View 2"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 3.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 3.jpg",
             "type": "image",
             "label": "Form View 3"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 4.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 4.jpg",
             "type": "image",
             "label": "Form View 4"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 5.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 5.jpg",
             "type": "image",
             "label": "Form View 5"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 6.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 6.jpg",
             "type": "image",
             "label": "Form View 6"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 7.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 7.jpg",
             "type": "image",
             "label": "Form View 7"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 8.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 8.jpg",
             "type": "image",
             "label": "Form View 8"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 9.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 9.jpg",
             "type": "image",
             "label": "Form View 9"
           }
@@ -1084,52 +481,595 @@ export const completeProjects: CompleteProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164442.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Site Images/20260731_164442.jpg",
             "type": "image",
             "label": "20260731 164442"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164516.mp4",
-            "type": "video",
-            "label": "20260731 164516"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164801.mp4",
-            "type": "video",
-            "label": "20260731 164801"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164837.mp4",
-            "type": "video",
-            "label": "20260731 164837"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164908.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Site Images/20260731_164908.jpg",
             "type": "image",
             "label": "20260731 164908"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164932.mp4",
-            "type": "video",
-            "label": "20260731 164932"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165015.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Site Images/20260731_165015.jpg",
             "type": "image",
             "label": "20260731 165015"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165034.jpg",
+            "src": "/images/projects/Complete projects/grand-pavilion-venue/Site Images/20260731_165034.jpg",
             "type": "image",
             "label": "20260731 165034"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mysore-sanctuary",
+    "title": "The Mysore Sanctuary",
+    "category": "Residential",
+    "location": "Mysore, Karnataka",
+    "description": "A grounded, modernist villa employing raw concrete and expansive glass to capture natural light.",
+    "cover": "/images/projects/Complete projects/mysore-sanctuary/site output/Cover image.png",
+    "sections": [
+      {
+        "id": "site-studies",
+        "title": "Site studies",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/mysore-sanctuary/site output/07C45233-5F92-4CA3-9CCA-C9EE9D3922D0.png",
+            "type": "image",
+            "label": "07C45233 5F92 4CA3 9CCA C9EE9D3922D0"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165108.mp4",
-            "type": "video",
-            "label": "20260731 165108"
+            "src": "/images/projects/Complete projects/mysore-sanctuary/site output/67C4ABAD-54E8-42EC-BE59-74D7E218EABB.png",
+            "type": "image",
+            "label": "67C4ABAD 54E8 42EC BE59 74D7E218EABB"
+          },
+          {
+            "src": "/images/projects/Complete projects/mysore-sanctuary/site output/7F268CC4-3239-4151-A2DE-0FE59B7FD6BF.png",
+            "type": "image",
+            "label": "7F268CC4 3239 4151 A2DE 0FE59B7FD6BF"
+          },
+          {
+            "src": "/images/projects/Complete projects/mysore-sanctuary/site output/Cover image.png",
+            "type": "image",
+            "label": "Cover image"
+          },
+          {
+            "src": "/images/projects/Complete projects/mysore-sanctuary/site output/D5C46C52-2D16-40D5-A5C7-4A76CF3F2F37.png",
+            "type": "image",
+            "label": "D5C46C52 2D16 40D5 A5C7 4A76CF3F2F37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "agrarian-retreat",
+    "title": "The Agrarian Retreat",
+    "category": "Residential",
+    "location": "Tiruchengode, Tamil Nadu",
+    "description": "A contemporary farmhouse seamlessly integrated into its agricultural context with vernacular roofing techniques.",
+    "cover": "/images/projects/Complete projects/agrarian-retreat/exterior site images/ChatGPT Image Sep 23, 2026, 08_15_11 PM.png",
+    "sections": [
+      {
+        "id": "exterior-photography",
+        "title": "Exterior photography",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/exterior site images/ChatGPT Image Sep 23, 2026, 08_10_40 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 08 10 40 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/exterior site images/ChatGPT Image Sep 23, 2026, 08_15_11 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 08 15 11 PM"
+          }
+        ]
+      },
+      {
+        "id": "interior-photography",
+        "title": "Interior photography",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/1ED4E7E5-CDE7-47AF-8142-27DF5334449A.png",
+            "type": "image",
+            "label": "1ED4E7E5 CDE7 47AF 8142 27DF5334449A"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/7BC31638-0085-4001-8361-096C25348BA3.png",
+            "type": "image",
+            "label": "7BC31638 0085 4001 8361 096C25348BA3"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 04_51_26 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 04 51 26 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 05_21_16 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 05 21 16 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 05_48_32 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 05 48 32 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 05_54_21 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 05 54 21 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 05_59_58 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 05 59 58 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 06_03_01 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 06 03 01 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 06_21_33 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 06 21 33 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 06_40_00 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 06 40 00 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 06_41_38 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 06 41 38 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 06_49_13 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 06 49 13 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/ChatGPT Image Sep 23, 2026, 08_18_29 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 08 18 29 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/agrarian-retreat/interior site images/FDB75244-6ACC-4164-B331-63671BD0E2B7.png",
+            "type": "image",
+            "label": "FDB75244 6ACC 4164 B331 63671BD0E2B7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "riverside-farmhouse",
+    "title": "Riverside Farmhouse",
+    "category": "Residential",
+    "location": "Bhavani, Tamil Nadu",
+    "description": "A tranquil private estate designed to maximize cross-ventilation and views of the surrounding watershed.",
+    "cover": "/images/projects/Complete projects/riverside-farmhouse/site images/ChatGPT Image Sep 23, 2026, 11_49_13 PM.png",
+    "sections": [
+      {
+        "id": "exterior-perspectives",
+        "title": "Exterior perspectives",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Exterior/Front view 1n_Photo - 4.jpg",
+            "type": "image",
+            "label": "Front view 1n Photo   4"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Exterior/Front view 1n_Photo - 6.jpg",
+            "type": "image",
+            "label": "Front view 1n Photo   6"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Exterior/Front view 1n_Photo - 7.jpg",
+            "type": "image",
+            "label": "Front view 1n Photo   7"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Exterior/Front view 1n_Photo - 8.jpg",
+            "type": "image",
+            "label": "Front view 1n Photo   8"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Exterior/Front view 1n_Photo - 9.jpg",
+            "type": "image",
+            "label": "Front view 1n Photo   9"
+          }
+        ]
+      },
+      {
+        "id": "interior-perspectives",
+        "title": "Interior perspectives",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/Foyer view 1.png",
+            "type": "image",
+            "label": "Foyer view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/Foyer view 2.png",
+            "type": "image",
+            "label": "Foyer view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/Foyer view 3.png",
+            "type": "image",
+            "label": "Foyer view 3"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/kitchen view 1.png",
+            "type": "image",
+            "label": "kitchen view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/kitchen view 2.png",
+            "type": "image",
+            "label": "kitchen view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/kitchen view 3.png",
+            "type": "image",
+            "label": "kitchen view 3"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/Living view 1.png",
+            "type": "image",
+            "label": "Living view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/Living view 2.png",
+            "type": "image",
+            "label": "Living view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/pooja view 1.png",
+            "type": "image",
+            "label": "pooja view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/pooja view 2.png",
+            "type": "image",
+            "label": "pooja view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/pooja view 3.png",
+            "type": "image",
+            "label": "pooja view 3"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Interior/pooja view 4.png",
+            "type": "image",
+            "label": "pooja view 4"
+          }
+        ]
+      },
+      {
+        "id": "site-photography",
+        "title": "Site photography",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/site images/ChatGPT Image Sep 23, 2026, 11_44_11 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 44 11 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/site images/ChatGPT Image Sep 23, 2026, 11_49_13 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 49 13 PM"
+          }
+        ]
+      },
+      {
+        "id": "sketch-studies",
+        "title": "Sketch studies",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/riverside-farmhouse/Sketch/POST-4 - FINAL-6.jpg",
+            "type": "image",
+            "label": "POST 4   FINAL 6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "urban-courtyard",
+    "title": "Urban Courtyard House",
+    "category": "Residential",
+    "location": "Tiruppur, Tamil Nadu",
+    "description": "An inward-looking urban residence featuring a central landscaped courtyard for privacy and thermal comfort.",
+    "cover": "/images/projects/Complete projects/urban-courtyard-house/Exterior Views/front elevation day view 4.png",
+    "sections": [
+      {
+        "id": "technical-drawings",
+        "title": "Technical drawings",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Drawings/0.png",
+            "type": "image",
+            "label": "0"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Drawings/0(1).png",
+            "type": "image",
+            "label": "0(1)"
+          }
+        ]
+      },
+      {
+        "id": "exterior-perspectives",
+        "title": "Exterior perspectives",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Exterior Views/front elevation day view 4.png",
+            "type": "image",
+            "label": "front elevation day view 4"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Exterior Views/side view 1.png",
+            "type": "image",
+            "label": "side view 1"
+          }
+        ]
+      },
+      {
+        "id": "interior-perspectives",
+        "title": "Interior perspectives",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/ff bedroom view 2.png",
+            "type": "image",
+            "label": "ff bedroom view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/ff bedroom view 4.png",
+            "type": "image",
+            "label": "ff bedroom view 4"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/ff library view 1.png",
+            "type": "image",
+            "label": "ff library view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/ff library view 2.png",
+            "type": "image",
+            "label": "ff library view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/Formal Living view 3.png",
+            "type": "image",
+            "label": "Formal Living view 3"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/Kitchen view 3 (1).png",
+            "type": "image",
+            "label": "Kitchen view 3 (1)"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/Living view 1.png",
+            "type": "image",
+            "label": "Living view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/Living view 2.jpeg",
+            "type": "image",
+            "label": "Living view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/Living view 4.png",
+            "type": "image",
+            "label": "Living view 4"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/sliding folding door v2.png",
+            "type": "image",
+            "label": "sliding folding door v2"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/v11b1.png",
+            "type": "image",
+            "label": "v11b1"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/v1b1.png",
+            "type": "image",
+            "label": "v1b1"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/v1b2.png",
+            "type": "image",
+            "label": "v1b2"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/v3b2.png",
+            "type": "image",
+            "label": "v3b2"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Interior Views/v4b2.png",
+            "type": "image",
+            "label": "v4b2"
+          }
+        ]
+      },
+      {
+        "id": "site-photography",
+        "title": "Site photography",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Site images/ChatGPT Image Sep 23, 2026, 09_04_58 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 09 04 58 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Site images/ChatGPT Image Sep 23, 2026, 09_07_06 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 09 07 06 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/urban-courtyard-house/Site images/ChatGPT Image Sep 23, 2026, 09_09_39 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 09 09 39 PM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "minimalist-haven",
+    "title": "Minimalist Canopy Haven",
+    "category": "Residential",
+    "location": "Avinashi, Tamil Nadu",
+    "description": "A sleek residential intervention focusing on deep roof overhangs and minimal material palettes.",
+    "cover": "/images/projects/Complete projects/minimalist-canopy-haven/Exterior Renders/1.jpg",
+    "sections": [
+      {
+        "id": "exterior-perspectives",
+        "title": "Exterior perspectives",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Exterior Renders/1_2 - Photo.jpg",
+            "type": "image",
+            "label": "1 2   Photo"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Exterior Renders/1.jpg",
+            "type": "image",
+            "label": "1"
+          }
+        ]
+      },
+      {
+        "id": "interior-perspectives",
+        "title": "Interior perspectives",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/Bedroom 1 V1.png",
+            "type": "image",
+            "label": "Bedroom 1 V1"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/Bedroom 2 V1.png",
+            "type": "image",
+            "label": "Bedroom 2 V1"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/Bedroom 3 V1.png",
+            "type": "image",
+            "label": "Bedroom 3 V1"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/Bedroom 3 V3.png",
+            "type": "image",
+            "label": "Bedroom 3 V3"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/Bedroom 4 V1.png",
+            "type": "image",
+            "label": "Bedroom 4 V1"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/BF42D745-DA27-4B65-BB2A-E6623061E86E.jpeg",
+            "type": "image",
+            "label": "BF42D745 DA27 4B65 BB2A E6623061E86E"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/C5A82C37-0294-4747-8A59-799502AD6560.jpeg",
+            "type": "image",
+            "label": "C5A82C37 0294 4747 8A59 799502AD6560"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/F914F757-F3F8-4369-9D80-713D7230B57C.jpeg",
+            "type": "image",
+            "label": "F914F757 F3F8 4369 9D80 713D7230B57C"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/FCCFFFBB-946B-4C7B-A819-2C2C1B2B1FAF.jpeg",
+            "type": "image",
+            "label": "FCCFFFBB 946B 4C7B A819 2C2C1B2B1FAF"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/foyer view 1.png",
+            "type": "image",
+            "label": "foyer view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/foyer view 2.png",
+            "type": "image",
+            "label": "foyer view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/kitchen view 1.jpeg",
+            "type": "image",
+            "label": "kitchen view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/kitchen view 2.jpeg",
+            "type": "image",
+            "label": "kitchen view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/Kitchen view 3.jpeg",
+            "type": "image",
+            "label": "Kitchen view 3"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/kitchen view 4.jpeg",
+            "type": "image",
+            "label": "kitchen view 4"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/kitchen view 5.jpeg",
+            "type": "image",
+            "label": "kitchen view 5"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/living view 1.png",
+            "type": "image",
+            "label": "living view 1"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/living view 2.png",
+            "type": "image",
+            "label": "living view 2"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/living view 3.png",
+            "type": "image",
+            "label": "living view 3"
+          },
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Interior Renders/living view 4.png",
+            "type": "image",
+            "label": "living view 4"
+          }
+        ]
+      },
+      {
+        "id": "site-photography",
+        "title": "Site photography",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/minimalist-canopy-haven/Site Images/ChatGPT Image Sep 23, 2026, 10_34_34 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 10 34 34 PM"
           }
         ]
       }
     ]
   }
 ];
+
+// Backwards-compatible alias for existing project route and sitemap consumers.
+export const completeProjects = portfolioProjects;
+export type CompleteProject = PortfolioProject;

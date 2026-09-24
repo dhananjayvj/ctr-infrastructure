@@ -24,50 +24,6 @@ function slugify(value) {
     .toLowerCase();
 }
 
-function titleize(value) {
-  const cleaned = value
-    .replace(/[_]/g, "'")
-    .replace(/\s+/g, ' ')
-    .trim()
-    .replace(/\bTamilnadu\b/gi, 'Tamil Nadu')
-    .replace(/\bTalakadu\b/gi, 'Talakad')
-    .replace(/\bUnversity\b/i, 'University')
-    .replace(/^Micelleneous$/i, 'Miscellaneous')
-    .replace(/\s*,\s*/g, ', ')
-    .replace(/[., ]+$/, '');
-  return cleaned;
-}
-
-function inferCategory(name) {
-  const value = name.toLowerCase();
-  if (/(residence|farmhouse|carmel)/.test(value)) return 'Residential';
-  if (/(resort|motel|venue)/.test(value)) return 'Hospitality';
-  if (/(school|university|temple|karunya)/.test(value)) return 'Institutional';
-  if (/(petroleum|railways|helipad)/.test(value)) return 'Infrastructure';
-  return 'Commercial';
-}
-
-function inferLocation(name) {
-  const parts = name.split(' - ').map((part) => part.trim()).filter(Boolean);
-  const suffix = parts[parts.length - 1]?.replace(/\s+/g, ' ').trim() ?? '';
-  if (/karnataka/i.test(suffix) && parts.length > 1) return `${parts[parts.length - 2]}, Karnataka`;
-  if (/tamilnadu|tamil nadu/i.test(suffix) && parts.length > 1) {
-    const city = suffix.split(',')[0]?.trim() || parts[parts.length - 2];
-    return `${city}, Tamil Nadu`;
-  }
-  if (parts.length > 1) return suffix;
-  const value = name.toLowerCase();
-  if (value.includes('chennai')) return 'Chennai, Tamil Nadu';
-  if (value.includes('mysore')) return 'Mysore, Karnataka';
-  if (value.includes('coimbatore')) return 'Coimbatore, Tamil Nadu';
-  if (value.includes('tiruppur')) return 'Tiruppur, Tamil Nadu';
-  if (value.includes('nilgiris')) return 'The Nilgiris, Tamil Nadu';
-  if (value.includes('tiruchengode')) return 'Tiruchengode, Tamil Nadu';
-  if (value.includes('bhavani')) return 'Bhavani, Tamil Nadu';
-  if (value.includes('avinashi')) return 'Avinashi, Tamil Nadu';
-  return 'South India';
-}
-
 function sectionLabel(value) {
   const label = value.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
   if (/^site images?$/i.test(label)) return 'Site photography';
@@ -115,12 +71,107 @@ function publicPath(absolutePath) {
   return `/${relative}`;
 }
 
-const projects = fs.readdirSync(projectRoot, { withFileTypes: true })
-  .filter((entry) => entry.isDirectory() && entry.name !== '.DS_Store')
-  .sort((a, b) => a.name.localeCompare(b.name))
-  .map((entry) => {
-    const folder = entry.name;
-    const absoluteFolder = path.join(projectRoot, folder);
+const portfolioMetadata = [
+  {
+    sourceFolder: 'campus-masterplan',
+    id: 'campus-masterplan',
+    title: 'Campus Masterplan & Academic Block',
+    category: 'Institutional',
+    location: 'South India',
+    description: 'A sprawling institutional masterplan focused on sustainable campus flow and naturally lit academic spaces.',
+  },
+  {
+    sourceFolder: 'sacred-heritage-complex',
+    id: 'sacred-heritage-complex',
+    title: 'Sacred Heritage Complex',
+    category: 'Institutional',
+    location: 'Talakadu Temple, Karnataka',
+    description: 'A sensitive restoration and spatial intervention integrating historic context with modern pedestrian flow.',
+  },
+  {
+    sourceFolder: 'educational-block',
+    id: 'educational-block',
+    title: 'Primary Educational Block',
+    category: 'Institutional',
+    location: 'South India',
+    description: 'A dynamic learning environment designed with kinetic facades and open courtyards for early childhood development.',
+  },
+  {
+    sourceFolder: 'alpine-energy-infrastructure',
+    id: 'alpine-infrastructure',
+    title: 'Alpine Energy Infrastructure',
+    category: 'Infrastructure',
+    location: 'Nilgiris, Tamil Nadu',
+    description: 'A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.',
+  },
+  {
+    sourceFolder: 'retail-flagship-store',
+    id: 'retail-flagship',
+    title: 'Retail Flagship Store',
+    category: 'Commercial',
+    location: 'Chennai, Tamil Nadu',
+    description: 'A multi-level commercial hub featuring a striking glass curtain wall and expansive, column-free retail floors.',
+  },
+  {
+    sourceFolder: 'eco-resort-wellness',
+    id: 'eco-resort-spa',
+    title: 'Eco-Resort & Wellness Retreat',
+    category: 'Hospitality',
+    location: 'Coimbatore, Tamil Nadu',
+    description: 'A landscape-integrated hospitality project blending indigenous materials with modern luxury.',
+  },
+  {
+    sourceFolder: 'grand-pavilion-venue',
+    id: 'grand-pavilion',
+    title: 'The Grand Pavilion Venue',
+    category: 'Hospitality',
+    location: 'Tiruppur, Tamil Nadu',
+    description: 'A large-scale event space characterized by wide-span structural roofing and seamless indoor-outdoor transitions.',
+  },
+  {
+    sourceFolder: 'mysore-sanctuary',
+    id: 'mysore-sanctuary',
+    title: 'The Mysore Sanctuary',
+    category: 'Residential',
+    location: 'Mysore, Karnataka',
+    description: 'A grounded, modernist villa employing raw concrete and expansive glass to capture natural light.',
+  },
+  {
+    sourceFolder: 'agrarian-retreat',
+    id: 'agrarian-retreat',
+    title: 'The Agrarian Retreat',
+    category: 'Residential',
+    location: 'Tiruchengode, Tamil Nadu',
+    description: 'A contemporary farmhouse seamlessly integrated into its agricultural context with vernacular roofing techniques.',
+  },
+  {
+    sourceFolder: 'riverside-farmhouse',
+    id: 'riverside-farmhouse',
+    title: 'Riverside Farmhouse',
+    category: 'Residential',
+    location: 'Bhavani, Tamil Nadu',
+    description: 'A tranquil private estate designed to maximize cross-ventilation and views of the surrounding watershed.',
+  },
+  {
+    sourceFolder: 'urban-courtyard-house',
+    id: 'urban-courtyard',
+    title: 'Urban Courtyard House',
+    category: 'Residential',
+    location: 'Tiruppur, Tamil Nadu',
+    description: 'An inward-looking urban residence featuring a central landscaped courtyard for privacy and thermal comfort.',
+  },
+  {
+    sourceFolder: 'minimalist-canopy-haven',
+    id: 'minimalist-haven',
+    title: 'Minimalist Canopy Haven',
+    category: 'Residential',
+    location: 'Avinashi, Tamil Nadu',
+    description: 'A sleek residential intervention focusing on deep roof overhangs and minimal material palettes.',
+  },
+];
+
+const projects = portfolioMetadata.map(({ sourceFolder, ...project }) => {
+    const absoluteFolder = path.join(projectRoot, sourceFolder);
     const files = walk(absoluteFolder)
       .map((absolute) => ({ absolute, type: mediaType(absolute), size: fs.statSync(absolute).size }))
       .filter((file) => file.type && file.size <= maxTrackedMediaBytes)
@@ -146,23 +197,14 @@ const projects = fs.readdirSync(projectRoot, { withFileTypes: true })
     const cover = files
       .map((file) => ({ ...file, score: coverScore(file) }))
       .sort((a, b) => b.score - a.score || b.size - a.size)[0];
-    const title = titleize(folder);
-    const slug = slugify(title);
-    const category = inferCategory(folder);
-    const location = inferLocation(folder);
-
     return {
-      id: slug,
-      title,
-      category,
-      location,
-      description: `${title} is a ${category.toLowerCase()} project in ${location}. Explore the project through its perspectives, interiors, site work, and technical documentation.`,
+      ...project,
       cover: cover?.score > -1000 ? publicPath(cover.absolute) : null,
       sections: sectionRecords,
     };
   });
 
-const source = `// Generated by scripts/generate-project-catalog.mjs. Do not edit by hand.\n\nexport type ProjectMediaType = 'image' | 'video' | 'document';\n\nexport type ProjectMedia = {\n  src: string;\n  type: ProjectMediaType;\n  label: string;\n};\n\nexport type ProjectSection = {\n  id: string;\n  title: string;\n  media: ProjectMedia[];\n};\n\nexport type CompleteProject = {\n  id: string;\n  title: string;\n  category: 'Residential' | 'Commercial' | 'Hospitality' | 'Institutional' | 'Infrastructure';\n  location: string;\n  description: string;\n  cover: string | null;\n  sections: ProjectSection[];\n};\n\nexport const completeProjects: CompleteProject[] = ${JSON.stringify(projects, null, 2)};\n`;
+const source = `// Generated by scripts/generate-project-catalog.mjs. Do not edit by hand.\n\nexport type ProjectMediaType = 'image' | 'video' | 'document';\n\nexport type ProjectMedia = {\n  src: string;\n  type: ProjectMediaType;\n  label: string;\n};\n\nexport type ProjectSection = {\n  id: string;\n  title: string;\n  media: ProjectMedia[];\n};\n\nexport type PortfolioProject = {\n  id: string;\n  title: string;\n  category: 'Residential' | 'Commercial' | 'Hospitality' | 'Institutional' | 'Infrastructure';\n  location: string;\n  description: string;\n  cover: string | null;\n  sections: ProjectSection[];\n};\n\nexport const portfolioProjects: PortfolioProject[] = ${JSON.stringify(projects, null, 2)};\n\n// Backwards-compatible alias for existing project route and sitemap consumers.\nexport const completeProjects = portfolioProjects;\nexport type CompleteProject = PortfolioProject;\n`;
 
 fs.writeFileSync(outputPath, source);
 console.log(`Generated ${projects.length} projects at ${outputPath}`);
