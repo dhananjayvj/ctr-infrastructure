@@ -655,37 +655,6 @@ export const completeProjects: CompleteProject[] = [
     ]
   },
   {
-    "id": "miscellaneous",
-    "title": "Miscellaneous",
-    "category": "Commercial",
-    "location": "South India",
-    "description": "Miscellaneous is a commercial project in South India. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Micelleneous/1.jpg",
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Micelleneous/1.jpg",
-            "type": "image",
-            "label": "1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Micelleneous/2.jpg",
-            "type": "image",
-            "label": "2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Micelleneous/3_Photo - 3.jpg",
-            "type": "image",
-            "label": "3 Photo   3"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "sathyamoorthys-farmhouse-bhavani",
     "title": "Sathyamoorthy's Farmhouse - Bhavani",
     "category": "Residential",
@@ -1125,24 +1094,9 @@ export const completeProjects: CompleteProject[] = [
             "label": "20260731 164516"
           },
           {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164801.mp4",
-            "type": "video",
-            "label": "20260731 164801"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164837.mp4",
-            "type": "video",
-            "label": "20260731 164837"
-          },
-          {
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164908.jpg",
             "type": "image",
             "label": "20260731 164908"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164932.mp4",
-            "type": "video",
-            "label": "20260731 164932"
           },
           {
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165015.jpg",
@@ -1153,11 +1107,6 @@ export const completeProjects: CompleteProject[] = [
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165034.jpg",
             "type": "image",
             "label": "20260731 165034"
-          },
-          {
-            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165108.mp4",
-            "type": "video",
-            "label": "20260731 165108"
           }
         ]
       }

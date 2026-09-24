@@ -24,15 +24,18 @@ const categorySizes: Record<ProjectLocation['category'], number> = {
 };
 const regionPositions: Record<ProjectLocation['state'], Array<{ left: number; top: number }>> = {
   Karnataka: [
-    { left: 12, top: 9 }, { left: 38, top: 9 }, { left: 64, top: 9 }, { left: 88, top: 9 },
-    { left: 18, top: 19 }, { left: 43, top: 19 }, { left: 68, top: 19 }, { left: 92, top: 19 },
+    { left: 14, top: 9 }, { left: 43, top: 13 }, { left: 72, top: 8 }, { left: 91, top: 15 },
+    { left: 20, top: 23 }, { left: 50, top: 27 }, { left: 77, top: 22 }, { left: 91, top: 28 },
   ],
-  'Tamil Nadu': Array.from({ length: 24 }, (_, index) => {
-    const column = index % 4;
-    const row = Math.floor(index / 4);
-    return { left: 16 + column * 22 + ((row + column) % 2), top: 33 + row * 9 + ((index * 5) % 3) };
-  }),
-  'Andhra Pradesh': [{ left: 15, top: 93 }],
+  'Tamil Nadu': [
+    { left: 15, top: 37 }, { left: 39, top: 34 }, { left: 66, top: 38 }, { left: 88, top: 35 },
+    { left: 23, top: 45 }, { left: 51, top: 47 }, { left: 76, top: 44 }, { left: 91, top: 49 },
+    { left: 14, top: 53 }, { left: 34, top: 55 }, { left: 61, top: 52 }, { left: 82, top: 56 },
+    { left: 24, top: 62 }, { left: 49, top: 60 }, { left: 72, top: 63 }, { left: 92, top: 60 },
+    { left: 14, top: 69 }, { left: 38, top: 71 }, { left: 65, top: 68 }, { left: 86, top: 72 },
+    { left: 12, top: 78 }, { left: 35, top: 76 }, { left: 59, top: 79 }, { left: 84, top: 77 },
+  ],
+  'Andhra Pradesh': [{ left: 14, top: 95 }],
 };
 
 function projectPosition(location: ProjectLocation) {
