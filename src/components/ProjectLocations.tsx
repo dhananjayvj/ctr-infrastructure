@@ -1,30 +1,53 @@
 'use client';
 
 import { useState } from 'react';
-import { Box, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Flex, Heading, HStack, Text, VStack } from '@chakra-ui/react';
 import { useReducedMotion } from 'framer-motion';
 import type { ProjectLocation } from '@/data/locations';
 import { projectLocations } from '@/data/locations';
 import { sectionPy } from '@/lib/spacing';
 
 const categoryColors: Record<ProjectLocation['category'], string> = {
-  Residential: '#e8d8bd',
-  Commercial: '#b9d4cf',
-  Hospitality: '#d9b99d',
-  Institutional: '#b9c9df',
-  Corporate: '#c9bfdc',
+  Residential: '#f1c27d',
+  Commercial: '#72d1c0',
+  Hospitality: '#ee8d9f',
+  Institutional: '#86aef0',
+  Corporate: '#c79bea',
+};
+const categoryOrder: ProjectLocation['category'][] = ['Residential', 'Commercial', 'Hospitality', 'Institutional', 'Corporate'];
+const categorySizes: Record<ProjectLocation['category'], number> = {
+  Residential: 24,
+  Commercial: 27,
+  Hospitality: 30,
+  Institutional: 33,
+  Corporate: 36,
+};
+const categoryShapes: Record<ProjectLocation['category'], string> = {
+  Residential: 'circle',
+  Commercial: 'square',
+  Hospitality: 'diamond',
+  Institutional: 'triangle',
+  Corporate: 'hexagon',
 };
 const regionPositions: Record<ProjectLocation['state'], Array<{ left: number; top: number }>> = {
   Karnataka: [
-    { left: 8, top: 13 }, { left: 19, top: 20 }, { left: 9, top: 36 }, { left: 21, top: 44 },
-    { left: 8, top: 60 }, { left: 20, top: 67 }, { left: 10, top: 82 }, { left: 21, top: 88 },
+    { left: 12, top: 9 }, { left: 38, top: 9 }, { left: 64, top: 9 }, { left: 88, top: 9 },
+    { left: 18, top: 19 }, { left: 43, top: 19 }, { left: 68, top: 19 }, { left: 92, top: 19 },
   ],
   'Tamil Nadu': Array.from({ length: 24 }, (_, index) => {
     const column = index % 4;
     const row = Math.floor(index / 4);
-    return { left: 33 + column * 10 + ((row + column) % 2), top: 11 + row * 15 + ((index * 5) % 3) };
+    return { left: 16 + column * 22 + ((row + column) % 2), top: 33 + row * 9 + ((index * 5) % 3) };
   }),
-  'Andhra Pradesh': [{ left: 89, top: 48 }],
+  'Andhra Pradesh': [{ left: 15, top: 93 }],
+};
+
+const shapeStyles: Record<string, { borderRadius?: string; clipPath?: string }> = {
+  circle: { borderRadius: 'full' },
+  square: { borderRadius: '0' },
+  diamond: { clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' },
+  triangle: { clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' },
+  hexagon: { clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)' },
 };
 
 function projectPosition(location: ProjectLocation) {
@@ -43,6 +66,8 @@ function LocationPin({ location, active, reducedMotion, onSelect, onHover }: {
 }) {
   const position = projectPosition(location);
   const accent = categoryColors[location.category];
+  const shape = shapeStyles[categoryShapes[location.category]];
+  const size = categorySizes[location.category];
 
   return (
     <Box position="absolute" {...position} transform="translate(-50%, -50%)" zIndex={active ? 3 : 2}>
@@ -75,8 +100,8 @@ function LocationPin({ location, active, reducedMotion, onSelect, onHover }: {
         onMouseEnter={onHover}
         onFocus={onHover}
         position="relative"
-        w={active ? '36px' : '28px'}
-        h={active ? '36px' : '28px'}
+        w={`${active ? size + 8 : size}px`}
+        h={`${active ? size + 8 : size}px`}
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -85,6 +110,7 @@ function LocationPin({ location, active, reducedMotion, onSelect, onHover }: {
         borderRadius="full"
         bg={active ? accent : 'rgba(10,10,10,0.82)'}
         color={accent}
+        {...shape}
         transition="all 0.3s"
         _hover={{ transform: 'scale(1.08)', borderColor: accent }}
         _focusVisible={{ boxShadow: '0 0 0 2px var(--chakra-colors-dark-900), 0 0 0 4px var(--chakra-colors-dark-50)' }}
@@ -126,13 +152,16 @@ export function ProjectLocations() {
             <svg viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.7 }} aria-hidden="true">
               {[12, 24, 36, 48, 60, 72, 84].map((line) => <line key={`h-${line}`} x1="0" y1={line} x2="100" y2={line} stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
               {[14, 28, 42, 56, 70, 84].map((line) => <line key={`v-${line}`} x1={line} y1="0" x2={line} y2="100" stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
-              <path d="M26 0 L34 100" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
-              <path d="M66 0 L74 100" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
+              <path d="M0 26 L100 30" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
+              <path d="M0 81 L100 85" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
             </svg>
-            <Text position="absolute" top={5} left="7%" fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">KARNATAKA</Text>
-            <Text position="absolute" top={5} left="47%" transform="translateX(-50%)" fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">TAMIL NADU</Text>
-            <Text position="absolute" top={5} right="6%" fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">ANDHRA PRADESH</Text>
+            <Text position="absolute" top={4} left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">KARNATAKA</Text>
+            <Text position="absolute" top="31%" left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">TAMIL NADU</Text>
+            <Text position="absolute" bottom={5} left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">ANDHRA PRADESH</Text>
             {locationsInView.map((location) => <LocationPin key={location.id} location={location} active={location.id === activeLocation?.id} reducedMotion={reducedMotion} onSelect={() => selectLocation(location.id)} onHover={() => selectLocation(location.id)} />)}
+            <Flex position="absolute" bottom={4} right={4} left={{ base: '32%', md: '28%' }} px={3} py={2} bg="rgba(10,10,10,0.72)" border="1px solid" borderColor="whiteAlpha.200" gap={{ base: 2, md: 4 }} flexWrap="wrap" justify="flex-end">
+              {categoryOrder.map((category) => <HStack key={category} spacing={2} align="center"><Box w={`${Math.max(10, categorySizes[category] * 0.55)}px`} h={`${Math.max(10, categorySizes[category] * 0.55)}px`} flexShrink={0} bg={categoryColors[category]} {...shapeStyles[categoryShapes[category]]} /><Text fontFamily="mono" fontSize="10px" color="dark.200">{category.toLowerCase()}</Text></HStack>)}
+            </Flex>
           </Box>
       </Box>
     </Box>
