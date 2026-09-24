@@ -1094,9 +1094,24 @@ export const completeProjects: CompleteProject[] = [
             "label": "20260731 164516"
           },
           {
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164801.mp4",
+            "type": "video",
+            "label": "20260731 164801"
+          },
+          {
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164837.mp4",
+            "type": "video",
+            "label": "20260731 164837"
+          },
+          {
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164908.jpg",
             "type": "image",
             "label": "20260731 164908"
+          },
+          {
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164932.mp4",
+            "type": "video",
+            "label": "20260731 164932"
           },
           {
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165015.jpg",
@@ -1107,6 +1122,11 @@ export const completeProjects: CompleteProject[] = [
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165034.jpg",
             "type": "image",
             "label": "20260731 165034"
+          },
+          {
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165108.mp4",
+            "type": "video",
+            "label": "20260731 165108"
           }
         ]
       }

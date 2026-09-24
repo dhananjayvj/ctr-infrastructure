@@ -13,7 +13,7 @@ const theme = extendTheme({
   fonts: {
     heading: `'Cormorant Garamond', Georgia, serif`,
     body: `'Manrope', -apple-system, BlinkMacSystemFont, sans-serif`,
-    mono: `'SFMono-Regular', Consolas, 'Liberation Mono', monospace`,
+    mono: `'Manrope', -apple-system, BlinkMacSystemFont, sans-serif`,
   },
   fontSizes: {
     'display-xl': 'clamp(3.25rem, 6vw, 5.75rem)',
