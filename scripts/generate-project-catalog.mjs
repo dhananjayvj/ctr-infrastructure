@@ -70,13 +70,36 @@ function inferLocation(name) {
 
 function sectionLabel(value) {
   const label = value.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
-  if (/^site images?$/i.test(label)) return 'Site images';
-  if (/^interior site images?$/i.test(label)) return 'Interior views';
-  if (/^exterior site images?$/i.test(label)) return 'Exterior views';
-  if (/^interior renders?$/i.test(label)) return 'Interior renders';
-  if (/^exterior renders?$/i.test(label)) return 'Exterior renders';
-  if (/^site output$/i.test(label)) return 'Site output';
+  if (/^site images?$/i.test(label)) return 'Site photography';
+  if (/^interior site images?$/i.test(label)) return 'Interior photography';
+  if (/^exterior site images?$/i.test(label)) return 'Exterior photography';
+  if (/^interior views?$/i.test(label)) return 'Interior perspectives';
+  if (/^exterior views?$/i.test(label)) return 'Exterior perspectives';
+  if (/^interior renders?$/i.test(label)) return 'Interior perspectives';
+  if (/^exterior renders?$/i.test(label)) return 'Exterior perspectives';
+  if (/^renders?$/i.test(label)) return 'Perspectives';
+  if (/^site output$/i.test(label)) return 'Site studies';
+  if (/^exterior$/i.test(label)) return 'Exterior perspectives';
+  if (/^interior$/i.test(label)) return 'Interior perspectives';
+  if (/^drawings?$/i.test(label)) return 'Technical drawings';
+  if (/^sketch(es)?$/i.test(label)) return 'Sketch studies';
   return label.replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function coverScore(file) {
+  if (file.type !== 'image') return Number.NEGATIVE_INFINITY;
+  const value = file.absolute.toLowerCase();
+  if (/(drawing|sketch|plan|section|detail|schedule|diagram|legend)/.test(value)) return -1000;
+
+  let score = 0;
+  if (/(exterior renders?|exterior views?|exterior perspectives?)/.test(value)) score += 80;
+  if (/(^|[/ ])renders?([/ ])/.test(value)) score += 72;
+  if (/(site images?|site output|site studies)/.test(value)) score += 58;
+  if (/(interior views?|interior renders?|interior perspectives?)/.test(value)) score += 42;
+  if (/(cover|hero|front elevation|facade|perspective|render|view)/.test(value)) score += 20;
+  if (/(front|main|primary)/.test(value)) score += 8;
+  if (/(^|[/ ])0(\(1\))?\./.test(value)) score -= 30;
+  return score;
 }
 
 function mediaType(file) {
@@ -120,17 +143,21 @@ const projects = fs.readdirSync(projectRoot, { withFileTypes: true })
       title,
       media,
     }));
-    const cover = sectionRecords.flatMap((section) => section.media).find((media) => media.type === 'image');
+    const cover = files
+      .map((file) => ({ ...file, score: coverScore(file) }))
+      .sort((a, b) => b.score - a.score || b.size - a.size)[0];
     const title = titleize(folder);
     const slug = slugify(title);
+    const category = inferCategory(folder);
+    const location = inferLocation(folder);
 
     return {
       id: slug,
       title,
-      category: inferCategory(folder),
-      location: inferLocation(folder),
-      description: `${title} is a ${inferCategory(folder).toLowerCase()} project in ${inferLocation(folder)}. Explore the documentation by view, interior, drawing, and site section.`,
-      cover: cover?.src ?? null,
+      category,
+      location,
+      description: `${title} is a ${category.toLowerCase()} project in ${location}. Explore the project through its perspectives, interiors, site work, and technical documentation.`,
+      cover: cover?.score > -1000 ? publicPath(cover.absolute) : null,
       sections: sectionRecords,
     };
   });

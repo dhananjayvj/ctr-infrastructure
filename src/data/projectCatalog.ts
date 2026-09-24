@@ -30,12 +30,12 @@ export const completeProjects: CompleteProject[] = [
     "title": "Carmel's residence - Mysore - Karnataka",
     "category": "Residential",
     "location": "Mysore, Karnataka",
-    "description": "Carmel's residence - Mysore - Karnataka is a residential project in Mysore, Karnataka. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/07C45233-5F92-4CA3-9CCA-C9EE9D3922D0.png",
+    "description": "Carmel's residence - Mysore - Karnataka is a residential project in Mysore, Karnataka. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/Cover image.png",
     "sections": [
       {
-        "id": "site-output",
-        "title": "Site output",
+        "id": "site-studies",
+        "title": "Site studies",
         "media": [
           {
             "src": "/images/projects/Complete projects/Carmel_s residence - Mysore - Karnataka/site output/07C45233-5F92-4CA3-9CCA-C9EE9D3922D0.png",
@@ -71,8 +71,8 @@ export const completeProjects: CompleteProject[] = [
     "title": "Chennai Silks",
     "category": "Commercial",
     "location": "Chennai, Tamil Nadu",
-    "description": "Chennai Silks is a commercial project in Chennai, Tamil Nadu. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_33_58 PM.png",
+    "description": "Chennai Silks is a commercial project in Chennai, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
     "sections": [
       {
         "id": "overview",
@@ -102,12 +102,12 @@ export const completeProjects: CompleteProject[] = [
     "title": "Deepak's Residence - Tiruppur, Tamil Nadu",
     "category": "Residential",
     "location": "Tiruppur, Tamil Nadu",
-    "description": "Deepak's Residence - Tiruppur, Tamil Nadu is a residential project in Tiruppur, Tamil Nadu. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Drawings/0.png",
+    "description": "Deepak's Residence - Tiruppur, Tamil Nadu is a residential project in Tiruppur, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Exterior Views/front elevation day view 4.png",
     "sections": [
       {
-        "id": "drawings",
-        "title": "Drawings",
+        "id": "technical-drawings",
+        "title": "Technical drawings",
         "media": [
           {
             "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Drawings/0.png",
@@ -122,8 +122,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "exterior-views",
-        "title": "Exterior Views",
+        "id": "exterior-perspectives",
+        "title": "Exterior perspectives",
         "media": [
           {
             "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Exterior Views/front elevation day view 4.png",
@@ -138,8 +138,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "interior-views",
-        "title": "Interior Views",
+        "id": "interior-perspectives",
+        "title": "Interior perspectives",
         "media": [
           {
             "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Interior Views/ff bedroom view 2.png",
@@ -219,8 +219,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "site-images",
-        "title": "Site images",
+        "id": "site-photography",
+        "title": "Site photography",
         "media": [
           {
             "src": "/images/projects/Complete projects/Deepak_s Residence - Tiruppur, Tamilnadu./Site images/ChatGPT Image Sep 23, 2026, 09_04_58 PM.png",
@@ -246,12 +246,12 @@ export const completeProjects: CompleteProject[] = [
     "title": "Eshwaren's Farmhouse - Tiruchengode - Tamil Nadu",
     "category": "Residential",
     "location": "Tamilnadu, Tamil Nadu",
-    "description": "Eshwaren's Farmhouse - Tiruchengode - Tamil Nadu is a residential project in Tamilnadu, Tamil Nadu. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/exterior site images/ChatGPT Image Sep 23, 2026, 08_10_40 PM.png",
+    "description": "Eshwaren's Farmhouse - Tiruchengode - Tamil Nadu is a residential project in Tamilnadu, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/exterior site images/ChatGPT Image Sep 23, 2026, 08_15_11 PM.png",
     "sections": [
       {
-        "id": "exterior-views",
-        "title": "Exterior views",
+        "id": "exterior-photography",
+        "title": "Exterior photography",
         "media": [
           {
             "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/exterior site images/ChatGPT Image Sep 23, 2026, 08_10_40 PM.png",
@@ -266,8 +266,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "interior-views",
-        "title": "Interior views",
+        "id": "interior-photography",
+        "title": "Interior photography",
         "media": [
           {
             "src": "/images/projects/Complete projects/Eshwaren_s Farmhouse - Tiruchengode - Tamilnadu/interior site images/1ED4E7E5-CDE7-47AF-8142-27DF5334449A.png",
@@ -348,12 +348,12 @@ export const completeProjects: CompleteProject[] = [
     "title": "Ganeshan's Residence - Avinashi - Tamil Nadu",
     "category": "Residential",
     "location": "Tamilnadu, Tamil Nadu",
-    "description": "Ganeshan's Residence - Avinashi - Tamil Nadu is a residential project in Tamilnadu, Tamil Nadu. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Exterior Renders/1_2 - Photo.jpg",
+    "description": "Ganeshan's Residence - Avinashi - Tamil Nadu is a residential project in Tamilnadu, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Exterior Renders/1.jpg",
     "sections": [
       {
-        "id": "exterior-renders",
-        "title": "Exterior renders",
+        "id": "exterior-perspectives",
+        "title": "Exterior perspectives",
         "media": [
           {
             "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Exterior Renders/1_2 - Photo.jpg",
@@ -368,8 +368,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "interior-renders",
-        "title": "Interior renders",
+        "id": "interior-perspectives",
+        "title": "Interior perspectives",
         "media": [
           {
             "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Interior Renders/Bedroom 1 V1.png",
@@ -474,8 +474,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "site-images",
-        "title": "Site images",
+        "id": "site-photography",
+        "title": "Site photography",
         "media": [
           {
             "src": "/images/projects/Complete projects/Ganeshan_s Residence - Avinashi - Tamilnadu/Site Images/ChatGPT Image Sep 23, 2026, 10_34_34 PM.png",
@@ -491,7 +491,7 @@ export const completeProjects: CompleteProject[] = [
     "title": "Helipad",
     "category": "Infrastructure",
     "location": "South India",
-    "description": "Helipad is a infrastructure project in South India. Explore the documentation by view, interior, drawing, and site section.",
+    "description": "Helipad is a infrastructure project in South India. Explore the project through its perspectives, interiors, site work, and technical documentation.",
     "cover": null,
     "sections": []
   },
@@ -500,8 +500,8 @@ export const completeProjects: CompleteProject[] = [
     "title": "Hindustan Petroleum - Nilgiris",
     "category": "Infrastructure",
     "location": "Nilgiris",
-    "description": "Hindustan Petroleum - Nilgiris is a infrastructure project in Nilgiris. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v1.png",
+    "description": "Hindustan Petroleum - Nilgiris is a infrastructure project in Nilgiris. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
     "sections": [
       {
         "id": "overview",
@@ -556,12 +556,12 @@ export const completeProjects: CompleteProject[] = [
     "title": "Hindustan resort, Coimbatore, Tamil Nadu",
     "category": "Hospitality",
     "location": "Coimbatore, Tamil Nadu",
-    "description": "Hindustan resort, Coimbatore, Tamil Nadu is a hospitality project in Coimbatore, Tamil Nadu. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_54_27 PM.png",
+    "description": "Hindustan resort, Coimbatore, Tamil Nadu is a hospitality project in Coimbatore, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
     "sections": [
       {
-        "id": "renders",
-        "title": "Renders",
+        "id": "perspectives",
+        "title": "Perspectives",
         "media": [
           {
             "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_54_27 PM.png",
@@ -591,8 +591,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "site-images",
-        "title": "Site images",
+        "id": "site-photography",
+        "title": "Site photography",
         "media": [
           {
             "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_17_28 PM.png",
@@ -628,8 +628,8 @@ export const completeProjects: CompleteProject[] = [
     "title": "Karunya University",
     "category": "Institutional",
     "location": "South India",
-    "description": "Karunya University is a institutional project in South India. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_30_23 PM.png",
+    "description": "Karunya University is a institutional project in South India. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_32_02 PM.png",
     "sections": [
       {
         "id": "overview",
@@ -659,12 +659,12 @@ export const completeProjects: CompleteProject[] = [
     "title": "Sathyamoorthy's Farmhouse - Bhavani",
     "category": "Residential",
     "location": "Bhavani",
-    "description": "Sathyamoorthy's Farmhouse - Bhavani is a residential project in Bhavani. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Exterior/Front view 1n_Photo - 4.jpg",
+    "description": "Sathyamoorthy's Farmhouse - Bhavani is a residential project in Bhavani. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/site images/ChatGPT Image Sep 23, 2026, 11_49_13 PM.png",
     "sections": [
       {
-        "id": "exterior",
-        "title": "Exterior",
+        "id": "exterior-perspectives",
+        "title": "Exterior perspectives",
         "media": [
           {
             "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Exterior/Front view 1n_Photo - 4.jpg",
@@ -694,8 +694,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "interior",
-        "title": "Interior",
+        "id": "interior-perspectives",
+        "title": "Interior perspectives",
         "media": [
           {
             "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Interior/Foyer view 1.png",
@@ -760,8 +760,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "site-images",
-        "title": "Site images",
+        "id": "site-photography",
+        "title": "Site photography",
         "media": [
           {
             "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/site images/ChatGPT Image Sep 23, 2026, 11_44_11 PM.png",
@@ -776,8 +776,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "sketch",
-        "title": "Sketch",
+        "id": "sketch-studies",
+        "title": "Sketch studies",
         "media": [
           {
             "src": "/images/projects/Complete projects/Sathyamoorthy_s Farmhouse - Bhavani/Sketch/POST-4 - FINAL-6.jpg",
@@ -793,8 +793,8 @@ export const completeProjects: CompleteProject[] = [
     "title": "Shristi Vikas School",
     "category": "Institutional",
     "location": "South India",
-    "description": "Shristi Vikas School is a institutional project in South India. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Shristi Vikas School/DSC07280.JPG",
+    "description": "Shristi Vikas School is a institutional project in South India. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
     "sections": [
       {
         "id": "overview",
@@ -914,7 +914,7 @@ export const completeProjects: CompleteProject[] = [
     "title": "Southern Railways",
     "category": "Infrastructure",
     "location": "South India",
-    "description": "Southern Railways is a infrastructure project in South India. Explore the documentation by view, interior, drawing, and site section.",
+    "description": "Southern Railways is a infrastructure project in South India. Explore the project through its perspectives, interiors, site work, and technical documentation.",
     "cover": null,
     "sections": []
   },
@@ -923,8 +923,8 @@ export const completeProjects: CompleteProject[] = [
     "title": "Talakad Temple - Mysore, Karnataka",
     "category": "Institutional",
     "location": "Talakadu Temple, Karnataka",
-    "description": "Talakad Temple - Mysore, Karnataka is a institutional project in Talakadu Temple, Karnataka. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_51_16 PM.png",
+    "description": "Talakad Temple - Mysore, Karnataka is a institutional project in Talakadu Temple, Karnataka. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
     "sections": [
       {
         "id": "overview",
@@ -969,12 +969,12 @@ export const completeProjects: CompleteProject[] = [
     "title": "Treasure Trove Venue - Tiruppur, Tamil Nadu",
     "category": "Hospitality",
     "location": "Tiruppur, Tamil Nadu",
-    "description": "Treasure Trove Venue - Tiruppur, Tamil Nadu is a hospitality project in Tiruppur, Tamil Nadu. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 1.jpg",
+    "description": "Treasure Trove Venue - Tiruppur, Tamil Nadu is a hospitality project in Tiruppur, Tamil Nadu. Explore the project through its perspectives, interiors, site work, and technical documentation.",
+    "cover": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 8.jpg",
     "sections": [
       {
-        "id": "drawings",
-        "title": "Drawings",
+        "id": "technical-drawings",
+        "title": "Technical drawings",
         "media": [
           {
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Drawings/[EN19-D1-A] CIVIL WORK MASONRY DETAIL - DIAGONAL WALL [PROTOTYPE].pdf",
@@ -994,8 +994,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "renders",
-        "title": "Renders",
+        "id": "perspectives",
+        "title": "Perspectives",
         "media": [
           {
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 1.jpg",
@@ -1080,8 +1080,8 @@ export const completeProjects: CompleteProject[] = [
         ]
       },
       {
-        "id": "site-images",
-        "title": "Site images",
+        "id": "site-photography",
+        "title": "Site photography",
         "media": [
           {
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164442.jpg",
