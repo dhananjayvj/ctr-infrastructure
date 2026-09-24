@@ -1,11 +1,22 @@
 'use client';
 
-import { Box, Container, Flex, Heading, HStack, Image, Text, VStack } from '@chakra-ui/react';
-import { motion, useReducedMotion } from 'framer-motion';
+import { Box, Container, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useState } from 'react';
 import type { CompleteProject } from '@/data/projectCatalog';
 
 const MotionBox = motion(Box);
+
+const categoryOrder: CompleteProject['category'][] = [
+  'Residential',
+  'Commercial',
+  'Hospitality',
+  'Institutional',
+  'Infrastructure',
+];
+
+type ProjectFilter = 'All projects' | CompleteProject['category'];
 
 function assetSrc(src: string) {
   return encodeURI(src);
@@ -32,13 +43,63 @@ function ProjectVisual({ project }: { project: CompleteProject }) {
 }
 
 export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) {
-  const reducedMotion = useReducedMotion();
+  const [activeFilter, setActiveFilter] = useState<ProjectFilter>('All projects');
+  const categories = categoryOrder.filter((category) => projects.some((project) => project.category === category));
+  const visibleProjects = activeFilter === 'All projects'
+    ? projects
+    : projects.filter((project) => project.category === activeFilter);
 
   return (
     <Box as="section" id="all-projects" bg="dark.900">
       <Container maxW="1440px">
-        <Flex borderTop="1px solid" borderColor="whiteAlpha.120" direction="column">
-          {projects.map((project, index) => {
+        <Box borderTop="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.120">
+          <Flex justify="space-between" align="baseline" gap={5} pt={{ base: 5, md: 6 }}>
+            <Text variant="caption">Filter by project type</Text>
+            <Text variant="caption" color="dark.400">{visibleProjects.length} projects</Text>
+          </Flex>
+          <Flex className="audi-scroll-strip" gap={{ base: 5, md: 8 }} py={3}>
+            {(['All projects', ...categories] as ProjectFilter[]).map((filter) => {
+              const isActive = activeFilter === filter;
+              return (
+                <Box
+                  key={filter}
+                  as="button"
+                  type="button"
+                  aria-pressed={isActive}
+                  onClick={() => setActiveFilter(filter)}
+                  minH="44px"
+                  position="relative"
+                  flexShrink={0}
+                  color={isActive ? 'dark.50' : 'dark.300'}
+                  fontSize="xs"
+                  fontWeight="600"
+                  letterSpacing="0.12em"
+                  textTransform="uppercase"
+                  transition="color 180ms ease-out"
+                  _after={{
+                    content: '""',
+                    position: 'absolute',
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    h: '1px',
+                    bg: 'dark.50',
+                    transform: isActive ? 'scaleX(1)' : 'scaleX(0)',
+                    transformOrigin: 'left',
+                    transition: 'transform 180ms ease-out',
+                  }}
+                  _hover={{ color: 'dark.50' }}
+                  _focusVisible={{ outline: '2px solid', outlineColor: 'dark.50', outlineOffset: '3px' }}
+                >
+                  {filter}
+                </Box>
+              );
+            })}
+          </Flex>
+        </Box>
+
+        <Flex direction="column">
+          {visibleProjects.map((project, index) => {
             const imageFirst = index % 2 === 1;
             return (
               <Box
@@ -64,10 +125,7 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
                   borderColor="whiteAlpha.120"
                 >
                   <VStack align="flex-start" spacing={{ base: 5, md: 7 }}>
-                    <HStack spacing={4} color="dark.400">
-                      <Text variant="caption">{String(index + 1).padStart(2, '0')}</Text>
-                      <Text variant="caption">{project.category}</Text>
-                    </HStack>
+                    <Text variant="caption" color="dark.400">{project.category}</Text>
                     <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} fontWeight="400" lineHeight="1.02" maxW="30rem">
                       {project.title}
                     </Heading>

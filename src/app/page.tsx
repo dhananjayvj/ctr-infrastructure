@@ -16,7 +16,7 @@ import {
   Button,
 } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { FiMapPin, FiMail } from 'react-icons/fi';
+import { FiMapPin, FiMail, FiMessageCircle, FiPhone } from 'react-icons/fi';
 import NextLink from 'next/link';
 import { HeroCarousel } from '@/components/audi/HeroCarousel';
 import { QuickNavPills, LearnMoreLink } from '@/components/audi/LearnMoreLink';
@@ -497,22 +497,34 @@ export default function HomePage() {
               <Box>
                 <Text variant="caption" mb={4}>Get in touch</Text>
                 <Heading fontSize="display-md" fontWeight="400">
-                  Let&apos;s create together
+                  Contact
                 </Heading>
               </Box>
 
               <VStack align="flex-start" spacing={6}>
                 {[
                   {
-                    icon: FiMapPin,
-                    label: 'Headquarters',
-                    lines: ['Tamil Nadu, South India'],
+                    icon: FiMail,
+                    label: 'Mail',
+                    lines: ['infodesk@ctrinfrasturre.com'],
+                    href: 'mailto:infodesk@ctrinfrasturre.com',
                   },
                   {
-                    icon: FiMail,
-                    label: 'Email',
-                    lines: ['hello@ctrinfrastructure.com'],
-                    href: 'mailto:hello@ctrinfrastructure.com',
+                    icon: FiMessageCircle,
+                    label: 'WhatsApp',
+                    lines: ['9600622928'],
+                    href: 'https://wa.me/919600622928',
+                  },
+                  {
+                    icon: FiPhone,
+                    label: 'Office',
+                    lines: ['9600622928'],
+                    href: 'tel:+919600622928',
+                  },
+                  {
+                    icon: FiMapPin,
+                    label: 'Head office',
+                    lines: ['Coimbatore, Tamilnadu, India'],
                   },
                 ].map((item) => (
                   <HStack key={item.label} spacing={4} align="flex-start">

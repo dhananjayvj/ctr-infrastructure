@@ -24,11 +24,11 @@ const sections = [
   },
   {
     title: 'Your rights',
-    body: 'You may request access to, correction of, or deletion of personal information you have submitted to us by contacting hello@ctrinfrastructure.com. We will respond to verified requests within a reasonable timeframe.',
+    body: 'You may request access to, correction of, or deletion of personal information you have submitted to us by contacting infodesk@ctrinfrasturre.com. We will respond to verified requests within a reasonable timeframe.',
   },
   {
     title: 'Contact us',
-    body: 'Questions about this policy can be directed to hello@ctrinfrastructure.com.',
+    body: 'Questions about this policy can be directed to infodesk@ctrinfrasturre.com.',
   },
 ];
 
