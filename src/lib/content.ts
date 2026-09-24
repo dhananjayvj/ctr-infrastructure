@@ -12,12 +12,6 @@ export type QuickLink = {
   href: string;
 };
 
-export type StripItem = {
-  id: string;
-  label: string;
-  href: string;
-};
-
 export type FeatureTile = {
   id: number;
   title: string;
@@ -70,16 +64,6 @@ export const quickLinks: QuickLink[] = [
   { label: 'About', href: '/#about' },
   { label: 'Contact', href: '/#contact' },
   { label: 'Media', href: '/#news' },
-];
-
-export const projectStrip: StripItem[] = [
-  { id: 'hindustan-petroleum', label: 'Hindustan Petroleum', href: '/projects' },
-  { id: 'hindustan-resort', label: 'Hindustan Resort', href: '/projects' },
-  { id: 'treasure-trove', label: 'Treasure Trove Venue', href: '/projects' },
-  { id: 'urban-courtyard', label: 'Urban Courtyard House', href: '/projects' },
-  { id: 'minimalist-haven', label: 'Minimalist Canopy Haven', href: '/projects' },
-  { id: 'agrarian-retreat', label: 'The Agrarian Retreat', href: '/projects' },
-  { id: 'riverside-farmhouse', label: 'Riverside Farmhouse', href: '/projects' },
 ];
 
 export const featureTiles: FeatureTile[] = [

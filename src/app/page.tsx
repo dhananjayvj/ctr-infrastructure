@@ -20,7 +20,6 @@ import { FiMapPin, FiMail, FiMessageCircle, FiPhone } from 'react-icons/fi';
 import NextLink from 'next/link';
 import { HeroCarousel } from '@/components/audi/HeroCarousel';
 import { QuickNavPills, LearnMoreLink } from '@/components/audi/LearnMoreLink';
-import { HorizontalStrip } from '@/components/audi/HorizontalStrip';
 import { FeatureGrid } from '@/components/audi/FeatureGrid';
 import { NewsSection } from '@/components/audi/NewsSection';
 import { SiteFooter } from '@/components/SiteFooter';
@@ -30,7 +29,6 @@ import { ClientsSection } from '@/components/ClientsSection';
 import {
   heroSlides,
   quickLinks,
-  projectStrip,
   featureTiles,
   newsItems,
   stats,
@@ -76,7 +74,6 @@ export default function HomePage() {
     <Box as="main" overflowX="hidden" bg="dark.900">
       <HeroCarousel slides={heroSlides} />
       <QuickNavPills links={quickLinks} />
-      <HorizontalStrip title="CTR Projects" items={projectStrip} />
 
       {/* Discover CTA — Audi "Discover the Models" pattern */}
       <Box as="section" py={{ base: 16, md: 24 }} bg="dark.900">
@@ -89,7 +86,7 @@ export default function HomePage() {
               mr={{ lg: 0 }}
             >
               <Image
-                src="/images/projects/minimalist-canopy-haven/1.jpg"
+                src="/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_59_54 PM.png"
                 alt="CTR Infrastructure projects"
                 objectFit="cover"
                 w="full"
