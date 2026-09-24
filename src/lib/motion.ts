@@ -140,7 +140,6 @@ export const overlayVariants: Variants = {
 
 export const navLinks = [
   { label: 'Projects', href: '/projects' },
-  { label: 'Clients', href: '/projects/#clients' },
   { label: 'Locations', href: '/projects/#locations' },
   { label: 'Services', href: '/#services' },
   { label: 'About', href: '/#about' },

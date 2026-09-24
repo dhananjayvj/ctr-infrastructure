@@ -68,13 +68,15 @@ function LocationPin({ location, active, reducedMotion, onSelect, onHover }: {
   const accent = categoryColors[location.category];
   const shape = shapeStyles[categoryShapes[location.category]];
   const size = categorySizes[location.category];
+  const tooltipBelow = location.state === 'Karnataka';
 
   return (
     <Box position="absolute" {...position} transform="translate(-50%, -50%)" zIndex={active ? 3 : 2}>
       {active && (
         <Box
           position="absolute"
-          bottom="calc(100% + 12px)"
+          top={tooltipBelow ? 'calc(100% + 12px)' : 'auto'}
+          bottom={tooltipBelow ? 'auto' : 'calc(100% + 12px)'}
           left="50%"
           transform="translateX(-50%)"
           w={{ base: '180px', md: '210px' }}
@@ -106,10 +108,10 @@ function LocationPin({ location, active, reducedMotion, onSelect, onHover }: {
         alignItems="center"
         justifyContent="center"
         border="1px solid"
-        borderColor={active ? accent : `${accent}99`}
+        borderColor={accent}
         borderRadius="full"
-        bg={active ? accent : 'rgba(10,10,10,0.82)'}
-        color={accent}
+        bg={accent}
+        color="dark.900"
         {...shape}
         transition="all 0.3s"
         _hover={{ transform: 'scale(1.08)', borderColor: accent }}
@@ -134,6 +136,10 @@ export function ProjectLocations() {
   };
 
   const activeLocation = projectLocations.find((location) => location.id === activeId);
+  const categoryCounts = categoryOrder.reduce<Record<ProjectLocation['category'], number>>((counts, category) => {
+    counts[category] = locationsInView.filter((location) => location.category === category).length;
+    return counts;
+  }, {} as Record<ProjectLocation['category'], number>);
   return (
     <Box as="section" id="locations" py={sectionPy} bg="dark.900" borderTop="1px solid" borderColor="whiteAlpha.120">
       <Box maxW="1440px" mx="auto" px={{ base: 5, sm: 6, md: 10, lg: 14 }}>
@@ -152,15 +158,15 @@ export function ProjectLocations() {
             <svg viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.7 }} aria-hidden="true">
               {[12, 24, 36, 48, 60, 72, 84].map((line) => <line key={`h-${line}`} x1="0" y1={line} x2="100" y2={line} stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
               {[14, 28, 42, 56, 70, 84].map((line) => <line key={`v-${line}`} x1={line} y1="0" x2={line} y2="100" stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
-              <path d="M0 26 L100 30" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
-              <path d="M0 81 L100 85" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
+              <path d="M0 30 L100 26" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
+              <path d="M0 85 L100 81" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
             </svg>
             <Text position="absolute" top={4} left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">KARNATAKA</Text>
             <Text position="absolute" top="31%" left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">TAMIL NADU</Text>
             <Text position="absolute" bottom={5} left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">ANDHRA PRADESH</Text>
             {locationsInView.map((location) => <LocationPin key={location.id} location={location} active={location.id === activeLocation?.id} reducedMotion={reducedMotion} onSelect={() => selectLocation(location.id)} onHover={() => selectLocation(location.id)} />)}
             <Flex position="absolute" bottom={4} right={4} left={{ base: '32%', md: '28%' }} px={3} py={2} bg="rgba(10,10,10,0.72)" border="1px solid" borderColor="whiteAlpha.200" gap={{ base: 2, md: 4 }} flexWrap="wrap" justify="flex-end">
-              {categoryOrder.map((category) => <HStack key={category} spacing={2} align="center"><Box w={`${Math.max(10, categorySizes[category] * 0.55)}px`} h={`${Math.max(10, categorySizes[category] * 0.55)}px`} flexShrink={0} bg={categoryColors[category]} {...shapeStyles[categoryShapes[category]]} /><Text fontFamily="mono" fontSize="10px" color="dark.200">{category.toLowerCase()}</Text></HStack>)}
+              {categoryOrder.map((category) => <HStack key={category} spacing={2} align="center"><Box w={`${Math.max(10, categorySizes[category] * 0.55)}px`} h={`${Math.max(10, categorySizes[category] * 0.55)}px`} flexShrink={0} bg={categoryColors[category]} {...shapeStyles[categoryShapes[category]]} /><Text fontFamily="mono" fontSize="10px" color="dark.200">{category.toLowerCase()} ({categoryCounts[category]})</Text></HStack>)}
             </Flex>
           </Box>
       </Box>
