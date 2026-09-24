@@ -63,7 +63,7 @@ export function ProjectDetail({ project }: { project: CompleteProject }) {
           <Container maxW="1440px" overflowX="auto">
             <HStack spacing={0} minW="max-content">
               {project.sections.map((section, index) => (
-                <ChakraLink key={section.id} as={Link} href={`#${section.id}`} px={{ base: 4, md: 6 }} py={4} borderRight="1px solid" borderColor="whiteAlpha.120" fontFamily="mono" fontSize="10px" letterSpacing="0.12em" textTransform="uppercase" color="dark.300" _hover={{ color: 'dark.50', textDecoration: 'none', bg: 'whiteAlpha.50' }}>
+                <ChakraLink key={section.id} as={Link} href={`#${section.id}`} px={{ base: 4, md: 6 }} py={4} borderRight="1px solid" borderColor="whiteAlpha.120" fontSize="10px" letterSpacing="0.12em" textTransform="uppercase" color="dark.300" _hover={{ color: 'dark.50', textDecoration: 'none', bg: 'whiteAlpha.50' }}>
                   {String(index + 1).padStart(2, '0')} / {section.title}
                 </ChakraLink>
               ))}

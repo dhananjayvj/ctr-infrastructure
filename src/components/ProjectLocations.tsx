@@ -77,7 +77,7 @@ function LocationPin({ location, active, reducedMotion, onSelect, onHover }: {
           boxShadow="0 12px 30px rgba(0,0,0,0.28)"
           pointerEvents="none"
         >
-          <Text fontFamily="mono" fontSize="10px" color="dark.400" letterSpacing="0.1em" mb={2}>{location.category.toUpperCase()}</Text>
+          <Text fontSize="10px" color="dark.400" letterSpacing="0.1em" mb={2}>{location.category.toUpperCase()}</Text>
           <Heading fontSize="lg" fontWeight="400" lineHeight="1.05">{location.name}</Heading>
           <Text fontSize="xs" color="dark.300" mt={2}>{location.city}, {location.state}</Text>
           {location.client && <Text fontSize="xs" color="dark.400" mt={1}>{location.client}</Text>}
@@ -152,9 +152,9 @@ export function ProjectLocations() {
               <path d="M0 30 L100 26" fill="none" stroke="rgba(255,255,255,0.28)" strokeWidth="0.18" strokeDasharray="1.1 2.2" />
               <path d="M0 85 L100 81" fill="none" stroke="rgba(255,255,255,0.28)" strokeWidth="0.18" strokeDasharray="1.1 2.2" />
             </svg>
-            <Text position="absolute" top={4} left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">KARNATAKA</Text>
-            <Text position="absolute" top="31%" left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">TAMIL NADU</Text>
-            <Text position="absolute" bottom={5} left={5} fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">ANDHRA PRADESH</Text>
+            <Text position="absolute" top={4} left={5} fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">KARNATAKA</Text>
+            <Text position="absolute" top="31%" left={5} fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">TAMIL NADU</Text>
+            <Text position="absolute" bottom={5} left={5} fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">ANDHRA PRADESH</Text>
             {locationsInView.map((location) => <LocationPin key={location.id} location={location} active={location.id === activeLocation?.id} reducedMotion={reducedMotion} onSelect={() => selectLocation(location.id)} onHover={() => selectLocation(location.id)} />)}
           </Box>
           <Flex
@@ -167,12 +167,12 @@ export function ProjectLocations() {
             gap={{ base: 4, lg: 8 }}
             bg="rgba(10,10,10,0.72)"
           >
-            <Text fontFamily="mono" fontSize="9px" letterSpacing="0.16em" textTransform="uppercase" color="dark.400" flexShrink={0}>Index</Text>
+            <Text fontSize="9px" letterSpacing="0.16em" textTransform="uppercase" color="dark.400" flexShrink={0}>Index</Text>
             <Box display="grid" gridTemplateColumns={{ base: 'repeat(2, minmax(0, 1fr))', sm: 'repeat(3, minmax(0, 1fr))', lg: 'repeat(5, minmax(0, 1fr))' }} gap={{ base: 3, md: 5 }} flex="1">
               {categoryOrder.map((category) => (
                 <HStack key={category} spacing={2} align="center" minW={0}>
                   <Box w={{ base: '8px', md: '9px' }} h={{ base: '8px', md: '9px' }} flexShrink={0} borderRadius="full" bg={categoryColors[category]} boxShadow={`0 0 0 1px ${categoryColors[category]}66`} />
-                  <Text fontFamily="mono" fontSize={{ base: '9px', md: '10px' }} lineHeight="1.2" color="dark.200" textTransform="lowercase" whiteSpace="nowrap">{category} ({categoryCounts[category]})</Text>
+                  <Text fontSize={{ base: '9px', md: '10px' }} lineHeight="1.2" color="dark.200" textTransform="lowercase" whiteSpace="nowrap">{category} ({categoryCounts[category]})</Text>
                 </HStack>
               ))}
             </Box>
