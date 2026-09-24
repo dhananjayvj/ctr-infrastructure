@@ -26,29 +26,29 @@ export type PortfolioProject = {
 
 export const portfolioProjects: PortfolioProject[] = [
   {
-    "id": "campus-masterplan",
-    "title": "Campus Masterplan & Academic Block",
+    "id": "karunya-university",
+    "title": "Karunya University",
     "category": "Institutional",
     "location": "South India",
     "description": "A sprawling institutional masterplan focused on sustainable campus flow and naturally lit academic spaces.",
-    "cover": null,
+    "cover": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_32_02 PM.png",
     "sections": [
       {
         "id": "overview",
         "title": "Overview",
         "media": [
           {
-            "src": "/images/projects/Complete projects/campus-masterplan/ChatGPT Image Sep 23, 2026, 11_30_23 PM.png",
+            "src": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_30_23 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 30 23 PM"
           },
           {
-            "src": "/images/projects/Complete projects/campus-masterplan/ChatGPT Image Sep 23, 2026, 11_32_02 PM.png",
+            "src": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_32_02 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 32 02 PM"
           },
           {
-            "src": "/images/projects/Complete projects/campus-masterplan/ChatGPT Image Sep 23, 2026, 11_33_42 PM.png",
+            "src": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_33_42 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 33 42 PM"
           }
@@ -57,44 +57,44 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "id": "sacred-heritage-complex",
-    "title": "Sacred Heritage Complex",
+    "id": "talakad-temple-mysore-karnataka",
+    "title": "Talakad Temple - Mysore, Karnataka",
     "category": "Institutional",
     "location": "Talakadu Temple, Karnataka",
     "description": "A sensitive restoration and spatial intervention integrating historic context with modern pedestrian flow.",
-    "cover": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
+    "cover": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
     "sections": [
       {
         "id": "overview",
         "title": "Overview",
         "media": [
           {
-            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_51_16 PM.png",
+            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_51_16 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 51 16 PM"
           },
           {
-            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_53_19 PM.png",
+            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_53_19 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 53 19 PM"
           },
           {
-            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
+            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 54 44 PM"
           },
           {
-            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_56_15 PM.png",
+            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_56_15 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 56 15 PM"
           },
           {
-            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 23, 2026, 11_58_55 PM.png",
+            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_58_55 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 58 55 PM"
           },
           {
-            "src": "/images/projects/Complete projects/sacred-heritage-complex/ChatGPT Image Sep 24, 2026, 12_01_31 AM.png",
+            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 24, 2026, 12_01_31 AM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 24, 2026, 12 01 31 AM"
           }
@@ -103,119 +103,119 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "id": "educational-block",
-    "title": "Primary Educational Block",
+    "id": "shristi-vikas-school",
+    "title": "Shristi Vikas School",
     "category": "Institutional",
     "location": "South India",
     "description": "A dynamic learning environment designed with kinetic facades and open courtyards for early childhood development.",
-    "cover": "/images/projects/Complete projects/educational-block/DSC07281.JPG",
+    "cover": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
     "sections": [
       {
         "id": "overview",
         "title": "Overview",
         "media": [
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07280.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07280.JPG",
             "type": "image",
             "label": "DSC07280"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07281.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
             "type": "image",
             "label": "DSC07281"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07282.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07282.JPG",
             "type": "image",
             "label": "DSC07282"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07283.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07283.JPG",
             "type": "image",
             "label": "DSC07283"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07284.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07284.JPG",
             "type": "image",
             "label": "DSC07284"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07286.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07286.JPG",
             "type": "image",
             "label": "DSC07286"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07287.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07287.JPG",
             "type": "image",
             "label": "DSC07287"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07290.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07290.JPG",
             "type": "image",
             "label": "DSC07290"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07292.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07292.JPG",
             "type": "image",
             "label": "DSC07292"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07293.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07293.JPG",
             "type": "image",
             "label": "DSC07293"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07294.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07294.JPG",
             "type": "image",
             "label": "DSC07294"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07295.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07295.JPG",
             "type": "image",
             "label": "DSC07295"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07296.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07296.JPG",
             "type": "image",
             "label": "DSC07296"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07297.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07297.JPG",
             "type": "image",
             "label": "DSC07297"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07304.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07304.JPG",
             "type": "image",
             "label": "DSC07304"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07306.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07306.JPG",
             "type": "image",
             "label": "DSC07306"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07307.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07307.JPG",
             "type": "image",
             "label": "DSC07307"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07308.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07308.JPG",
             "type": "image",
             "label": "DSC07308"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07310.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07310.JPG",
             "type": "image",
             "label": "DSC07310"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07311.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07311.JPG",
             "type": "image",
             "label": "DSC07311"
           },
           {
-            "src": "/images/projects/Complete projects/educational-block/DSC07312.JPG",
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07312.JPG",
             "type": "image",
             "label": "DSC07312"
           }
@@ -224,54 +224,54 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "id": "alpine-infrastructure",
-    "title": "Alpine Energy Infrastructure",
+    "id": "hindustan-petroleum-nilgiris",
+    "title": "Hindustan Petroleum - Nilgiris",
     "category": "Infrastructure",
     "location": "Nilgiris, Tamil Nadu",
     "description": "A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.",
-    "cover": "/images/projects/Complete projects/alpine-energy-infrastructure/v17.png",
+    "cover": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
     "sections": [
       {
         "id": "overview",
         "title": "Overview",
         "media": [
           {
-            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v1.png",
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v1.png",
             "type": "image",
             "label": "v1"
           },
           {
-            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v10.png",
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v10.png",
             "type": "image",
             "label": "v10"
           },
           {
-            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v11.png",
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v11.png",
             "type": "image",
             "label": "v11"
           },
           {
-            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v12.png",
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v12.png",
             "type": "image",
             "label": "v12"
           },
           {
-            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v13.png",
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v13.png",
             "type": "image",
             "label": "v13"
           },
           {
-            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v17.png",
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
             "type": "image",
             "label": "v17"
           },
           {
-            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v2.png",
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v2.png",
             "type": "image",
             "label": "v2"
           },
           {
-            "src": "/images/projects/Complete projects/alpine-energy-infrastructure/v4.png",
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v4.png",
             "type": "image",
             "label": "v4"
           }
@@ -280,29 +280,29 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "id": "retail-flagship",
-    "title": "Retail Flagship Store",
+    "id": "chennai-silks",
+    "title": "Chennai Silks",
     "category": "Commercial",
     "location": "Chennai, Tamil Nadu",
     "description": "A multi-level commercial hub featuring a striking glass curtain wall and expansive, column-free retail floors.",
-    "cover": "/images/projects/Complete projects/retail-flagship-store/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
+    "cover": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
     "sections": [
       {
         "id": "overview",
         "title": "Overview",
         "media": [
           {
-            "src": "/images/projects/Complete projects/retail-flagship-store/ChatGPT Image Sep 23, 2026, 08_33_58 PM.png",
+            "src": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_33_58 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 08 33 58 PM"
           },
           {
-            "src": "/images/projects/Complete projects/retail-flagship-store/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
+            "src": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_54_00 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 08 54 00 PM"
           },
           {
-            "src": "/images/projects/Complete projects/retail-flagship-store/ChatGPT Image Sep 23, 2026, 08_54_22 PM.png",
+            "src": "/images/projects/Complete projects/Chennai Silks/ChatGPT Image Sep 23, 2026, 08_54_22 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 08 54 22 PM"
           }
@@ -311,39 +311,39 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "id": "eco-resort-spa",
-    "title": "Eco-Resort & Wellness Retreat",
+    "id": "hindustan-resort-coimbatore-tamil-nadu",
+    "title": "Hindustan Resort, Coimbatore, Tamil Nadu",
     "category": "Hospitality",
     "location": "Coimbatore, Tamil Nadu",
     "description": "A landscape-integrated hospitality project blending indigenous materials with modern luxury.",
-    "cover": "/images/projects/Complete projects/eco-resort-wellness/Renders/v10r.jpg",
+    "cover": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
     "sections": [
       {
         "id": "perspectives",
         "title": "Perspectives",
         "media": [
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/ChatGPT Image Sep 23, 2026, 10_54_27 PM.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_54_27 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 10 54 27 PM"
           },
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/ChatGPT Image Sep 23, 2026, 10_59_54 PM.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_59_54 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 10 59 54 PM"
           },
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/ChatGPT Image Sep 23, 2026, 11_04_08 PM.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 11_04_08 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 04 08 PM"
           },
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/ChatGPT Image Sep 23, 2026, 11_11_58 PM.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 11_11_58 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 11 58 PM"
           },
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Renders/v10r.jpg",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
             "type": "image",
             "label": "v10r"
           }
@@ -354,27 +354,27 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/ChatGPT Image Sep 23, 2026, 11_17_28 PM.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_17_28 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 17 28 PM"
           },
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/ChatGPT Image Sep 23, 2026, 11_21_43 PM.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_21_43 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 21 43 PM"
           },
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/ChatGPT Image Sep 23, 2026, 11_23_07 PM.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_23_07 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 23 07 PM"
           },
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/ChatGPT Image Sep 23, 2026, 11_25_00 PM.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_25_00 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 11 25 00 PM"
           },
           {
-            "src": "/images/projects/Complete projects/eco-resort-wellness/Site images/Project Banner_.png",
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/Project Banner_.png",
             "type": "image",
             "label": "Project Banner "
           }
@@ -383,94 +383,94 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "id": "grand-pavilion",
-    "title": "The Grand Pavilion Venue",
+    "id": "treasure-trove-venue-tiruppur-tamil-nadu",
+    "title": "Treasure Trove Venue - Tiruppur, Tamil Nadu",
     "category": "Hospitality",
     "location": "Tiruppur, Tamil Nadu",
     "description": "A large-scale event space characterized by wide-span structural roofing and seamless indoor-outdoor transitions.",
-    "cover": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 8.jpg",
+    "cover": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 8.jpg",
     "sections": [
       {
         "id": "perspectives",
         "title": "Perspectives",
         "media": [
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 1.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 1.jpg",
             "type": "image",
             "label": "Form View 1"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 10.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 10.jpg",
             "type": "image",
             "label": "Form View 10"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 12.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 12.jpg",
             "type": "image",
             "label": "Form View 12"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 13.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 13.jpg",
             "type": "image",
             "label": "Form View 13"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 14.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 14.jpg",
             "type": "image",
             "label": "Form View 14"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 15.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 15.jpg",
             "type": "image",
             "label": "Form View 15"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 16.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 16.jpg",
             "type": "image",
             "label": "Form View 16"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 17.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 17.jpg",
             "type": "image",
             "label": "Form View 17"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 2.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 2.jpg",
             "type": "image",
             "label": "Form View 2"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 3.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 3.jpg",
             "type": "image",
             "label": "Form View 3"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 4.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 4.jpg",
             "type": "image",
             "label": "Form View 4"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 5.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 5.jpg",
             "type": "image",
             "label": "Form View 5"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 6.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 6.jpg",
             "type": "image",
             "label": "Form View 6"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 7.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 7.jpg",
             "type": "image",
             "label": "Form View 7"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 8.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 8.jpg",
             "type": "image",
             "label": "Form View 8"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Renders/Form View 9.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 9.jpg",
             "type": "image",
             "label": "Form View 9"
           }
@@ -481,22 +481,22 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Site Images/20260731_164442.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164442.jpg",
             "type": "image",
             "label": "20260731 164442"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Site Images/20260731_164908.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_164908.jpg",
             "type": "image",
             "label": "20260731 164908"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Site Images/20260731_165015.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165015.jpg",
             "type": "image",
             "label": "20260731 165015"
           },
           {
-            "src": "/images/projects/Complete projects/grand-pavilion-venue/Site Images/20260731_165034.jpg",
+            "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165034.jpg",
             "type": "image",
             "label": "20260731 165034"
           }
