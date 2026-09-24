@@ -122,7 +122,7 @@ export function ClientsSection() {
           </Flex>
         </Box>
 
-        <Text variant="caption" mb={5}>Category of work</Text>
+        <Text variant="caption" mt={{ base: 16, md: 20 }} mb={5}>Category of work</Text>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={0} borderTop="1px solid" borderLeft="1px solid" borderColor="whiteAlpha.120">
           {clientGroups.map((group) => (
             <Box key={group.label} p={{ base: 5, md: 7 }} minH={{ md: '210px' }} borderRight="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.120" _hover={{ bg: 'whiteAlpha.40' }} transition="background 0.3s">

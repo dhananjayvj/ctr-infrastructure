@@ -47,17 +47,17 @@ const timelineItems = [
   {
     year: '1960s',
     title: 'A vision takes root',
-    body: 'Er. T.C. Chinnamuthu pioneers work at the intersection of water resources and landscape development, setting a course rooted in sustainability and environmental sensitivity.',
+    body: 'Er. T.C. Chinnamuthu begins a practice at the intersection of water resources, landscape, and environmental care.',
   },
   {
     year: '1990',
     title: 'CTR Infrastructure is founded',
-    body: 'The firm is officially established, building on three decades of prior groundwork and a clear vision for responsible, context-driven infrastructure.',
+    body: 'CTR Infrastructure is formally established, carrying forward three decades of context-driven groundwork.',
   },
   {
     year: 'Today',
     title: 'A multidisciplinary practice',
-    body: 'Led by Er. C. Thillairajan — Managing Director and Past President, FACEAT&P — CTR Infrastructure operates as an integrated team of engineers, architects, and technical experts across South India.',
+    body: 'Led by Er. C. Thillairajan, the practice brings engineers, architects, and technical experts together across South India.',
   },
 ];
 
@@ -72,19 +72,19 @@ const projectSectors = [
     number: '01',
     title: 'Residential Projects',
     description:
-      'Our residential work is defined by a commitment to clarity in planning, refinement in detail, and a deep respect for the individuality of each site and client. We design homes that balance spatial efficiency with comfort, privacy with openness, and permanence with adaptability.',
+      'Homes shaped by clear planning, refined detail, and a balance of comfort, privacy, openness, and permanence.',
   },
   {
     number: '02',
     title: 'Commercial & Multistorey Buildings',
     description:
-      'Our expertise in multistorey developments brings together functionality, aesthetics, and sustainability — maximizing space efficiency, natural light, and ventilation while ensuring structural integrity. From residential complexes to commercial hubs, we design vertical spaces with a refined architectural identity.',
+      'Vertical developments that unite space efficiency, natural light, ventilation, structural integrity, and a clear architectural identity.',
   },
   {
     number: '03',
     title: 'Archeology & Conservation',
     description:
-      'Our work in archaeology and conservation is driven by a deep respect for cultural heritage. We collaborate with historians, conservation experts, and local communities to document, preserve, and sometimes reinterpret historic sites — minimal yet meaningful interventions guided by research and context.',
+      'Research-led conservation with historians, experts, and communities — minimal interventions that respect cultural memory and place.',
   },
 ];
 
@@ -93,13 +93,13 @@ const designPillars = [
     number: '01',
     title: 'Minimalism',
     description:
-      'Minimalism guides our form and detailing — clean lines, quiet compositions, and restrained palettes that allow architecture to speak through space, light, and proportion. Each design is stripped of excess, yet rich in thought and experience.',
+      'Clean lines, quiet compositions, and restrained palettes let space, light, and proportion carry the experience.',
   },
   {
     number: '02',
     title: 'Sustainability',
     description:
-      'Sustainability forms the backbone of our approach. From local materials to climate-responsive planning, we create spaces that endure while fostering a meaningful connection between people, place, and nature.',
+      'Local materials and climate-responsive planning create spaces that endure and connect people with nature.',
   },
 ];
 
@@ -264,20 +264,10 @@ export default function HomePage() {
                 A legacy of more than 60 years
               </Heading>
               <Text variant="body" maxW="none">
-                CTR Infrastructure was officially established in 1990, building
-                on a strong foundation laid in the 1960s by Er. T.C.
-                Chinnamuthu. His pioneering work focused on the intersection of
-                water resources and landscape development, setting a vision
-                rooted in sustainability and environmental sensitivity.
-              </Text>
-              <Text color="dark.200" lineHeight="1.7" maxW="none">
-                Today, the firm is led by Er. C. Thillairajan, Managing
-                Director and Past President of the Federation of all Civil
-                Engineers Association of Tamil Nadu and Pondicherry
-                (FACEAT&P). Our approach seamlessly integrates planning,
-                design, and execution, resulting in built environments that
-                are thoughtful, efficient, and deeply connected to their
-                context.
+                Established in 1990 on a foundation laid in the 1960s by Er. T.C.
+                Chinnamuthu, CTR is led today by Er. C. Thillairajan. We unite
+                planning, design, and execution to create thoughtful, efficient,
+                context-connected environments.
               </Text>
             </VStack>
           </Reveal>
@@ -303,17 +293,10 @@ export default function HomePage() {
                   Rooted in South India
                 </Heading>
                 <Text variant="body" maxW="none">
-                  Over the years, the geographical scope of our work has
-                  expanded to span more than four states across South India,
-                  with projects ranging from rural landscapes to dense urban
-                  contexts throughout Tamil Nadu.
-                </Text>
-                <Text color="dark.200" lineHeight="1.7" maxW="none">
-                  Regardless of location or scale, our core philosophies remain
-                  unchanged: thoughtful consideration of the environment, a deep
-                  respect for local materials and cultural narratives, and a
-                  strong emphasis on collaboration with skilled craftspeople,
-                  artists, and domain experts.
+                  Our work spans more than four states across South India,
+                  from rural landscapes to dense urban contexts. Wherever the
+                  scale, we remain attentive to climate, local materials,
+                  cultural narratives, and collaboration with skilled makers.
                 </Text>
               </VStack>
             </Reveal>
@@ -351,21 +334,11 @@ export default function HomePage() {
             <Reveal delay={0.1}>
               <VStack align="flex-start" spacing={5}>
                 <Text variant="body" maxW="none">
-                  CTR has evolved over the decades into a multidisciplinary
-                  practice that now includes urban designers, planners, interior
-                  designers, and more — a collective of designers with artistic
-                  sensibility, architects and engineers with specialized
-                  technical expertise, and planners with a deep understanding of
-                  policy and economics, currently led by Ar. Vishnu Raj T.T. and
-                  Ar. Vaishnavi M. Pawar.
-                </Text>
-                <Text color="dark.200" lineHeight="1.7" maxW="none">
-                  Our work spans a wide range of sectors — from sustainable
-                  engineering and healthcare design, to regenerative city
-                  planning and temple architecture. None of these areas stand in
-                  isolation; each discipline is deeply interwoven with the
-                  others, shaped by a rich exchange of ideas, perspectives, and
-                  knowledge.
+                  CTR brings together urban designers, planners, interior
+                  designers, architects, and engineers, currently led by Ar.
+                  Vishnu Raj T.T. and Ar. Vaishnavi M. Pawar. Their shared
+                  expertise moves across sustainable engineering, healthcare,
+                  planning, and temple architecture.
                 </Text>
               </VStack>
             </Reveal>
@@ -380,17 +353,9 @@ export default function HomePage() {
                   A contextual, collaborative practice
                 </Heading>
                 <Text variant="body" maxW="none">
-                  Our design approach is rooted in clarity, climate sensitivity,
-                  and material honesty. We work closely with engineers,
-                  craftspeople, and other specialists to ensure that every
-                  detail — from structure to finish — is considered and
-                  cohesive.
-                </Text>
-                <Text color="dark.200" lineHeight="1.7" maxW="none">
-                  Led by a studio that values both creative exploration and
-                  technical precision, we continuously engage with the evolving
-                  needs of modern living, while remaining attuned to tradition,
-                  craft, and local identity.
+                  We work from clarity, climate sensitivity, and material honesty,
+                  partnering with engineers and craftspeople so every detail is
+                  considered, cohesive, and attuned to local identity.
                 </Text>
               </VStack>
             </Reveal>

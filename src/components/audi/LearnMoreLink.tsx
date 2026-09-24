@@ -55,39 +55,46 @@ type QuickNavPillsProps = {
 
 export function QuickNavPills({ links }: QuickNavPillsProps) {
   return (
-    <Flex
-      className="audi-scroll-strip"
-      gap={0}
+    <Box
+      as="nav"
+      aria-label="Quick navigation"
       borderTop="1px solid"
       borderBottom="1px solid"
       borderColor="whiteAlpha.120"
       bg="dark.900"
     >
-      {links.map((link) => (
-        <Box
-          key={link.label}
-          as={NextLink}
-          href={link.href}
-          flexShrink={0}
-          px={{ base: 5, md: 8 }}
-          py={{ base: 4, md: 5 }}
-          fontSize="sm"
-          fontWeight="500"
-          color="dark.200"
-          borderRight="1px solid"
-          borderColor="whiteAlpha.120"
-          whiteSpace="nowrap"
-          transition="all 0.35s"
-          _hover={{
-            color: 'dark.50',
-            bg: 'whiteAlpha.50',
-            textDecoration: 'none',
-          }}
-          _last={{ borderRight: 'none' }}
-        >
-          {link.label}
-        </Box>
-      ))}
-    </Flex>
+      <Flex className="audi-scroll-strip" gap={{ base: 7, md: 10 }} px={{ base: 5, md: 14 }}>
+        {links.map((link) => (
+          <Box
+            key={link.label}
+            as={NextLink}
+            href={link.href}
+            flexShrink={0}
+            py={{ base: 4, md: 5 }}
+            fontSize="sm"
+            fontWeight="500"
+            color="dark.300"
+            whiteSpace="nowrap"
+            position="relative"
+            transition="color 220ms ease-out"
+            _after={{
+              content: '""',
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              bottom: 0,
+              h: '1px',
+              bg: 'dark.50',
+              transform: 'scaleX(0)',
+              transformOrigin: 'left',
+              transition: 'transform 220ms ease-out',
+            }}
+            _hover={{ color: 'dark.50', textDecoration: 'none', _after: { transform: 'scaleX(1)' } }}
+          >
+            {link.label}
+          </Box>
+        ))}
+      </Flex>
+    </Box>
   );
 }
