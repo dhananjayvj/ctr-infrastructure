@@ -153,6 +153,11 @@ export const portfolioProjects: PortfolioProject[] = [
             "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 24, 2026, 12_01_31 AM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 24, 2026, 12 01 31 AM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/WhatsApp Image 2026-09-25 at 00.41.30.jpeg",
+            "type": "image",
+            "label": "WhatsApp Image 2026 09 25 at 00.41.30"
           }
         ]
       }
