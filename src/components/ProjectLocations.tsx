@@ -159,17 +159,20 @@ export function ProjectLocations() {
             borderColor="whiteAlpha.180"
             px={{ base: 4, md: 6 }}
             py={{ base: 4, md: 5 }}
-            display="grid"
-            gridTemplateColumns={{ base: 'repeat(2, minmax(0, 1fr))', sm: 'repeat(3, minmax(0, 1fr))', lg: 'repeat(5, minmax(0, 1fr))' }}
-            gap={{ base: 3, md: 5 }}
+            direction={{ base: 'column', lg: 'row' }}
+            align={{ base: 'stretch', lg: 'center' }}
+            gap={{ base: 4, lg: 8 }}
             bg="rgba(10,10,10,0.72)"
           >
-            {categoryOrder.map((category) => (
-              <HStack key={category} spacing={2} align="center" minW={0}>
-                <Box w={{ base: '9px', md: '10px' }} h={{ base: '9px', md: '10px' }} flexShrink={0} borderRadius="full" bg={categoryColors[category]} boxShadow={`0 0 0 1px ${categoryColors[category]}66`} />
-                <Text fontFamily="mono" fontSize={{ base: '9px', md: '10px' }} lineHeight="1.2" color="dark.200" textTransform="lowercase" whiteSpace="nowrap">{category} ({categoryCounts[category]})</Text>
-              </HStack>
-            ))}
+            <Text fontFamily="mono" fontSize="9px" letterSpacing="0.16em" textTransform="uppercase" color="dark.400" flexShrink={0}>Index</Text>
+            <Box display="grid" gridTemplateColumns={{ base: 'repeat(2, minmax(0, 1fr))', sm: 'repeat(3, minmax(0, 1fr))', lg: 'repeat(5, minmax(0, 1fr))' }} gap={{ base: 3, md: 5 }} flex="1">
+              {categoryOrder.map((category) => (
+                <HStack key={category} spacing={2} align="center" minW={0}>
+                  <Box w={{ base: '8px', md: '9px' }} h={{ base: '8px', md: '9px' }} flexShrink={0} borderRadius="full" bg={categoryColors[category]} boxShadow={`0 0 0 1px ${categoryColors[category]}66`} />
+                  <Text fontFamily="mono" fontSize={{ base: '9px', md: '10px' }} lineHeight="1.2" color="dark.200" textTransform="lowercase" whiteSpace="nowrap">{category} ({categoryCounts[category]})</Text>
+                </HStack>
+              ))}
+            </Box>
           </Flex>
         </Box>
       </Box>
