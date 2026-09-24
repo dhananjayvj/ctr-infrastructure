@@ -21,8 +21,8 @@ const AUTO_ADVANCE_MS = 7000;
 
 export function HeroCarousel({
   slides,
-  tagline = 'Breaking New Ground in Spatial Design.',
-  subtitle = 'From modernist marvels to timeless sanctuaries, we are the definitive studio for visionary architecture.',
+  tagline = 'Architecture shaped by place.',
+  subtitle = 'Context-led work across South India.',
 }: HeroCarouselProps) {
   const reducedMotion = useReducedMotion();
   const [activeIndex, setActiveIndex] = useState(0);

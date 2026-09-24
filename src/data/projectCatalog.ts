@@ -26,12 +26,68 @@ export type PortfolioProject = {
 
 export const portfolioProjects: PortfolioProject[] = [
   {
+    "id": "hindustan-petroleum-nilgiris",
+    "title": "Hindustan Petroleum - Nilgiris",
+    "category": "Infrastructure",
+    "location": "Nilgiris, Tamil Nadu",
+    "description": "A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.",
+    "cover": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v1.png",
+            "type": "image",
+            "label": "v1"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v10.png",
+            "type": "image",
+            "label": "v10"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v11.png",
+            "type": "image",
+            "label": "v11"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v12.png",
+            "type": "image",
+            "label": "v12"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v13.png",
+            "type": "image",
+            "label": "v13"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
+            "type": "image",
+            "label": "v17"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v2.png",
+            "type": "image",
+            "label": "v2"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v4.png",
+            "type": "image",
+            "label": "v4"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "karunya-university",
     "title": "Karunya University",
     "category": "Institutional",
     "location": "South India",
     "description": "A sprawling institutional masterplan focused on sustainable campus flow and naturally lit academic spaces.",
-    "cover": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_32_02 PM.png",
+    "cover": "https://ctrinfrastructure.com/images/projects/Complete%20projects/Karunya%20Unversity/ChatGPT%20Image%20Sep%2023,%202026,%2011_30_23%20PM.png",
     "sections": [
       {
         "id": "overview",
@@ -103,183 +159,6 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "id": "shristi-vikas-school",
-    "title": "Shristi Vikas School",
-    "category": "Institutional",
-    "location": "South India",
-    "description": "A dynamic learning environment designed with kinetic facades and open courtyards for early childhood development.",
-    "cover": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07280.JPG",
-            "type": "image",
-            "label": "DSC07280"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
-            "type": "image",
-            "label": "DSC07281"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07282.JPG",
-            "type": "image",
-            "label": "DSC07282"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07283.JPG",
-            "type": "image",
-            "label": "DSC07283"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07284.JPG",
-            "type": "image",
-            "label": "DSC07284"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07286.JPG",
-            "type": "image",
-            "label": "DSC07286"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07287.JPG",
-            "type": "image",
-            "label": "DSC07287"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07290.JPG",
-            "type": "image",
-            "label": "DSC07290"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07292.JPG",
-            "type": "image",
-            "label": "DSC07292"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07293.JPG",
-            "type": "image",
-            "label": "DSC07293"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07294.JPG",
-            "type": "image",
-            "label": "DSC07294"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07295.JPG",
-            "type": "image",
-            "label": "DSC07295"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07296.JPG",
-            "type": "image",
-            "label": "DSC07296"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07297.JPG",
-            "type": "image",
-            "label": "DSC07297"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07304.JPG",
-            "type": "image",
-            "label": "DSC07304"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07306.JPG",
-            "type": "image",
-            "label": "DSC07306"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07307.JPG",
-            "type": "image",
-            "label": "DSC07307"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07308.JPG",
-            "type": "image",
-            "label": "DSC07308"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07310.JPG",
-            "type": "image",
-            "label": "DSC07310"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07311.JPG",
-            "type": "image",
-            "label": "DSC07311"
-          },
-          {
-            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07312.JPG",
-            "type": "image",
-            "label": "DSC07312"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "hindustan-petroleum-nilgiris",
-    "title": "Hindustan Petroleum - Nilgiris",
-    "category": "Infrastructure",
-    "location": "Nilgiris, Tamil Nadu",
-    "description": "A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.",
-    "cover": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v1.png",
-            "type": "image",
-            "label": "v1"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v10.png",
-            "type": "image",
-            "label": "v10"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v11.png",
-            "type": "image",
-            "label": "v11"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v12.png",
-            "type": "image",
-            "label": "v12"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v13.png",
-            "type": "image",
-            "label": "v13"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
-            "type": "image",
-            "label": "v17"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v2.png",
-            "type": "image",
-            "label": "v2"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v4.png",
-            "type": "image",
-            "label": "v4"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "chennai-silks",
     "title": "Chennai Silks",
     "category": "Commercial",
@@ -311,81 +190,9 @@ export const portfolioProjects: PortfolioProject[] = [
     ]
   },
   {
-    "id": "hindustan-resort-coimbatore-tamil-nadu",
-    "title": "Hindustan Resort, Coimbatore, Tamil Nadu",
-    "category": "Hospitality",
-    "location": "Coimbatore, Tamil Nadu",
-    "description": "A landscape-integrated hospitality project blending indigenous materials with modern luxury.",
-    "cover": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
-    "sections": [
-      {
-        "id": "perspectives",
-        "title": "Perspectives",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_54_27 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 10 54 27 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_59_54 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 10 59 54 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 11_04_08 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 04 08 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 11_11_58 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 11 58 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
-            "type": "image",
-            "label": "v10r"
-          }
-        ]
-      },
-      {
-        "id": "site-photography",
-        "title": "Site photography",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_17_28 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 17 28 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_21_43 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 21 43 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_23_07 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 23 07 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_25_00 PM.png",
-            "type": "image",
-            "label": "ChatGPT Image Sep 23, 2026, 11 25 00 PM"
-          },
-          {
-            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/Project Banner_.png",
-            "type": "image",
-            "label": "Project Banner "
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "treasure-trove-venue-tiruppur-tamil-nadu",
     "title": "Treasure Trove Venue - Tiruppur, Tamil Nadu",
-    "category": "Hospitality",
+    "category": "Commercial",
     "location": "Tiruppur, Tamil Nadu",
     "description": "A large-scale event space characterized by wide-span structural roofing and seamless indoor-outdoor transitions.",
     "cover": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Renders/Form View 8.jpg",
@@ -499,6 +306,78 @@ export const portfolioProjects: PortfolioProject[] = [
             "src": "/images/projects/Complete projects/Treasure Trove Venue - Tiruppur, Tamilnadu /Site Images/20260731_165034.jpg",
             "type": "image",
             "label": "20260731 165034"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hindustan-resort-coimbatore-tamil-nadu",
+    "title": "Hindustan Resort, Coimbatore, Tamil Nadu",
+    "category": "Hospitality",
+    "location": "Coimbatore, Tamil Nadu",
+    "description": "A landscape-integrated hospitality project blending indigenous materials with modern luxury.",
+    "cover": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
+    "sections": [
+      {
+        "id": "perspectives",
+        "title": "Perspectives",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_54_27 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 10 54 27 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 10_59_54 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 10 59 54 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 11_04_08 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 04 08 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/ChatGPT Image Sep 23, 2026, 11_11_58 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 11 58 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Renders/v10r.jpg",
+            "type": "image",
+            "label": "v10r"
+          }
+        ]
+      },
+      {
+        "id": "site-photography",
+        "title": "Site photography",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_17_28 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 17 28 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_21_43 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 21 43 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_23_07 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 23 07 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/ChatGPT Image Sep 23, 2026, 11_25_00 PM.png",
+            "type": "image",
+            "label": "ChatGPT Image Sep 23, 2026, 11 25 00 PM"
+          },
+          {
+            "src": "/images/projects/Complete projects/Hindustan resort ,Coimbatore, Tamilnadu/Site images/Project Banner_.png",
+            "type": "image",
+            "label": "Project Banner "
           }
         ]
       }
@@ -787,7 +666,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "category": "Residential",
     "location": "Tiruppur, Tamil Nadu",
     "description": "An inward-looking urban residence featuring a central landscaped courtyard for privacy and thermal comfort.",
-    "cover": "/images/projects/Complete projects/urban-courtyard-house/Exterior Views/front elevation day view 4.png",
+    "cover": "https://ctrinfrastructure.com/images/projects/Complete%20projects/urban-courtyard-house/Exterior%20Views/side%20view%201.png",
     "sections": [
       {
         "id": "technical-drawings",
@@ -1063,6 +942,127 @@ export const portfolioProjects: PortfolioProject[] = [
             "src": "/images/projects/Complete projects/minimalist-canopy-haven/Site Images/ChatGPT Image Sep 23, 2026, 10_34_34 PM.png",
             "type": "image",
             "label": "ChatGPT Image Sep 23, 2026, 10 34 34 PM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shristi-vikas-school",
+    "title": "Shristi Vikas School",
+    "category": "Institutional",
+    "location": "South India",
+    "description": "A dynamic learning environment designed with kinetic facades and open courtyards for early childhood development.",
+    "cover": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "media": [
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07280.JPG",
+            "type": "image",
+            "label": "DSC07280"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07281.JPG",
+            "type": "image",
+            "label": "DSC07281"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07282.JPG",
+            "type": "image",
+            "label": "DSC07282"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07283.JPG",
+            "type": "image",
+            "label": "DSC07283"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07284.JPG",
+            "type": "image",
+            "label": "DSC07284"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07286.JPG",
+            "type": "image",
+            "label": "DSC07286"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07287.JPG",
+            "type": "image",
+            "label": "DSC07287"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07290.JPG",
+            "type": "image",
+            "label": "DSC07290"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07292.JPG",
+            "type": "image",
+            "label": "DSC07292"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07293.JPG",
+            "type": "image",
+            "label": "DSC07293"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07294.JPG",
+            "type": "image",
+            "label": "DSC07294"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07295.JPG",
+            "type": "image",
+            "label": "DSC07295"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07296.JPG",
+            "type": "image",
+            "label": "DSC07296"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07297.JPG",
+            "type": "image",
+            "label": "DSC07297"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07304.JPG",
+            "type": "image",
+            "label": "DSC07304"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07306.JPG",
+            "type": "image",
+            "label": "DSC07306"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07307.JPG",
+            "type": "image",
+            "label": "DSC07307"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07308.JPG",
+            "type": "image",
+            "label": "DSC07308"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07310.JPG",
+            "type": "image",
+            "label": "DSC07310"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07311.JPG",
+            "type": "image",
+            "label": "DSC07311"
+          },
+          {
+            "src": "/images/projects/Complete projects/Shristi Vikas School/DSC07312.JPG",
+            "type": "image",
+            "label": "DSC07312"
           }
         ]
       }

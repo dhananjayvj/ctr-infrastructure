@@ -73,12 +73,21 @@ function publicPath(absolutePath) {
 
 const portfolioMetadata = [
   {
+    sourceFolder: 'Hindustan Petroleum - Nilgiris',
+    id: 'hindustan-petroleum-nilgiris',
+    title: 'Hindustan Petroleum - Nilgiris',
+    category: 'Infrastructure',
+    location: 'Nilgiris, Tamil Nadu',
+    description: 'A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.',
+  },
+  {
     sourceFolder: 'Karunya Unversity',
     id: 'karunya-university',
     title: 'Karunya University',
     category: 'Institutional',
     location: 'South India',
     description: 'A sprawling institutional masterplan focused on sustainable campus flow and naturally lit academic spaces.',
+    cover: 'https://ctrinfrastructure.com/images/projects/Complete%20projects/Karunya%20Unversity/ChatGPT%20Image%20Sep%2023,%202026,%2011_30_23%20PM.png',
   },
   {
     sourceFolder: 'Talakadu Temple - Mysore, Karnataka',
@@ -89,22 +98,6 @@ const portfolioMetadata = [
     description: 'A sensitive restoration and spatial intervention integrating historic context with modern pedestrian flow.',
   },
   {
-    sourceFolder: 'Shristi Vikas School',
-    id: 'shristi-vikas-school',
-    title: 'Shristi Vikas School',
-    category: 'Institutional',
-    location: 'South India',
-    description: 'A dynamic learning environment designed with kinetic facades and open courtyards for early childhood development.',
-  },
-  {
-    sourceFolder: 'Hindustan Petroleum - Nilgiris',
-    id: 'hindustan-petroleum-nilgiris',
-    title: 'Hindustan Petroleum - Nilgiris',
-    category: 'Infrastructure',
-    location: 'Nilgiris, Tamil Nadu',
-    description: 'A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.',
-  },
-  {
     sourceFolder: 'Chennai Silks',
     id: 'chennai-silks',
     title: 'Chennai Silks',
@@ -113,20 +106,20 @@ const portfolioMetadata = [
     description: 'A multi-level commercial hub featuring a striking glass curtain wall and expansive, column-free retail floors.',
   },
   {
+    sourceFolder: 'Treasure Trove Venue - Tiruppur, Tamilnadu ',
+    id: 'treasure-trove-venue-tiruppur-tamil-nadu',
+    title: 'Treasure Trove Venue - Tiruppur, Tamil Nadu',
+    category: 'Commercial',
+    location: 'Tiruppur, Tamil Nadu',
+    description: 'A large-scale event space characterized by wide-span structural roofing and seamless indoor-outdoor transitions.',
+  },
+  {
     sourceFolder: 'Hindustan resort ,Coimbatore, Tamilnadu',
     id: 'hindustan-resort-coimbatore-tamil-nadu',
     title: 'Hindustan Resort, Coimbatore, Tamil Nadu',
     category: 'Hospitality',
     location: 'Coimbatore, Tamil Nadu',
     description: 'A landscape-integrated hospitality project blending indigenous materials with modern luxury.',
-  },
-  {
-    sourceFolder: 'Treasure Trove Venue - Tiruppur, Tamilnadu ',
-    id: 'treasure-trove-venue-tiruppur-tamil-nadu',
-    title: 'Treasure Trove Venue - Tiruppur, Tamil Nadu',
-    category: 'Hospitality',
-    location: 'Tiruppur, Tamil Nadu',
-    description: 'A large-scale event space characterized by wide-span structural roofing and seamless indoor-outdoor transitions.',
   },
   {
     sourceFolder: 'mysore-sanctuary',
@@ -159,6 +152,7 @@ const portfolioMetadata = [
     category: 'Residential',
     location: 'Tiruppur, Tamil Nadu',
     description: 'An inward-looking urban residence featuring a central landscaped courtyard for privacy and thermal comfort.',
+    cover: 'https://ctrinfrastructure.com/images/projects/Complete%20projects/urban-courtyard-house/Exterior%20Views/side%20view%201.png',
   },
   {
     sourceFolder: 'minimalist-canopy-haven',
@@ -168,9 +162,17 @@ const portfolioMetadata = [
     location: 'Avinashi, Tamil Nadu',
     description: 'A sleek residential intervention focusing on deep roof overhangs and minimal material palettes.',
   },
+  {
+    sourceFolder: 'Shristi Vikas School',
+    id: 'shristi-vikas-school',
+    title: 'Shristi Vikas School',
+    category: 'Institutional',
+    location: 'South India',
+    description: 'A dynamic learning environment designed with kinetic facades and open courtyards for early childhood development.',
+  },
 ];
 
-const projects = portfolioMetadata.map(({ sourceFolder, ...project }) => {
+const projects = portfolioMetadata.map(({ sourceFolder, cover: coverOverride, ...project }) => {
     const absoluteFolder = path.join(projectRoot, sourceFolder);
     const files = walk(absoluteFolder)
       .map((absolute) => ({ absolute, type: mediaType(absolute), size: fs.statSync(absolute).size }))
@@ -199,7 +201,7 @@ const projects = portfolioMetadata.map(({ sourceFolder, ...project }) => {
       .sort((a, b) => b.score - a.score || b.size - a.size)[0];
     return {
       ...project,
-      cover: cover?.score > -1000 ? publicPath(cover.absolute) : null,
+      cover: coverOverride ?? (cover?.score > -1000 ? publicPath(cover.absolute) : null),
       sections: sectionRecords,
     };
   });

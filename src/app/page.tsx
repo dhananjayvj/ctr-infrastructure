@@ -67,27 +67,6 @@ const reachStats = [
   { number: '4+', label: 'States across South India' },
 ];
 
-const projectSectors = [
-  {
-    number: '01',
-    title: 'Residential Projects',
-    description:
-      'Homes shaped by clear planning, refined detail, and a balance of comfort, privacy, openness, and permanence.',
-  },
-  {
-    number: '02',
-    title: 'Commercial & Multistorey Buildings',
-    description:
-      'Vertical developments that unite space efficiency, natural light, ventilation, structural integrity, and a clear architectural identity.',
-  },
-  {
-    number: '03',
-    title: 'Archeology & Conservation',
-    description:
-      'Research-led conservation with historians, experts, and communities — minimal interventions that respect cultural memory and place.',
-  },
-];
-
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnpadjev';
 
 export default function HomePage() {
@@ -127,14 +106,13 @@ export default function HomePage() {
               py={{ base: 4, lg: 12 }}
             >
               <Text variant="caption" mb={4} color="dark.300">
-                Information on the projects
+                Selected work
               </Text>
               <Heading fontSize="display-lg" fontWeight="400" mb={5}>
-                Discover the CTR portfolio
+                Explore the portfolio
               </Heading>
               <Text variant="lead" maxW="none" mb={8}>
-                Find featured work, sector expertise, and commissioning information
-                for commercial, residential, and civic projects.
+                Public, commercial, and residential work across South India.
               </Text>
               <LearnMoreLink href="/projects">Discover CTR Projects</LearnMoreLink>
             </Flex>
@@ -165,10 +143,7 @@ export default function HomePage() {
         </Container>
       </Box>
 
-      <FeatureGrid
-        title="Step into the world of CTR"
-        tiles={featureTiles}
-      />
+      <FeatureGrid title="Selected work" tiles={featureTiles} />
 
       {/* Services */}
       <Box as="section" id="services" py={sectionPyLg} bg="dark.800">
@@ -176,11 +151,10 @@ export default function HomePage() {
           <Grid templateColumns={{ base: '1fr', lg: '1fr 2fr' }} gap={{ base: 10, lg: 20 }}>
             <VStack align="flex-start" spacing={5} maxW="28rem">
               <Heading fontSize="display-md" fontWeight="400">
-                Design services across scale
+                Architecture at every scale
               </Heading>
               <Text variant="body" maxW="none">
-                From early feasibility through construction administration, we lead
-                architecture, infrastructure, and planning with one integrated team.
+                Architecture, planning, and infrastructure from concept to completion.
               </Text>
               <LearnMoreLink href="/#contact">Discuss a project</LearnMoreLink>
             </VStack>
@@ -234,10 +208,7 @@ export default function HomePage() {
               CTR Infrastructure
             </Heading>
             <Text variant="lead" maxW="none">
-              Architecture is a deeply contextual and collaborative practice. We
-              view each project as an opportunity to create spaces that are
-              responsive — to their environment, to their users, and to the
-              culture they emerge from.
+              Context-led work for people, place, and time.
             </Text>
           </VStack>
 
@@ -246,13 +217,11 @@ export default function HomePage() {
             <VStack align="flex-start" spacing={5} maxW="42rem" pb={{ base: 14, md: 16 }}>
               <Text variant="caption">Our Legacy</Text>
               <Heading fontSize="display-md" fontWeight="400">
-                A legacy of more than 60 years
+                60 years in practice
               </Heading>
               <Text variant="body" maxW="none">
-                Established in 1990 on a foundation laid in the 1960s by Er. T.C.
-                Chinnamuthu, CTR is led today by Er. C. Thillairajan. We unite
-                planning, design, and execution to create thoughtful, efficient,
-                context-connected environments.
+                Founded in 1990 on work begun in the 1960s, CTR brings planning,
+                design, and execution together.
               </Text>
             </VStack>
           </Reveal>
@@ -278,10 +247,8 @@ export default function HomePage() {
                   Rooted in South India
                 </Heading>
                 <Text variant="body" maxW="none">
-                  Our work spans more than four states across South India,
-                  from rural landscapes to dense urban contexts. Wherever the
-                  scale, we remain attentive to climate, local materials,
-                  cultural narratives, and collaboration with skilled makers.
+                  From rural landscapes to dense urban contexts, our work follows
+                  climate, material, and place.
                 </Text>
               </VStack>
             </Reveal>
@@ -312,110 +279,28 @@ export default function HomePage() {
               <VStack align="flex-start" spacing={5} maxW="28rem">
                 <Text variant="caption">Architecture</Text>
                 <Heading fontSize="display-md" fontWeight="400">
-                  A multidisciplinary studio
+                  One integrated studio
                 </Heading>
               </VStack>
             </Reveal>
             <Reveal delay={0.1}>
               <VStack align="flex-start" spacing={5}>
                 <Text variant="body" maxW="none">
-                  CTR brings together urban designers, planners, interior
-                  designers, architects, and engineers, currently led by Ar.
-                  Vishnu Raj T.T. and Ar. Vaishnavi M. Pawar. Their shared
-                  expertise moves across sustainable engineering, healthcare,
-                  planning, and temple architecture.
+                  Architects, planners, engineers, and interior designers work as
+                  one team across every commission.
                 </Text>
               </VStack>
             </Reveal>
           </Grid>
 
-          {/* About Our Work */}
-          <Box py={{ base: 16, md: 20 }} borderTop="1px solid" borderColor="whiteAlpha.120">
-            <Reveal>
-              <VStack align="flex-start" spacing={5} maxW="900px">
-                <Text variant="caption">About Our Work</Text>
-                <Heading fontSize="display-md" fontWeight="400">
-                  A contextual, collaborative practice
-                </Heading>
-                <Text variant="body" maxW="none">
-                  We work from clarity, climate sensitivity, and material honesty,
-                  partnering with engineers and craftspeople so every detail is
-                  considered, cohesive, and attuned to local identity.
-                </Text>
-              </VStack>
-            </Reveal>
-          </Box>
-
-          {/* Our Projects — sector grid */}
-          <Box py={{ base: 16, md: 20 }} borderTop="1px solid" borderColor="whiteAlpha.120">
-            <VStack align="flex-start" spacing={4} mb={{ base: 10, md: 14 }}>
-              <Text variant="caption">Diverse Works</Text>
-              <Heading fontSize="display-md" fontWeight="400">
-                Our Projects
-              </Heading>
-            </VStack>
-
-            <MotionGrid
-              templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
-              gap={gridGap}
-              variants={staggerContainer}
-              initial={reducedMotion ? false : 'hidden'}
-              whileInView="visible"
-              viewport={viewportOnce}
-            >
-              {projectSectors.map((sector) => (
-                <MotionBox
-                  key={sector.number}
-                  variants={staggerItem}
-                  p={{ base: 6, md: 8 }}
-                  border="1px solid"
-                  borderColor="whiteAlpha.120"
-                  _hover={{ borderColor: 'whiteAlpha.300', bg: 'whiteAlpha.30' }}
-                  transition="all 0.45s"
-                >
-                  <Text fontSize="sm" color="dark.300" mb={4} sx={{ fontVariantNumeric: 'tabular-nums' }}>
-                    {sector.number}
-                  </Text>
-                  <Heading fontSize="lg" fontWeight="500" mb={3}>
-                    {sector.title}
-                  </Heading>
-                  <Text fontSize="sm" color="dark.200" lineHeight="1.7">
-                    {sector.description}
-                  </Text>
-                </MotionBox>
-              ))}
-            </MotionGrid>
-          </Box>
-
-          {/* Eco Design — closing */}
-          <Box pt={{ base: 16, md: 20 }} borderTop="1px solid" borderColor="whiteAlpha.120" textAlign="center">
-            <Reveal>
-              <VStack spacing={6} maxW="36rem" mx="auto">
-                <Text variant="caption">Eco Design</Text>
-                <Heading fontSize="display-md" fontWeight="400">
-                  Sustainability as a starting point
-                </Heading>
-                <Text variant="lead" maxW="none" mx="auto" textAlign="center">
-                  We approach sustainability as an intrinsic part of design, not
-                  an afterthought. By embracing local traditions,
-                  climate-responsive strategies, and natural materials, we craft
-                  spaces that breathe, conserve energy, and connect people with
-                  nature.
-                </Text>
-                <Box pt={2}>
-                  <LearnMoreLink href="/#contact">Discuss a project</LearnMoreLink>
-                </Box>
-              </VStack>
-            </Reveal>
-          </Box>
         </Container>
       </Box>
 
       <ClientsSection />
 
       <NewsSection
-        title="CTR Media Center"
-        description="Find the latest project information, images, and updates from CTR Communications."
+        title="Studio updates"
+        description="Project news and studio notes."
         items={newsItems}
       />
 
