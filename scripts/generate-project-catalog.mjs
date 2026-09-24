@@ -87,7 +87,7 @@ const portfolioMetadata = [
     category: 'Institutional',
     location: 'South India',
     description: 'A sprawling institutional masterplan focused on sustainable campus flow and naturally lit academic spaces.',
-    cover: 'https://ctrinfrastructure.com/images/projects/Complete%20projects/Karunya%20Unversity/ChatGPT%20Image%20Sep%2023,%202026,%2011_30_23%20PM.png',
+    cover: '/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_30_23 PM.png',
   },
   {
     sourceFolder: 'Talakadu Temple - Mysore, Karnataka',
@@ -152,7 +152,7 @@ const portfolioMetadata = [
     category: 'Residential',
     location: 'Tiruppur, Tamil Nadu',
     description: 'An inward-looking urban residence featuring a central landscaped courtyard for privacy and thermal comfort.',
-    cover: 'https://ctrinfrastructure.com/images/projects/Complete%20projects/urban-courtyard-house/Exterior%20Views/side%20view%201.png',
+    cover: '/images/projects/Complete projects/urban-courtyard-house/Exterior Views/side view 1.png',
   },
   {
     sourceFolder: 'minimalist-canopy-haven',
