@@ -487,48 +487,6 @@ export const completeProjects: CompleteProject[] = [
     ]
   },
   {
-    "id": "georges-residence-coimbatore",
-    "title": "George's Residence - Coimbatore",
-    "category": "Residential",
-    "location": "Coimbatore",
-    "description": "George's Residence - Coimbatore is a residential project in Coimbatore. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": null,
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/George_s Residence - Coimbatore/[RD01-D1-A] - [LEVEL-A] PLAN - SCHEMATIC DETAIL.pdf",
-            "type": "document",
-            "label": "[RD01 D1 A]   [LEVEL A] PLAN   SCHEMATIC DETAIL"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "harshini-motel",
-    "title": "Harshini - Motel",
-    "category": "Hospitality",
-    "location": "Motel",
-    "description": "Harshini - Motel is a hospitality project in Motel. Explore the documentation by view, interior, drawing, and site section.",
-    "cover": null,
-    "sections": [
-      {
-        "id": "overview",
-        "title": "Overview",
-        "media": [
-          {
-            "src": "/images/projects/Complete projects/Harshini - Motel /1A - SCHEMATIC DRAWING - PLAN.pdf",
-            "type": "document",
-            "label": "1A   SCHEMATIC DRAWING   PLAN"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "helipad",
     "title": "Helipad",
     "category": "Infrastructure",
