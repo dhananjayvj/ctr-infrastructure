@@ -1,15 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { Box, Flex, Grid, Heading, HStack, Text, VStack } from '@chakra-ui/react';
-import { motion, useReducedMotion } from 'framer-motion';
+import { Box, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import { useReducedMotion } from 'framer-motion';
 import type { ProjectLocation } from '@/data/locations';
 import { projectLocations } from '@/data/locations';
-import { staggerContainer, staggerItem, viewportOnce } from '@/lib/motion';
 import { sectionPy } from '@/lib/spacing';
 
-const MotionBox = motion(Box);
-const categoryOrder: ProjectLocation['category'][] = ['Residential', 'Commercial', 'Hospitality', 'Institutional', 'Corporate'];
 const categoryColors: Record<ProjectLocation['category'], string> = {
   Residential: '#e8d8bd',
   Commercial: '#b9d4cf',
@@ -17,24 +14,34 @@ const categoryColors: Record<ProjectLocation['category'], string> = {
   Institutional: '#b9c9df',
   Corporate: '#c9bfdc',
 };
-function projectPosition(index: number) {
-  const columns = 6;
-  const row = Math.floor(index / columns);
-  const column = index % columns;
-  const x = 10 + column * 15.2 + (row % 2 ? 2.5 : 0) + ((index * 7) % 3);
-  const y = 10 + row * 13 + ((index * 11) % 4);
-  return { left: `${x}%`, top: `${y}%` };
+const regionPositions: Record<ProjectLocation['state'], Array<{ left: number; top: number }>> = {
+  Karnataka: [
+    { left: 8, top: 13 }, { left: 19, top: 20 }, { left: 9, top: 36 }, { left: 21, top: 44 },
+    { left: 8, top: 60 }, { left: 20, top: 67 }, { left: 10, top: 82 }, { left: 21, top: 88 },
+  ],
+  'Tamil Nadu': Array.from({ length: 24 }, (_, index) => {
+    const column = index % 4;
+    const row = Math.floor(index / 4);
+    return { left: 33 + column * 10 + ((row + column) % 2), top: 11 + row * 15 + ((index * 5) % 3) };
+  }),
+  'Andhra Pradesh': [{ left: 89, top: 48 }],
+};
+
+function projectPosition(location: ProjectLocation) {
+  const stateLocations = projectLocations.filter((project) => project.state === location.state);
+  const index = stateLocations.findIndex((project) => project.id === location.id);
+  const position = regionPositions[location.state][index] ?? regionPositions[location.state][0];
+  return { left: `${position.left}%`, top: `${position.top}%` };
 }
 
-function LocationPin({ location, index, active, reducedMotion, onSelect, onHover }: {
+function LocationPin({ location, active, reducedMotion, onSelect, onHover }: {
   location: ProjectLocation;
-  index: number;
   active: boolean;
   reducedMotion: boolean | null;
   onSelect: () => void;
   onHover: () => void;
 }) {
-  const position = projectPosition(index);
+  const position = projectPosition(location);
   const accent = categoryColors[location.category];
 
   return (
@@ -101,11 +108,6 @@ export function ProjectLocations() {
   };
 
   const activeLocation = projectLocations.find((location) => location.id === activeId);
-  const categorySummary = categoryOrder.map((category) => ({
-    category,
-    count: locationsInView.filter((location) => location.category === category).length,
-  }));
-
   return (
     <Box as="section" id="locations" py={sectionPy} bg="dark.900" borderTop="1px solid" borderColor="whiteAlpha.120">
       <Box maxW="1440px" mx="auto" px={{ base: 5, sm: 6, md: 10, lg: 14 }}>
@@ -120,34 +122,18 @@ export function ProjectLocations() {
           </VStack>
         </Flex>
 
-        <Grid templateColumns={{ base: '1fr', lg: '1fr 1fr' }} alignItems="start" gap={0} border="1px solid" borderColor="whiteAlpha.160">
-          <Box position="relative" minH={{ base: '460px', md: '600px', lg: '680px' }} borderRight={{ lg: '1px solid' }} borderColor="whiteAlpha.160" overflow="hidden" bg="dark.800" backgroundImage="radial-gradient(circle at 27% 20%, rgba(255,255,255,0.10), transparent 30%), linear-gradient(135deg, #191919 0%, #0a0a0a 58%, #171717 100%)">
+        <Box position="relative" minH={{ base: '520px', md: '660px', lg: '720px' }} border="1px solid" borderColor="whiteAlpha.160" overflow="hidden" bg="dark.800" backgroundImage="radial-gradient(circle at 27% 20%, rgba(255,255,255,0.10), transparent 30%), linear-gradient(135deg, #191919 0%, #0a0a0a 58%, #171717 100%)">
             <svg viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height="100%" style={{ position: 'absolute', inset: 0, opacity: 0.7 }} aria-hidden="true">
               {[12, 24, 36, 48, 60, 72, 84].map((line) => <line key={`h-${line}`} x1="0" y1={line} x2="100" y2={line} stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
               {[14, 28, 42, 56, 70, 84].map((line) => <line key={`v-${line}`} x1={line} y1="0" x2={line} y2="100" stroke="rgba(255,255,255,0.08)" strokeWidth="0.12" />)}
+              <path d="M26 0 L34 100" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
+              <path d="M66 0 L74 100" fill="none" stroke="rgba(255,255,255,0.42)" strokeWidth="0.22" strokeDasharray="1.2 1.8" />
             </svg>
-            {locationsInView.map((location, index) => <LocationPin key={location.id} location={location} index={index} active={location.id === activeLocation?.id} reducedMotion={reducedMotion} onSelect={() => selectLocation(location.id)} onHover={() => selectLocation(location.id)} />)}
-            <Flex position="absolute" bottom={5} left={5} right={5} gap={{ base: 3, md: 5 }} flexWrap="wrap" justify="flex-end" fontFamily="mono" fontSize="10px" color="dark.300">
-              {categoryOrder.map((category) => <HStack key={category} spacing={2}><Box w="8px" h="8px" borderRadius="full" bg={categoryColors[category]} /><Text>{category.toLowerCase()}</Text></HStack>)}
-            </Flex>
+            <Text position="absolute" top={5} left="7%" fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">KARNATAKA</Text>
+            <Text position="absolute" top={5} left="47%" transform="translateX(-50%)" fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">TAMIL NADU</Text>
+            <Text position="absolute" top={5} right="6%" fontFamily="mono" fontSize="10px" letterSpacing="0.16em" color="whiteAlpha.600">ANDHRA PRADESH</Text>
+            {locationsInView.map((location) => <LocationPin key={location.id} location={location} active={location.id === activeLocation?.id} reducedMotion={reducedMotion} onSelect={() => selectLocation(location.id)} onHover={() => selectLocation(location.id)} />)}
           </Box>
-
-          <Box minW={0} px={{ base: 5, md: 7 }} py={{ base: 7, md: 9 }}>
-            <MotionBox variants={staggerContainer} initial={reducedMotion ? false : 'hidden'} whileInView="visible" viewport={viewportOnce}>
-              <Text variant="caption" mb={6}>Project types</Text>
-              <VStack align="stretch" spacing={0}>
-                {categorySummary.map(({ category, count }) => (
-                  <MotionBox key={category} variants={staggerItem}>
-                    <Flex py={4} borderBottom="1px solid" borderColor="whiteAlpha.120" align="center">
-                      <Box w="10px" h="10px" borderRadius="full" bg={categoryColors[category]} mr={3} flexShrink={0} />
-                      <Text fontSize="sm" color="dark.100">{category} ({count})</Text>
-                    </Flex>
-                  </MotionBox>
-                ))}
-              </VStack>
-            </MotionBox>
-          </Box>
-        </Grid>
       </Box>
     </Box>
   );
