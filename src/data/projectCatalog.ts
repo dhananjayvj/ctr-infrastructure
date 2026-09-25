@@ -31,7 +31,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "category": "Infrastructure",
     "location": "Nilgiris, Tamil Nadu",
     "description": "A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.",
-    "cover": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v17.png",
+    "cover": "/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v13.png",
     "sections": [
       {
         "id": "overview",
@@ -87,7 +87,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "category": "Institutional",
     "location": "South India",
     "description": "A sprawling institutional masterplan focused on sustainable campus flow and naturally lit academic spaces.",
-    "cover": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_30_23 PM.png",
+    "cover": "/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_33_42 PM.png",
     "sections": [
       {
         "id": "overview",
@@ -118,7 +118,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "category": "Institutional",
     "location": "Talakadu Temple, Karnataka",
     "description": "A sensitive restoration and spatial intervention integrating historic context with modern pedestrian flow.",
-    "cover": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_54_44 PM.png",
+    "cover": "/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_51_16 PM.png",
     "sections": [
       {
         "id": "overview",
@@ -537,7 +537,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "category": "Residential",
     "location": "Bhavani, Tamil Nadu",
     "description": "A tranquil private estate designed to maximize cross-ventilation and views of the surrounding watershed.",
-    "cover": "/images/projects/Complete projects/riverside-farmhouse/site images/ChatGPT Image Sep 23, 2026, 11_49_13 PM.png",
+    "cover": "/images/projects/Complete projects/riverside-farmhouse/Exterior/Front view 1n_Photo - 4.jpg",
     "sections": [
       {
         "id": "exterior-perspectives",
@@ -671,7 +671,7 @@ export const portfolioProjects: PortfolioProject[] = [
     "category": "Residential",
     "location": "Tiruppur, Tamil Nadu",
     "description": "An inward-looking urban residence featuring a central landscaped courtyard for privacy and thermal comfort.",
-    "cover": "/images/projects/Complete projects/urban-courtyard-house/Exterior Views/side view 1.png",
+    "cover": "/images/projects/Complete projects/urban-courtyard-house/Exterior Views/front elevation day view 4.png",
     "sections": [
       {
         "id": "technical-drawings",
