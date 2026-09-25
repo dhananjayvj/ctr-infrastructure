@@ -1,10 +1,11 @@
 'use client';
 
 import { Box, Container, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 import type { CompleteProject } from '@/data/projectCatalog';
+import { projectCardVariants, projectGridVariants } from '@/lib/motion';
 
 const MotionBox = motion(Box);
 
@@ -25,7 +26,7 @@ function assetSrc(src: string) {
 function ProjectVisual({ project }: { project: CompleteProject }) {
   if (!project.cover) {
     return (
-      <Box position="relative" aspectRatio={{ base: 1.2, md: 1.45 }} overflow="hidden" bg="dark.800" border="1px solid" borderColor="whiteAlpha.120">
+      <Box position="relative" aspectRatio={16 / 9} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
         <Box position="absolute" inset="12%" border="1px solid" borderColor="whiteAlpha.180" backgroundImage="linear-gradient(135deg, transparent 49.8%, rgba(255,255,255,0.18) 50%, transparent 50.2%), linear-gradient(45deg, transparent 49.8%, rgba(255,255,255,0.12) 50%, transparent 50.2%)" />
         <Text position="absolute" left={5} bottom={5} variant="caption">Portfolio archive</Text>
       </Box>
@@ -33,9 +34,19 @@ function ProjectVisual({ project }: { project: CompleteProject }) {
   }
 
   return (
-    <Box position="relative" aspectRatio={{ base: 1.2, md: 1.45 }} overflow="hidden" bg="dark.800">
+    <Box position="relative" aspectRatio={16 / 9} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
       <MotionBox position="absolute" inset={0} transition="transform 700ms cubic-bezier(0.25, 0.1, 0.25, 1)" _groupHover={{ transform: 'scale(1.035)' }}>
-        <Image src={assetSrc(project.cover)} alt={`${project.title} project view`} w="full" h="full" objectFit="cover" />
+        <Image
+          src={assetSrc(project.cover)}
+          alt={`A ${project.category.toLowerCase()} project in ${project.location} by CTR Architecture`}
+          w="full"
+          h="full"
+          objectFit="cover"
+          pointerEvents="none"
+          userSelect="none"
+          draggable={false}
+          sx={{ WebkitUserDrag: 'none' }}
+        />
       </MotionBox>
       <Box position="absolute" inset={0} bgGradient="linear(to-t, rgba(0,0,0,0.48), transparent 55%)" pointerEvents="none" />
     </Box>
@@ -43,6 +54,7 @@ function ProjectVisual({ project }: { project: CompleteProject }) {
 }
 
 export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) {
+  const reducedMotion = useReducedMotion();
   const [activeFilter, setActiveFilter] = useState<ProjectFilter>('All projects');
   const categories = categoryOrder.filter((category) => projects.some((project) => project.category === category));
   const visibleProjects = activeFilter === 'All projects'
@@ -98,13 +110,42 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
           </Flex>
         </Box>
 
+        {projects.map((project) => (
+          <script
+            key={`schema-${project.id}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'ArchitecturalProject',
+                name: project.title,
+                description: project.description,
+                category: project.category,
+                location: { '@type': 'Place', name: project.location },
+                creator: { '@type': 'Organization', name: 'CTR Infrastructure', url: 'https://ctrinfrastructure.com' },
+              }),
+            }}
+          />
+        ))}
+
+        <MotionBox
+          variants={projectGridVariants}
+          initial={reducedMotion ? false : 'hidden'}
+          whileInView={reducedMotion ? undefined : 'visible'}
+          viewport={{ once: true, amount: 0.3 }}
+        >
         <Flex direction="column">
           {visibleProjects.map((project, index) => {
             const imageFirst = index % 2 === 1;
             return (
-              <Box
+              <MotionBox
                 key={project.id}
                 as={Link}
+                variants={projectCardVariants}
+                custom={index}
+                initial={reducedMotion ? false : 'hidden'}
+                whileInView={reducedMotion ? undefined : 'visible'}
+                viewport={{ once: true, amount: 0.3 }}
                 href={`/projects/${project.id}/`}
                 role="group"
                 display="grid"
@@ -126,7 +167,7 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
                 >
                   <VStack align="flex-start" spacing={{ base: 5, md: 7 }}>
                     <Text variant="caption" color="dark.400">{project.category}</Text>
-                    <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} fontWeight="400" lineHeight="1.02" maxW="30rem">
+                    <Heading as="h2" fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} fontWeight="400" lineHeight="1.02" maxW="30rem">
                       {project.title}
                     </Heading>
                     <Text color="dark.200" fontSize={{ base: 'sm', md: 'md' }} lineHeight="1.75" maxW="28rem">
@@ -144,10 +185,11 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
                 <Box order={{ base: 2, md: imageFirst ? 1 : 2 }}>
                   <ProjectVisual project={project} />
                 </Box>
-              </Box>
+              </MotionBox>
             );
           })}
         </Flex>
+        </MotionBox>
       </Container>
     </Box>
   );

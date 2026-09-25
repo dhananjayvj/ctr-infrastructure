@@ -67,11 +67,23 @@ const reachStats = [
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnpadjev';
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['Organization', 'ProfessionalService'],
+  name: 'CTR Infrastructure',
+  url: SITE_URL,
+  description: 'CTR Infrastructure is a South India-based engineering and architecture firm specializing in commercial, residential, institutional, and infrastructure projects.',
+  areaServed: ['South India', 'Tamil Nadu', 'Karnataka'],
+  knowsAbout: ['Commercial architecture', 'Residential architecture', 'Institutional infrastructure', 'Engineering design'],
+  email: 'infodesk@ctrinfrastructure.com',
+};
+
 export default function HomePage() {
   const reducedMotion = useReducedMotion();
 
   return (
     <Box as="main" overflowX="hidden" bg="dark.900">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <HeroCarousel slides={heroSlides} />
       <QuickNavPills links={quickLinks} />
 
@@ -318,8 +330,8 @@ export default function HomePage() {
                   {
                     icon: FiMail,
                     label: 'Mail',
-                    lines: ['infodesk@ctrinfrasturre.com'],
-                    href: 'mailto:infodesk@ctrinfrasturre.com',
+                    lines: ['infodesk@ctrinfrastructure.com'],
+                    href: 'mailto:infodesk@ctrinfrastructure.com',
                   },
                   {
                     icon: FiMessageCircle,

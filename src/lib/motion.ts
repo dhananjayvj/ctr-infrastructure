@@ -138,6 +138,54 @@ export const overlayVariants: Variants = {
   exit: { opacity: 0, transition: tweenExit(0.25) },
 };
 
+export const mobileMenuVariants: Variants = {
+  closed: { y: '-100%' },
+  open: {
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 32,
+      when: 'beforeChildren',
+      staggerChildren: 0.07,
+      delayChildren: 0.08,
+    },
+  },
+  exit: {
+    y: '-100%',
+    transition: { type: 'spring', stiffness: 300, damping: 34 },
+  },
+};
+
+export const mobileMenuLinkVariants: Variants = {
+  closed: { opacity: 0, y: 14 },
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.28, ease: easeSmooth },
+  },
+  exit: { opacity: 0, y: 8, transition: tweenExit(0.18) },
+};
+
+export const projectGridVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.04,
+    },
+  },
+};
+
+export const projectCardVariants: Variants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: (index: number = 0) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { type: 'spring', stiffness: 100, damping: 25, delay: index * 0.055 },
+  }),
+};
+
 export const navLinks = [
   { label: 'Projects', href: '/projects' },
   { label: 'Locations', href: '/projects/#locations' },

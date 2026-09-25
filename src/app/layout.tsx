@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: 'CTR Infrastructure | Architecture & Design Excellence',
     template: '%s | CTR Infrastructure',
   },
-  description: 'CTR Infrastructure is a multidisciplinary architecture and infrastructure firm dedicated to creating spaces that define cities and inspire communities. Specializing in commercial, residential, and infrastructure projects.',
+  description: 'CTR Infrastructure is a South India architecture and infrastructure firm specializing in commercial, residential, institutional, and engineering projects across Tamil Nadu and Karnataka.',
   keywords: [
     'architecture',
     'infrastructure',
@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     'building design',
     'architectural firm',
     'CTR Infrastructure',
+    'architects in Tamil Nadu',
+    'architects in Karnataka',
+    'South India infrastructure design',
   ],
   authors: [{ name: 'CTR Infrastructure' }],
   creator: 'CTR Infrastructure',
@@ -31,11 +34,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     url: SITE_URL,
     siteName: 'CTR Infrastructure',
     title: 'CTR Infrastructure | Architecture & Design Excellence',
-    description: 'Creating extraordinary spaces that define cities and inspire communities. Specializing in architecture, infrastructure, and urban planning.',
+    description: 'Architecture and infrastructure projects across Tamil Nadu, Karnataka, and South India.',
     images: [
       {
         url: '/images/og-image.jpg',

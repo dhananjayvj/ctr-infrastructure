@@ -21,7 +21,7 @@ import {
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { drawerVariants, navLinks, overlayVariants, safeTransition } from '@/lib/motion';
+import { mobileMenuLinkVariants, mobileMenuVariants, navLinks, overlayVariants, safeTransition } from '@/lib/motion';
 import { HEADER_HEIGHT } from '@/lib/spacing';
 
 const MotionBox = motion(Box);
@@ -172,16 +172,16 @@ export function SiteHeader() {
               aria-label="Mobile navigation"
               position="fixed"
               top={0}
+              left={0}
               right={0}
               bottom={0}
               zIndex={120}
-              w="min(100vw, 360px)"
               direction="column"
               bg="dark.900"
               px={8}
               py={10}
               pt={20}
-              variants={drawerVariants}
+              variants={reducedMotion ? undefined : mobileMenuVariants}
               initial="closed"
               animate="open"
               exit="exit"
@@ -201,18 +201,12 @@ export function SiteHeader() {
               </Flex>
 
               <VStack align="stretch" spacing={0} flex={1}>
-                {navLinks.map((item, index) => (
+                {navLinks.map((item) => (
                   <MotionBox
                     key={item.label}
-                    initial={reducedMotion ? false : { opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{
-                      delay: reducedMotion ? 0 : 0.04 + index * 0.07,
-                      duration: 0.45,
-                      ease: [0.25, 0.1, 0.25, 1],
-                    }}
+                    variants={reducedMotion ? undefined : mobileMenuLinkVariants}
                     borderBottom="1px solid"
-                    borderColor="whiteAlpha.80"
+                    borderColor="whiteAlpha.120"
                   >
                     <Link
                       as={NextLink}
