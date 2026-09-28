@@ -40,7 +40,7 @@ export function FeatureGrid({ title, subtitle, tiles }: FeatureGridProps) {
         whileInView="visible"
         viewport={{ once: true, margin: '-60px' }}
       >
-        {tiles.map((tile) => (
+        {tiles.map((tile) => tile.imageSources && (
           <MotionBox
             key={tile.id}
             variants={staggerItem}
@@ -58,9 +58,9 @@ export function FeatureGrid({ title, subtitle, tiles }: FeatureGridProps) {
               variants={imageHover}
             >
               <ResponsiveProjectImage
-                fallback={tile.image}
                 sources={tile.imageSources}
                 alt={tile.title}
+                sizes="(min-width: 62em) 33vw, (min-width: 48em) 50vw, 100vw"
                 loading="lazy"
               />
             </MotionBox>

@@ -1,34 +1,17 @@
 'use client';
 
-import { Box, Container, Flex, Heading, HStack, Image, Link as ChakraLink, SimpleGrid, Text, VStack } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, HStack, Link as ChakraLink, SimpleGrid, Text, VStack } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
-import { FiArrowLeft, FiExternalLink } from 'react-icons/fi';
+import { FiArrowLeft } from 'react-icons/fi';
 import type { CompleteProject, ProjectMedia } from '@/data/projectCatalog';
+import { ResponsiveGalleryImage } from '@/components/ResponsiveGalleryImage';
 import { pageTopPad, sectionPy } from '@/lib/spacing';
 
 const MotionBox = motion(Box);
 
-function assetSrc(src: string) {
-  return encodeURI(src);
-}
-
-function MediaItem({ media, projectTitle }: { media: ProjectMedia; projectTitle: string }) {
-  if (media.type === 'video') {
-    return <Box as="video" src={assetSrc(media.src)} controls preload="metadata" w="full" h="full" objectFit="cover" aria-label={`${projectTitle} ${media.label}`} />;
-  }
-  if (media.type === 'document') {
-    return (
-      <ChakraLink as={Link} href={assetSrc(media.src)} target="_blank" rel="noreferrer" display="flex" h="full" minH="160px" alignItems="center" justifyContent="space-between" p={{ base: 5, md: 7 }} bg="dark.800" border="1px solid" borderColor="whiteAlpha.160" color="dark.50" _hover={{ textDecoration: 'none', bg: 'whiteAlpha.50' }}>
-        <VStack align="flex-start" spacing={2}>
-          <Text variant="caption">Drawing / document</Text>
-          <Text fontSize="sm" maxW="18rem">{media.label}</Text>
-        </VStack>
-        <FiExternalLink aria-hidden="true" />
-      </ChakraLink>
-    );
-  }
-  return <Image src={assetSrc(media.src)} alt={`${projectTitle} — ${media.label}`} w="full" h="full" objectFit="cover" loading="lazy" />;
+function MediaItem({ media, projectTitle, eager }: { media: ProjectMedia; projectTitle: string; eager: boolean }) {
+  return <ResponsiveGalleryImage alt={`${projectTitle} — ${media.label}`} sources={media.imageSources} eager={eager} />;
 }
 
 export function ProjectDetail({ project }: { project: CompleteProject }) {
@@ -79,10 +62,10 @@ export function ProjectDetail({ project }: { project: CompleteProject }) {
               <Heading fontSize={{ base: 'xl', md: '2xl' }} fontWeight="400">{section.title}</Heading>
               <Text variant="caption">{String(section.media.length).padStart(2, '0')} views</Text>
             </Flex>
-            <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={{ base: 3, md: 5 }}>
+            <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} spacing={{ base: 3, md: 5 }}>
               {section.media.map((media, mediaIndex) => (
                 <MotionBox key={`${media.src}-${mediaIndex}`} initial={reducedMotion ? false : { opacity: 0, y: 18 }} whileInView={reducedMotion ? undefined : { opacity: 1, y: 0 }} viewport={{ once: true, margin: '-40px' }} transition={{ duration: 0.45, delay: Math.min(mediaIndex * 0.035, 0.2) }} aspectRatio={{ base: 1.1, md: 1.25 }} overflow="hidden" bg="dark.800" border="1px solid" borderColor="whiteAlpha.100">
-                  <MediaItem media={media} projectTitle={project.title} />
+                  <MediaItem media={media} projectTitle={project.title} eager={sectionIndex === 0 && mediaIndex < 3} />
                 </MotionBox>
               ))}
             </SimpleGrid>

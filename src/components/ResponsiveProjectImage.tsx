@@ -1,32 +1,19 @@
-import { Box, Image } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import type { ResponsiveImageSources } from '@/data/projectCatalog';
+import { ResponsiveImagePicture } from '@/components/ResponsiveImagePicture';
 
 type ResponsiveProjectImageProps = {
   alt: string;
-  fallback: string;
-  sources?: ResponsiveImageSources | null;
+  sources: ResponsiveImageSources;
+  sizes: string;
   loading?: 'eager' | 'lazy';
+  objectFit?: 'cover' | 'contain';
 };
 
-function assetSrc(src: string) {
-  return encodeURI(src);
-}
-
-function srcSet(sources: ResponsiveImageSources['webp']) {
-  return sources.map((source) => `${assetSrc(source.src)} ${source.width}w`).join(', ');
-}
-
-export function ResponsiveProjectImage({
-  alt,
-  fallback,
-  sources,
-  loading = 'lazy',
-}: ResponsiveProjectImageProps) {
+export function ResponsiveProjectImage({ alt, sources, sizes, loading = 'lazy', objectFit = 'cover' }: ResponsiveProjectImageProps) {
   return (
-    <Box as="picture" display="block" w="full" h="full">
-      {sources && <source type="image/avif" srcSet={srcSet(sources.avif)} sizes={sources.sizes} />}
-      {sources && <source type="image/webp" srcSet={srcSet(sources.webp)} sizes={sources.sizes} />}
-      <Image src={assetSrc(fallback)} alt={alt} w="full" h="full" objectFit="cover" loading={loading} />
+    <Box w="full" h="full">
+      <ResponsiveImagePicture alt={alt} sources={sources} sizes={sizes} loading={loading} objectFit={objectFit} />
     </Box>
   );
 }

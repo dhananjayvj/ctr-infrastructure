@@ -1,16 +1,35 @@
 'use client';
 
-import { Box, Container, Heading, Image, SimpleGrid, VStack } from '@chakra-ui/react';
-
-const clientLogos = [
-  '01.png', '02.png', '03.png', '04.png', '05.png', '06.png', '07.png',
-  '08.png', '09.png', '10.png', '010.png', '011.png', '012.png', '013.png',
-  '014.png', '015.png', '017.png', '018.png', '019.png', '020.png', '021.png',
-];
+import { Box, Container, Heading, SimpleGrid, VStack } from '@chakra-ui/react';
+import { useEffect, useRef, useState } from 'react';
+import { clientLogos } from '@/data/clientLogoCatalog';
+import { ResponsiveProjectImage } from '@/components/ResponsiveProjectImage';
 
 export function ClientsSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [nearViewport, setNearViewport] = useState(false);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    if (!('IntersectionObserver' in window)) {
+      setNearViewport(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        setNearViewport(true);
+        observer.disconnect();
+      },
+      { rootMargin: '600px 0px', threshold: 0 },
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <Box as="section" id="clients" py={{ base: 20, md: 28 }} bg="dark.800" borderTop="1px solid" borderColor="whiteAlpha.120">
+    <Box ref={sectionRef} as="section" id="clients" py={{ base: 20, md: 28 }} bg="dark.800" borderTop="1px solid" borderColor="whiteAlpha.120">
       <Container maxW="1440px">
         <VStack align="center" spacing={{ base: 10, md: 14 }}>
           <Heading as="h2" fontSize="display-md" fontWeight="400" lineHeight="1" textAlign="center">
@@ -18,9 +37,9 @@ export function ClientsSection() {
           </Heading>
 
           <SimpleGrid columns={{ base: 3, sm: 4, md: 5, lg: 7 }} spacing={{ base: 4, md: 5, lg: 6 }} w="full">
-            {clientLogos.map((filename, index) => (
+            {clientLogos.map((logo) => (
               <Box
-                key={filename}
+                key={logo.filename}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -28,16 +47,17 @@ export function ClientsSection() {
                 px={{ base: 2, md: 4, lg: 5 }}
                 py={{ base: 3, md: 4 }}
               >
-                <Image
-                  src={`/images/clients/${filename}`}
-                  alt={`Client logo ${index + 1}`}
-                  maxW="100%"
-                  maxH={{ base: '36px', md: '56px', lg: '64px' }}
-                  objectFit="contain"
-                  loading="lazy"
-                  filter="grayscale(1) contrast(1.08)"
-                  opacity={1}
-                />
+                {nearViewport && (
+                  <Box w="full" h={{ base: '36px', md: '56px', lg: '64px' }}>
+                    <ResponsiveProjectImage
+                      alt={`Client ${logo.id}`}
+                      sources={logo.imageSources}
+                      sizes="(min-width: 80em) 12vw, (min-width: 48em) 18vw, 28vw"
+                      loading="lazy"
+                      objectFit="contain"
+                    />
+                  </Box>
+                )}
               </Box>
             ))}
           </SimpleGrid>

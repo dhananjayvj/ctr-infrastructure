@@ -1,15 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import sharp from 'sharp';
 
-const projectRoot = path.resolve('public/images/projects/Complete projects');
+const projectRoot = path.resolve('src/assets/project-media/Complete projects');
+const projectMediaRoot = path.resolve('src/assets/project-media');
+const clientLogoRoot = path.resolve('src/assets/client-logos');
 const outputPath = path.resolve('src/data/projectCatalog.ts');
-const generatedCoverRoot = path.resolve('public/images/generated/project-covers');
-const responsiveWidths = [640, 1024, 1600];
+const generatedRoot = path.resolve('public/images/generated');
+const responsiveWidths = [640, 1024];
+const heroWidths = [768, 1440, 2560];
+const logoWidths = [128, 256];
 const imageExtensions = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif']);
-const videoExtensions = new Set(['.mp4', '.webm', '.mov']);
-const documentExtensions = new Set(['.pdf']);
-const maxTrackedMediaBytes = 95 * 1024 * 1024;
+sharp.concurrency(4);
 
 function walk(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -61,46 +64,68 @@ function coverScore(file) {
   return score;
 }
 
-function mediaType(file) {
-  const extension = path.extname(file).toLowerCase();
-  if (imageExtensions.has(extension)) return 'image';
-  if (videoExtensions.has(extension)) return 'video';
-  if (documentExtensions.has(extension)) return 'document';
-  return null;
-}
-
 function publicPath(absolutePath) {
-  const relative = path.relative('public', absolutePath).split(path.sep).join('/');
-  return `/${relative}`;
+  return `/${path.relative('public', absolutePath).split(path.sep).join('/')}`;
 }
 
-async function generateCoverSources(id, coverPath) {
-  const sourcePath = path.resolve('public', `.${coverPath}`);
-  const metadata = await sharp(sourcePath).metadata();
-  const sourceWidth = metadata.width ?? responsiveWidths.at(-1);
-  const widths = [...new Set([...responsiveWidths.filter((width) => width < sourceWidth), sourceWidth])];
-  const outputDirectory = path.join(generatedCoverRoot, id);
-  fs.mkdirSync(outputDirectory, { recursive: true });
-
-  const variants = await Promise.all(widths.flatMap((width) => [
-    (async () => {
-      const output = path.join(outputDirectory, `${width}.webp`);
-      await sharp(sourcePath).rotate().resize({ width, withoutEnlargement: true }).webp({ quality: 82 }).toFile(output);
-      return { format: 'webp', src: publicPath(output), width };
-    })(),
-    (async () => {
-      const output = path.join(outputDirectory, `${width}.avif`);
-      await sharp(sourcePath).rotate().resize({ width, withoutEnlargement: true }).avif({ quality: 55, effort: 4 }).toFile(output);
-      return { format: 'avif', src: publicPath(output), width };
-    })(),
-  ]));
-
+function orientedDimensions(metadata) {
+  const swapsAxes = [5, 6, 7, 8].includes(metadata.orientation ?? 1);
   return {
-    fallback: coverPath,
-    sizes: '(min-width: 48em) 50vw, 100vw',
-    webp: variants.filter((variant) => variant.format === 'webp').map(({ src, width }) => ({ src, width })),
-    avif: variants.filter((variant) => variant.format === 'avif').map(({ src, width }) => ({ src, width })),
+    width: swapsAxes ? metadata.height : metadata.width,
+    height: swapsAxes ? metadata.width : metadata.height,
   };
+}
+
+function candidateWidths(sourceWidth, requestedWidths) {
+  const candidates = requestedWidths.filter((width) => width < sourceWidth);
+  if (sourceWidth <= requestedWidths.at(-1)) candidates.push(sourceWidth);
+  return [...new Set(candidates)].sort((a, b) => a - b);
+}
+
+function imageKey(relativePath) {
+  const basename = slugify(path.basename(relativePath, path.extname(relativePath))).slice(0, 42) || 'image';
+  const hash = createHash('sha1').update(relativePath).digest('hex').slice(0, 10);
+  return `${basename}-${hash}`;
+}
+
+async function writeVariant(sourcePath, outputPath, format, width) {
+  const pipeline = sharp(sourcePath).rotate().resize({ width, withoutEnlargement: true });
+  if (format === 'avif') pipeline.avif({ quality: 52, effort: 4 });
+  else if (format === 'webp') pipeline.webp({ quality: 80, effort: 4 });
+  else if (format === 'png') pipeline.png({ compressionLevel: 9, palette: true, quality: 85 });
+  else pipeline.jpeg({ quality: 80, mozjpeg: true });
+  const info = await pipeline.toFile(outputPath);
+  return { src: publicPath(outputPath), width: info.width, height: info.height };
+}
+
+async function generateImageSources(sourcePath, relativeKey, requestedWidths, { fallbackFormat = 'jpeg', outputGroup = 'projects' } = {}) {
+  const metadata = await sharp(sourcePath).metadata();
+  const intrinsic = orientedDimensions(metadata);
+  const widths = candidateWidths(intrinsic.width, requestedWidths);
+  const outputDirectory = path.join(generatedRoot, outputGroup, relativeKey);
+  fs.mkdirSync(outputDirectory, { recursive: true });
+  const variants = await Promise.all(widths.flatMap((width) => [
+    writeVariant(sourcePath, path.join(outputDirectory, `${width}.avif`), 'avif', width).then((value) => ({ ...value, format: 'avif' })),
+    writeVariant(sourcePath, path.join(outputDirectory, `${width}.webp`), 'webp', width).then((value) => ({ ...value, format: 'webp' })),
+  ]));
+  const fallbackWidth = Math.min(intrinsic.width, requestedWidths.at(-1));
+  const extension = fallbackFormat === 'png' ? 'png' : 'jpg';
+  const fallback = fallbackFormat
+    ? await writeVariant(sourcePath, path.join(outputDirectory, `${fallbackWidth}.${extension}`), fallbackFormat, fallbackWidth)
+    : null;
+  return {
+    width: intrinsic.width,
+    height: intrinsic.height,
+    fallback,
+    avif: variants.filter(({ format }) => format === 'avif').map(({ src, width, height }) => ({ src, width, height })),
+    webp: variants.filter(({ format }) => format === 'webp').map(({ src, width, height }) => ({ src, width, height })),
+  };
+}
+
+function imagesUnder(directory) {
+  return walk(directory)
+    .filter((absolute) => imageExtensions.has(path.extname(absolute).toLowerCase()))
+    .sort((a, b) => a.localeCompare(b));
 }
 
 const portfolioMetadata = [
@@ -111,7 +136,7 @@ const portfolioMetadata = [
     category: 'Infrastructure',
     location: 'Nilgiris, Tamil Nadu',
     description: 'A resilient, weather-adapted structural canopy designed for high-altitude logistical operations.',
-    cover: '/images/projects/Complete projects/Hindustan Petroleum - Nilgiris/v13.png',
+    cover: 'v13.png',
     client: 'Hindustan Petroleum', sector: 'Infrastructure', scope: ['Architectural design', 'Canopy engineering', 'Site planning'], year: '2026',
     brief: 'Create a durable fuel-station canopy and forecourt suited to a high-altitude setting.',
     outcomes: ['Weather-adapted structural canopy', 'Clear vehicle circulation', 'Integrated landscape lighting'], featured: true,
@@ -123,7 +148,7 @@ const portfolioMetadata = [
     category: 'Institutional',
     location: 'South India',
     description: 'A sprawling institutional masterplan focused on sustainable campus flow and naturally lit academic spaces.',
-    cover: '/images/projects/Complete projects/Karunya Unversity/ChatGPT Image Sep 23, 2026, 11_33_42 PM.png',
+    cover: 'ChatGPT Image Sep 23, 2026, 11_33_42 PM.png',
     client: 'Karunya University', sector: 'Institutional', scope: ['Academic planning', 'Architecture', 'Campus circulation'], year: '2026',
     brief: 'Organise an academic block around daylight, intuitive movement, and long-term campus growth.',
     outcomes: ['Naturally lit learning spaces', 'Legible circulation', 'Climate-conscious massing'], featured: true,
@@ -135,7 +160,7 @@ const portfolioMetadata = [
     category: 'Institutional',
     location: 'Talakadu Temple, Karnataka',
     description: 'A sensitive restoration and spatial intervention integrating historic context with modern pedestrian flow.',
-    cover: '/images/projects/Complete projects/Talakadu Temple - Mysore, Karnataka/ChatGPT Image Sep 23, 2026, 11_51_16 PM.png',
+    cover: 'ChatGPT Image Sep 23, 2026, 11_51_16 PM.png',
     client: 'Temple precinct authority', sector: 'Institutional', scope: ['Heritage planning', 'Public realm design', 'Pedestrian circulation'], year: '2026',
     brief: 'Improve public access while respecting the temple precinct and its historic setting.',
     outcomes: ['Context-sensitive intervention', 'Improved pedestrian flow', 'Restoration-led public realm'], featured: false,
@@ -202,7 +227,7 @@ const portfolioMetadata = [
     category: 'Residential',
     location: 'Bhavani, Tamil Nadu',
     description: 'A tranquil private estate designed to maximize cross-ventilation and views of the surrounding watershed.',
-    cover: '/images/projects/Complete projects/riverside-farmhouse/Exterior/Front view 1n_Photo - 4.jpg',
+    cover: 'Exterior/Front view 1n_Photo - 4.jpg',
     client: 'Private client', sector: 'Residential', scope: ['Residential architecture', 'Passive ventilation', 'Site planning'], year: '2025',
     brief: 'Establish a riverside retreat with deep environmental connection and low-energy comfort.',
     outcomes: ['Cross-ventilated rooms', 'Watershed views', 'Calm private grounds'], featured: false,
@@ -214,7 +239,7 @@ const portfolioMetadata = [
     category: 'Residential',
     location: 'Tiruppur, Tamil Nadu',
     description: 'An inward-looking urban residence featuring a central landscaped courtyard for privacy and thermal comfort.',
-    cover: '/images/projects/Complete projects/urban-courtyard-house/Exterior Views/front elevation day view 4.png',
+    cover: 'Exterior Views/front elevation day view 4.png',
     client: 'Private client', sector: 'Residential', scope: ['Urban residence', 'Courtyard planning', 'Thermal comfort'], year: '2025',
     brief: 'Create a protected family home that brings landscape and daylight into a dense urban plot.',
     outcomes: ['Central planted courtyard', 'Privacy from the street', 'Passive cooling strategy'], featured: false,
@@ -243,45 +268,86 @@ const portfolioMetadata = [
   },
 ];
 
-fs.rmSync(generatedCoverRoot, { recursive: true, force: true });
+fs.rmSync(generatedRoot, { recursive: true, force: true });
+fs.mkdirSync(generatedRoot, { recursive: true });
 
 const projects = await Promise.all(portfolioMetadata.map(async ({ sourceFolder, cover: coverOverride, ...project }) => {
-    const absoluteFolder = path.join(projectRoot, sourceFolder);
-    const files = walk(absoluteFolder)
-      .map((absolute) => ({ absolute, type: mediaType(absolute), size: fs.statSync(absolute).size }))
-      .filter((file) => file.type && file.size <= maxTrackedMediaBytes)
-      .sort((a, b) => a.absolute.localeCompare(b.absolute));
-    const sections = new Map();
-
-    files.forEach(({ absolute, type }) => {
-      const relative = path.relative(absoluteFolder, absolute).split(path.sep);
-      const section = relative.length > 1 ? sectionLabel(relative[0]) : 'Overview';
-      if (!sections.has(section)) sections.set(section, []);
-      sections.get(section).push({
-        src: publicPath(absolute),
-        type,
-        label: path.basename(absolute, path.extname(absolute)).replace(/[_-]+/g, ' '),
-      });
-    });
-
-    const sectionRecords = Array.from(sections, ([title, media]) => ({
-      id: slugify(title),
-      title,
-      media,
-    }));
-    const cover = files
-      .map((file) => ({ ...file, score: coverScore(file) }))
-      .sort((a, b) => b.score - a.score || b.size - a.size)[0];
-    const coverPath = coverOverride ?? (cover?.score > -1000 ? publicPath(cover.absolute) : null);
-    return {
-      ...project,
-      cover: coverPath,
-      coverSources: coverPath ? await generateCoverSources(project.id, coverPath) : null,
-      sections: sectionRecords,
-    };
+  const absoluteFolder = path.join(projectRoot, sourceFolder);
+  const sourceFiles = imagesUnder(absoluteFolder).map((absolute) => ({
+    absolute,
+    relative: path.relative(absoluteFolder, absolute).split(path.sep).join('/'),
+    size: fs.statSync(absolute).size,
   }));
+  const files = await Promise.all(sourceFiles.map(async (file) => ({
+    ...file,
+    type: 'image',
+    imageSources: await generateImageSources(
+      file.absolute,
+      `${project.id}/${imageKey(file.relative)}`,
+      responsiveWidths,
+    ),
+  })));
+  const sections = new Map();
 
-const source = `// Generated by scripts/generate-project-catalog.mjs. Do not edit by hand.\n\nexport type ProjectMediaType = 'image' | 'video' | 'document';\n\nexport type ResponsiveImageSource = {\n  src: string;\n  width: number;\n};\n\nexport type ResponsiveImageSources = {\n  fallback: string;\n  sizes: string;\n  webp: ResponsiveImageSource[];\n  avif: ResponsiveImageSource[];\n};\n\nexport type ProjectMedia = {\n  src: string;\n  type: ProjectMediaType;\n  label: string;\n};\n\nexport type ProjectSection = {\n  id: string;\n  title: string;\n  media: ProjectMedia[];\n};\n\nexport type PortfolioProject = {\n  id: string;\n  title: string;\n  category: 'Residential' | 'Commercial' | 'Hospitality' | 'Institutional' | 'Infrastructure';\n  location: string;\n  sector: string;\n  client: string;\n  scope: string[];\n  year: string;\n  brief: string;\n  outcomes: string[];\n  featured: boolean;\n  description: string;\n  cover: string | null;\n  coverSources: ResponsiveImageSources | null;\n  sections: ProjectSection[];\n};\n\nexport const portfolioProjects: PortfolioProject[] = ${JSON.stringify(projects, null, 2)};\n\n// Backwards-compatible alias for existing project route and sitemap consumers.\nexport const completeProjects = portfolioProjects;\nexport type CompleteProject = PortfolioProject;\n`;
+  files.forEach((file) => {
+    const relativeParts = file.relative.split('/');
+    const section = relativeParts.length > 1 ? sectionLabel(relativeParts[0]) : 'Overview';
+    if (!sections.has(section)) sections.set(section, []);
+    sections.get(section).push({
+      src: file.imageSources.fallback.src,
+      width: file.imageSources.width,
+      height: file.imageSources.height,
+      imageSources: file.imageSources,
+      type: file.type,
+      label: path.basename(file.relative, path.extname(file.relative)).replace(/[_-]+/g, ' '),
+    });
+  });
 
-fs.writeFileSync(outputPath, source);
-console.log(`Generated ${projects.length} projects at ${outputPath}`);
+  const sectionRecords = Array.from(sections, ([title, media]) => ({ id: slugify(title), title, media }));
+  const cover = coverOverride
+    ? files.find((file) => file.relative === coverOverride)
+    : files
+      .map((file) => ({ ...file, score: coverScore({ ...file, absolute: file.relative }) }))
+      .sort((a, b) => b.score - a.score || b.size - a.size)[0];
+
+  return {
+    ...project,
+    cover: cover?.imageSources.fallback.src ?? null,
+    coverSources: cover?.imageSources ?? null,
+    sections: sectionRecords,
+  };
+}));
+
+const projectSource = `// Generated by scripts/generate-project-catalog.mjs. Do not edit by hand.\n\nexport type ResponsiveImageSource = { src: string; width: number; height: number };\nexport type ResponsiveImageSources = { width: number; height: number; fallback: ResponsiveImageSource; webp: ResponsiveImageSource[]; avif: ResponsiveImageSource[] };\nexport type ProjectMedia = { src: string; width: number; height: number; imageSources: ResponsiveImageSources; type: 'image'; label: string };\nexport type ProjectSection = { id: string; title: string; media: ProjectMedia[] };\nexport type PortfolioProject = { id: string; title: string; category: 'Residential' | 'Commercial' | 'Hospitality' | 'Institutional' | 'Infrastructure'; location: string; sector: string; client: string; scope: string[]; year: string; brief: string; outcomes: string[]; featured: boolean; description: string; cover: string | null; coverSources: ResponsiveImageSources | null; sections: ProjectSection[] };\n\nexport const portfolioProjects: PortfolioProject[] = ${JSON.stringify(projects, null, 2)};\nexport const completeProjects = portfolioProjects;\nexport type CompleteProject = PortfolioProject;\n`;
+fs.writeFileSync(outputPath, projectSource);
+
+const heroAssets = [
+  { id: 1, path: 'hindustan-petroleum/1.jpg' },
+  { id: 2, path: 'hindustan-resort/1.jpg' },
+  { id: 3, path: 'treasure-trove-venue/1.jpg' },
+];
+const heroImageSources = {};
+for (const hero of heroAssets) {
+  const sourcePath = path.join(projectMediaRoot, hero.path);
+  heroImageSources[hero.id] = await generateImageSources(sourcePath, String(hero.id), heroWidths, { outputGroup: 'hero' });
+}
+fs.writeFileSync(
+  path.resolve('src/data/heroImageCatalog.ts'),
+  `// Generated by scripts/generate-project-catalog.mjs. Do not edit by hand.\nimport type { ResponsiveImageSources } from './projectCatalog';\nexport const heroImageSources: Record<number, ResponsiveImageSources> = ${JSON.stringify(heroImageSources, null, 2)};\n`,
+);
+
+const logoNames = [
+  '01.png', '02.png', '03.png', '04.png', '05.png', '06.png', '07.png', '08.png', '09.png', '10.png',
+  '010.png', '011.png', '012.png', '013.png', '014.png', '015.png', '017.png', '018.png', '019.png', '020.png', '021.png',
+];
+const logoRecords = await Promise.all(logoNames.map(async (filename, index) => {
+  const sourcePath = path.join(clientLogoRoot, filename);
+  const imageSources = await generateImageSources(sourcePath, imageKey(filename), logoWidths, { fallbackFormat: 'png', outputGroup: 'client-logos' });
+  return { id: index + 1, filename, imageSources };
+}));
+fs.writeFileSync(
+  path.resolve('src/data/clientLogoCatalog.ts'),
+  `// Generated by scripts/generate-project-catalog.mjs. Do not edit by hand.\nimport type { ResponsiveImageSources } from './projectCatalog';\nexport type ClientLogo = { id: number; filename: string; imageSources: ResponsiveImageSources };\nexport const clientLogos: ClientLogo[] = ${JSON.stringify(logoRecords, null, 2)};\n`,
+);
+
+console.log(`Generated responsive assets and ${projects.length} projects at ${outputPath}`);

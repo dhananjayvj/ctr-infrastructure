@@ -7,6 +7,7 @@ import type { HeroSlide } from '@/lib/content';
 import { crossfade, heroItem, heroStagger } from '@/lib/motion';
 import { HEADER_HEIGHT } from '@/lib/spacing';
 import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
+import { ResponsiveImagePicture } from '@/components/ResponsiveImagePicture';
 
 const MotionBox = motion(Box);
 const MotionVStack = motion(VStack);
@@ -50,6 +51,14 @@ export function HeroCarousel({
       overflow="hidden"
       bg="dark.900"
     >
+      <link
+        rel="preload"
+        as="image"
+        type="image/avif"
+        imageSrcSet={slides[0].imageSources.avif.map((source) => `${source.src} ${source.width}w`).join(', ')}
+        imageSizes="100vw"
+        fetchPriority="high"
+      />
       <AnimatePresence exitBeforeEnter>
         <MotionBox
           key={slide.id}
@@ -60,14 +69,15 @@ export function HeroCarousel({
           animate="animate"
           exit="exit"
         >
-          <Box
-            position="absolute"
-            inset={0}
-            bgImage={`url('${slide.image}')`}
-            bgSize="cover"
-            bgPosition="center"
-            filter="brightness(0.72) saturate(0.92)"
-          />
+          <Box position="absolute" inset={0} filter="brightness(0.72) saturate(0.92)">
+            <ResponsiveImagePicture
+              alt=""
+              sources={slide.imageSources}
+              sizes="100vw"
+              loading={activeIndex === 0 ? 'eager' : 'lazy'}
+              fetchPriority={activeIndex === 0 ? 'high' : 'auto'}
+            />
+          </Box>
         </MotionBox>
       </AnimatePresence>
 

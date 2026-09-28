@@ -21,7 +21,7 @@ const categoryOrder: CompleteProject['category'][] = [
 type ProjectFilter = 'All projects' | CompleteProject['category'];
 
 function ProjectVisual({ project, loading }: { project: CompleteProject; loading: 'eager' | 'lazy' }) {
-  if (!project.cover) {
+  if (!project.cover || !project.coverSources) {
     return (
       <Box position="relative" h={{ base: 'auto', md: 'full' }} aspectRatio={{ base: 16 / 9, md: 'auto' }} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
         <Box position="absolute" inset="12%" border="1px solid" borderColor="whiteAlpha.180" backgroundImage="linear-gradient(135deg, transparent 49.8%, rgba(255,255,255,0.18) 50%, transparent 50.2%), linear-gradient(45deg, transparent 49.8%, rgba(255,255,255,0.12) 50%, transparent 50.2%)" />
@@ -34,9 +34,9 @@ function ProjectVisual({ project, loading }: { project: CompleteProject; loading
     <Box position="relative" h={{ base: 'auto', md: 'full' }} aspectRatio={{ base: 16 / 9, md: 'auto' }} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
       <MotionBox position="absolute" inset={0} transition="transform 700ms cubic-bezier(0.25, 0.1, 0.25, 1)" _groupHover={{ transform: 'scale(1.035)' }}>
         <ResponsiveProjectImage
-          fallback={project.cover}
           sources={project.coverSources}
           alt={`A ${project.category.toLowerCase()} project in ${project.location} by CTR Architecture`}
+          sizes="(min-width: 90em) 45vw, (min-width: 48em) 50vw, 100vw"
           loading={loading}
         />
       </MotionBox>

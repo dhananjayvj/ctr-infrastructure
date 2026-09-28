@@ -1,9 +1,12 @@
+import type { ResponsiveImageSources } from '@/data/projectCatalog';
+import { heroImageSources } from '@/data/heroImageCatalog';
+
 export type HeroSlide = {
   id: number;
   title: string;
   subtitle: string;
   date: string;
-  image: string;
+  imageSources: ResponsiveImageSources;
   href: string;
 };
 
@@ -36,7 +39,7 @@ export const heroSlides: HeroSlide[] = [
     title: 'Hindustan Petroleum — Nilgiris',
     subtitle: 'Infrastructure',
     date: '07/10/2026',
-    image: '/images/projects/hindustan-petroleum/1.jpg',
+    imageSources: heroImageSources[1],
     href: '/projects',
   },
   {
@@ -44,7 +47,7 @@ export const heroSlides: HeroSlide[] = [
     title: 'Hindustan Resort — Coimbatore',
     subtitle: 'Hospitality',
     date: '07/29/2026',
-    image: '/images/projects/hindustan-resort/1.jpg',
+    imageSources: heroImageSources[2],
     href: '/projects',
   },
   {
@@ -52,7 +55,7 @@ export const heroSlides: HeroSlide[] = [
     title: 'Treasure Trove Venue — Tiruppur',
     subtitle: 'Commercial',
     date: '07/23/2026',
-    image: '/images/projects/treasure-trove-venue/1.jpg',
+    imageSources: heroImageSources[3],
     href: '/projects',
   },
 ];
@@ -242,4 +245,3 @@ export const featuredProjects = [
     description: 'A farmhouse with a sculptural, timber-clad facade set within landscaped grounds.',
   },
 ];
-import type { ResponsiveImageSources } from '@/data/projectCatalog';
