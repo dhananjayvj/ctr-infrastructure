@@ -35,8 +35,8 @@ export function ClientsSection() {
                   maxH={{ base: '36px', md: '56px', lg: '64px' }}
                   objectFit="contain"
                   loading="lazy"
-                  filter="grayscale(1) invert(1) contrast(1.35) brightness(1.2)"
-                  opacity={0.9}
+                  filter="grayscale(1) contrast(1.08)"
+                  opacity={1}
                 />
               </Box>
             ))}
