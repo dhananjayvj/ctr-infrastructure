@@ -13,18 +13,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 85
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/01-c2fc3cad45/128.avif",
-          "width": 128,
-          "height": 43
-        },
-        {
-          "src": "/images/generated/client-logos/01-c2fc3cad45/256.avif",
-          "width": 256,
-          "height": 85
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/01-c2fc3cad45/128.webp",
@@ -50,18 +39,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 256
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/02-b75fdd2a84/128.avif",
-          "width": 128,
-          "height": 128
-        },
-        {
-          "src": "/images/generated/client-logos/02-b75fdd2a84/256.avif",
-          "width": 256,
-          "height": 256
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/02-b75fdd2a84/128.webp",
@@ -87,18 +65,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 256
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/03-b68857f12d/128.avif",
-          "width": 128,
-          "height": 128
-        },
-        {
-          "src": "/images/generated/client-logos/03-b68857f12d/256.avif",
-          "width": 256,
-          "height": 256
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/03-b68857f12d/128.webp",
@@ -124,18 +91,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 256
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/04-07e0e94f91/128.avif",
-          "width": 128,
-          "height": 128
-        },
-        {
-          "src": "/images/generated/client-logos/04-07e0e94f91/256.avif",
-          "width": 256,
-          "height": 256
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/04-07e0e94f91/128.webp",
@@ -161,18 +117,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 85
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/05-e09661d081/128.avif",
-          "width": 128,
-          "height": 43
-        },
-        {
-          "src": "/images/generated/client-logos/05-e09661d081/256.avif",
-          "width": 256,
-          "height": 85
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/05-e09661d081/128.webp",
@@ -198,18 +143,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 246
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/06-0ff5099632/128.avif",
-          "width": 128,
-          "height": 123
-        },
-        {
-          "src": "/images/generated/client-logos/06-0ff5099632/256.avif",
-          "width": 256,
-          "height": 246
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/06-0ff5099632/128.webp",
@@ -235,18 +169,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 256
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/07-52fcf119aa/128.avif",
-          "width": 128,
-          "height": 128
-        },
-        {
-          "src": "/images/generated/client-logos/07-52fcf119aa/256.avif",
-          "width": 256,
-          "height": 256
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/07-52fcf119aa/128.webp",
@@ -272,18 +195,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 256
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/08-ef318289db/128.avif",
-          "width": 128,
-          "height": 128
-        },
-        {
-          "src": "/images/generated/client-logos/08-ef318289db/256.avif",
-          "width": 256,
-          "height": 256
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/08-ef318289db/128.webp",
@@ -309,18 +221,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 104
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/09-451b1a2cae/128.avif",
-          "width": 128,
-          "height": 52
-        },
-        {
-          "src": "/images/generated/client-logos/09-451b1a2cae/256.avif",
-          "width": 256,
-          "height": 104
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/09-451b1a2cae/128.webp",
@@ -346,18 +247,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 232
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/10-26df41bdfa/128.avif",
-          "width": 128,
-          "height": 116
-        },
-        {
-          "src": "/images/generated/client-logos/10-26df41bdfa/256.avif",
-          "width": 256,
-          "height": 232
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/10-26df41bdfa/128.webp",
@@ -383,18 +273,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 210
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/010-e812731ac2/128.avif",
-          "width": 128,
-          "height": 105
-        },
-        {
-          "src": "/images/generated/client-logos/010-e812731ac2/256.avif",
-          "width": 256,
-          "height": 210
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/010-e812731ac2/128.webp",
@@ -420,18 +299,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 292
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/011-a04a8db65c/128.avif",
-          "width": 128,
-          "height": 146
-        },
-        {
-          "src": "/images/generated/client-logos/011-a04a8db65c/256.avif",
-          "width": 256,
-          "height": 292
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/011-a04a8db65c/128.webp",
@@ -457,18 +325,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 169
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/012-2694dcf8f0/128.avif",
-          "width": 128,
-          "height": 85
-        },
-        {
-          "src": "/images/generated/client-logos/012-2694dcf8f0/256.avif",
-          "width": 256,
-          "height": 169
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/012-2694dcf8f0/128.webp",
@@ -494,18 +351,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 321
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/013-4dcd6b0886/128.avif",
-          "width": 128,
-          "height": 161
-        },
-        {
-          "src": "/images/generated/client-logos/013-4dcd6b0886/256.avif",
-          "width": 256,
-          "height": 321
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/013-4dcd6b0886/128.webp",
@@ -531,18 +377,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 85
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/014-1afc9f0462/128.avif",
-          "width": 128,
-          "height": 43
-        },
-        {
-          "src": "/images/generated/client-logos/014-1afc9f0462/256.avif",
-          "width": 256,
-          "height": 85
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/014-1afc9f0462/128.webp",
@@ -568,18 +403,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 201
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/015-59dae86ae6/128.avif",
-          "width": 128,
-          "height": 101
-        },
-        {
-          "src": "/images/generated/client-logos/015-59dae86ae6/256.avif",
-          "width": 256,
-          "height": 201
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/015-59dae86ae6/128.webp",
@@ -605,18 +429,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 270
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/017-9443c7f448/128.avif",
-          "width": 128,
-          "height": 135
-        },
-        {
-          "src": "/images/generated/client-logos/017-9443c7f448/256.avif",
-          "width": 256,
-          "height": 270
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/017-9443c7f448/128.webp",
@@ -642,18 +455,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 128
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/018-ef0939abd0/128.avif",
-          "width": 128,
-          "height": 64
-        },
-        {
-          "src": "/images/generated/client-logos/018-ef0939abd0/256.avif",
-          "width": 256,
-          "height": 128
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/018-ef0939abd0/128.webp",
@@ -679,18 +481,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 216
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/019-1aa1d3878e/128.avif",
-          "width": 128,
-          "height": 108
-        },
-        {
-          "src": "/images/generated/client-logos/019-1aa1d3878e/256.avif",
-          "width": 256,
-          "height": 216
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/019-1aa1d3878e/128.webp",
@@ -716,18 +507,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 256
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/020-8a4f665e68/128.avif",
-          "width": 128,
-          "height": 128
-        },
-        {
-          "src": "/images/generated/client-logos/020-8a4f665e68/256.avif",
-          "width": 256,
-          "height": 256
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/020-8a4f665e68/128.webp",
@@ -753,18 +533,7 @@ export const clientLogos: ClientLogo[] = [
         "width": 256,
         "height": 171
       },
-      "avif": [
-        {
-          "src": "/images/generated/client-logos/021-0e54218169/128.avif",
-          "width": 128,
-          "height": 85
-        },
-        {
-          "src": "/images/generated/client-logos/021-0e54218169/256.avif",
-          "width": 256,
-          "height": 171
-        }
-      ],
+      "avif": [],
       "webp": [
         {
           "src": "/images/generated/client-logos/021-0e54218169/128.webp",

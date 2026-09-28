@@ -8,8 +8,8 @@ const projectMediaRoot = path.resolve('src/assets/project-media');
 const clientLogoRoot = path.resolve('src/assets/client-logos');
 const outputPath = path.resolve('src/data/projectCatalog.ts');
 const generatedRoot = path.resolve('public/images/generated');
-const responsiveWidths = [640, 1024];
-const heroWidths = [768, 1440, 2560];
+const responsiveWidths = [640, 1024, 1440];
+const heroWidths = [768, 1440, 2560, 3200];
 const logoWidths = [128, 256];
 const imageExtensions = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif']);
 sharp.concurrency(4);
@@ -88,30 +88,31 @@ function imageKey(relativePath) {
   return `${basename}-${hash}`;
 }
 
-async function writeVariant(sourcePath, outputPath, format, width) {
+async function writeVariant(sourcePath, outputPath, format, width, profile) {
   const pipeline = sharp(sourcePath).rotate().resize({ width, withoutEnlargement: true });
-  if (format === 'avif') pipeline.avif({ quality: 52, effort: 4 });
-  else if (format === 'webp') pipeline.webp({ quality: 80, effort: 4 });
-  else if (format === 'png') pipeline.png({ compressionLevel: 9, palette: true, quality: 85 });
-  else pipeline.jpeg({ quality: 80, mozjpeg: true });
+  if (format === 'avif') pipeline.avif({ quality: profile.avifQuality, effort: 6, chromaSubsampling: '4:4:4' });
+  else if (format === 'webp') pipeline.webp({ quality: profile.webpQuality, effort: 6, lossless: profile.losslessWebp ?? false });
+  else if (format === 'png') pipeline.png({ compressionLevel: 9 });
+  else pipeline.jpeg({ quality: profile.jpegQuality, mozjpeg: true });
   const info = await pipeline.toFile(outputPath);
   return { src: publicPath(outputPath), width: info.width, height: info.height };
 }
 
-async function generateImageSources(sourcePath, relativeKey, requestedWidths, { fallbackFormat = 'jpeg', outputGroup = 'projects' } = {}) {
+async function generateImageSources(sourcePath, relativeKey, requestedWidths, { fallbackFormat = 'jpeg', outputGroup = 'projects', profile = photographicProfile } = {}) {
   const metadata = await sharp(sourcePath).metadata();
   const intrinsic = orientedDimensions(metadata);
   const widths = candidateWidths(intrinsic.width, requestedWidths);
   const outputDirectory = path.join(generatedRoot, outputGroup, relativeKey);
   fs.mkdirSync(outputDirectory, { recursive: true });
-  const variants = await Promise.all(widths.flatMap((width) => [
-    writeVariant(sourcePath, path.join(outputDirectory, `${width}.avif`), 'avif', width).then((value) => ({ ...value, format: 'avif' })),
-    writeVariant(sourcePath, path.join(outputDirectory, `${width}.webp`), 'webp', width).then((value) => ({ ...value, format: 'webp' })),
-  ]));
+  const formats = profile.formats ?? ['avif', 'webp'];
+  const variants = await Promise.all(widths.flatMap((width) => formats.map((format) =>
+    writeVariant(sourcePath, path.join(outputDirectory, `${width}.${format}`), format, width, profile)
+      .then((value) => ({ ...value, format }))
+  )));
   const fallbackWidth = Math.min(intrinsic.width, requestedWidths.at(-1));
   const extension = fallbackFormat === 'png' ? 'png' : 'jpg';
   const fallback = fallbackFormat
-    ? await writeVariant(sourcePath, path.join(outputDirectory, `${fallbackWidth}.${extension}`), fallbackFormat, fallbackWidth)
+    ? await writeVariant(sourcePath, path.join(outputDirectory, `${fallbackWidth}.${extension}`), fallbackFormat, fallbackWidth, profile)
     : null;
   return {
     width: intrinsic.width,
@@ -121,6 +122,10 @@ async function generateImageSources(sourcePath, relativeKey, requestedWidths, { 
     webp: variants.filter(({ format }) => format === 'webp').map(({ src, width, height }) => ({ src, width, height })),
   };
 }
+
+const photographicProfile = { avifQuality: 65, webpQuality: 86, jpegQuality: 86 };
+const heroProfile = { avifQuality: 68, webpQuality: 88, jpegQuality: 88 };
+const logoProfile = { formats: ['webp'], losslessWebp: true, webpQuality: 100, jpegQuality: 100 };
 
 function imagesUnder(directory) {
   return walk(directory)
@@ -268,7 +273,7 @@ const portfolioMetadata = [
   },
 ];
 
-fs.rmSync(generatedRoot, { recursive: true, force: true });
+fs.rmSync(generatedRoot, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 });
 fs.mkdirSync(generatedRoot, { recursive: true });
 
 const projects = await Promise.all(portfolioMetadata.map(async ({ sourceFolder, cover: coverOverride, ...project }) => {
@@ -329,7 +334,7 @@ const heroAssets = [
 const heroImageSources = {};
 for (const hero of heroAssets) {
   const sourcePath = path.join(projectMediaRoot, hero.path);
-  heroImageSources[hero.id] = await generateImageSources(sourcePath, String(hero.id), heroWidths, { outputGroup: 'hero' });
+  heroImageSources[hero.id] = await generateImageSources(sourcePath, String(hero.id), heroWidths, { outputGroup: 'hero', profile: heroProfile });
 }
 fs.writeFileSync(
   path.resolve('src/data/heroImageCatalog.ts'),
@@ -342,7 +347,7 @@ const logoNames = [
 ];
 const logoRecords = await Promise.all(logoNames.map(async (filename, index) => {
   const sourcePath = path.join(clientLogoRoot, filename);
-  const imageSources = await generateImageSources(sourcePath, imageKey(filename), logoWidths, { fallbackFormat: 'png', outputGroup: 'client-logos' });
+  const imageSources = await generateImageSources(sourcePath, imageKey(filename), logoWidths, { fallbackFormat: 'png', outputGroup: 'client-logos', profile: logoProfile });
   return { id: index + 1, filename, imageSources };
 }));
 fs.writeFileSync(

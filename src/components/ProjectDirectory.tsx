@@ -58,7 +58,7 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
         <Box borderTop="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.120">
           <Flex justify="space-between" align="baseline" gap={5} pt={{ base: 5, md: 6 }}>
             <Text variant="caption">Filter by project type</Text>
-            <Text variant="caption" color="dark.400">{visibleProjects.length} projects</Text>
+            <Text variant="caption" color="dark.200">{visibleProjects.length} projects</Text>
           </Flex>
           <Flex className="audi-scroll-strip" gap={{ base: 5, md: 8 }} py={3}>
             {(['All projects', ...categories] as ProjectFilter[]).map((filter) => {
@@ -73,7 +73,7 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
                   minH="44px"
                   position="relative"
                   flexShrink={0}
-                  color={isActive ? 'dark.50' : 'dark.300'}
+                  color={isActive ? 'dark.50' : 'dark.200'}
                   fontSize="xs"
                   fontWeight="600"
                   letterSpacing="0.12em"
@@ -157,7 +157,7 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
                   borderColor="whiteAlpha.120"
                 >
                   <VStack align="flex-start" spacing={{ base: 5, md: 7 }}>
-                    <Text variant="caption" color="dark.400">{project.category}</Text>
+                    <Text variant="caption" color="dark.200">{project.category}</Text>
                     <Heading as="h2" fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} fontWeight="400" lineHeight="1.02" maxW="30rem">
                       {project.title}
                     </Heading>

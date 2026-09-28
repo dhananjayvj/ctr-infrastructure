@@ -44,34 +44,32 @@ export function FeatureGrid({ title, subtitle, tiles }: FeatureGridProps) {
           <MotionBox
             key={tile.id}
             variants={staggerItem}
-            position="relative"
+            display="flex"
+            flexDirection="column"
             overflow="hidden"
-            aspectRatio={{ base: 4 / 3, md: 1 }}
+            bg="dark.800"
             role="group"
             cursor="pointer"
             initial="rest"
             whileHover={reducedMotion ? undefined : 'hover'}
           >
-            <MotionBox
-              position="absolute"
-              inset={0}
-              variants={imageHover}
-            >
-              <ResponsiveProjectImage
-                sources={tile.imageSources}
-                alt={tile.title}
-                sizes="(min-width: 62em) 33vw, (min-width: 48em) 50vw, 100vw"
-                loading="lazy"
-              />
-            </MotionBox>
+            <Box position="relative" overflow="hidden" aspectRatio={{ base: 4 / 3, md: 1 }} bg="dark.700">
+              <MotionBox position="absolute" inset={0} variants={imageHover}>
+                <ResponsiveProjectImage
+                  sources={tile.imageSources}
+                  alt={tile.title}
+                  sizes="(min-width: 80em) 33vw, (min-width: 48em) 50vw, 100vw"
+                  loading="lazy"
+                />
+              </MotionBox>
+            </Box>
             <VStack
               align="flex-start"
-              justify="flex-end"
-              position="absolute"
-              inset={0}
               p={{ base: 6, md: 8 }}
               spacing={3}
-              textShadow="0 2px 16px rgba(0, 0, 0, 0.9)"
+              flex="1"
+              borderBottom="1px solid"
+              borderColor="whiteAlpha.120"
             >
               <Heading fontSize={{ base: 'lg', md: 'xl' }} fontWeight="400">
                 {tile.title}

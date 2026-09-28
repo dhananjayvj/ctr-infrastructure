@@ -28,14 +28,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Integrated landscape lighting"
     ],
     "featured": true,
-    "cover": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1024.jpg",
+    "cover": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1440.jpg",
     "coverSources": {
       "width": 1549,
       "height": 1015,
       "fallback": {
-        "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1024.jpg",
-        "width": 1024,
-        "height": 671
+        "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1440.jpg",
+        "width": 1440,
+        "height": 944
       },
       "avif": [
         {
@@ -47,6 +47,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1024.avif",
           "width": 1024,
           "height": 671
+        },
+        {
+          "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1440.avif",
+          "width": 1440,
+          "height": 944
         }
       ],
       "webp": [
@@ -59,6 +64,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1024.webp",
           "width": 1024,
           "height": 671
+        },
+        {
+          "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1440.webp",
+          "width": 1440,
+          "height": 944
         }
       ]
     },
@@ -68,16 +78,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Overview",
         "media": [
           {
-            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v1-3db2271047/1024.jpg",
+            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v1-3db2271047/1440.jpg",
             "width": 1445,
             "height": 1088,
             "imageSources": {
               "width": 1445,
               "height": 1088,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v1-3db2271047/1024.jpg",
-                "width": 1024,
-                "height": 771
+                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v1-3db2271047/1440.jpg",
+                "width": 1440,
+                "height": 1084
               },
               "avif": [
                 {
@@ -89,6 +99,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v1-3db2271047/1024.avif",
                   "width": 1024,
                   "height": 771
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v1-3db2271047/1440.avif",
+                  "width": 1440,
+                  "height": 1084
                 }
               ],
               "webp": [
@@ -101,6 +116,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v1-3db2271047/1024.webp",
                   "width": 1024,
                   "height": 771
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v1-3db2271047/1440.webp",
+                  "width": 1440,
+                  "height": 1084
                 }
               ]
             },
@@ -108,16 +128,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v1"
           },
           {
-            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v10-efd73cf396/1024.jpg",
+            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v10-efd73cf396/1440.jpg",
             "width": 1551,
             "height": 1014,
             "imageSources": {
               "width": 1551,
               "height": 1014,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v10-efd73cf396/1024.jpg",
-                "width": 1024,
-                "height": 669
+                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v10-efd73cf396/1440.jpg",
+                "width": 1440,
+                "height": 941
               },
               "avif": [
                 {
@@ -129,6 +149,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v10-efd73cf396/1024.avif",
                   "width": 1024,
                   "height": 669
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v10-efd73cf396/1440.avif",
+                  "width": 1440,
+                  "height": 941
                 }
               ],
               "webp": [
@@ -141,6 +166,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v10-efd73cf396/1024.webp",
                   "width": 1024,
                   "height": 669
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v10-efd73cf396/1440.webp",
+                  "width": 1440,
+                  "height": 941
                 }
               ]
             },
@@ -148,16 +178,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v10"
           },
           {
-            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v11-20afd01e4f/1024.jpg",
+            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v11-20afd01e4f/1440.jpg",
             "width": 1549,
             "height": 1015,
             "imageSources": {
               "width": 1549,
               "height": 1015,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v11-20afd01e4f/1024.jpg",
-                "width": 1024,
-                "height": 671
+                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v11-20afd01e4f/1440.jpg",
+                "width": 1440,
+                "height": 944
               },
               "avif": [
                 {
@@ -169,6 +199,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v11-20afd01e4f/1024.avif",
                   "width": 1024,
                   "height": 671
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v11-20afd01e4f/1440.avif",
+                  "width": 1440,
+                  "height": 944
                 }
               ],
               "webp": [
@@ -181,6 +216,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v11-20afd01e4f/1024.webp",
                   "width": 1024,
                   "height": 671
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v11-20afd01e4f/1440.webp",
+                  "width": 1440,
+                  "height": 944
                 }
               ]
             },
@@ -188,16 +228,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v11"
           },
           {
-            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v12-e800cc2544/1024.jpg",
+            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v12-e800cc2544/1440.jpg",
             "width": 1570,
             "height": 1002,
             "imageSources": {
               "width": 1570,
               "height": 1002,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v12-e800cc2544/1024.jpg",
-                "width": 1024,
-                "height": 654
+                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v12-e800cc2544/1440.jpg",
+                "width": 1440,
+                "height": 919
               },
               "avif": [
                 {
@@ -209,6 +249,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v12-e800cc2544/1024.avif",
                   "width": 1024,
                   "height": 654
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v12-e800cc2544/1440.avif",
+                  "width": 1440,
+                  "height": 919
                 }
               ],
               "webp": [
@@ -221,6 +266,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v12-e800cc2544/1024.webp",
                   "width": 1024,
                   "height": 654
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v12-e800cc2544/1440.webp",
+                  "width": 1440,
+                  "height": 919
                 }
               ]
             },
@@ -228,16 +278,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v12"
           },
           {
-            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1024.jpg",
+            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1440.jpg",
             "width": 1549,
             "height": 1015,
             "imageSources": {
               "width": 1549,
               "height": 1015,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1024.jpg",
-                "width": 1024,
-                "height": 671
+                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1440.jpg",
+                "width": 1440,
+                "height": 944
               },
               "avif": [
                 {
@@ -249,6 +299,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1024.avif",
                   "width": 1024,
                   "height": 671
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1440.avif",
+                  "width": 1440,
+                  "height": 944
                 }
               ],
               "webp": [
@@ -261,6 +316,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1024.webp",
                   "width": 1024,
                   "height": 671
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v13-093af0d7e4/1440.webp",
+                  "width": 1440,
+                  "height": 944
                 }
               ]
             },
@@ -268,16 +328,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v13"
           },
           {
-            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v17-db884e9991/1024.jpg",
+            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v17-db884e9991/1440.jpg",
             "width": 1536,
             "height": 1024,
             "imageSources": {
               "width": 1536,
               "height": 1024,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v17-db884e9991/1024.jpg",
-                "width": 1024,
-                "height": 683
+                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v17-db884e9991/1440.jpg",
+                "width": 1440,
+                "height": 960
               },
               "avif": [
                 {
@@ -289,6 +349,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v17-db884e9991/1024.avif",
                   "width": 1024,
                   "height": 683
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v17-db884e9991/1440.avif",
+                  "width": 1440,
+                  "height": 960
                 }
               ],
               "webp": [
@@ -301,6 +366,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v17-db884e9991/1024.webp",
                   "width": 1024,
                   "height": 683
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v17-db884e9991/1440.webp",
+                  "width": 1440,
+                  "height": 960
                 }
               ]
             },
@@ -308,16 +378,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v17"
           },
           {
-            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v2-7650e1e4bf/1024.jpg",
+            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v2-7650e1e4bf/1440.jpg",
             "width": 1532,
             "height": 1027,
             "imageSources": {
               "width": 1532,
               "height": 1027,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v2-7650e1e4bf/1024.jpg",
-                "width": 1024,
-                "height": 686
+                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v2-7650e1e4bf/1440.jpg",
+                "width": 1440,
+                "height": 965
               },
               "avif": [
                 {
@@ -329,6 +399,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v2-7650e1e4bf/1024.avif",
                   "width": 1024,
                   "height": 686
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v2-7650e1e4bf/1440.avif",
+                  "width": 1440,
+                  "height": 965
                 }
               ],
               "webp": [
@@ -341,6 +416,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v2-7650e1e4bf/1024.webp",
                   "width": 1024,
                   "height": 686
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v2-7650e1e4bf/1440.webp",
+                  "width": 1440,
+                  "height": 965
                 }
               ]
             },
@@ -348,16 +428,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v2"
           },
           {
-            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v4-fd69fc985c/1024.jpg",
+            "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v4-fd69fc985c/1440.jpg",
             "width": 1530,
             "height": 1001,
             "imageSources": {
               "width": 1530,
               "height": 1001,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v4-fd69fc985c/1024.jpg",
-                "width": 1024,
-                "height": 670
+                "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v4-fd69fc985c/1440.jpg",
+                "width": 1440,
+                "height": 942
               },
               "avif": [
                 {
@@ -369,6 +449,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v4-fd69fc985c/1024.avif",
                   "width": 1024,
                   "height": 670
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v4-fd69fc985c/1440.avif",
+                  "width": 1440,
+                  "height": 942
                 }
               ],
               "webp": [
@@ -381,6 +466,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v4-fd69fc985c/1024.webp",
                   "width": 1024,
                   "height": 670
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-petroleum-nilgiris/v4-fd69fc985c/1440.webp",
+                  "width": 1440,
+                  "height": 942
                 }
               ]
             },
@@ -412,14 +502,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Climate-conscious massing"
     ],
     "featured": true,
-    "cover": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1024.jpg",
+    "cover": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1440.jpg",
     "coverSources": {
       "width": 1448,
       "height": 1086,
       "fallback": {
-        "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1024.jpg",
-        "width": 1024,
-        "height": 768
+        "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1440.jpg",
+        "width": 1440,
+        "height": 1080
       },
       "avif": [
         {
@@ -431,6 +521,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1024.avif",
           "width": 1024,
           "height": 768
+        },
+        {
+          "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1440.avif",
+          "width": 1440,
+          "height": 1080
         }
       ],
       "webp": [
@@ -443,6 +538,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1024.webp",
           "width": 1024,
           "height": 768
+        },
+        {
+          "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1440.webp",
+          "width": 1440,
+          "height": 1080
         }
       ]
     },
@@ -452,16 +552,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Overview",
         "media": [
           {
-            "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113023-pm-92ee9a059d/1024.jpg",
+            "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113023-pm-92ee9a059d/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113023-pm-92ee9a059d/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113023-pm-92ee9a059d/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -473,6 +573,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113023-pm-92ee9a059d/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113023-pm-92ee9a059d/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -485,6 +590,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113023-pm-92ee9a059d/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113023-pm-92ee9a059d/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -492,16 +602,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 30 23 PM"
           },
           {
-            "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113202-pm-6bb36da1d9/1024.jpg",
+            "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113202-pm-6bb36da1d9/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113202-pm-6bb36da1d9/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113202-pm-6bb36da1d9/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -513,6 +623,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113202-pm-6bb36da1d9/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113202-pm-6bb36da1d9/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -525,6 +640,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113202-pm-6bb36da1d9/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113202-pm-6bb36da1d9/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -532,16 +652,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 32 02 PM"
           },
           {
-            "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1024.jpg",
+            "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -553,6 +673,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -565,6 +690,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/karunya-university/chatgpt-image-sep-23-2026-113342-pm-8ad7b0cd63/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -596,14 +726,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Restoration-led public realm"
     ],
     "featured": false,
-    "cover": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1024.jpg",
+    "cover": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1440.jpg",
     "coverSources": {
       "width": 1799,
       "height": 874,
       "fallback": {
-        "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1024.jpg",
-        "width": 1024,
-        "height": 497
+        "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1440.jpg",
+        "width": 1440,
+        "height": 700
       },
       "avif": [
         {
@@ -615,6 +745,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1024.avif",
           "width": 1024,
           "height": 497
+        },
+        {
+          "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1440.avif",
+          "width": 1440,
+          "height": 700
         }
       ],
       "webp": [
@@ -627,6 +762,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1024.webp",
           "width": 1024,
           "height": 497
+        },
+        {
+          "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1440.webp",
+          "width": 1440,
+          "height": 700
         }
       ]
     },
@@ -636,16 +776,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Overview",
         "media": [
           {
-            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1024.jpg",
+            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1440.jpg",
             "width": 1799,
             "height": 874,
             "imageSources": {
               "width": 1799,
               "height": 874,
               "fallback": {
-                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1024.jpg",
-                "width": 1024,
-                "height": 497
+                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1440.jpg",
+                "width": 1440,
+                "height": 700
               },
               "avif": [
                 {
@@ -657,6 +797,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1024.avif",
                   "width": 1024,
                   "height": 497
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1440.avif",
+                  "width": 1440,
+                  "height": 700
                 }
               ],
               "webp": [
@@ -669,6 +814,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1024.webp",
                   "width": 1024,
                   "height": 497
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115116-pm-0030bd87e2/1440.webp",
+                  "width": 1440,
+                  "height": 700
                 }
               ]
             },
@@ -676,16 +826,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 51 16 PM"
           },
           {
-            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115319-pm-afd37a6fcf/1024.jpg",
+            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115319-pm-afd37a6fcf/1440.jpg",
             "width": 1453,
             "height": 1083,
             "imageSources": {
               "width": 1453,
               "height": 1083,
               "fallback": {
-                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115319-pm-afd37a6fcf/1024.jpg",
-                "width": 1024,
-                "height": 763
+                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115319-pm-afd37a6fcf/1440.jpg",
+                "width": 1440,
+                "height": 1073
               },
               "avif": [
                 {
@@ -697,6 +847,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115319-pm-afd37a6fcf/1024.avif",
                   "width": 1024,
                   "height": 763
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115319-pm-afd37a6fcf/1440.avif",
+                  "width": 1440,
+                  "height": 1073
                 }
               ],
               "webp": [
@@ -709,6 +864,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115319-pm-afd37a6fcf/1024.webp",
                   "width": 1024,
                   "height": 763
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115319-pm-afd37a6fcf/1440.webp",
+                  "width": 1440,
+                  "height": 1073
                 }
               ]
             },
@@ -716,16 +876,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 53 19 PM"
           },
           {
-            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115444-pm-9bd1cc056d/1024.jpg",
+            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115444-pm-9bd1cc056d/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115444-pm-9bd1cc056d/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115444-pm-9bd1cc056d/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -737,6 +897,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115444-pm-9bd1cc056d/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115444-pm-9bd1cc056d/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -749,6 +914,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115444-pm-9bd1cc056d/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115444-pm-9bd1cc056d/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -756,16 +926,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 54 44 PM"
           },
           {
-            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115615-pm-c8bb387fa7/1024.jpg",
+            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115615-pm-c8bb387fa7/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115615-pm-c8bb387fa7/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115615-pm-c8bb387fa7/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -777,6 +947,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115615-pm-c8bb387fa7/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115615-pm-c8bb387fa7/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -789,6 +964,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115615-pm-c8bb387fa7/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115615-pm-c8bb387fa7/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -796,16 +976,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 56 15 PM"
           },
           {
-            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115855-pm-894d426057/1024.jpg",
+            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115855-pm-894d426057/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115855-pm-894d426057/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115855-pm-894d426057/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -817,6 +997,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115855-pm-894d426057/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115855-pm-894d426057/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -829,6 +1014,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115855-pm-894d426057/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-23-2026-115855-pm-894d426057/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -836,16 +1026,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 58 55 PM"
           },
           {
-            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-24-2026-120131-am-5e1f629447/1024.jpg",
+            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-24-2026-120131-am-5e1f629447/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-24-2026-120131-am-5e1f629447/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-24-2026-120131-am-5e1f629447/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -857,6 +1047,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-24-2026-120131-am-5e1f629447/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-24-2026-120131-am-5e1f629447/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -869,6 +1064,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-24-2026-120131-am-5e1f629447/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/chatgpt-image-sep-24-2026-120131-am-5e1f629447/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -876,16 +1076,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 24, 2026, 12 01 31 AM"
           },
           {
-            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/whatsapp-image-2026-09-25-at-00-41-30-30cc265a4f/1024.jpg",
+            "src": "/images/generated/projects/talakad-temple-mysore-karnataka/whatsapp-image-2026-09-25-at-00-41-30-30cc265a4f/1440.jpg",
             "width": 1536,
             "height": 1024,
             "imageSources": {
               "width": 1536,
               "height": 1024,
               "fallback": {
-                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/whatsapp-image-2026-09-25-at-00-41-30-30cc265a4f/1024.jpg",
-                "width": 1024,
-                "height": 683
+                "src": "/images/generated/projects/talakad-temple-mysore-karnataka/whatsapp-image-2026-09-25-at-00-41-30-30cc265a4f/1440.jpg",
+                "width": 1440,
+                "height": 960
               },
               "avif": [
                 {
@@ -897,6 +1097,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/whatsapp-image-2026-09-25-at-00-41-30-30cc265a4f/1024.avif",
                   "width": 1024,
                   "height": 683
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/whatsapp-image-2026-09-25-at-00-41-30-30cc265a4f/1440.avif",
+                  "width": 1440,
+                  "height": 960
                 }
               ],
               "webp": [
@@ -909,6 +1114,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/talakad-temple-mysore-karnataka/whatsapp-image-2026-09-25-at-00-41-30-30cc265a4f/1024.webp",
                   "width": 1024,
                   "height": 683
+                },
+                {
+                  "src": "/images/generated/projects/talakad-temple-mysore-karnataka/whatsapp-image-2026-09-25-at-00-41-30-30cc265a4f/1440.webp",
+                  "width": 1440,
+                  "height": 960
                 }
               ]
             },
@@ -940,14 +1150,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Flexible merchandising zones"
     ],
     "featured": false,
-    "cover": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1024.jpg",
+    "cover": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1440.jpg",
     "coverSources": {
       "width": 1448,
       "height": 1086,
       "fallback": {
-        "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1024.jpg",
-        "width": 1024,
-        "height": 768
+        "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1440.jpg",
+        "width": 1440,
+        "height": 1080
       },
       "avif": [
         {
@@ -959,6 +1169,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1024.avif",
           "width": 1024,
           "height": 768
+        },
+        {
+          "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1440.avif",
+          "width": 1440,
+          "height": 1080
         }
       ],
       "webp": [
@@ -971,6 +1186,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1024.webp",
           "width": 1024,
           "height": 768
+        },
+        {
+          "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1440.webp",
+          "width": 1440,
+          "height": 1080
         }
       ]
     },
@@ -980,16 +1200,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Overview",
         "media": [
           {
-            "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-083358-pm-566e077f21/1024.jpg",
+            "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-083358-pm-566e077f21/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-083358-pm-566e077f21/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-083358-pm-566e077f21/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -1001,6 +1221,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-083358-pm-566e077f21/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-083358-pm-566e077f21/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -1013,6 +1238,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-083358-pm-566e077f21/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-083358-pm-566e077f21/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -1020,16 +1250,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 08 33 58 PM"
           },
           {
-            "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1024.jpg",
+            "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -1041,6 +1271,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -1053,6 +1288,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085400-pm-a2615f8279/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -1060,16 +1300,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 08 54 00 PM"
           },
           {
-            "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085422-pm-f858bcc08c/1024.jpg",
+            "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085422-pm-f858bcc08c/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085422-pm-f858bcc08c/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085422-pm-f858bcc08c/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -1081,6 +1321,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085422-pm-f858bcc08c/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085422-pm-f858bcc08c/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -1093,6 +1338,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085422-pm-f858bcc08c/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/chennai-silks/chatgpt-image-sep-23-2026-085422-pm-f858bcc08c/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -1124,14 +1374,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Flexible guest capacity"
     ],
     "featured": false,
-    "cover": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1024.jpg",
+    "cover": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1440.jpg",
     "coverSources": {
       "width": 7680,
       "height": 4320,
       "fallback": {
-        "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1024.jpg",
-        "width": 1024,
-        "height": 576
+        "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1440.jpg",
+        "width": 1440,
+        "height": 810
       },
       "avif": [
         {
@@ -1143,6 +1393,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1024.avif",
           "width": 1024,
           "height": 576
+        },
+        {
+          "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1440.avif",
+          "width": 1440,
+          "height": 810
         }
       ],
       "webp": [
@@ -1155,6 +1410,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1024.webp",
           "width": 1024,
           "height": 576
+        },
+        {
+          "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1440.webp",
+          "width": 1440,
+          "height": 810
         }
       ]
     },
@@ -1164,16 +1424,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Perspectives",
         "media": [
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-1-ba258e25df/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-1-ba258e25df/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-1-ba258e25df/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-1-ba258e25df/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1185,6 +1445,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-1-ba258e25df/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-1-ba258e25df/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1197,6 +1462,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-1-ba258e25df/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-1-ba258e25df/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1204,16 +1474,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 1"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-10-1bfc87a4ab/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-10-1bfc87a4ab/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-10-1bfc87a4ab/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-10-1bfc87a4ab/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1225,6 +1495,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-10-1bfc87a4ab/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-10-1bfc87a4ab/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1237,6 +1512,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-10-1bfc87a4ab/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-10-1bfc87a4ab/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1244,16 +1524,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 10"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-12-16ed813459/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-12-16ed813459/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-12-16ed813459/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-12-16ed813459/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1265,6 +1545,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-12-16ed813459/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-12-16ed813459/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1277,6 +1562,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-12-16ed813459/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-12-16ed813459/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1284,16 +1574,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 12"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-13-7636fe23f1/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-13-7636fe23f1/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-13-7636fe23f1/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-13-7636fe23f1/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1305,6 +1595,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-13-7636fe23f1/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-13-7636fe23f1/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1317,6 +1612,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-13-7636fe23f1/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-13-7636fe23f1/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1324,16 +1624,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 13"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-14-92d730ab2a/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-14-92d730ab2a/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-14-92d730ab2a/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-14-92d730ab2a/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1345,6 +1645,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-14-92d730ab2a/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-14-92d730ab2a/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1357,6 +1662,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-14-92d730ab2a/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-14-92d730ab2a/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1364,16 +1674,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 14"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-15-9d1e890725/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-15-9d1e890725/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-15-9d1e890725/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-15-9d1e890725/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1385,6 +1695,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-15-9d1e890725/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-15-9d1e890725/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1397,6 +1712,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-15-9d1e890725/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-15-9d1e890725/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1404,16 +1724,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 15"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-16-093e50b188/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-16-093e50b188/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-16-093e50b188/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-16-093e50b188/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1425,6 +1745,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-16-093e50b188/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-16-093e50b188/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1437,6 +1762,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-16-093e50b188/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-16-093e50b188/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1444,16 +1774,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 16"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-17-a68dcbd7a3/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-17-a68dcbd7a3/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-17-a68dcbd7a3/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-17-a68dcbd7a3/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1465,6 +1795,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-17-a68dcbd7a3/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-17-a68dcbd7a3/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1477,6 +1812,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-17-a68dcbd7a3/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-17-a68dcbd7a3/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1484,16 +1824,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 17"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-2-b35e5213cc/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-2-b35e5213cc/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-2-b35e5213cc/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-2-b35e5213cc/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1505,6 +1845,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-2-b35e5213cc/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-2-b35e5213cc/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1517,6 +1862,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-2-b35e5213cc/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-2-b35e5213cc/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1524,16 +1874,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 2"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-3-63d9f59d27/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-3-63d9f59d27/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-3-63d9f59d27/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-3-63d9f59d27/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1545,6 +1895,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-3-63d9f59d27/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-3-63d9f59d27/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1557,6 +1912,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-3-63d9f59d27/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-3-63d9f59d27/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1564,16 +1924,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 3"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-4-bef1841401/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-4-bef1841401/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-4-bef1841401/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-4-bef1841401/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1585,6 +1945,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-4-bef1841401/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-4-bef1841401/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1597,6 +1962,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-4-bef1841401/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-4-bef1841401/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1604,16 +1974,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 4"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-5-d57120263d/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-5-d57120263d/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-5-d57120263d/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-5-d57120263d/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1625,6 +1995,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-5-d57120263d/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-5-d57120263d/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1637,6 +2012,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-5-d57120263d/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-5-d57120263d/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1644,16 +2024,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 5"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-6-229de61026/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-6-229de61026/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-6-229de61026/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-6-229de61026/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1665,6 +2045,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-6-229de61026/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-6-229de61026/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1677,6 +2062,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-6-229de61026/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-6-229de61026/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1684,16 +2074,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 6"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-7-4376403f96/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-7-4376403f96/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-7-4376403f96/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-7-4376403f96/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1705,6 +2095,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-7-4376403f96/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-7-4376403f96/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1717,6 +2112,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-7-4376403f96/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-7-4376403f96/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1724,16 +2124,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 7"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1745,6 +2145,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1757,6 +2162,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-8-11eae80d44/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1764,16 +2174,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Form View 8"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-9-b29e9c19ab/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-9-b29e9c19ab/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-9-b29e9c19ab/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-9-b29e9c19ab/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -1785,6 +2195,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-9-b29e9c19ab/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-9-b29e9c19ab/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -1797,6 +2212,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-9-b29e9c19ab/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/form-view-9-b29e9c19ab/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -1810,16 +2230,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164442-ca4f243b94/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164442-ca4f243b94/1440.jpg",
             "width": 4000,
             "height": 2252,
             "imageSources": {
               "width": 4000,
               "height": 2252,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164442-ca4f243b94/1024.jpg",
-                "width": 1024,
-                "height": 577
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164442-ca4f243b94/1440.jpg",
+                "width": 1440,
+                "height": 811
               },
               "avif": [
                 {
@@ -1831,6 +2251,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164442-ca4f243b94/1024.avif",
                   "width": 1024,
                   "height": 577
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164442-ca4f243b94/1440.avif",
+                  "width": 1440,
+                  "height": 811
                 }
               ],
               "webp": [
@@ -1843,6 +2268,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164442-ca4f243b94/1024.webp",
                   "width": 1024,
                   "height": 577
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164442-ca4f243b94/1440.webp",
+                  "width": 1440,
+                  "height": 811
                 }
               ]
             },
@@ -1850,16 +2280,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "20260731 164442"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164908-c322256127/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164908-c322256127/1440.jpg",
             "width": 2252,
             "height": 4000,
             "imageSources": {
               "width": 2252,
               "height": 4000,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164908-c322256127/1024.jpg",
-                "width": 1024,
-                "height": 1819
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164908-c322256127/1440.jpg",
+                "width": 1440,
+                "height": 2558
               },
               "avif": [
                 {
@@ -1871,6 +2301,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164908-c322256127/1024.avif",
                   "width": 1024,
                   "height": 1819
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164908-c322256127/1440.avif",
+                  "width": 1440,
+                  "height": 2558
                 }
               ],
               "webp": [
@@ -1883,6 +2318,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164908-c322256127/1024.webp",
                   "width": 1024,
                   "height": 1819
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731164908-c322256127/1440.webp",
+                  "width": 1440,
+                  "height": 2558
                 }
               ]
             },
@@ -1890,16 +2330,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "20260731 164908"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165015-4a123ec22c/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165015-4a123ec22c/1440.jpg",
             "width": 4000,
             "height": 2252,
             "imageSources": {
               "width": 4000,
               "height": 2252,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165015-4a123ec22c/1024.jpg",
-                "width": 1024,
-                "height": 577
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165015-4a123ec22c/1440.jpg",
+                "width": 1440,
+                "height": 811
               },
               "avif": [
                 {
@@ -1911,6 +2351,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165015-4a123ec22c/1024.avif",
                   "width": 1024,
                   "height": 577
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165015-4a123ec22c/1440.avif",
+                  "width": 1440,
+                  "height": 811
                 }
               ],
               "webp": [
@@ -1923,6 +2368,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165015-4a123ec22c/1024.webp",
                   "width": 1024,
                   "height": 577
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165015-4a123ec22c/1440.webp",
+                  "width": 1440,
+                  "height": 811
                 }
               ]
             },
@@ -1930,16 +2380,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "20260731 165015"
           },
           {
-            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165034-ad2f01efe6/1024.jpg",
+            "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165034-ad2f01efe6/1440.jpg",
             "width": 4000,
             "height": 2252,
             "imageSources": {
               "width": 4000,
               "height": 2252,
               "fallback": {
-                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165034-ad2f01efe6/1024.jpg",
-                "width": 1024,
-                "height": 577
+                "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165034-ad2f01efe6/1440.jpg",
+                "width": 1440,
+                "height": 811
               },
               "avif": [
                 {
@@ -1951,6 +2401,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165034-ad2f01efe6/1024.avif",
                   "width": 1024,
                   "height": 577
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165034-ad2f01efe6/1440.avif",
+                  "width": 1440,
+                  "height": 811
                 }
               ],
               "webp": [
@@ -1963,6 +2418,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165034-ad2f01efe6/1024.webp",
                   "width": 1024,
                   "height": 577
+                },
+                {
+                  "src": "/images/generated/projects/treasure-trove-venue-tiruppur-tamil-nadu/20260731165034-ad2f01efe6/1440.webp",
+                  "width": 1440,
+                  "height": 811
                 }
               ]
             },
@@ -1994,14 +2454,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Indoor-outdoor guest spaces"
     ],
     "featured": true,
-    "cover": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1024.jpg",
+    "cover": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1440.jpg",
     "coverSources": {
       "width": 7680,
       "height": 4320,
       "fallback": {
-        "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1024.jpg",
-        "width": 1024,
-        "height": 576
+        "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1440.jpg",
+        "width": 1440,
+        "height": 810
       },
       "avif": [
         {
@@ -2013,6 +2473,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1024.avif",
           "width": 1024,
           "height": 576
+        },
+        {
+          "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1440.avif",
+          "width": 1440,
+          "height": 810
         }
       ],
       "webp": [
@@ -2025,6 +2490,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1024.webp",
           "width": 1024,
           "height": 576
+        },
+        {
+          "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1440.webp",
+          "width": 1440,
+          "height": 810
         }
       ]
     },
@@ -2034,16 +2504,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Perspectives",
         "media": [
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105427-pm-afe9e0a9a3/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105427-pm-afe9e0a9a3/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105427-pm-afe9e0a9a3/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105427-pm-afe9e0a9a3/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -2055,6 +2525,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105427-pm-afe9e0a9a3/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105427-pm-afe9e0a9a3/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -2067,6 +2542,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105427-pm-afe9e0a9a3/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105427-pm-afe9e0a9a3/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -2074,16 +2554,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 10 54 27 PM"
           },
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105954-pm-cd47ce9c03/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105954-pm-cd47ce9c03/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105954-pm-cd47ce9c03/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105954-pm-cd47ce9c03/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -2095,6 +2575,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105954-pm-cd47ce9c03/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105954-pm-cd47ce9c03/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -2107,6 +2592,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105954-pm-cd47ce9c03/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-105954-pm-cd47ce9c03/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -2114,16 +2604,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 10 59 54 PM"
           },
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-110408-pm-2179073d39/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-110408-pm-2179073d39/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-110408-pm-2179073d39/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-110408-pm-2179073d39/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -2135,6 +2625,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-110408-pm-2179073d39/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-110408-pm-2179073d39/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -2147,6 +2642,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-110408-pm-2179073d39/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-110408-pm-2179073d39/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -2154,16 +2654,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 04 08 PM"
           },
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111158-pm-42eebb6af0/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111158-pm-42eebb6af0/1440.jpg",
             "width": 1843,
             "height": 853,
             "imageSources": {
               "width": 1843,
               "height": 853,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111158-pm-42eebb6af0/1024.jpg",
-                "width": 1024,
-                "height": 474
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111158-pm-42eebb6af0/1440.jpg",
+                "width": 1440,
+                "height": 666
               },
               "avif": [
                 {
@@ -2175,6 +2675,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111158-pm-42eebb6af0/1024.avif",
                   "width": 1024,
                   "height": 474
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111158-pm-42eebb6af0/1440.avif",
+                  "width": 1440,
+                  "height": 666
                 }
               ],
               "webp": [
@@ -2187,6 +2692,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111158-pm-42eebb6af0/1024.webp",
                   "width": 1024,
                   "height": 474
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111158-pm-42eebb6af0/1440.webp",
+                  "width": 1440,
+                  "height": 666
                 }
               ]
             },
@@ -2194,16 +2704,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 11 58 PM"
           },
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1440.jpg",
             "width": 7680,
             "height": 4320,
             "imageSources": {
               "width": 7680,
               "height": 4320,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -2215,6 +2725,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -2227,6 +2742,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/v10r-c3ad552e20/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -2240,16 +2760,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111728-pm-c5cbff3e13/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111728-pm-c5cbff3e13/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111728-pm-c5cbff3e13/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111728-pm-c5cbff3e13/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -2261,6 +2781,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111728-pm-c5cbff3e13/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111728-pm-c5cbff3e13/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -2273,6 +2798,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111728-pm-c5cbff3e13/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-111728-pm-c5cbff3e13/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -2320,16 +2850,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 21 43 PM"
           },
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112307-pm-e49afb6aae/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112307-pm-e49afb6aae/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112307-pm-e49afb6aae/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112307-pm-e49afb6aae/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -2341,6 +2871,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112307-pm-e49afb6aae/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112307-pm-e49afb6aae/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -2353,6 +2888,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112307-pm-e49afb6aae/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112307-pm-e49afb6aae/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -2360,16 +2900,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 23 07 PM"
           },
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112500-pm-296c3982e0/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112500-pm-296c3982e0/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112500-pm-296c3982e0/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112500-pm-296c3982e0/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -2381,6 +2921,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112500-pm-296c3982e0/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112500-pm-296c3982e0/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -2393,6 +2938,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112500-pm-296c3982e0/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/chatgpt-image-sep-23-2026-112500-pm-296c3982e0/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -2400,16 +2950,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 25 00 PM"
           },
           {
-            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/project-banner-5ff4f5f7a9/1024.jpg",
+            "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/project-banner-5ff4f5f7a9/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/project-banner-5ff4f5f7a9/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/project-banner-5ff4f5f7a9/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -2421,6 +2971,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/project-banner-5ff4f5f7a9/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/project-banner-5ff4f5f7a9/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -2433,6 +2988,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/project-banner-5ff4f5f7a9/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/hindustan-resort-coimbatore-tamil-nadu/project-banner-5ff4f5f7a9/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -2584,16 +3144,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "67C4ABAD 54E8 42EC BE59 74D7E218EABB"
           },
           {
-            "src": "/images/generated/projects/mysore-sanctuary/7f268cc4-3239-4151-a2de-0fe59b7fd6bf-b472cbd002/1024.jpg",
+            "src": "/images/generated/projects/mysore-sanctuary/7f268cc4-3239-4151-a2de-0fe59b7fd6bf-b472cbd002/1051.jpg",
             "width": 1051,
             "height": 1496,
             "imageSources": {
               "width": 1051,
               "height": 1496,
               "fallback": {
-                "src": "/images/generated/projects/mysore-sanctuary/7f268cc4-3239-4151-a2de-0fe59b7fd6bf-b472cbd002/1024.jpg",
-                "width": 1024,
-                "height": 1458
+                "src": "/images/generated/projects/mysore-sanctuary/7f268cc4-3239-4151-a2de-0fe59b7fd6bf-b472cbd002/1051.jpg",
+                "width": 1051,
+                "height": 1496
               },
               "avif": [
                 {
@@ -2605,6 +3165,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/mysore-sanctuary/7f268cc4-3239-4151-a2de-0fe59b7fd6bf-b472cbd002/1024.avif",
                   "width": 1024,
                   "height": 1458
+                },
+                {
+                  "src": "/images/generated/projects/mysore-sanctuary/7f268cc4-3239-4151-a2de-0fe59b7fd6bf-b472cbd002/1051.avif",
+                  "width": 1051,
+                  "height": 1496
                 }
               ],
               "webp": [
@@ -2617,6 +3182,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/mysore-sanctuary/7f268cc4-3239-4151-a2de-0fe59b7fd6bf-b472cbd002/1024.webp",
                   "width": 1024,
                   "height": 1458
+                },
+                {
+                  "src": "/images/generated/projects/mysore-sanctuary/7f268cc4-3239-4151-a2de-0fe59b7fd6bf-b472cbd002/1051.webp",
+                  "width": 1051,
+                  "height": 1496
                 }
               ]
             },
@@ -2728,14 +3298,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Passive climate response"
     ],
     "featured": false,
-    "cover": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1024.jpg",
+    "cover": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1440.jpg",
     "coverSources": {
       "width": 1500,
       "height": 1049,
       "fallback": {
-        "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1024.jpg",
-        "width": 1024,
-        "height": 716
+        "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1440.jpg",
+        "width": 1440,
+        "height": 1007
       },
       "avif": [
         {
@@ -2747,6 +3317,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1024.avif",
           "width": 1024,
           "height": 716
+        },
+        {
+          "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1440.avif",
+          "width": 1440,
+          "height": 1007
         }
       ],
       "webp": [
@@ -2759,6 +3334,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1024.webp",
           "width": 1024,
           "height": 716
+        },
+        {
+          "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1440.webp",
+          "width": 1440,
+          "height": 1007
         }
       ]
     },
@@ -2768,16 +3348,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Exterior photography",
         "media": [
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081040-pm-446c98c61a/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081040-pm-446c98c61a/1440.jpg",
             "width": 1500,
             "height": 1049,
             "imageSources": {
               "width": 1500,
               "height": 1049,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081040-pm-446c98c61a/1024.jpg",
-                "width": 1024,
-                "height": 716
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081040-pm-446c98c61a/1440.jpg",
+                "width": 1440,
+                "height": 1007
               },
               "avif": [
                 {
@@ -2789,6 +3369,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081040-pm-446c98c61a/1024.avif",
                   "width": 1024,
                   "height": 716
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081040-pm-446c98c61a/1440.avif",
+                  "width": 1440,
+                  "height": 1007
                 }
               ],
               "webp": [
@@ -2801,6 +3386,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081040-pm-446c98c61a/1024.webp",
                   "width": 1024,
                   "height": 716
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081040-pm-446c98c61a/1440.webp",
+                  "width": 1440,
+                  "height": 1007
                 }
               ]
             },
@@ -2808,16 +3398,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 08 10 40 PM"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1440.jpg",
             "width": 1500,
             "height": 1049,
             "imageSources": {
               "width": 1500,
               "height": 1049,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1024.jpg",
-                "width": 1024,
-                "height": 716
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1440.jpg",
+                "width": 1440,
+                "height": 1007
               },
               "avif": [
                 {
@@ -2829,6 +3419,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1024.avif",
                   "width": 1024,
                   "height": 716
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1440.avif",
+                  "width": 1440,
+                  "height": 1007
                 }
               ],
               "webp": [
@@ -2841,6 +3436,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1024.webp",
                   "width": 1024,
                   "height": 716
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081511-pm-572a94a0fd/1440.webp",
+                  "width": 1440,
+                  "height": 1007
                 }
               ]
             },
@@ -2934,16 +3534,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "7BC31638 0085 4001 8361 096C25348BA3"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-045126-pm-8ca32aed74/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-045126-pm-8ca32aed74/1086.jpg",
             "width": 1086,
             "height": 1448,
             "imageSources": {
               "width": 1086,
               "height": 1448,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-045126-pm-8ca32aed74/1024.jpg",
-                "width": 1024,
-                "height": 1365
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-045126-pm-8ca32aed74/1086.jpg",
+                "width": 1086,
+                "height": 1448
               },
               "avif": [
                 {
@@ -2955,6 +3555,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-045126-pm-8ca32aed74/1024.avif",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-045126-pm-8ca32aed74/1086.avif",
+                  "width": 1086,
+                  "height": 1448
                 }
               ],
               "webp": [
@@ -2967,6 +3572,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-045126-pm-8ca32aed74/1024.webp",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-045126-pm-8ca32aed74/1086.webp",
+                  "width": 1086,
+                  "height": 1448
                 }
               ]
             },
@@ -2974,16 +3584,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 04 51 26 PM"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-052116-pm-e5f9cace36/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-052116-pm-e5f9cace36/1086.jpg",
             "width": 1086,
             "height": 1448,
             "imageSources": {
               "width": 1086,
               "height": 1448,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-052116-pm-e5f9cace36/1024.jpg",
-                "width": 1024,
-                "height": 1365
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-052116-pm-e5f9cace36/1086.jpg",
+                "width": 1086,
+                "height": 1448
               },
               "avif": [
                 {
@@ -2995,6 +3605,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-052116-pm-e5f9cace36/1024.avif",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-052116-pm-e5f9cace36/1086.avif",
+                  "width": 1086,
+                  "height": 1448
                 }
               ],
               "webp": [
@@ -3007,6 +3622,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-052116-pm-e5f9cace36/1024.webp",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-052116-pm-e5f9cace36/1086.webp",
+                  "width": 1086,
+                  "height": 1448
                 }
               ]
             },
@@ -3014,16 +3634,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 05 21 16 PM"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-054832-pm-6ec2b995d1/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-054832-pm-6ec2b995d1/1086.jpg",
             "width": 1086,
             "height": 1448,
             "imageSources": {
               "width": 1086,
               "height": 1448,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-054832-pm-6ec2b995d1/1024.jpg",
-                "width": 1024,
-                "height": 1365
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-054832-pm-6ec2b995d1/1086.jpg",
+                "width": 1086,
+                "height": 1448
               },
               "avif": [
                 {
@@ -3035,6 +3655,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-054832-pm-6ec2b995d1/1024.avif",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-054832-pm-6ec2b995d1/1086.avif",
+                  "width": 1086,
+                  "height": 1448
                 }
               ],
               "webp": [
@@ -3047,6 +3672,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-054832-pm-6ec2b995d1/1024.webp",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-054832-pm-6ec2b995d1/1086.webp",
+                  "width": 1086,
+                  "height": 1448
                 }
               ]
             },
@@ -3054,16 +3684,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 05 48 32 PM"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055421-pm-5a8c81dc4c/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055421-pm-5a8c81dc4c/1440.jpg",
             "width": 1686,
             "height": 933,
             "imageSources": {
               "width": 1686,
               "height": 933,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055421-pm-5a8c81dc4c/1024.jpg",
-                "width": 1024,
-                "height": 567
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055421-pm-5a8c81dc4c/1440.jpg",
+                "width": 1440,
+                "height": 797
               },
               "avif": [
                 {
@@ -3075,6 +3705,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055421-pm-5a8c81dc4c/1024.avif",
                   "width": 1024,
                   "height": 567
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055421-pm-5a8c81dc4c/1440.avif",
+                  "width": 1440,
+                  "height": 797
                 }
               ],
               "webp": [
@@ -3087,6 +3722,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055421-pm-5a8c81dc4c/1024.webp",
                   "width": 1024,
                   "height": 567
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055421-pm-5a8c81dc4c/1440.webp",
+                  "width": 1440,
+                  "height": 797
                 }
               ]
             },
@@ -3094,16 +3734,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 05 54 21 PM"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055958-pm-72ab275e32/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055958-pm-72ab275e32/1350.jpg",
             "width": 1350,
             "height": 1165,
             "imageSources": {
               "width": 1350,
               "height": 1165,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055958-pm-72ab275e32/1024.jpg",
-                "width": 1024,
-                "height": 884
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055958-pm-72ab275e32/1350.jpg",
+                "width": 1350,
+                "height": 1165
               },
               "avif": [
                 {
@@ -3115,6 +3755,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055958-pm-72ab275e32/1024.avif",
                   "width": 1024,
                   "height": 884
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055958-pm-72ab275e32/1350.avif",
+                  "width": 1350,
+                  "height": 1165
                 }
               ],
               "webp": [
@@ -3127,6 +3772,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055958-pm-72ab275e32/1024.webp",
                   "width": 1024,
                   "height": 884
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-055958-pm-72ab275e32/1350.webp",
+                  "width": 1350,
+                  "height": 1165
                 }
               ]
             },
@@ -3134,16 +3784,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 05 59 58 PM"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-060301-pm-14cbbe6c31/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-060301-pm-14cbbe6c31/1086.jpg",
             "width": 1086,
             "height": 1448,
             "imageSources": {
               "width": 1086,
               "height": 1448,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-060301-pm-14cbbe6c31/1024.jpg",
-                "width": 1024,
-                "height": 1365
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-060301-pm-14cbbe6c31/1086.jpg",
+                "width": 1086,
+                "height": 1448
               },
               "avif": [
                 {
@@ -3155,6 +3805,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-060301-pm-14cbbe6c31/1024.avif",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-060301-pm-14cbbe6c31/1086.avif",
+                  "width": 1086,
+                  "height": 1448
                 }
               ],
               "webp": [
@@ -3167,6 +3822,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-060301-pm-14cbbe6c31/1024.webp",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-060301-pm-14cbbe6c31/1086.webp",
+                  "width": 1086,
+                  "height": 1448
                 }
               ]
             },
@@ -3254,16 +3914,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 06 40 00 PM"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-064138-pm-0928a5b9f5/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-064138-pm-0928a5b9f5/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-064138-pm-0928a5b9f5/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-064138-pm-0928a5b9f5/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -3275,6 +3935,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-064138-pm-0928a5b9f5/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-064138-pm-0928a5b9f5/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -3287,6 +3952,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-064138-pm-0928a5b9f5/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-064138-pm-0928a5b9f5/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -3334,16 +4004,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 06 49 13 PM"
           },
           {
-            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081829-pm-c83407ca71/1024.jpg",
+            "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081829-pm-c83407ca71/1094.jpg",
             "width": 1094,
             "height": 1438,
             "imageSources": {
               "width": 1094,
               "height": 1438,
               "fallback": {
-                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081829-pm-c83407ca71/1024.jpg",
-                "width": 1024,
-                "height": 1346
+                "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081829-pm-c83407ca71/1094.jpg",
+                "width": 1094,
+                "height": 1438
               },
               "avif": [
                 {
@@ -3355,6 +4025,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081829-pm-c83407ca71/1024.avif",
                   "width": 1024,
                   "height": 1346
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081829-pm-c83407ca71/1094.avif",
+                  "width": 1094,
+                  "height": 1438
                 }
               ],
               "webp": [
@@ -3367,6 +4042,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081829-pm-c83407ca71/1024.webp",
                   "width": 1024,
                   "height": 1346
+                },
+                {
+                  "src": "/images/generated/projects/agrarian-retreat/chatgpt-image-sep-23-2026-081829-pm-c83407ca71/1094.webp",
+                  "width": 1094,
+                  "height": 1438
                 }
               ]
             },
@@ -3438,14 +4118,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Calm private grounds"
     ],
     "featured": false,
-    "cover": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1024.jpg",
+    "cover": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1440.jpg",
     "coverSources": {
       "width": 3840,
       "height": 2160,
       "fallback": {
-        "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1024.jpg",
-        "width": 1024,
-        "height": 576
+        "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1440.jpg",
+        "width": 1440,
+        "height": 810
       },
       "avif": [
         {
@@ -3457,6 +4137,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1024.avif",
           "width": 1024,
           "height": 576
+        },
+        {
+          "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1440.avif",
+          "width": 1440,
+          "height": 810
         }
       ],
       "webp": [
@@ -3469,6 +4154,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1024.webp",
           "width": 1024,
           "height": 576
+        },
+        {
+          "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1440.webp",
+          "width": 1440,
+          "height": 810
         }
       ]
     },
@@ -3478,16 +4168,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Exterior perspectives",
         "media": [
           {
-            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1440.jpg",
             "width": 3840,
             "height": 2160,
             "imageSources": {
               "width": 3840,
               "height": 2160,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -3499,6 +4189,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -3511,6 +4206,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-4-1eb071f24a/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -3518,16 +4218,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Front view 1n Photo   4"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-6-7ad7362c94/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-6-7ad7362c94/1440.jpg",
             "width": 3840,
             "height": 2160,
             "imageSources": {
               "width": 3840,
               "height": 2160,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-6-7ad7362c94/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-6-7ad7362c94/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -3539,6 +4239,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-6-7ad7362c94/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-6-7ad7362c94/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -3551,6 +4256,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-6-7ad7362c94/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-6-7ad7362c94/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -3558,16 +4268,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Front view 1n Photo   6"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-7-9bc352d838/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-7-9bc352d838/1440.jpg",
             "width": 3840,
             "height": 2160,
             "imageSources": {
               "width": 3840,
               "height": 2160,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-7-9bc352d838/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-7-9bc352d838/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -3579,6 +4289,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-7-9bc352d838/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-7-9bc352d838/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -3591,6 +4306,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-7-9bc352d838/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-7-9bc352d838/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -3598,16 +4318,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Front view 1n Photo   7"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-8-cd22312a3a/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-8-cd22312a3a/1440.jpg",
             "width": 3840,
             "height": 2160,
             "imageSources": {
               "width": 3840,
               "height": 2160,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-8-cd22312a3a/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-8-cd22312a3a/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -3619,6 +4339,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-8-cd22312a3a/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-8-cd22312a3a/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -3631,6 +4356,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-8-cd22312a3a/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-8-cd22312a3a/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -3638,16 +4368,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Front view 1n Photo   8"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-9-73019ccb6c/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-9-73019ccb6c/1440.jpg",
             "width": 3840,
             "height": 2160,
             "imageSources": {
               "width": 3840,
               "height": 2160,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-9-73019ccb6c/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-9-73019ccb6c/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -3659,6 +4389,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-9-73019ccb6c/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-9-73019ccb6c/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -3671,6 +4406,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-9-73019ccb6c/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/front-view-1nphoto-9-73019ccb6c/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -3684,16 +4424,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Interior perspectives",
         "media": [
           {
-            "src": "/images/generated/projects/riverside-farmhouse/foyer-view-1-326496906f/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/foyer-view-1-326496906f/1440.jpg",
             "width": 2321,
             "height": 1518,
             "imageSources": {
               "width": 2321,
               "height": 1518,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/foyer-view-1-326496906f/1024.jpg",
-                "width": 1024,
-                "height": 670
+                "src": "/images/generated/projects/riverside-farmhouse/foyer-view-1-326496906f/1440.jpg",
+                "width": 1440,
+                "height": 942
               },
               "avif": [
                 {
@@ -3705,6 +4445,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/foyer-view-1-326496906f/1024.avif",
                   "width": 1024,
                   "height": 670
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/foyer-view-1-326496906f/1440.avif",
+                  "width": 1440,
+                  "height": 942
                 }
               ],
               "webp": [
@@ -3717,6 +4462,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/foyer-view-1-326496906f/1024.webp",
                   "width": 1024,
                   "height": 670
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/foyer-view-1-326496906f/1440.webp",
+                  "width": 1440,
+                  "height": 942
                 }
               ]
             },
@@ -3724,16 +4474,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Foyer view 1"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/foyer-view-2-79db98bbde/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/foyer-view-2-79db98bbde/1440.jpg",
             "width": 2453,
             "height": 1585,
             "imageSources": {
               "width": 2453,
               "height": 1585,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/foyer-view-2-79db98bbde/1024.jpg",
-                "width": 1024,
-                "height": 662
+                "src": "/images/generated/projects/riverside-farmhouse/foyer-view-2-79db98bbde/1440.jpg",
+                "width": 1440,
+                "height": 930
               },
               "avif": [
                 {
@@ -3745,6 +4495,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/foyer-view-2-79db98bbde/1024.avif",
                   "width": 1024,
                   "height": 662
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/foyer-view-2-79db98bbde/1440.avif",
+                  "width": 1440,
+                  "height": 930
                 }
               ],
               "webp": [
@@ -3757,6 +4512,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/foyer-view-2-79db98bbde/1024.webp",
                   "width": 1024,
                   "height": 662
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/foyer-view-2-79db98bbde/1440.webp",
+                  "width": 1440,
+                  "height": 930
                 }
               ]
             },
@@ -3764,16 +4524,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Foyer view 2"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/foyer-view-3-2a4b0b3712/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/foyer-view-3-2a4b0b3712/1440.jpg",
             "width": 2999,
             "height": 1687,
             "imageSources": {
               "width": 2999,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/foyer-view-3-2a4b0b3712/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/riverside-farmhouse/foyer-view-3-2a4b0b3712/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -3785,6 +4545,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/foyer-view-3-2a4b0b3712/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/foyer-view-3-2a4b0b3712/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -3797,6 +4562,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/foyer-view-3-2a4b0b3712/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/foyer-view-3-2a4b0b3712/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -3804,16 +4574,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Foyer view 3"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-1-ce0ce5fad0/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-1-ce0ce5fad0/1440.jpg",
             "width": 2261,
             "height": 1506,
             "imageSources": {
               "width": 2261,
               "height": 1506,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-1-ce0ce5fad0/1024.jpg",
-                "width": 1024,
-                "height": 682
+                "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-1-ce0ce5fad0/1440.jpg",
+                "width": 1440,
+                "height": 959
               },
               "avif": [
                 {
@@ -3825,6 +4595,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-1-ce0ce5fad0/1024.avif",
                   "width": 1024,
                   "height": 682
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-1-ce0ce5fad0/1440.avif",
+                  "width": 1440,
+                  "height": 959
                 }
               ],
               "webp": [
@@ -3837,6 +4612,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-1-ce0ce5fad0/1024.webp",
                   "width": 1024,
                   "height": 682
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-1-ce0ce5fad0/1440.webp",
+                  "width": 1440,
+                  "height": 959
                 }
               ]
             },
@@ -3844,16 +4624,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "kitchen view 1"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-2-4941cbf041/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-2-4941cbf041/1440.jpg",
             "width": 2544,
             "height": 1687,
             "imageSources": {
               "width": 2544,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-2-4941cbf041/1024.jpg",
-                "width": 1024,
-                "height": 679
+                "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-2-4941cbf041/1440.jpg",
+                "width": 1440,
+                "height": 955
               },
               "avif": [
                 {
@@ -3865,6 +4645,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-2-4941cbf041/1024.avif",
                   "width": 1024,
                   "height": 679
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-2-4941cbf041/1440.avif",
+                  "width": 1440,
+                  "height": 955
                 }
               ],
               "webp": [
@@ -3877,6 +4662,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-2-4941cbf041/1024.webp",
                   "width": 1024,
                   "height": 679
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-2-4941cbf041/1440.webp",
+                  "width": 1440,
+                  "height": 955
                 }
               ]
             },
@@ -3884,16 +4674,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "kitchen view 2"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-3-528f373a81/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-3-528f373a81/1440.jpg",
             "width": 2590,
             "height": 1639,
             "imageSources": {
               "width": 2590,
               "height": 1639,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-3-528f373a81/1024.jpg",
-                "width": 1024,
-                "height": 648
+                "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-3-528f373a81/1440.jpg",
+                "width": 1440,
+                "height": 911
               },
               "avif": [
                 {
@@ -3905,6 +4695,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-3-528f373a81/1024.avif",
                   "width": 1024,
                   "height": 648
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-3-528f373a81/1440.avif",
+                  "width": 1440,
+                  "height": 911
                 }
               ],
               "webp": [
@@ -3917,6 +4712,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-3-528f373a81/1024.webp",
                   "width": 1024,
                   "height": 648
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/kitchen-view-3-528f373a81/1440.webp",
+                  "width": 1440,
+                  "height": 911
                 }
               ]
             },
@@ -3924,16 +4724,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "kitchen view 3"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/living-view-1-6614905433/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/living-view-1-6614905433/1440.jpg",
             "width": 2999,
             "height": 1687,
             "imageSources": {
               "width": 2999,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/living-view-1-6614905433/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/riverside-farmhouse/living-view-1-6614905433/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -3945,6 +4745,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/living-view-1-6614905433/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/living-view-1-6614905433/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -3957,6 +4762,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/living-view-1-6614905433/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/living-view-1-6614905433/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -3964,16 +4774,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Living view 1"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/living-view-2-5f0ac84dda/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/living-view-2-5f0ac84dda/1440.jpg",
             "width": 2057,
             "height": 1687,
             "imageSources": {
               "width": 2057,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/living-view-2-5f0ac84dda/1024.jpg",
-                "width": 1024,
-                "height": 840
+                "src": "/images/generated/projects/riverside-farmhouse/living-view-2-5f0ac84dda/1440.jpg",
+                "width": 1440,
+                "height": 1181
               },
               "avif": [
                 {
@@ -3985,6 +4795,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/living-view-2-5f0ac84dda/1024.avif",
                   "width": 1024,
                   "height": 840
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/living-view-2-5f0ac84dda/1440.avif",
+                  "width": 1440,
+                  "height": 1181
                 }
               ],
               "webp": [
@@ -3997,6 +4812,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/living-view-2-5f0ac84dda/1024.webp",
                   "width": 1024,
                   "height": 840
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/living-view-2-5f0ac84dda/1440.webp",
+                  "width": 1440,
+                  "height": 1181
                 }
               ]
             },
@@ -4004,16 +4824,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Living view 2"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/pooja-view-1-47834bd729/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/pooja-view-1-47834bd729/1440.jpg",
             "width": 1989,
             "height": 1455,
             "imageSources": {
               "width": 1989,
               "height": 1455,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/pooja-view-1-47834bd729/1024.jpg",
-                "width": 1024,
-                "height": 749
+                "src": "/images/generated/projects/riverside-farmhouse/pooja-view-1-47834bd729/1440.jpg",
+                "width": 1440,
+                "height": 1053
               },
               "avif": [
                 {
@@ -4025,6 +4845,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/pooja-view-1-47834bd729/1024.avif",
                   "width": 1024,
                   "height": 749
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/pooja-view-1-47834bd729/1440.avif",
+                  "width": 1440,
+                  "height": 1053
                 }
               ],
               "webp": [
@@ -4037,6 +4862,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/pooja-view-1-47834bd729/1024.webp",
                   "width": 1024,
                   "height": 749
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/pooja-view-1-47834bd729/1440.webp",
+                  "width": 1440,
+                  "height": 1053
                 }
               ]
             },
@@ -4044,16 +4874,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "pooja view 1"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/pooja-view-2-bce6847e8a/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/pooja-view-2-bce6847e8a/1440.jpg",
             "width": 1740,
             "height": 1687,
             "imageSources": {
               "width": 1740,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/pooja-view-2-bce6847e8a/1024.jpg",
-                "width": 1024,
-                "height": 993
+                "src": "/images/generated/projects/riverside-farmhouse/pooja-view-2-bce6847e8a/1440.jpg",
+                "width": 1440,
+                "height": 1396
               },
               "avif": [
                 {
@@ -4065,6 +4895,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/pooja-view-2-bce6847e8a/1024.avif",
                   "width": 1024,
                   "height": 993
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/pooja-view-2-bce6847e8a/1440.avif",
+                  "width": 1440,
+                  "height": 1396
                 }
               ],
               "webp": [
@@ -4077,6 +4912,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/pooja-view-2-bce6847e8a/1024.webp",
                   "width": 1024,
                   "height": 993
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/pooja-view-2-bce6847e8a/1440.webp",
+                  "width": 1440,
+                  "height": 1396
                 }
               ]
             },
@@ -4084,16 +4924,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "pooja view 2"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/pooja-view-3-77ca9e0a15/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/pooja-view-3-77ca9e0a15/1440.jpg",
             "width": 2991,
             "height": 1687,
             "imageSources": {
               "width": 2991,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/pooja-view-3-77ca9e0a15/1024.jpg",
-                "width": 1024,
-                "height": 578
+                "src": "/images/generated/projects/riverside-farmhouse/pooja-view-3-77ca9e0a15/1440.jpg",
+                "width": 1440,
+                "height": 812
               },
               "avif": [
                 {
@@ -4105,6 +4945,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/pooja-view-3-77ca9e0a15/1024.avif",
                   "width": 1024,
                   "height": 578
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/pooja-view-3-77ca9e0a15/1440.avif",
+                  "width": 1440,
+                  "height": 812
                 }
               ],
               "webp": [
@@ -4117,6 +4962,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/pooja-view-3-77ca9e0a15/1024.webp",
                   "width": 1024,
                   "height": 578
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/pooja-view-3-77ca9e0a15/1440.webp",
+                  "width": 1440,
+                  "height": 812
                 }
               ]
             },
@@ -4124,16 +4974,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "pooja view 3"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/pooja-view-4-a3280286ba/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/pooja-view-4-a3280286ba/1440.jpg",
             "width": 2999,
             "height": 1687,
             "imageSources": {
               "width": 2999,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/pooja-view-4-a3280286ba/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/riverside-farmhouse/pooja-view-4-a3280286ba/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -4145,6 +4995,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/pooja-view-4-a3280286ba/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/pooja-view-4-a3280286ba/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -4157,6 +5012,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/pooja-view-4-a3280286ba/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/pooja-view-4-a3280286ba/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -4170,16 +5030,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114411-pm-b84c40200b/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114411-pm-b84c40200b/1086.jpg",
             "width": 1086,
             "height": 1448,
             "imageSources": {
               "width": 1086,
               "height": 1448,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114411-pm-b84c40200b/1024.jpg",
-                "width": 1024,
-                "height": 1365
+                "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114411-pm-b84c40200b/1086.jpg",
+                "width": 1086,
+                "height": 1448
               },
               "avif": [
                 {
@@ -4191,6 +5051,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114411-pm-b84c40200b/1024.avif",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114411-pm-b84c40200b/1086.avif",
+                  "width": 1086,
+                  "height": 1448
                 }
               ],
               "webp": [
@@ -4203,6 +5068,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114411-pm-b84c40200b/1024.webp",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114411-pm-b84c40200b/1086.webp",
+                  "width": 1086,
+                  "height": 1448
                 }
               ]
             },
@@ -4210,16 +5080,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 11 44 11 PM"
           },
           {
-            "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114913-pm-ce620e482f/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114913-pm-ce620e482f/1440.jpg",
             "width": 1448,
             "height": 1086,
             "imageSources": {
               "width": 1448,
               "height": 1086,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114913-pm-ce620e482f/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114913-pm-ce620e482f/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -4231,6 +5101,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114913-pm-ce620e482f/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114913-pm-ce620e482f/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -4243,6 +5118,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114913-pm-ce620e482f/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/chatgpt-image-sep-23-2026-114913-pm-ce620e482f/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -4256,16 +5136,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Sketch studies",
         "media": [
           {
-            "src": "/images/generated/projects/riverside-farmhouse/post-4-final-6-254495fbd4/1024.jpg",
+            "src": "/images/generated/projects/riverside-farmhouse/post-4-final-6-254495fbd4/1440.jpg",
             "width": 3750,
             "height": 2741,
             "imageSources": {
               "width": 3750,
               "height": 2741,
               "fallback": {
-                "src": "/images/generated/projects/riverside-farmhouse/post-4-final-6-254495fbd4/1024.jpg",
-                "width": 1024,
-                "height": 748
+                "src": "/images/generated/projects/riverside-farmhouse/post-4-final-6-254495fbd4/1440.jpg",
+                "width": 1440,
+                "height": 1053
               },
               "avif": [
                 {
@@ -4277,6 +5157,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/post-4-final-6-254495fbd4/1024.avif",
                   "width": 1024,
                   "height": 748
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/post-4-final-6-254495fbd4/1440.avif",
+                  "width": 1440,
+                  "height": 1053
                 }
               ],
               "webp": [
@@ -4289,6 +5174,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/riverside-farmhouse/post-4-final-6-254495fbd4/1024.webp",
                   "width": 1024,
                   "height": 748
+                },
+                {
+                  "src": "/images/generated/projects/riverside-farmhouse/post-4-final-6-254495fbd4/1440.webp",
+                  "width": 1440,
+                  "height": 1053
                 }
               ]
             },
@@ -4320,14 +5210,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Passive cooling strategy"
     ],
     "featured": false,
-    "cover": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1024.jpg",
+    "cover": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1440.jpg",
     "coverSources": {
       "width": 1825,
       "height": 862,
       "fallback": {
-        "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1024.jpg",
-        "width": 1024,
-        "height": 484
+        "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1440.jpg",
+        "width": 1440,
+        "height": 680
       },
       "avif": [
         {
@@ -4339,6 +5229,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1024.avif",
           "width": 1024,
           "height": 484
+        },
+        {
+          "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1440.avif",
+          "width": 1440,
+          "height": 680
         }
       ],
       "webp": [
@@ -4351,6 +5246,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1024.webp",
           "width": 1024,
           "height": 484
+        },
+        {
+          "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1440.webp",
+          "width": 1440,
+          "height": 680
         }
       ]
     },
@@ -4360,16 +5260,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Technical drawings",
         "media": [
           {
-            "src": "/images/generated/projects/urban-courtyard/0-f898664f89/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/0-f898664f89/1440.jpg",
             "width": 8675,
             "height": 5592,
             "imageSources": {
               "width": 8675,
               "height": 5592,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/0-f898664f89/1024.jpg",
-                "width": 1024,
-                "height": 660
+                "src": "/images/generated/projects/urban-courtyard/0-f898664f89/1440.jpg",
+                "width": 1440,
+                "height": 928
               },
               "avif": [
                 {
@@ -4381,6 +5281,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/0-f898664f89/1024.avif",
                   "width": 1024,
                   "height": 660
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/0-f898664f89/1440.avif",
+                  "width": 1440,
+                  "height": 928
                 }
               ],
               "webp": [
@@ -4393,6 +5298,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/0-f898664f89/1024.webp",
                   "width": 1024,
                   "height": 660
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/0-f898664f89/1440.webp",
+                  "width": 1440,
+                  "height": 928
                 }
               ]
             },
@@ -4400,16 +5310,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "0"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/0-1-1c42993376/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/0-1-1c42993376/1440.jpg",
             "width": 7958,
             "height": 9955,
             "imageSources": {
               "width": 7958,
               "height": 9955,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/0-1-1c42993376/1024.jpg",
-                "width": 1024,
-                "height": 1281
+                "src": "/images/generated/projects/urban-courtyard/0-1-1c42993376/1440.jpg",
+                "width": 1440,
+                "height": 1801
               },
               "avif": [
                 {
@@ -4421,6 +5331,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/0-1-1c42993376/1024.avif",
                   "width": 1024,
                   "height": 1281
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/0-1-1c42993376/1440.avif",
+                  "width": 1440,
+                  "height": 1801
                 }
               ],
               "webp": [
@@ -4433,6 +5348,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/0-1-1c42993376/1024.webp",
                   "width": 1024,
                   "height": 1281
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/0-1-1c42993376/1440.webp",
+                  "width": 1440,
+                  "height": 1801
                 }
               ]
             },
@@ -4446,16 +5366,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Exterior perspectives",
         "media": [
           {
-            "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1440.jpg",
             "width": 1825,
             "height": 862,
             "imageSources": {
               "width": 1825,
               "height": 862,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1024.jpg",
-                "width": 1024,
-                "height": 484
+                "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1440.jpg",
+                "width": 1440,
+                "height": 680
               },
               "avif": [
                 {
@@ -4467,6 +5387,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1024.avif",
                   "width": 1024,
                   "height": 484
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1440.avif",
+                  "width": 1440,
+                  "height": 680
                 }
               ],
               "webp": [
@@ -4479,6 +5404,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1024.webp",
                   "width": 1024,
                   "height": 484
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/front-elevation-day-view-4-ab4bb1c151/1440.webp",
+                  "width": 1440,
+                  "height": 680
                 }
               ]
             },
@@ -4486,16 +5416,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "front elevation day view 4"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/side-view-1-499a84dcfe/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/side-view-1-499a84dcfe/1440.jpg",
             "width": 1786,
             "height": 881,
             "imageSources": {
               "width": 1786,
               "height": 881,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/side-view-1-499a84dcfe/1024.jpg",
-                "width": 1024,
-                "height": 505
+                "src": "/images/generated/projects/urban-courtyard/side-view-1-499a84dcfe/1440.jpg",
+                "width": 1440,
+                "height": 710
               },
               "avif": [
                 {
@@ -4507,6 +5437,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/side-view-1-499a84dcfe/1024.avif",
                   "width": 1024,
                   "height": 505
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/side-view-1-499a84dcfe/1440.avif",
+                  "width": 1440,
+                  "height": 710
                 }
               ],
               "webp": [
@@ -4519,6 +5454,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/side-view-1-499a84dcfe/1024.webp",
                   "width": 1024,
                   "height": 505
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/side-view-1-499a84dcfe/1440.webp",
+                  "width": 1440,
+                  "height": 710
                 }
               ]
             },
@@ -4532,16 +5472,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Interior perspectives",
         "media": [
           {
-            "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-2-7241c5e683/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-2-7241c5e683/1440.jpg",
             "width": 2424,
             "height": 1611,
             "imageSources": {
               "width": 2424,
               "height": 1611,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-2-7241c5e683/1024.jpg",
-                "width": 1024,
-                "height": 681
+                "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-2-7241c5e683/1440.jpg",
+                "width": 1440,
+                "height": 957
               },
               "avif": [
                 {
@@ -4553,6 +5493,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-2-7241c5e683/1024.avif",
                   "width": 1024,
                   "height": 681
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-2-7241c5e683/1440.avif",
+                  "width": 1440,
+                  "height": 957
                 }
               ],
               "webp": [
@@ -4565,6 +5510,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-2-7241c5e683/1024.webp",
                   "width": 1024,
                   "height": 681
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-2-7241c5e683/1440.webp",
+                  "width": 1440,
+                  "height": 957
                 }
               ]
             },
@@ -4572,16 +5522,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ff bedroom view 2"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-4-461d0a8d51/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-4-461d0a8d51/1440.jpg",
             "width": 2943,
             "height": 1386,
             "imageSources": {
               "width": 2943,
               "height": 1386,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-4-461d0a8d51/1024.jpg",
-                "width": 1024,
-                "height": 482
+                "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-4-461d0a8d51/1440.jpg",
+                "width": 1440,
+                "height": 678
               },
               "avif": [
                 {
@@ -4593,6 +5543,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-4-461d0a8d51/1024.avif",
                   "width": 1024,
                   "height": 482
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-4-461d0a8d51/1440.avif",
+                  "width": 1440,
+                  "height": 678
                 }
               ],
               "webp": [
@@ -4605,6 +5560,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-4-461d0a8d51/1024.webp",
                   "width": 1024,
                   "height": 482
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/ff-bedroom-view-4-461d0a8d51/1440.webp",
+                  "width": 1440,
+                  "height": 678
                 }
               ]
             },
@@ -4612,16 +5572,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ff bedroom view 4"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/ff-library-view-1-714b46c283/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/ff-library-view-1-714b46c283/1440.jpg",
             "width": 2279,
             "height": 1687,
             "imageSources": {
               "width": 2279,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/ff-library-view-1-714b46c283/1024.jpg",
-                "width": 1024,
-                "height": 758
+                "src": "/images/generated/projects/urban-courtyard/ff-library-view-1-714b46c283/1440.jpg",
+                "width": 1440,
+                "height": 1066
               },
               "avif": [
                 {
@@ -4633,6 +5593,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/ff-library-view-1-714b46c283/1024.avif",
                   "width": 1024,
                   "height": 758
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/ff-library-view-1-714b46c283/1440.avif",
+                  "width": 1440,
+                  "height": 1066
                 }
               ],
               "webp": [
@@ -4645,6 +5610,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/ff-library-view-1-714b46c283/1024.webp",
                   "width": 1024,
                   "height": 758
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/ff-library-view-1-714b46c283/1440.webp",
+                  "width": 1440,
+                  "height": 1066
                 }
               ]
             },
@@ -4652,16 +5622,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ff library view 1"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/ff-library-view-2-ca386b9573/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/ff-library-view-2-ca386b9573/1440.jpg",
             "width": 2365,
             "height": 1583,
             "imageSources": {
               "width": 2365,
               "height": 1583,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/ff-library-view-2-ca386b9573/1024.jpg",
-                "width": 1024,
-                "height": 685
+                "src": "/images/generated/projects/urban-courtyard/ff-library-view-2-ca386b9573/1440.jpg",
+                "width": 1440,
+                "height": 964
               },
               "avif": [
                 {
@@ -4673,6 +5643,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/ff-library-view-2-ca386b9573/1024.avif",
                   "width": 1024,
                   "height": 685
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/ff-library-view-2-ca386b9573/1440.avif",
+                  "width": 1440,
+                  "height": 964
                 }
               ],
               "webp": [
@@ -4685,6 +5660,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/ff-library-view-2-ca386b9573/1024.webp",
                   "width": 1024,
                   "height": 685
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/ff-library-view-2-ca386b9573/1440.webp",
+                  "width": 1440,
+                  "height": 964
                 }
               ]
             },
@@ -4692,16 +5672,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ff library view 2"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/formal-living-view-3-5e6e1e0606/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/formal-living-view-3-5e6e1e0606/1440.jpg",
             "width": 2657,
             "height": 1487,
             "imageSources": {
               "width": 2657,
               "height": 1487,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/formal-living-view-3-5e6e1e0606/1024.jpg",
-                "width": 1024,
-                "height": 573
+                "src": "/images/generated/projects/urban-courtyard/formal-living-view-3-5e6e1e0606/1440.jpg",
+                "width": 1440,
+                "height": 806
               },
               "avif": [
                 {
@@ -4713,6 +5693,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/formal-living-view-3-5e6e1e0606/1024.avif",
                   "width": 1024,
                   "height": 573
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/formal-living-view-3-5e6e1e0606/1440.avif",
+                  "width": 1440,
+                  "height": 806
                 }
               ],
               "webp": [
@@ -4725,6 +5710,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/formal-living-view-3-5e6e1e0606/1024.webp",
                   "width": 1024,
                   "height": 573
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/formal-living-view-3-5e6e1e0606/1440.webp",
+                  "width": 1440,
+                  "height": 806
                 }
               ]
             },
@@ -4732,16 +5722,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Formal Living view 3"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/kitchen-view-3-1-d93416f08c/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/kitchen-view-3-1-d93416f08c/1440.jpg",
             "width": 2193,
             "height": 1518,
             "imageSources": {
               "width": 2193,
               "height": 1518,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/kitchen-view-3-1-d93416f08c/1024.jpg",
-                "width": 1024,
-                "height": 709
+                "src": "/images/generated/projects/urban-courtyard/kitchen-view-3-1-d93416f08c/1440.jpg",
+                "width": 1440,
+                "height": 997
               },
               "avif": [
                 {
@@ -4753,6 +5743,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/kitchen-view-3-1-d93416f08c/1024.avif",
                   "width": 1024,
                   "height": 709
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/kitchen-view-3-1-d93416f08c/1440.avif",
+                  "width": 1440,
+                  "height": 997
                 }
               ],
               "webp": [
@@ -4765,6 +5760,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/kitchen-view-3-1-d93416f08c/1024.webp",
                   "width": 1024,
                   "height": 709
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/kitchen-view-3-1-d93416f08c/1440.webp",
+                  "width": 1440,
+                  "height": 997
                 }
               ]
             },
@@ -4772,16 +5772,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Kitchen view 3 (1)"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/living-view-1-5ee8fada2c/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/living-view-1-5ee8fada2c/1440.jpg",
             "width": 2096,
             "height": 1515,
             "imageSources": {
               "width": 2096,
               "height": 1515,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/living-view-1-5ee8fada2c/1024.jpg",
-                "width": 1024,
-                "height": 740
+                "src": "/images/generated/projects/urban-courtyard/living-view-1-5ee8fada2c/1440.jpg",
+                "width": 1440,
+                "height": 1041
               },
               "avif": [
                 {
@@ -4793,6 +5793,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/living-view-1-5ee8fada2c/1024.avif",
                   "width": 1024,
                   "height": 740
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/living-view-1-5ee8fada2c/1440.avif",
+                  "width": 1440,
+                  "height": 1041
                 }
               ],
               "webp": [
@@ -4805,6 +5810,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/living-view-1-5ee8fada2c/1024.webp",
                   "width": 1024,
                   "height": 740
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/living-view-1-5ee8fada2c/1440.webp",
+                  "width": 1440,
+                  "height": 1041
                 }
               ]
             },
@@ -4812,16 +5822,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Living view 1"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/living-view-2-d50af3091b/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/living-view-2-d50af3091b/1061.jpg",
             "width": 1061,
             "height": 1679,
             "imageSources": {
               "width": 1061,
               "height": 1679,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/living-view-2-d50af3091b/1024.jpg",
-                "width": 1024,
-                "height": 1620
+                "src": "/images/generated/projects/urban-courtyard/living-view-2-d50af3091b/1061.jpg",
+                "width": 1061,
+                "height": 1679
               },
               "avif": [
                 {
@@ -4833,6 +5843,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/living-view-2-d50af3091b/1024.avif",
                   "width": 1024,
                   "height": 1620
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/living-view-2-d50af3091b/1061.avif",
+                  "width": 1061,
+                  "height": 1679
                 }
               ],
               "webp": [
@@ -4845,6 +5860,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/living-view-2-d50af3091b/1024.webp",
                   "width": 1024,
                   "height": 1620
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/living-view-2-d50af3091b/1061.webp",
+                  "width": 1061,
+                  "height": 1679
                 }
               ]
             },
@@ -4852,16 +5872,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Living view 2"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/living-view-4-1703a7e254/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/living-view-4-1703a7e254/1440.jpg",
             "width": 2703,
             "height": 1398,
             "imageSources": {
               "width": 2703,
               "height": 1398,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/living-view-4-1703a7e254/1024.jpg",
-                "width": 1024,
-                "height": 530
+                "src": "/images/generated/projects/urban-courtyard/living-view-4-1703a7e254/1440.jpg",
+                "width": 1440,
+                "height": 745
               },
               "avif": [
                 {
@@ -4873,6 +5893,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/living-view-4-1703a7e254/1024.avif",
                   "width": 1024,
                   "height": 530
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/living-view-4-1703a7e254/1440.avif",
+                  "width": 1440,
+                  "height": 745
                 }
               ],
               "webp": [
@@ -4885,6 +5910,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/living-view-4-1703a7e254/1024.webp",
                   "width": 1024,
                   "height": 530
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/living-view-4-1703a7e254/1440.webp",
+                  "width": 1440,
+                  "height": 745
                 }
               ]
             },
@@ -4892,16 +5922,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Living view 4"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/sliding-folding-door-v2-1dd838853b/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/sliding-folding-door-v2-1dd838853b/1097.jpg",
             "width": 1097,
             "height": 1434,
             "imageSources": {
               "width": 1097,
               "height": 1434,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/sliding-folding-door-v2-1dd838853b/1024.jpg",
-                "width": 1024,
-                "height": 1339
+                "src": "/images/generated/projects/urban-courtyard/sliding-folding-door-v2-1dd838853b/1097.jpg",
+                "width": 1097,
+                "height": 1434
               },
               "avif": [
                 {
@@ -4913,6 +5943,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/sliding-folding-door-v2-1dd838853b/1024.avif",
                   "width": 1024,
                   "height": 1339
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/sliding-folding-door-v2-1dd838853b/1097.avif",
+                  "width": 1097,
+                  "height": 1434
                 }
               ],
               "webp": [
@@ -4925,6 +5960,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/sliding-folding-door-v2-1dd838853b/1024.webp",
                   "width": 1024,
                   "height": 1339
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/sliding-folding-door-v2-1dd838853b/1097.webp",
+                  "width": 1097,
+                  "height": 1434
                 }
               ]
             },
@@ -4932,16 +5972,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "sliding folding door v2"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/v11b1-80c7ac25e3/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/v11b1-80c7ac25e3/1440.jpg",
             "width": 2093,
             "height": 1556,
             "imageSources": {
               "width": 2093,
               "height": 1556,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/v11b1-80c7ac25e3/1024.jpg",
-                "width": 1024,
-                "height": 761
+                "src": "/images/generated/projects/urban-courtyard/v11b1-80c7ac25e3/1440.jpg",
+                "width": 1440,
+                "height": 1071
               },
               "avif": [
                 {
@@ -4953,6 +5993,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v11b1-80c7ac25e3/1024.avif",
                   "width": 1024,
                   "height": 761
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v11b1-80c7ac25e3/1440.avif",
+                  "width": 1440,
+                  "height": 1071
                 }
               ],
               "webp": [
@@ -4965,6 +6010,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v11b1-80c7ac25e3/1024.webp",
                   "width": 1024,
                   "height": 761
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v11b1-80c7ac25e3/1440.webp",
+                  "width": 1440,
+                  "height": 1071
                 }
               ]
             },
@@ -4972,16 +6022,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v11b1"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/v1b1-132d738b2b/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/v1b1-132d738b2b/1440.jpg",
             "width": 1452,
             "height": 1670,
             "imageSources": {
               "width": 1452,
               "height": 1670,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/v1b1-132d738b2b/1024.jpg",
-                "width": 1024,
-                "height": 1178
+                "src": "/images/generated/projects/urban-courtyard/v1b1-132d738b2b/1440.jpg",
+                "width": 1440,
+                "height": 1656
               },
               "avif": [
                 {
@@ -4993,6 +6043,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v1b1-132d738b2b/1024.avif",
                   "width": 1024,
                   "height": 1178
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v1b1-132d738b2b/1440.avif",
+                  "width": 1440,
+                  "height": 1656
                 }
               ],
               "webp": [
@@ -5005,6 +6060,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v1b1-132d738b2b/1024.webp",
                   "width": 1024,
                   "height": 1178
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v1b1-132d738b2b/1440.webp",
+                  "width": 1440,
+                  "height": 1656
                 }
               ]
             },
@@ -5012,16 +6072,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v1b1"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/v1b2-a9155d4803/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/v1b2-a9155d4803/1440.jpg",
             "width": 2582,
             "height": 1519,
             "imageSources": {
               "width": 2582,
               "height": 1519,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/v1b2-a9155d4803/1024.jpg",
-                "width": 1024,
-                "height": 602
+                "src": "/images/generated/projects/urban-courtyard/v1b2-a9155d4803/1440.jpg",
+                "width": 1440,
+                "height": 847
               },
               "avif": [
                 {
@@ -5033,6 +6093,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v1b2-a9155d4803/1024.avif",
                   "width": 1024,
                   "height": 602
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v1b2-a9155d4803/1440.avif",
+                  "width": 1440,
+                  "height": 847
                 }
               ],
               "webp": [
@@ -5045,6 +6110,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v1b2-a9155d4803/1024.webp",
                   "width": 1024,
                   "height": 602
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v1b2-a9155d4803/1440.webp",
+                  "width": 1440,
+                  "height": 847
                 }
               ]
             },
@@ -5052,16 +6122,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v1b2"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/v3b2-3d5355cbf5/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/v3b2-3d5355cbf5/1440.jpg",
             "width": 1750,
             "height": 1393,
             "imageSources": {
               "width": 1750,
               "height": 1393,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/v3b2-3d5355cbf5/1024.jpg",
-                "width": 1024,
-                "height": 815
+                "src": "/images/generated/projects/urban-courtyard/v3b2-3d5355cbf5/1440.jpg",
+                "width": 1440,
+                "height": 1146
               },
               "avif": [
                 {
@@ -5073,6 +6143,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v3b2-3d5355cbf5/1024.avif",
                   "width": 1024,
                   "height": 815
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v3b2-3d5355cbf5/1440.avif",
+                  "width": 1440,
+                  "height": 1146
                 }
               ],
               "webp": [
@@ -5085,6 +6160,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v3b2-3d5355cbf5/1024.webp",
                   "width": 1024,
                   "height": 815
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v3b2-3d5355cbf5/1440.webp",
+                  "width": 1440,
+                  "height": 1146
                 }
               ]
             },
@@ -5092,16 +6172,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "v3b2"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/v4b2-0e2c04c5f5/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/v4b2-0e2c04c5f5/1440.jpg",
             "width": 1869,
             "height": 1538,
             "imageSources": {
               "width": 1869,
               "height": 1538,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/v4b2-0e2c04c5f5/1024.jpg",
-                "width": 1024,
-                "height": 843
+                "src": "/images/generated/projects/urban-courtyard/v4b2-0e2c04c5f5/1440.jpg",
+                "width": 1440,
+                "height": 1185
               },
               "avif": [
                 {
@@ -5113,6 +6193,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v4b2-0e2c04c5f5/1024.avif",
                   "width": 1024,
                   "height": 843
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v4b2-0e2c04c5f5/1440.avif",
+                  "width": 1440,
+                  "height": 1185
                 }
               ],
               "webp": [
@@ -5125,6 +6210,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/v4b2-0e2c04c5f5/1024.webp",
                   "width": 1024,
                   "height": 843
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/v4b2-0e2c04c5f5/1440.webp",
+                  "width": 1440,
+                  "height": 1185
                 }
               ]
             },
@@ -5138,16 +6228,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090458-pm-871626f5c1/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090458-pm-871626f5c1/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090458-pm-871626f5c1/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090458-pm-871626f5c1/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -5159,6 +6249,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090458-pm-871626f5c1/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090458-pm-871626f5c1/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -5171,6 +6266,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090458-pm-871626f5c1/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090458-pm-871626f5c1/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -5218,16 +6318,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "ChatGPT Image Sep 23, 2026, 09 07 06 PM"
           },
           {
-            "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090939-pm-34e12d04d2/1024.jpg",
+            "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090939-pm-34e12d04d2/1440.jpg",
             "width": 1672,
             "height": 941,
             "imageSources": {
               "width": 1672,
               "height": 941,
               "fallback": {
-                "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090939-pm-34e12d04d2/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090939-pm-34e12d04d2/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -5239,6 +6339,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090939-pm-34e12d04d2/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090939-pm-34e12d04d2/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -5251,6 +6356,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090939-pm-34e12d04d2/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/urban-courtyard/chatgpt-image-sep-23-2026-090939-pm-34e12d04d2/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -5282,14 +6392,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Comfortable shaded edges"
     ],
     "featured": false,
-    "cover": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1024.jpg",
+    "cover": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1440.jpg",
     "coverSources": {
       "width": 3259,
       "height": 2077,
       "fallback": {
-        "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1024.jpg",
-        "width": 1024,
-        "height": 652
+        "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1440.jpg",
+        "width": 1440,
+        "height": 918
       },
       "avif": [
         {
@@ -5301,6 +6411,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1024.avif",
           "width": 1024,
           "height": 652
+        },
+        {
+          "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1440.avif",
+          "width": 1440,
+          "height": 918
         }
       ],
       "webp": [
@@ -5313,6 +6428,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1024.webp",
           "width": 1024,
           "height": 652
+        },
+        {
+          "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1440.webp",
+          "width": 1440,
+          "height": 918
         }
       ]
     },
@@ -5322,16 +6442,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Exterior perspectives",
         "media": [
           {
-            "src": "/images/generated/projects/minimalist-haven/12-photo-0851fa6830/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/12-photo-0851fa6830/1440.jpg",
             "width": 2067,
             "height": 1904,
             "imageSources": {
               "width": 2067,
               "height": 1904,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/12-photo-0851fa6830/1024.jpg",
-                "width": 1024,
-                "height": 943
+                "src": "/images/generated/projects/minimalist-haven/12-photo-0851fa6830/1440.jpg",
+                "width": 1440,
+                "height": 1326
               },
               "avif": [
                 {
@@ -5343,6 +6463,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/12-photo-0851fa6830/1024.avif",
                   "width": 1024,
                   "height": 943
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/12-photo-0851fa6830/1440.avif",
+                  "width": 1440,
+                  "height": 1326
                 }
               ],
               "webp": [
@@ -5355,6 +6480,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/12-photo-0851fa6830/1024.webp",
                   "width": 1024,
                   "height": 943
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/12-photo-0851fa6830/1440.webp",
+                  "width": 1440,
+                  "height": 1326
                 }
               ]
             },
@@ -5362,16 +6492,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "1 2   Photo"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1440.jpg",
             "width": 3259,
             "height": 2077,
             "imageSources": {
               "width": 3259,
               "height": 2077,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1024.jpg",
-                "width": 1024,
-                "height": 652
+                "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1440.jpg",
+                "width": 1440,
+                "height": 918
               },
               "avif": [
                 {
@@ -5383,6 +6513,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1024.avif",
                   "width": 1024,
                   "height": 652
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1440.avif",
+                  "width": 1440,
+                  "height": 918
                 }
               ],
               "webp": [
@@ -5395,6 +6530,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1024.webp",
                   "width": 1024,
                   "height": 652
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/1-0cd3877bdf/1440.webp",
+                  "width": 1440,
+                  "height": 918
                 }
               ]
             },
@@ -5408,16 +6548,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Interior perspectives",
         "media": [
           {
-            "src": "/images/generated/projects/minimalist-haven/bedroom-1-v1-4eec2c0e39/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/bedroom-1-v1-4eec2c0e39/1440.jpg",
             "width": 1525,
             "height": 1687,
             "imageSources": {
               "width": 1525,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/bedroom-1-v1-4eec2c0e39/1024.jpg",
-                "width": 1024,
-                "height": 1133
+                "src": "/images/generated/projects/minimalist-haven/bedroom-1-v1-4eec2c0e39/1440.jpg",
+                "width": 1440,
+                "height": 1593
               },
               "avif": [
                 {
@@ -5429,6 +6569,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-1-v1-4eec2c0e39/1024.avif",
                   "width": 1024,
                   "height": 1133
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-1-v1-4eec2c0e39/1440.avif",
+                  "width": 1440,
+                  "height": 1593
                 }
               ],
               "webp": [
@@ -5441,6 +6586,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-1-v1-4eec2c0e39/1024.webp",
                   "width": 1024,
                   "height": 1133
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-1-v1-4eec2c0e39/1440.webp",
+                  "width": 1440,
+                  "height": 1593
                 }
               ]
             },
@@ -5448,16 +6598,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Bedroom 1 V1"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/bedroom-2-v1-12b1409634/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/bedroom-2-v1-12b1409634/1440.jpg",
             "width": 1877,
             "height": 1687,
             "imageSources": {
               "width": 1877,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/bedroom-2-v1-12b1409634/1024.jpg",
-                "width": 1024,
-                "height": 920
+                "src": "/images/generated/projects/minimalist-haven/bedroom-2-v1-12b1409634/1440.jpg",
+                "width": 1440,
+                "height": 1294
               },
               "avif": [
                 {
@@ -5469,6 +6619,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-2-v1-12b1409634/1024.avif",
                   "width": 1024,
                   "height": 920
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-2-v1-12b1409634/1440.avif",
+                  "width": 1440,
+                  "height": 1294
                 }
               ],
               "webp": [
@@ -5481,6 +6636,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-2-v1-12b1409634/1024.webp",
                   "width": 1024,
                   "height": 920
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-2-v1-12b1409634/1440.webp",
+                  "width": 1440,
+                  "height": 1294
                 }
               ]
             },
@@ -5488,16 +6648,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Bedroom 2 V1"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/bedroom-3-v1-5e1c9ac806/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/bedroom-3-v1-5e1c9ac806/1440.jpg",
             "width": 1855,
             "height": 1687,
             "imageSources": {
               "width": 1855,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/bedroom-3-v1-5e1c9ac806/1024.jpg",
-                "width": 1024,
-                "height": 931
+                "src": "/images/generated/projects/minimalist-haven/bedroom-3-v1-5e1c9ac806/1440.jpg",
+                "width": 1440,
+                "height": 1310
               },
               "avif": [
                 {
@@ -5509,6 +6669,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-3-v1-5e1c9ac806/1024.avif",
                   "width": 1024,
                   "height": 931
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-3-v1-5e1c9ac806/1440.avif",
+                  "width": 1440,
+                  "height": 1310
                 }
               ],
               "webp": [
@@ -5521,6 +6686,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-3-v1-5e1c9ac806/1024.webp",
                   "width": 1024,
                   "height": 931
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-3-v1-5e1c9ac806/1440.webp",
+                  "width": 1440,
+                  "height": 1310
                 }
               ]
             },
@@ -5528,16 +6698,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Bedroom 3 V1"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/bedroom-3-v3-b92ae874ec/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/bedroom-3-v3-b92ae874ec/1440.jpg",
             "width": 2285,
             "height": 1572,
             "imageSources": {
               "width": 2285,
               "height": 1572,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/bedroom-3-v3-b92ae874ec/1024.jpg",
-                "width": 1024,
-                "height": 704
+                "src": "/images/generated/projects/minimalist-haven/bedroom-3-v3-b92ae874ec/1440.jpg",
+                "width": 1440,
+                "height": 991
               },
               "avif": [
                 {
@@ -5549,6 +6719,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-3-v3-b92ae874ec/1024.avif",
                   "width": 1024,
                   "height": 704
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-3-v3-b92ae874ec/1440.avif",
+                  "width": 1440,
+                  "height": 991
                 }
               ],
               "webp": [
@@ -5561,6 +6736,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-3-v3-b92ae874ec/1024.webp",
                   "width": 1024,
                   "height": 704
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-3-v3-b92ae874ec/1440.webp",
+                  "width": 1440,
+                  "height": 991
                 }
               ]
             },
@@ -5568,16 +6748,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Bedroom 3 V3"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/bedroom-4-v1-40f5f0f902/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/bedroom-4-v1-40f5f0f902/1440.jpg",
             "width": 1882,
             "height": 1643,
             "imageSources": {
               "width": 1882,
               "height": 1643,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/bedroom-4-v1-40f5f0f902/1024.jpg",
-                "width": 1024,
-                "height": 894
+                "src": "/images/generated/projects/minimalist-haven/bedroom-4-v1-40f5f0f902/1440.jpg",
+                "width": 1440,
+                "height": 1257
               },
               "avif": [
                 {
@@ -5589,6 +6769,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-4-v1-40f5f0f902/1024.avif",
                   "width": 1024,
                   "height": 894
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-4-v1-40f5f0f902/1440.avif",
+                  "width": 1440,
+                  "height": 1257
                 }
               ],
               "webp": [
@@ -5601,6 +6786,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bedroom-4-v1-40f5f0f902/1024.webp",
                   "width": 1024,
                   "height": 894
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bedroom-4-v1-40f5f0f902/1440.webp",
+                  "width": 1440,
+                  "height": 1257
                 }
               ]
             },
@@ -5608,16 +6798,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Bedroom 4 V1"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/bf42d745-da27-4b65-bb2a-e6623061e86e-8fe3188ba5/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/bf42d745-da27-4b65-bb2a-e6623061e86e-8fe3188ba5/1440.jpg",
             "width": 1631,
             "height": 1517,
             "imageSources": {
               "width": 1631,
               "height": 1517,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/bf42d745-da27-4b65-bb2a-e6623061e86e-8fe3188ba5/1024.jpg",
-                "width": 1024,
-                "height": 952
+                "src": "/images/generated/projects/minimalist-haven/bf42d745-da27-4b65-bb2a-e6623061e86e-8fe3188ba5/1440.jpg",
+                "width": 1440,
+                "height": 1339
               },
               "avif": [
                 {
@@ -5629,6 +6819,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bf42d745-da27-4b65-bb2a-e6623061e86e-8fe3188ba5/1024.avif",
                   "width": 1024,
                   "height": 952
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bf42d745-da27-4b65-bb2a-e6623061e86e-8fe3188ba5/1440.avif",
+                  "width": 1440,
+                  "height": 1339
                 }
               ],
               "webp": [
@@ -5641,6 +6836,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/bf42d745-da27-4b65-bb2a-e6623061e86e-8fe3188ba5/1024.webp",
                   "width": 1024,
                   "height": 952
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/bf42d745-da27-4b65-bb2a-e6623061e86e-8fe3188ba5/1440.webp",
+                  "width": 1440,
+                  "height": 1339
                 }
               ]
             },
@@ -5648,16 +6848,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "BF42D745 DA27 4B65 BB2A E6623061E86E"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/c5a82c37-0294-4747-8a59-799502ad6560-018fe940c9/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/c5a82c37-0294-4747-8a59-799502ad6560-018fe940c9/1440.jpg",
             "width": 1803,
             "height": 1615,
             "imageSources": {
               "width": 1803,
               "height": 1615,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/c5a82c37-0294-4747-8a59-799502ad6560-018fe940c9/1024.jpg",
-                "width": 1024,
-                "height": 917
+                "src": "/images/generated/projects/minimalist-haven/c5a82c37-0294-4747-8a59-799502ad6560-018fe940c9/1440.jpg",
+                "width": 1440,
+                "height": 1290
               },
               "avif": [
                 {
@@ -5669,6 +6869,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/c5a82c37-0294-4747-8a59-799502ad6560-018fe940c9/1024.avif",
                   "width": 1024,
                   "height": 917
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/c5a82c37-0294-4747-8a59-799502ad6560-018fe940c9/1440.avif",
+                  "width": 1440,
+                  "height": 1290
                 }
               ],
               "webp": [
@@ -5681,6 +6886,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/c5a82c37-0294-4747-8a59-799502ad6560-018fe940c9/1024.webp",
                   "width": 1024,
                   "height": 917
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/c5a82c37-0294-4747-8a59-799502ad6560-018fe940c9/1440.webp",
+                  "width": 1440,
+                  "height": 1290
                 }
               ]
             },
@@ -5688,16 +6898,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "C5A82C37 0294 4747 8A59 799502AD6560"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/f914f757-f3f8-4369-9d80-713d7230b57c-0652e6c637/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/f914f757-f3f8-4369-9d80-713d7230b57c-0652e6c637/1440.jpg",
             "width": 2131,
             "height": 1685,
             "imageSources": {
               "width": 2131,
               "height": 1685,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/f914f757-f3f8-4369-9d80-713d7230b57c-0652e6c637/1024.jpg",
-                "width": 1024,
-                "height": 810
+                "src": "/images/generated/projects/minimalist-haven/f914f757-f3f8-4369-9d80-713d7230b57c-0652e6c637/1440.jpg",
+                "width": 1440,
+                "height": 1139
               },
               "avif": [
                 {
@@ -5709,6 +6919,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/f914f757-f3f8-4369-9d80-713d7230b57c-0652e6c637/1024.avif",
                   "width": 1024,
                   "height": 810
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/f914f757-f3f8-4369-9d80-713d7230b57c-0652e6c637/1440.avif",
+                  "width": 1440,
+                  "height": 1139
                 }
               ],
               "webp": [
@@ -5721,6 +6936,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/f914f757-f3f8-4369-9d80-713d7230b57c-0652e6c637/1024.webp",
                   "width": 1024,
                   "height": 810
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/f914f757-f3f8-4369-9d80-713d7230b57c-0652e6c637/1440.webp",
+                  "width": 1440,
+                  "height": 1139
                 }
               ]
             },
@@ -5728,16 +6948,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "F914F757 F3F8 4369 9D80 713D7230B57C"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/fccfffbb-946b-4c7b-a819-2c2c1b2b1faf-5e1877bd99/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/fccfffbb-946b-4c7b-a819-2c2c1b2b1faf-5e1877bd99/1440.jpg",
             "width": 1893,
             "height": 1686,
             "imageSources": {
               "width": 1893,
               "height": 1686,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/fccfffbb-946b-4c7b-a819-2c2c1b2b1faf-5e1877bd99/1024.jpg",
-                "width": 1024,
-                "height": 912
+                "src": "/images/generated/projects/minimalist-haven/fccfffbb-946b-4c7b-a819-2c2c1b2b1faf-5e1877bd99/1440.jpg",
+                "width": 1440,
+                "height": 1283
               },
               "avif": [
                 {
@@ -5749,6 +6969,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/fccfffbb-946b-4c7b-a819-2c2c1b2b1faf-5e1877bd99/1024.avif",
                   "width": 1024,
                   "height": 912
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/fccfffbb-946b-4c7b-a819-2c2c1b2b1faf-5e1877bd99/1440.avif",
+                  "width": 1440,
+                  "height": 1283
                 }
               ],
               "webp": [
@@ -5761,6 +6986,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/fccfffbb-946b-4c7b-a819-2c2c1b2b1faf-5e1877bd99/1024.webp",
                   "width": 1024,
                   "height": 912
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/fccfffbb-946b-4c7b-a819-2c2c1b2b1faf-5e1877bd99/1440.webp",
+                  "width": 1440,
+                  "height": 1283
                 }
               ]
             },
@@ -5768,16 +6998,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "FCCFFFBB 946B 4C7B A819 2C2C1B2B1FAF"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/foyer-view-1-359bd5ef4e/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/foyer-view-1-359bd5ef4e/1440.jpg",
             "width": 2240,
             "height": 1518,
             "imageSources": {
               "width": 2240,
               "height": 1518,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/foyer-view-1-359bd5ef4e/1024.jpg",
-                "width": 1024,
-                "height": 694
+                "src": "/images/generated/projects/minimalist-haven/foyer-view-1-359bd5ef4e/1440.jpg",
+                "width": 1440,
+                "height": 976
               },
               "avif": [
                 {
@@ -5789,6 +7019,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/foyer-view-1-359bd5ef4e/1024.avif",
                   "width": 1024,
                   "height": 694
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/foyer-view-1-359bd5ef4e/1440.avif",
+                  "width": 1440,
+                  "height": 976
                 }
               ],
               "webp": [
@@ -5801,6 +7036,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/foyer-view-1-359bd5ef4e/1024.webp",
                   "width": 1024,
                   "height": 694
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/foyer-view-1-359bd5ef4e/1440.webp",
+                  "width": 1440,
+                  "height": 976
                 }
               ]
             },
@@ -5808,16 +7048,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "foyer view 1"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/foyer-view-2-d3b2ad6313/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/foyer-view-2-d3b2ad6313/1440.jpg",
             "width": 2999,
             "height": 1687,
             "imageSources": {
               "width": 2999,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/foyer-view-2-d3b2ad6313/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/minimalist-haven/foyer-view-2-d3b2ad6313/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -5829,6 +7069,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/foyer-view-2-d3b2ad6313/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/foyer-view-2-d3b2ad6313/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -5841,6 +7086,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/foyer-view-2-d3b2ad6313/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/foyer-view-2-d3b2ad6313/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -5848,16 +7098,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "foyer view 2"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/kitchen-view-1-dfd8b91363/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/kitchen-view-1-dfd8b91363/1440.jpg",
             "width": 2470,
             "height": 1687,
             "imageSources": {
               "width": 2470,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/kitchen-view-1-dfd8b91363/1024.jpg",
-                "width": 1024,
-                "height": 699
+                "src": "/images/generated/projects/minimalist-haven/kitchen-view-1-dfd8b91363/1440.jpg",
+                "width": 1440,
+                "height": 984
               },
               "avif": [
                 {
@@ -5869,6 +7119,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-1-dfd8b91363/1024.avif",
                   "width": 1024,
                   "height": 699
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-1-dfd8b91363/1440.avif",
+                  "width": 1440,
+                  "height": 984
                 }
               ],
               "webp": [
@@ -5881,6 +7136,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-1-dfd8b91363/1024.webp",
                   "width": 1024,
                   "height": 699
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-1-dfd8b91363/1440.webp",
+                  "width": 1440,
+                  "height": 984
                 }
               ]
             },
@@ -5888,16 +7148,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "kitchen view 1"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/kitchen-view-2-af3ca93f03/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/kitchen-view-2-af3ca93f03/1440.jpg",
             "width": 1933,
             "height": 1525,
             "imageSources": {
               "width": 1933,
               "height": 1525,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/kitchen-view-2-af3ca93f03/1024.jpg",
-                "width": 1024,
-                "height": 808
+                "src": "/images/generated/projects/minimalist-haven/kitchen-view-2-af3ca93f03/1440.jpg",
+                "width": 1440,
+                "height": 1136
               },
               "avif": [
                 {
@@ -5909,6 +7169,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-2-af3ca93f03/1024.avif",
                   "width": 1024,
                   "height": 808
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-2-af3ca93f03/1440.avif",
+                  "width": 1440,
+                  "height": 1136
                 }
               ],
               "webp": [
@@ -5921,6 +7186,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-2-af3ca93f03/1024.webp",
                   "width": 1024,
                   "height": 808
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-2-af3ca93f03/1440.webp",
+                  "width": 1440,
+                  "height": 1136
                 }
               ]
             },
@@ -5928,16 +7198,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "kitchen view 2"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/kitchen-view-3-2d8a7528c9/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/kitchen-view-3-2d8a7528c9/1440.jpg",
             "width": 2271,
             "height": 1687,
             "imageSources": {
               "width": 2271,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/kitchen-view-3-2d8a7528c9/1024.jpg",
-                "width": 1024,
-                "height": 761
+                "src": "/images/generated/projects/minimalist-haven/kitchen-view-3-2d8a7528c9/1440.jpg",
+                "width": 1440,
+                "height": 1070
               },
               "avif": [
                 {
@@ -5949,6 +7219,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-3-2d8a7528c9/1024.avif",
                   "width": 1024,
                   "height": 761
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-3-2d8a7528c9/1440.avif",
+                  "width": 1440,
+                  "height": 1070
                 }
               ],
               "webp": [
@@ -5961,6 +7236,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-3-2d8a7528c9/1024.webp",
                   "width": 1024,
                   "height": 761
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-3-2d8a7528c9/1440.webp",
+                  "width": 1440,
+                  "height": 1070
                 }
               ]
             },
@@ -5968,16 +7248,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "Kitchen view 3"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/kitchen-view-4-d40d4ec2c4/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/kitchen-view-4-d40d4ec2c4/1440.jpg",
             "width": 1470,
             "height": 1367,
             "imageSources": {
               "width": 1470,
               "height": 1367,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/kitchen-view-4-d40d4ec2c4/1024.jpg",
-                "width": 1024,
-                "height": 952
+                "src": "/images/generated/projects/minimalist-haven/kitchen-view-4-d40d4ec2c4/1440.jpg",
+                "width": 1440,
+                "height": 1339
               },
               "avif": [
                 {
@@ -5989,6 +7269,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-4-d40d4ec2c4/1024.avif",
                   "width": 1024,
                   "height": 952
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-4-d40d4ec2c4/1440.avif",
+                  "width": 1440,
+                  "height": 1339
                 }
               ],
               "webp": [
@@ -6001,6 +7286,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-4-d40d4ec2c4/1024.webp",
                   "width": 1024,
                   "height": 952
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-4-d40d4ec2c4/1440.webp",
+                  "width": 1440,
+                  "height": 1339
                 }
               ]
             },
@@ -6008,16 +7298,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "kitchen view 4"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/kitchen-view-5-84f2644209/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/kitchen-view-5-84f2644209/1440.jpg",
             "width": 2720,
             "height": 1686,
             "imageSources": {
               "width": 2720,
               "height": 1686,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/kitchen-view-5-84f2644209/1024.jpg",
-                "width": 1024,
-                "height": 635
+                "src": "/images/generated/projects/minimalist-haven/kitchen-view-5-84f2644209/1440.jpg",
+                "width": 1440,
+                "height": 893
               },
               "avif": [
                 {
@@ -6029,6 +7319,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-5-84f2644209/1024.avif",
                   "width": 1024,
                   "height": 635
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-5-84f2644209/1440.avif",
+                  "width": 1440,
+                  "height": 893
                 }
               ],
               "webp": [
@@ -6041,6 +7336,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/kitchen-view-5-84f2644209/1024.webp",
                   "width": 1024,
                   "height": 635
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/kitchen-view-5-84f2644209/1440.webp",
+                  "width": 1440,
+                  "height": 893
                 }
               ]
             },
@@ -6048,16 +7348,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "kitchen view 5"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/living-view-1-9551121c0c/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/living-view-1-9551121c0c/1440.jpg",
             "width": 2999,
             "height": 1673,
             "imageSources": {
               "width": 2999,
               "height": 1673,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/living-view-1-9551121c0c/1024.jpg",
-                "width": 1024,
-                "height": 571
+                "src": "/images/generated/projects/minimalist-haven/living-view-1-9551121c0c/1440.jpg",
+                "width": 1440,
+                "height": 803
               },
               "avif": [
                 {
@@ -6069,6 +7369,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/living-view-1-9551121c0c/1024.avif",
                   "width": 1024,
                   "height": 571
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/living-view-1-9551121c0c/1440.avif",
+                  "width": 1440,
+                  "height": 803
                 }
               ],
               "webp": [
@@ -6081,6 +7386,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/living-view-1-9551121c0c/1024.webp",
                   "width": 1024,
                   "height": 571
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/living-view-1-9551121c0c/1440.webp",
+                  "width": 1440,
+                  "height": 803
                 }
               ]
             },
@@ -6088,16 +7398,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "living view 1"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/living-view-2-276f5b4637/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/living-view-2-276f5b4637/1440.jpg",
             "width": 2597,
             "height": 1638,
             "imageSources": {
               "width": 2597,
               "height": 1638,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/living-view-2-276f5b4637/1024.jpg",
-                "width": 1024,
-                "height": 646
+                "src": "/images/generated/projects/minimalist-haven/living-view-2-276f5b4637/1440.jpg",
+                "width": 1440,
+                "height": 908
               },
               "avif": [
                 {
@@ -6109,6 +7419,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/living-view-2-276f5b4637/1024.avif",
                   "width": 1024,
                   "height": 646
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/living-view-2-276f5b4637/1440.avif",
+                  "width": 1440,
+                  "height": 908
                 }
               ],
               "webp": [
@@ -6121,6 +7436,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/living-view-2-276f5b4637/1024.webp",
                   "width": 1024,
                   "height": 646
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/living-view-2-276f5b4637/1440.webp",
+                  "width": 1440,
+                  "height": 908
                 }
               ]
             },
@@ -6128,16 +7448,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "living view 2"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/living-view-3-de41710222/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/living-view-3-de41710222/1440.jpg",
             "width": 2999,
             "height": 1687,
             "imageSources": {
               "width": 2999,
               "height": 1687,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/living-view-3-de41710222/1024.jpg",
-                "width": 1024,
-                "height": 576
+                "src": "/images/generated/projects/minimalist-haven/living-view-3-de41710222/1440.jpg",
+                "width": 1440,
+                "height": 810
               },
               "avif": [
                 {
@@ -6149,6 +7469,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/living-view-3-de41710222/1024.avif",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/living-view-3-de41710222/1440.avif",
+                  "width": 1440,
+                  "height": 810
                 }
               ],
               "webp": [
@@ -6161,6 +7486,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/living-view-3-de41710222/1024.webp",
                   "width": 1024,
                   "height": 576
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/living-view-3-de41710222/1440.webp",
+                  "width": 1440,
+                  "height": 810
                 }
               ]
             },
@@ -6168,16 +7498,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "living view 3"
           },
           {
-            "src": "/images/generated/projects/minimalist-haven/living-view-4-9a2f31195f/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/living-view-4-9a2f31195f/1440.jpg",
             "width": 2012,
             "height": 1561,
             "imageSources": {
               "width": 2012,
               "height": 1561,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/living-view-4-9a2f31195f/1024.jpg",
-                "width": 1024,
-                "height": 794
+                "src": "/images/generated/projects/minimalist-haven/living-view-4-9a2f31195f/1440.jpg",
+                "width": 1440,
+                "height": 1117
               },
               "avif": [
                 {
@@ -6189,6 +7519,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/living-view-4-9a2f31195f/1024.avif",
                   "width": 1024,
                   "height": 794
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/living-view-4-9a2f31195f/1440.avif",
+                  "width": 1440,
+                  "height": 1117
                 }
               ],
               "webp": [
@@ -6201,6 +7536,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/living-view-4-9a2f31195f/1024.webp",
                   "width": 1024,
                   "height": 794
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/living-view-4-9a2f31195f/1440.webp",
+                  "width": 1440,
+                  "height": 1117
                 }
               ]
             },
@@ -6214,16 +7554,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Site photography",
         "media": [
           {
-            "src": "/images/generated/projects/minimalist-haven/chatgpt-image-sep-23-2026-103434-pm-8d727f98fe/1024.jpg",
+            "src": "/images/generated/projects/minimalist-haven/chatgpt-image-sep-23-2026-103434-pm-8d727f98fe/1086.jpg",
             "width": 1086,
             "height": 1448,
             "imageSources": {
               "width": 1086,
               "height": 1448,
               "fallback": {
-                "src": "/images/generated/projects/minimalist-haven/chatgpt-image-sep-23-2026-103434-pm-8d727f98fe/1024.jpg",
-                "width": 1024,
-                "height": 1365
+                "src": "/images/generated/projects/minimalist-haven/chatgpt-image-sep-23-2026-103434-pm-8d727f98fe/1086.jpg",
+                "width": 1086,
+                "height": 1448
               },
               "avif": [
                 {
@@ -6235,6 +7575,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/chatgpt-image-sep-23-2026-103434-pm-8d727f98fe/1024.avif",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/chatgpt-image-sep-23-2026-103434-pm-8d727f98fe/1086.avif",
+                  "width": 1086,
+                  "height": 1448
                 }
               ],
               "webp": [
@@ -6247,6 +7592,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/minimalist-haven/chatgpt-image-sep-23-2026-103434-pm-8d727f98fe/1024.webp",
                   "width": 1024,
                   "height": 1365
+                },
+                {
+                  "src": "/images/generated/projects/minimalist-haven/chatgpt-image-sep-23-2026-103434-pm-8d727f98fe/1086.webp",
+                  "width": 1086,
+                  "height": 1448
                 }
               ]
             },
@@ -6278,14 +7628,14 @@ export const portfolioProjects: PortfolioProject[] = [
       "Climate-responsive facade"
     ],
     "featured": false,
-    "cover": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1024.jpg",
+    "cover": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1440.jpg",
     "coverSources": {
       "width": 2592,
       "height": 1944,
       "fallback": {
-        "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1024.jpg",
-        "width": 1024,
-        "height": 768
+        "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1440.jpg",
+        "width": 1440,
+        "height": 1080
       },
       "avif": [
         {
@@ -6297,6 +7647,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1024.avif",
           "width": 1024,
           "height": 768
+        },
+        {
+          "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1440.avif",
+          "width": 1440,
+          "height": 1080
         }
       ],
       "webp": [
@@ -6309,6 +7664,11 @@ export const portfolioProjects: PortfolioProject[] = [
           "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1024.webp",
           "width": 1024,
           "height": 768
+        },
+        {
+          "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1440.webp",
+          "width": 1440,
+          "height": 1080
         }
       ]
     },
@@ -6318,16 +7678,16 @@ export const portfolioProjects: PortfolioProject[] = [
         "title": "Overview",
         "media": [
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07280-2a34d5ffcc/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07280-2a34d5ffcc/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07280-2a34d5ffcc/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07280-2a34d5ffcc/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6339,6 +7699,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07280-2a34d5ffcc/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07280-2a34d5ffcc/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6351,6 +7716,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07280-2a34d5ffcc/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07280-2a34d5ffcc/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6358,16 +7728,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07280"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6379,6 +7749,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6391,6 +7766,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07281-9e28e277c8/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6398,16 +7778,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07281"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07282-f2c8ded93a/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07282-f2c8ded93a/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07282-f2c8ded93a/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07282-f2c8ded93a/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6419,6 +7799,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07282-f2c8ded93a/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07282-f2c8ded93a/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6431,6 +7816,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07282-f2c8ded93a/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07282-f2c8ded93a/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6438,16 +7828,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07282"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07283-803c3cca33/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07283-803c3cca33/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07283-803c3cca33/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07283-803c3cca33/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6459,6 +7849,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07283-803c3cca33/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07283-803c3cca33/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6471,6 +7866,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07283-803c3cca33/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07283-803c3cca33/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6478,16 +7878,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07283"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07284-41ac141eef/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07284-41ac141eef/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07284-41ac141eef/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07284-41ac141eef/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6499,6 +7899,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07284-41ac141eef/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07284-41ac141eef/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6511,6 +7916,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07284-41ac141eef/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07284-41ac141eef/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6518,16 +7928,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07284"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07286-8492a9164f/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07286-8492a9164f/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07286-8492a9164f/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07286-8492a9164f/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6539,6 +7949,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07286-8492a9164f/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07286-8492a9164f/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6551,6 +7966,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07286-8492a9164f/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07286-8492a9164f/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6558,16 +7978,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07286"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07287-5a1cf5f3f8/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07287-5a1cf5f3f8/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07287-5a1cf5f3f8/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07287-5a1cf5f3f8/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6579,6 +7999,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07287-5a1cf5f3f8/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07287-5a1cf5f3f8/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6591,6 +8016,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07287-5a1cf5f3f8/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07287-5a1cf5f3f8/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6598,16 +8028,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07287"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07290-cf1961edb3/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07290-cf1961edb3/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07290-cf1961edb3/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07290-cf1961edb3/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6619,6 +8049,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07290-cf1961edb3/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07290-cf1961edb3/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6631,6 +8066,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07290-cf1961edb3/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07290-cf1961edb3/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6638,16 +8078,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07290"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07292-d310fdf00c/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07292-d310fdf00c/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07292-d310fdf00c/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07292-d310fdf00c/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6659,6 +8099,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07292-d310fdf00c/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07292-d310fdf00c/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6671,6 +8116,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07292-d310fdf00c/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07292-d310fdf00c/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6678,16 +8128,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07292"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07293-0ea0e20eb0/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07293-0ea0e20eb0/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07293-0ea0e20eb0/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07293-0ea0e20eb0/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6699,6 +8149,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07293-0ea0e20eb0/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07293-0ea0e20eb0/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6711,6 +8166,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07293-0ea0e20eb0/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07293-0ea0e20eb0/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6718,16 +8178,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07293"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07294-f34777d090/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07294-f34777d090/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07294-f34777d090/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07294-f34777d090/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6739,6 +8199,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07294-f34777d090/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07294-f34777d090/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6751,6 +8216,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07294-f34777d090/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07294-f34777d090/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6758,16 +8228,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07294"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07295-c56a51e39b/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07295-c56a51e39b/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07295-c56a51e39b/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07295-c56a51e39b/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6779,6 +8249,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07295-c56a51e39b/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07295-c56a51e39b/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6791,6 +8266,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07295-c56a51e39b/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07295-c56a51e39b/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6798,16 +8278,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07295"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07296-307860e355/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07296-307860e355/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07296-307860e355/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07296-307860e355/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6819,6 +8299,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07296-307860e355/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07296-307860e355/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6831,6 +8316,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07296-307860e355/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07296-307860e355/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6838,16 +8328,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07296"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07297-00b1be948f/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07297-00b1be948f/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07297-00b1be948f/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07297-00b1be948f/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6859,6 +8349,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07297-00b1be948f/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07297-00b1be948f/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6871,6 +8366,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07297-00b1be948f/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07297-00b1be948f/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6878,16 +8378,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07297"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07304-c83aa79233/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07304-c83aa79233/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07304-c83aa79233/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07304-c83aa79233/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6899,6 +8399,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07304-c83aa79233/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07304-c83aa79233/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6911,6 +8416,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07304-c83aa79233/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07304-c83aa79233/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6918,16 +8428,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07304"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07306-f063836e31/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07306-f063836e31/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07306-f063836e31/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07306-f063836e31/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6939,6 +8449,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07306-f063836e31/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07306-f063836e31/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6951,6 +8466,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07306-f063836e31/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07306-f063836e31/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6958,16 +8478,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07306"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07307-500fc78c64/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07307-500fc78c64/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07307-500fc78c64/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07307-500fc78c64/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -6979,6 +8499,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07307-500fc78c64/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07307-500fc78c64/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -6991,6 +8516,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07307-500fc78c64/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07307-500fc78c64/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -6998,16 +8528,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07307"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07308-6231d4ad35/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07308-6231d4ad35/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07308-6231d4ad35/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07308-6231d4ad35/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -7019,6 +8549,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07308-6231d4ad35/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07308-6231d4ad35/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -7031,6 +8566,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07308-6231d4ad35/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07308-6231d4ad35/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -7038,16 +8578,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07308"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07310-a9d2c461f8/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07310-a9d2c461f8/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07310-a9d2c461f8/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07310-a9d2c461f8/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -7059,6 +8599,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07310-a9d2c461f8/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07310-a9d2c461f8/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -7071,6 +8616,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07310-a9d2c461f8/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07310-a9d2c461f8/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -7078,16 +8628,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07310"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07311-5f6b524b6a/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07311-5f6b524b6a/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07311-5f6b524b6a/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07311-5f6b524b6a/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -7099,6 +8649,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07311-5f6b524b6a/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07311-5f6b524b6a/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -7111,6 +8666,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07311-5f6b524b6a/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07311-5f6b524b6a/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },
@@ -7118,16 +8678,16 @@ export const portfolioProjects: PortfolioProject[] = [
             "label": "DSC07311"
           },
           {
-            "src": "/images/generated/projects/shristi-vikas-school/dsc07312-6c89cac36f/1024.jpg",
+            "src": "/images/generated/projects/shristi-vikas-school/dsc07312-6c89cac36f/1440.jpg",
             "width": 2592,
             "height": 1944,
             "imageSources": {
               "width": 2592,
               "height": 1944,
               "fallback": {
-                "src": "/images/generated/projects/shristi-vikas-school/dsc07312-6c89cac36f/1024.jpg",
-                "width": 1024,
-                "height": 768
+                "src": "/images/generated/projects/shristi-vikas-school/dsc07312-6c89cac36f/1440.jpg",
+                "width": 1440,
+                "height": 1080
               },
               "avif": [
                 {
@@ -7139,6 +8699,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07312-6c89cac36f/1024.avif",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07312-6c89cac36f/1440.avif",
+                  "width": 1440,
+                  "height": 1080
                 }
               ],
               "webp": [
@@ -7151,6 +8716,11 @@ export const portfolioProjects: PortfolioProject[] = [
                   "src": "/images/generated/projects/shristi-vikas-school/dsc07312-6c89cac36f/1024.webp",
                   "width": 1024,
                   "height": 768
+                },
+                {
+                  "src": "/images/generated/projects/shristi-vikas-school/dsc07312-6c89cac36f/1440.webp",
+                  "width": 1440,
+                  "height": 1080
                 }
               ]
             },

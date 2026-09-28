@@ -99,7 +99,7 @@ export function NewsSection({
             >
               <Flex gap={3} flexWrap="wrap" align="center">
                 <Text variant="date">{item.date}</Text>
-                <Text fontSize="xs" color="dark.300">
+                <Text fontSize="xs" color="dark.200">
                   {item.category}
                 </Text>
               </Flex>

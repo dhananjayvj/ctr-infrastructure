@@ -139,7 +139,7 @@ const theme = extendTheme({
           fontSize: 'sm',
           fontWeight: '400',
           letterSpacing: '0.02em',
-          color: 'dark.300',
+          color: 'dark.200',
         },
         stat: {
           fontSize: { base: '2xl', md: '3xl' },
@@ -150,7 +150,7 @@ const theme = extendTheme({
         date: {
           fontSize: 'xs',
           fontWeight: '400',
-          color: 'dark.300',
+          color: 'dark.200',
           sx: { fontVariantNumeric: 'tabular-nums' },
         },
       },

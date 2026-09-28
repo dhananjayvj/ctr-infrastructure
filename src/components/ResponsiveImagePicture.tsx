@@ -25,7 +25,7 @@ export function ResponsiveImagePicture({
 }: ResponsiveImagePictureProps) {
   return (
     <picture style={{ display: 'block', width: '100%', height: '100%' }}>
-      <source type="image/avif" srcSet={srcSet(sources.avif)} sizes={sizes} />
+      {sources.avif.length > 0 && <source type="image/avif" srcSet={srcSet(sources.avif)} sizes={sizes} />}
       <source type="image/webp" srcSet={srcSet(sources.webp)} sizes={sizes} />
       <img
         src={sources.fallback.src}

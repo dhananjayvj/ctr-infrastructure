@@ -73,7 +73,7 @@ export function QuickNavPills({ links }: QuickNavPillsProps) {
             py={{ base: 4, md: 5 }}
             fontSize="sm"
             fontWeight="500"
-            color="dark.300"
+            color="dark.200"
             whiteSpace="nowrap"
             position="relative"
             transition="color 220ms ease-out"

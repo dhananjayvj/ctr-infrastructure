@@ -69,7 +69,7 @@ export function HeroCarousel({
           animate="animate"
           exit="exit"
         >
-          <Box position="absolute" inset={0} filter="brightness(0.72) saturate(0.92)">
+          <Box position="absolute" inset={0}>
             <ResponsiveImagePicture
               alt=""
               sources={slide.imageSources}
@@ -92,7 +92,14 @@ export function HeroCarousel({
           <MotionVStack
             align="flex-start"
             spacing={3}
-            pt={{ base: 8, md: 16 }}
+            maxW={{ base: 'full', md: 'min(68vw, 760px)' }}
+            mt={{ base: 8, md: 16 }}
+            px={{ base: 5, md: 10 }}
+            py={{ base: 6, md: 10 }}
+            bg="rgba(9, 11, 11, 0.92)"
+            borderLeft="2px solid"
+            borderColor="accent.red"
+            boxShadow="0 12px 38px rgba(0, 0, 0, 0.28)"
             variants={heroStagger}
             initial={reducedMotion ? false : 'hidden'}
             animate="visible"
@@ -104,13 +111,13 @@ export function HeroCarousel({
                 fontWeight="300"
                 lineHeight="1.1"
                 maxW="14ch"
-                textShadow="0 2px 18px rgba(0, 0, 0, 0.88)"
+                textShadow="0 1px 4px rgba(0, 0, 0, 0.4)"
               >
                 {tagline}
               </Heading>
             </MotionBox>
             <MotionBox variants={heroItem}>
-              <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="400" color="dark.100" maxW="42rem" textShadow="0 2px 16px rgba(0, 0, 0, 0.88)">
+              <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="400" color="dark.100" maxW="42rem" textShadow="0 1px 4px rgba(0, 0, 0, 0.4)">
                 {subtitle}
               </Text>
             </MotionBox>
@@ -119,7 +126,7 @@ export function HeroCarousel({
             </MotionBox>
           </MotionVStack>
 
-          <Box maxW={{ base: 'full', md: '540px', lg: '620px' }}>
+          <Box maxW={{ base: 'full', md: '540px', lg: '620px' }} bg="rgba(9, 11, 11, 0.94)" px={{ base: 5, md: 8 }} py={{ base: 5, md: 6 }} borderLeft="2px solid" borderColor="accent.red" boxShadow="0 12px 38px rgba(0, 0, 0, 0.28)">
             <AnimatePresence exitBeforeEnter>
               <MotionBox
                 key={`content-${slide.id}`}
@@ -128,7 +135,7 @@ export function HeroCarousel({
                 animate="animate"
                 exit="exit"
               >
-                <Text variant="date" mb={3}>
+                <Text variant="date" color="dark.100" mb={3}>
                   {slide.date}
                 </Text>
                 <Heading
@@ -137,6 +144,7 @@ export function HeroCarousel({
                   fontWeight="400"
                   lineHeight="1.35"
                   mb={6}
+                  textShadow="0 1px 4px rgba(0, 0, 0, 0.4)"
                 >
                   {slide.title}
                 </Heading>
@@ -168,6 +176,7 @@ export function HeroCarousel({
               transition="transform 220ms ease-out, background 220ms ease-out"
               onClick={() => goTo(i)}
               cursor="pointer"
+              _focusVisible={{ outline: '2px solid', outlineColor: 'dark.50', outlineOffset: '4px', boxShadow: '0 0 0 6px rgba(9, 11, 11, 0.95)' }}
             />
           ))}
         </Flex>
