@@ -1,11 +1,12 @@
 'use client';
 
-import { Box, Container, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
 import type { CompleteProject } from '@/data/projectCatalog';
 import { projectCardVariants, projectGridVariants } from '@/lib/motion';
+import { ResponsiveProjectImage } from '@/components/ResponsiveProjectImage';
 
 const MotionBox = motion(Box);
 
@@ -19,11 +20,7 @@ const categoryOrder: CompleteProject['category'][] = [
 
 type ProjectFilter = 'All projects' | CompleteProject['category'];
 
-function assetSrc(src: string) {
-  return encodeURI(src);
-}
-
-function ProjectVisual({ project }: { project: CompleteProject }) {
+function ProjectVisual({ project, loading }: { project: CompleteProject; loading: 'eager' | 'lazy' }) {
   if (!project.cover) {
     return (
       <Box position="relative" h={{ base: 'auto', md: 'full' }} aspectRatio={{ base: 16 / 9, md: 'auto' }} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
@@ -36,19 +33,13 @@ function ProjectVisual({ project }: { project: CompleteProject }) {
   return (
     <Box position="relative" h={{ base: 'auto', md: 'full' }} aspectRatio={{ base: 16 / 9, md: 'auto' }} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
       <MotionBox position="absolute" inset={0} transition="transform 700ms cubic-bezier(0.25, 0.1, 0.25, 1)" _groupHover={{ transform: 'scale(1.035)' }}>
-        <Image
-          src={assetSrc(project.cover)}
+        <ResponsiveProjectImage
+          fallback={project.cover}
+          sources={project.coverSources}
           alt={`A ${project.category.toLowerCase()} project in ${project.location} by CTR Architecture`}
-          w="full"
-          h="full"
-          objectFit="cover"
-          pointerEvents="none"
-          userSelect="none"
-          draggable={false}
-          sx={{ WebkitUserDrag: 'none' }}
+          loading={loading}
         />
       </MotionBox>
-      <Box position="absolute" inset={0} bgGradient="linear(to-t, rgba(0,0,0,0.48), transparent 55%)" pointerEvents="none" />
     </Box>
   );
 }
@@ -183,7 +174,7 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
                   </Flex>
                 </Flex>
                 <Box order={{ base: 2, md: imageFirst ? 1 : 2 }} h={{ base: 'auto', md: 'full' }}>
-                  <ProjectVisual project={project} />
+                  <ProjectVisual project={project} loading={index === 0 ? 'eager' : 'lazy'} />
                 </Box>
               </MotionBox>
             );

@@ -53,6 +53,8 @@ export function PageTransition({ children }: PageTransitionProps) {
         exit="exit"
         w="full"
         minH="100dvh"
+        id="main-content"
+        tabIndex={-1}
         overflowX="hidden"
         position="relative"
         style={{ willChange: reducedMotion ? 'auto' : 'transform, opacity' }}

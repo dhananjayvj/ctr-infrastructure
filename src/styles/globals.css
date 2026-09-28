@@ -91,8 +91,29 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-text-primary);
-  outline-offset: 3px;
+  outline: 3px solid var(--color-text-primary);
+  outline-offset: 4px;
+  scroll-margin-block: 6rem calc(4rem + env(safe-area-inset-bottom));
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  transform: translateY(-160%);
+  padding: 0.75rem 1rem;
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+#main-content {
+  scroll-margin-top: 6rem;
 }
 
 /* Audi-style horizontal scroll strip */
@@ -148,5 +169,11 @@ a {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom));
   }
 }

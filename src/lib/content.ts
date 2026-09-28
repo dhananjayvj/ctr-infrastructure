@@ -17,6 +17,7 @@ export type FeatureTile = {
   title: string;
   subtitle: string;
   image: string;
+  imageSources?: ResponsiveImageSources | null;
   href: string;
 };
 
@@ -241,3 +242,4 @@ export const featuredProjects = [
     description: 'A farmhouse with a sculptural, timber-clad facade set within landscaped grounds.',
   },
 ];
+import type { ResponsiveImageSources } from '@/data/projectCatalog';

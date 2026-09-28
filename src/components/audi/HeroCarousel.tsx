@@ -66,12 +66,7 @@ export function HeroCarousel({
             bgImage={`url('${slide.image}')`}
             bgSize="cover"
             bgPosition="center"
-            filter="brightness(0.55)"
-          />
-          <Box
-            position="absolute"
-            inset={0}
-            bgGradient="linear(to-t, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.35) 45%, rgba(0,0,0,0.5) 100%)"
+            filter="brightness(0.72) saturate(0.92)"
           />
         </MotionBox>
       </AnimatePresence>
@@ -99,14 +94,18 @@ export function HeroCarousel({
                 fontWeight="300"
                 lineHeight="1.1"
                 maxW="14ch"
+                textShadow="0 2px 18px rgba(0, 0, 0, 0.88)"
               >
                 {tagline}
               </Heading>
             </MotionBox>
             <MotionBox variants={heroItem}>
-              <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="400" color="dark.200" maxW="42rem">
+              <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="400" color="dark.100" maxW="42rem" textShadow="0 2px 16px rgba(0, 0, 0, 0.88)">
                 {subtitle}
               </Text>
+            </MotionBox>
+            <MotionBox variants={heroItem} display={{ base: 'none', md: 'block' }} pt={2}>
+              <LearnMoreLink href="/#contact">Start a project</LearnMoreLink>
             </MotionBox>
           </MotionVStack>
 
@@ -131,7 +130,7 @@ export function HeroCarousel({
                 >
                   {slide.title}
                 </Heading>
-                <LearnMoreLink href={slide.href} />
+                <LearnMoreLink href={slide.href}>View {slide.title}</LearnMoreLink>
               </MotionBox>
             </AnimatePresence>
           </Box>
@@ -151,10 +150,12 @@ export function HeroCarousel({
               key={s.id}
               as="button"
               aria-label={`Go to slide ${i + 1}`}
-              w={i === activeIndex ? '32px' : '8px'}
+              w="8px"
               h="2px"
               bg={i === activeIndex ? 'dark.50' : 'whiteAlpha.400'}
-              transition="all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1)"
+              transform={i === activeIndex ? 'scaleX(4)' : 'scaleX(1)'}
+              transformOrigin="left"
+              transition="transform 220ms ease-out, background 220ms ease-out"
               onClick={() => goTo(i)}
               cursor="pointer"
             />

@@ -6,14 +6,14 @@ import { FiChevronRight } from 'react-icons/fi';
 
 type LearnMoreLinkProps = {
   href: string;
-  children?: string;
+  children: React.ReactNode;
   color?: string;
   size?: 'sm' | 'md';
 };
 
 export function LearnMoreLink({
   href,
-  children = 'Learn more',
+  children,
   color = 'dark.50',
   size = 'md',
 }: LearnMoreLinkProps) {

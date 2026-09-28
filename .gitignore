@@ -8,6 +8,7 @@ node_modules/
 out/
 build/
 dist/
+public/images/generated/
 
 # Environment files
 .env
@@ -47,5 +48,4 @@ next-env.d.ts
 
 # Misc
 *.log
-
 

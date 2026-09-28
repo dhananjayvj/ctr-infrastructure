@@ -28,7 +28,7 @@ function MediaItem({ media, projectTitle }: { media: ProjectMedia; projectTitle:
       </ChakraLink>
     );
   }
-  return <Image src={assetSrc(media.src)} alt={`${projectTitle} — ${media.label}`} w="full" h="full" objectFit="cover" loading="lazy" pointerEvents="none" userSelect="none" draggable={false} sx={{ WebkitUserDrag: 'none' }} />;
+  return <Image src={assetSrc(media.src)} alt={`${projectTitle} — ${media.label}`} w="full" h="full" objectFit="cover" loading="lazy" />;
 }
 
 export function ProjectDetail({ project }: { project: CompleteProject }) {

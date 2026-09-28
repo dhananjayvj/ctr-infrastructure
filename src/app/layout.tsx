@@ -83,6 +83,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         <Providers>
           <AppShell>{children}</AppShell>
         </Providers>

@@ -17,25 +17,26 @@ export function ClientsSection() {
             Our Clients
           </Heading>
 
-          <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 7 }} spacing={{ base: 3, md: 4, lg: 5 }} w="full">
+          <SimpleGrid columns={{ base: 3, sm: 4, md: 5, lg: 7 }} spacing={{ base: 4, md: 5, lg: 6 }} w="full">
             {clientLogos.map((filename, index) => (
               <Box
                 key={filename}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
-                minH={{ base: '88px', md: '108px', lg: '120px' }}
-                px={{ base: 3, md: 4, lg: 5 }}
-                py={{ base: 4, md: 5 }}
-                bg="dark.900"
+                minH={{ base: '68px', md: '96px', lg: '112px' }}
+                px={{ base: 2, md: 4, lg: 5 }}
+                py={{ base: 3, md: 4 }}
               >
                 <Image
                   src={`/images/clients/${filename}`}
                   alt={`Client logo ${index + 1}`}
                   maxW="100%"
-                  maxH={{ base: '48px', md: '62px', lg: '70px' }}
+                  maxH={{ base: '36px', md: '56px', lg: '64px' }}
                   objectFit="contain"
                   loading="lazy"
+                  filter="grayscale(1) invert(1) contrast(1.35) brightness(1.2)"
+                  opacity={0.9}
                 />
               </Box>
             ))}

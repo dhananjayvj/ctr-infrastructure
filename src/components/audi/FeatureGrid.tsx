@@ -1,10 +1,11 @@
 'use client';
 
-import { Box, Grid, Heading, Image, Text, VStack } from '@chakra-ui/react';
+import { Box, Grid, Heading, Text, VStack } from '@chakra-ui/react';
 import { motion, useReducedMotion } from 'framer-motion';
 import type { FeatureTile } from '@/lib/content';
 import { staggerContainer, staggerItem, imageHover } from '@/lib/motion';
 import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
+import { ResponsiveProjectImage } from '@/components/ResponsiveProjectImage';
 
 const MotionBox = motion(Box);
 const MotionGrid = motion(Grid);
@@ -56,19 +57,13 @@ export function FeatureGrid({ title, subtitle, tiles }: FeatureGridProps) {
               inset={0}
               variants={imageHover}
             >
-              <Image
-                src={tile.image}
+              <ResponsiveProjectImage
+                fallback={tile.image}
+                sources={tile.imageSources}
                 alt={tile.title}
-                objectFit="cover"
-                w="full"
-                h="full"
+                loading="lazy"
               />
             </MotionBox>
-            <Box
-              position="absolute"
-              inset={0}
-              bgGradient="linear(to-t, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.2) 55%, transparent 100%)"
-            />
             <VStack
               align="flex-start"
               justify="flex-end"
@@ -76,6 +71,7 @@ export function FeatureGrid({ title, subtitle, tiles }: FeatureGridProps) {
               inset={0}
               p={{ base: 6, md: 8 }}
               spacing={3}
+              textShadow="0 2px 16px rgba(0, 0, 0, 0.9)"
             >
               <Heading fontSize={{ base: 'lg', md: 'xl' }} fontWeight="400">
                 {tile.title}
@@ -83,7 +79,7 @@ export function FeatureGrid({ title, subtitle, tiles }: FeatureGridProps) {
               <Text fontSize="sm" color="dark.200" lineHeight="1.6" noOfLines={2}>
                 {tile.subtitle}
               </Text>
-              <LearnMoreLink href={tile.href} size="sm" />
+              <LearnMoreLink href={tile.href} size="sm">View {tile.title}</LearnMoreLink>
             </VStack>
           </MotionBox>
         ))}

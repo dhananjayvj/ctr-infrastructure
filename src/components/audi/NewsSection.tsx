@@ -106,7 +106,7 @@ export function NewsSection({
               <Heading fontSize={{ base: 'md', md: 'lg' }} fontWeight="400" lineHeight="1.4">
                 {item.title}
               </Heading>
-              <LearnMoreLink href={item.href} size="sm" />
+              <LearnMoreLink href={item.href} size="sm">Read about {item.title}</LearnMoreLink>
             </VStack>
           </MotionBox>
         ))}
