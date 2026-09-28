@@ -26,7 +26,7 @@ function assetSrc(src: string) {
 function ProjectVisual({ project }: { project: CompleteProject }) {
   if (!project.cover) {
     return (
-      <Box position="relative" aspectRatio={16 / 9} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
+      <Box position="relative" h={{ base: 'auto', md: 'full' }} aspectRatio={{ base: 16 / 9, md: 'auto' }} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
         <Box position="absolute" inset="12%" border="1px solid" borderColor="whiteAlpha.180" backgroundImage="linear-gradient(135deg, transparent 49.8%, rgba(255,255,255,0.18) 50%, transparent 50.2%), linear-gradient(45deg, transparent 49.8%, rgba(255,255,255,0.12) 50%, transparent 50.2%)" />
         <Text position="absolute" left={5} bottom={5} variant="caption">Portfolio archive</Text>
       </Box>
@@ -34,7 +34,7 @@ function ProjectVisual({ project }: { project: CompleteProject }) {
   }
 
   return (
-    <Box position="relative" aspectRatio={16 / 9} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
+    <Box position="relative" h={{ base: 'auto', md: 'full' }} aspectRatio={{ base: 16 / 9, md: 'auto' }} overflow="hidden" borderRadius="2xl" bg="dark.800" border="1px solid" borderColor="whiteAlpha.200">
       <MotionBox position="absolute" inset={0} transition="transform 700ms cubic-bezier(0.25, 0.1, 0.25, 1)" _groupHover={{ transform: 'scale(1.035)' }}>
         <Image
           src={assetSrc(project.cover)}
@@ -182,7 +182,7 @@ export function ProjectDirectory({ projects }: { projects: CompleteProject[] }) 
                     <Text variant="caption" color="dark.100" transition="transform 220ms ease-out" _groupHover={{ transform: 'translateX(4px)' }}>Open project →</Text>
                   </Flex>
                 </Flex>
-                <Box order={{ base: 2, md: imageFirst ? 1 : 2 }}>
+                <Box order={{ base: 2, md: imageFirst ? 1 : 2 }} h={{ base: 'auto', md: 'full' }}>
                   <ProjectVisual project={project} />
                 </Box>
               </MotionBox>
