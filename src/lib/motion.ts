@@ -187,7 +187,7 @@ export const projectCardVariants: Variants = {
 };
 
 export const navLinks = [
-  { label: 'Projects', href: '/projects' },
+  { label: 'Projects', href: '/projects/' },
   { label: 'Locations', href: '/projects/#locations' },
   { label: 'Services', href: '/#services' },
   { label: 'About', href: '/#about' },

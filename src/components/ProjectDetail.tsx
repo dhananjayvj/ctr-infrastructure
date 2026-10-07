@@ -6,7 +6,9 @@ import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
 import type { CompleteProject, ProjectMedia } from '@/data/projectCatalog';
 import { ResponsiveGalleryImage } from '@/components/ResponsiveGalleryImage';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { pageTopPad, sectionPy } from '@/lib/spacing';
+import { SITE_URL } from '@/lib/site';
 
 const MotionBox = motion(Box);
 
@@ -16,11 +18,28 @@ function MediaItem({ media, projectTitle, eager }: { media: ProjectMedia; projec
 
 export function ProjectDetail({ project }: { project: CompleteProject }) {
   const reducedMotion = useReducedMotion();
+  const projectSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: project.title,
+    description: project.description,
+    url: `${SITE_URL}/projects/${project.id}/`,
+    creator: { '@type': 'Organization', name: 'CTR Infrastructure', url: SITE_URL },
+    about: [project.category, project.sector, ...project.scope],
+    locationCreated: { '@type': 'Place', name: project.location },
+    dateCreated: project.year,
+  };
 
   return (
     <Box as="main" bg="dark.900" overflowX="hidden">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }} />
       <Box pt={pageTopPad} pb={{ base: 12, md: 20 }}>
         <Container maxW="1440px">
+          <Breadcrumbs items={[
+            { label: 'Home', href: '/' },
+            { label: 'Projects', href: '/projects/' },
+            { label: project.title },
+          ]} />
           <ChakraLink as={Link} href="/projects/" display="inline-flex" alignItems="center" gap={2} color="dark.200" fontSize="sm" _hover={{ color: 'dark.50', textDecoration: 'none' }}>
             <FiArrowLeft aria-hidden="true" /> Back to all projects
           </ChakraLink>
@@ -30,7 +49,7 @@ export function ProjectDetail({ project }: { project: CompleteProject }) {
                 <Text variant="caption">{project.category}</Text>
                 <Text variant="caption" color="dark.200">{project.location}</Text>
               </HStack>
-              <Heading fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }} fontWeight="400" lineHeight="0.94">{project.title}</Heading>
+              <Heading as="h1" fontSize={{ base: '4xl', md: '6xl', lg: '7xl' }} fontWeight="400" lineHeight="0.94">{project.title}</Heading>
               <Text variant="lead" maxW="39rem">{project.description}</Text>
             </VStack>
             <VStack align={{ base: 'flex-start', lg: 'flex-end' }} justify="flex-end" spacing={2} minW={{ lg: '12rem' }}>
@@ -40,6 +59,33 @@ export function ProjectDetail({ project }: { project: CompleteProject }) {
           </Flex>
         </Container>
       </Box>
+
+      <Container maxW="1440px" pb={{ base: 8, md: 12 }}>
+        <Box borderTop="1px solid" borderColor="whiteAlpha.120" pt={6}>
+          <Heading as="h2" fontSize="xl" fontWeight="400" mb={5}>Project overview</Heading>
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 4, md: 6 }}>
+            {[
+              ['Client', project.client],
+              ['Sector', project.sector],
+              ['Location', project.location],
+              ['Year', project.year],
+              ['Scope', project.scope.join(', ')],
+            ].map(([label, value]) => value && (
+              <Box key={label}>
+                <Text variant="caption" mb={1}>{label}</Text>
+                <Text fontSize="sm" color="dark.100">{value}</Text>
+              </Box>
+            ))}
+          </SimpleGrid>
+          {project.brief && <Text mt={6} maxW="52rem" color="dark.200" lineHeight="1.7">{project.brief}</Text>}
+          {project.outcomes?.length > 0 && (
+            <Box mt={6}>
+              <Text variant="caption" mb={2}>Project outcomes</Text>
+              <Text maxW="52rem" color="dark.200" lineHeight="1.7">{project.outcomes.join(' · ')}</Text>
+            </Box>
+          )}
+        </Box>
+      </Container>
 
       {project.sections.length > 1 && (
         <Box position="sticky" top="5.5rem" zIndex={10} borderTop="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.120" bg="rgba(10,10,10,0.94)" backdropFilter="blur(12px)">
@@ -59,7 +105,7 @@ export function ProjectDetail({ project }: { project: CompleteProject }) {
         {project.sections.map((section, sectionIndex) => (
           <Box key={section.id} id={section.id} scrollMarginTop="8rem" pt={{ base: 16, md: 24 }}>
             <Flex justify="space-between" align="baseline" gap={5} mb={{ base: 6, md: 8 }}>
-              <Heading fontSize={{ base: 'xl', md: '2xl' }} fontWeight="400">{section.title}</Heading>
+              <Heading as="h2" fontSize={{ base: 'xl', md: '2xl' }} fontWeight="400">{section.title}</Heading>
               <Text variant="caption">{String(section.media.length).padStart(2, '0')} views</Text>
             </Flex>
             <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} spacing={{ base: 3, md: 5 }}>

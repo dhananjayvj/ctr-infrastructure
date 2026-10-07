@@ -23,7 +23,7 @@ export function NewsSection({
   title,
   description,
   items,
-  ctaHref = '/projects',
+  ctaHref = '/projects/',
   ctaLabel = 'Open project portfolio',
 }: NewsSectionProps) {
   const reducedMotion = useReducedMotion();

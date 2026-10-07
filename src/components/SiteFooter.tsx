@@ -5,14 +5,14 @@ import NextLink from 'next/link';
 import { sectionPySm } from '@/lib/spacing';
 
 const footerNav = [
-  { label: 'Projects', href: '/projects' },
+  { label: 'Projects', href: '/projects/' },
   { label: 'Services', href: '/#services' },
   { label: 'About', href: '/#about' },
-  { label: 'FAQs', href: '/faq' },
+  { label: 'FAQs', href: '/faq/' },
   { label: 'Contact', href: '/#contact' },
 ];
 
-const legalLinks = [{ label: 'Privacy', href: '/privacy' }];
+const legalLinks = [{ label: 'Privacy', href: '/privacy/' }];
 
 export function SiteFooter() {
   return (

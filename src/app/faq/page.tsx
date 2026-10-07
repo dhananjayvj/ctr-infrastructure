@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Where are you based, and what regions do you work in?',
     answer:
-      'We are headquartered in Tamil Nadu, South India, with a legacy spanning more than 60 years and projects delivered across 4+ states in South India.',
+      'Our registered office is at 37/12, Poochakkadu, Mangalam Road, Tiruppur, Tamil Nadu 641604. We also have a Coimbatore office and work across Tamil Nadu and Karnataka.',
   },
   {
     question: 'How long does a typical project take?',
@@ -89,7 +89,7 @@ export default function FaqPage() {
               <Text variant="caption">Frequently asked questions</Text>
             </MotionBox>
             <MotionBox variants={heroItem}>
-              <Heading fontSize="display-lg" fontWeight="300" lineHeight="1.1">
+              <Heading as="h1" fontSize="display-lg" fontWeight="300" lineHeight="1.1">
                 Answers before you reach out
               </Heading>
             </MotionBox>

@@ -40,7 +40,7 @@ export const heroSlides: HeroSlide[] = [
     subtitle: 'Infrastructure',
     date: '07/10/2026',
     imageSources: heroImageSources[1],
-    href: '/projects',
+    href: '/projects/',
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ export const heroSlides: HeroSlide[] = [
     subtitle: 'Hospitality',
     date: '07/29/2026',
     imageSources: heroImageSources[2],
-    href: '/projects',
+    href: '/projects/',
   },
   {
     id: 3,
@@ -56,13 +56,13 @@ export const heroSlides: HeroSlide[] = [
     subtitle: 'Commercial',
     date: '07/23/2026',
     imageSources: heroImageSources[3],
-    href: '/projects',
+    href: '/projects/',
   },
 ];
 
 export const quickLinks: QuickLink[] = [
   { label: 'At a glance', href: '/#about' },
-  { label: 'Projects', href: '/projects' },
+  { label: 'Projects', href: '/projects/' },
   { label: 'Locations', href: '/projects/#locations' },
   { label: 'Services', href: '/#services' },
   { label: 'About', href: '/#about' },
@@ -111,7 +111,7 @@ export const featureTiles: FeatureTile[] = [
     title: 'Event space',
     subtitle: 'Tiruppur, Tamil Nadu',
     image: '/images/projects/treasure-trove-venue/1.jpg',
-    href: '/projects',
+    href: '/projects/',
   },
 ];
 
@@ -122,7 +122,7 @@ export const newsItems: NewsItem[] = [
     category: 'ctrinfrastructure.com',
     title: 'CTR Infrastructure across South India',
     image: '/images/projects/hindustan-resort/1.jpg',
-    href: '/projects',
+    href: '/projects/',
   },
   {
     id: 2,
@@ -130,7 +130,7 @@ export const newsItems: NewsItem[] = [
     category: 'Projects',
     title: 'Hindustan Resort, Coimbatore',
     image: '/images/projects/hindustan-resort/3.jpg',
-    href: '/projects',
+    href: '/projects/',
   },
   {
     id: 3,
@@ -138,7 +138,7 @@ export const newsItems: NewsItem[] = [
     category: 'Projects',
     title: 'Treasure Trove Venue, Tiruppur',
     image: '/images/projects/treasure-trove-venue/2.jpg',
-    href: '/projects',
+    href: '/projects/',
   },
   {
     id: 4,
@@ -146,15 +146,15 @@ export const newsItems: NewsItem[] = [
     category: 'Projects',
     title: 'Hindustan Petroleum, Nilgiris',
     image: '/images/projects/hindustan-petroleum/3.jpg',
-    href: '/projects',
+    href: '/projects/',
   },
 ];
 
 export const stats = [
   { number: '150+', label: 'Projects completed' },
-  { number: '60+', label: 'Years legacy' },
+  { number: 'South India', label: 'Regional practice' },
   { number: '40+', label: 'Awards won' },
-  { number: '4+', label: 'States across South India' },
+  { number: 'Tamil Nadu + Karnataka', label: 'Published project locations' },
 ];
 
 export const services = [

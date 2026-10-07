@@ -47,13 +47,13 @@ export default function ProjectsPage() {
               <Text variant="caption">Our work</Text>
             </MotionBox>
             <MotionBox variants={heroItem}>
-              <Heading fontSize="display-lg" fontWeight="300" lineHeight="1.1">
+              <Heading as="h1" fontSize="display-lg" fontWeight="300" lineHeight="1.1">
                 Project portfolio
               </Heading>
             </MotionBox>
             <MotionBox variants={heroItem}>
               <Text variant="lead" maxW="none">
-                Award-winning architecture and infrastructure across commercial,
+                Architecture and infrastructure across commercial,
                 residential, and public sectors.
               </Text>
             </MotionBox>

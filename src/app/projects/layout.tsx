@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/projects/' },
   title: 'Projects',
-  description: 'Explore our portfolio of award-winning architectural and infrastructure projects. Commercial, residential, and public sector developments across South India.',
+  description: 'Explore CTR Infrastructure project case studies across commercial, residential, institutional, hospitality, and infrastructure sectors in South India.',
   openGraph: {
+    url: '/projects/',
     title: 'Projects | CTR Infrastructure',
-    description: 'Explore our portfolio of award-winning architectural and infrastructure projects.',
+    description: 'Explore project case studies across commercial, residential, institutional, hospitality, and infrastructure sectors.',
   },
 };
 
@@ -16,4 +18,3 @@ export default function ProjectsLayout({
 }) {
   return children;
 }
-

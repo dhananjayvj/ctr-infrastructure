@@ -64,7 +64,7 @@ export function SiteHeader() {
   const closeMenu = () => setMenuOpen(false);
 
   const isLinkActive = (href: string) => {
-    if (href === '/projects') return pathname === '/projects';
+    if (href === '/projects/') return pathname === '/projects/';
     if (href.startsWith('/#')) {
       return pathname === '/' && typeof window !== 'undefined' && window.location.hash === href.slice(1);
     }
