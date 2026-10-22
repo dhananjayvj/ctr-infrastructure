@@ -35,14 +35,6 @@ export type NewsItem = {
 
 export const heroSlides: HeroSlide[] = [
   {
-    id: 1,
-    title: 'Hindustan Petroleum — Nilgiris',
-    subtitle: 'Infrastructure',
-    date: '07/10/2026',
-    imageSources: heroImageSources[1],
-    href: '/projects/',
-  },
-  {
     id: 2,
     title: 'Hindustan Resort — Coimbatore',
     subtitle: 'Hospitality',

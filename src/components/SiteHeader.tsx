@@ -99,7 +99,7 @@ export function SiteHeader() {
         <Container maxW="1440px">
           <Flex h={HEADER_HEIGHT} align="center" justify="space-between" gap={4}>
             <Link as={NextLink} href="/" _hover={{ textDecoration: 'none', opacity: 0.9 }} onClick={closeMenu}>
-              <HStack spacing={3}>
+              <HStack spacing={{ base: 2, md: 3 }}>
                 <Image
                   src="/images/logo/ctr-logo-mark.png"
                   alt="CTR Infrastructure"
@@ -107,11 +107,11 @@ export function SiteHeader() {
                   w="auto"
                 />
                 <Text
-                  fontSize={{ base: 'xs', md: 'sm' }}
+                  fontSize={{ base: '10px', sm: 'xs', md: 'sm' }}
                   fontWeight="600"
-                  letterSpacing="0.12em"
+                  letterSpacing={{ base: '0.06em', md: '0.12em' }}
                   textTransform="uppercase"
-                  display={{ base: 'none', sm: 'block' }}
+                  whiteSpace="nowrap"
                 >
                   CTR Infrastructure
                 </Text>

@@ -135,20 +135,16 @@ export function HeroCarousel({
                 animate="animate"
                 exit="exit"
               >
-                <Text variant="date" color="dark.100" mb={3}>
-                  {slide.date}
-                </Text>
                 <Heading
                   as="h2"
                   fontSize={{ base: 'xl', md: '2xl' }}
                   fontWeight="400"
                   lineHeight="1.35"
-                  mb={6}
+                  mb={0}
                   textShadow="0 1px 4px rgba(0, 0, 0, 0.4)"
                 >
                   {slide.title}
                 </Heading>
-                <LearnMoreLink href={slide.href}>View {slide.title}</LearnMoreLink>
               </MotionBox>
             </AnimatePresence>
           </Box>
