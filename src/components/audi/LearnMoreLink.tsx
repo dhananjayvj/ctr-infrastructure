@@ -27,6 +27,7 @@ export function LearnMoreLink({
       fontSize={size === 'sm' ? 'sm' : 'md'}
       fontWeight="500"
       w="fit-content"
+      minH="44px"
       role="group"
       _hover={{ textDecoration: 'none', opacity: 0.85 }}
     >

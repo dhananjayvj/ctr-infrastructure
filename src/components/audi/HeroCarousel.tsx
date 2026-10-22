@@ -5,7 +5,7 @@ import { Box, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import type { HeroSlide } from '@/lib/content';
 import { crossfade, heroItem, heroStagger } from '@/lib/motion';
-import { HEADER_HEIGHT } from '@/lib/spacing';
+import { containerPx, HEADER_HEIGHT } from '@/lib/spacing';
 import { LearnMoreLink } from '@/components/audi/LearnMoreLink';
 import { ResponsiveImagePicture } from '@/components/ResponsiveImagePicture';
 
@@ -22,8 +22,8 @@ const AUTO_ADVANCE_MS = 7000;
 
 export function HeroCarousel({
   slides,
-  tagline = 'Architecture shaped by place.',
-  subtitle = 'Context-led work across South India.',
+  tagline = 'Built with intent.',
+  subtitle = 'Architecture and engineering, from first idea to final detail.',
 }: HeroCarouselProps) {
   const reducedMotion = useReducedMotion();
   const [activeIndex, setActiveIndex] = useState(0);
@@ -81,6 +81,14 @@ export function HeroCarousel({
         </MotionBox>
       </AnimatePresence>
 
+      <Box
+        position="absolute"
+        inset={0}
+        zIndex={1}
+        pointerEvents="none"
+        bg="linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.12) 38%, rgba(0, 0, 0, 0.76) 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.12) 72%)"
+      />
+
       <Container maxW="1440px" h="full" position="relative" zIndex={2}>
         <Flex
           direction="column"
@@ -88,45 +96,41 @@ export function HeroCarousel({
           minH={{ base: 'min(100dvh, 820px)', md: '100dvh' }}
           pt={HEADER_HEIGHT}
           pb={{ base: 24, md: 16 }}
+          px={containerPx}
         >
           <MotionVStack
             align="flex-start"
-            spacing={3}
-            maxW={{ base: 'full', md: 'min(68vw, 760px)' }}
-            mt={{ base: 8, md: 16 }}
-            px={{ base: 5, md: 10 }}
-            py={{ base: 6, md: 10 }}
-            bg="rgba(9, 11, 11, 0.92)"
-            borderLeft="2px solid"
-            borderColor="accent.red"
-            boxShadow="0 12px 38px rgba(0, 0, 0, 0.28)"
+            spacing={{ base: 4, md: 6 }}
+            maxW="42rem"
+            mt={{ base: 10, md: 20 }}
             variants={heroStagger}
             initial={reducedMotion ? false : 'hidden'}
             animate="visible"
           >
+            <MotionBox variants={heroItem} w={10} h="2px" bg="accent.red" />
             <MotionBox variants={heroItem}>
               <Heading
                 as="h1"
                 fontSize="display-xl"
-                fontWeight="300"
-                lineHeight="1.1"
-                maxW="14ch"
-                textShadow="0 1px 4px rgba(0, 0, 0, 0.4)"
+                fontWeight="400"
+                lineHeight="0.98"
+                letterSpacing="-0.035em"
+                maxW="12ch"
               >
                 {tagline}
               </Heading>
             </MotionBox>
             <MotionBox variants={heroItem}>
-              <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="400" color="dark.100" maxW="42rem" textShadow="0 1px 4px rgba(0, 0, 0, 0.4)">
+              <Text fontSize={{ base: 'md', md: 'lg' }} lineHeight="1.6" color="dark.100" maxW="31rem">
                 {subtitle}
               </Text>
             </MotionBox>
-            <MotionBox variants={heroItem} display={{ base: 'none', md: 'block' }} pt={2}>
-              <LearnMoreLink href="/#contact">Start a project</LearnMoreLink>
+            <MotionBox variants={heroItem} pt={{ base: 2, md: 3 }}>
+              <LearnMoreLink href="/#contact">Discuss a project</LearnMoreLink>
             </MotionBox>
           </MotionVStack>
 
-          <Box maxW={{ base: 'full', md: '540px', lg: '620px' }} bg="rgba(9, 11, 11, 0.94)" px={{ base: 5, md: 8 }} py={{ base: 5, md: 6 }} borderLeft="2px solid" borderColor="accent.red" boxShadow="0 12px 38px rgba(0, 0, 0, 0.28)">
+          <Box maxW={{ base: 'full', md: '540px' }} borderTop="1px solid" borderColor="whiteAlpha.600" pt={{ base: 4, md: 5 }}>
             <AnimatePresence exitBeforeEnter>
               <MotionBox
                 key={`content-${slide.id}`}
@@ -135,13 +139,14 @@ export function HeroCarousel({
                 animate="animate"
                 exit="exit"
               >
+                <Text variant="eyebrow" color="dark.100" mb={2}>
+                  Selected project
+                </Text>
                 <Heading
                   as="h2"
-                  fontSize={{ base: 'xl', md: '2xl' }}
+                  fontSize={{ base: '2xl', md: '3xl' }}
                   fontWeight="400"
-                  lineHeight="1.35"
-                  mb={0}
-                  textShadow="0 1px 4px rgba(0, 0, 0, 0.4)"
+                  lineHeight="1.15"
                 >
                   {slide.title}
                 </Heading>
@@ -154,26 +159,34 @@ export function HeroCarousel({
       {slides.length > 1 && (
         <Flex
           position="absolute"
-          bottom={{ base: 6, md: 10 }}
+          bottom={{ base: 2, md: 6 }}
           right={{ base: 5, md: 14 }}
           zIndex={3}
-          gap={2}
+          gap={1}
         >
           {slides.map((s, i) => (
             <Box
               key={s.id}
               as="button"
-              aria-label={`Go to slide ${i + 1}`}
-              w="8px"
-              h="2px"
-              bg={i === activeIndex ? 'dark.50' : 'whiteAlpha.400'}
-              transform={i === activeIndex ? 'scaleX(4)' : 'scaleX(1)'}
-              transformOrigin="left"
-              transition="transform 220ms ease-out, background 220ms ease-out"
+              aria-label={`Show ${s.title}`}
+              aria-current={i === activeIndex ? 'true' : undefined}
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              w="44px"
+              h="44px"
               onClick={() => goTo(i)}
               cursor="pointer"
               _focusVisible={{ outline: '2px solid', outlineColor: 'dark.50', outlineOffset: '4px', boxShadow: '0 0 0 6px rgba(9, 11, 11, 0.95)' }}
-            />
+            >
+              <Box
+                w="8px"
+                h="2px"
+                bg={i === activeIndex ? 'dark.50' : 'whiteAlpha.600'}
+                transform={i === activeIndex ? 'scaleX(3.5)' : 'scaleX(1)'}
+                transition="transform 220ms ease-out, background 220ms ease-out"
+              />
+            </Box>
           ))}
         </Flex>
       )}

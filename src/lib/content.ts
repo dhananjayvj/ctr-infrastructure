@@ -4,10 +4,7 @@ import { heroImageSources } from '@/data/heroImageCatalog';
 export type HeroSlide = {
   id: number;
   title: string;
-  subtitle: string;
-  date: string;
   imageSources: ResponsiveImageSources;
-  href: string;
 };
 
 export type QuickLink = {
@@ -36,19 +33,13 @@ export type NewsItem = {
 export const heroSlides: HeroSlide[] = [
   {
     id: 2,
-    title: 'Hindustan Resort — Coimbatore',
-    subtitle: 'Hospitality',
-    date: '07/29/2026',
+    title: 'Hindustan Resort',
     imageSources: heroImageSources[2],
-    href: '/projects/',
   },
   {
     id: 3,
-    title: 'Treasure Trove Venue — Tiruppur',
-    subtitle: 'Commercial',
-    date: '07/23/2026',
+    title: 'Treasure Trove',
     imageSources: heroImageSources[3],
-    href: '/projects/',
   },
 ];
 
